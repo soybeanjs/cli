@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@soybeanjs/cli': ^0.0.1
   '@types/prompts': ^2.4.1
   bumpp: ^8.2.1
   commander: ^9.4.1
@@ -24,6 +25,7 @@ dependencies:
   prompts: 2.4.2
 
 devDependencies:
+  '@soybeanjs/cli': 0.0.1
   '@types/prompts': 2.4.1
   bumpp: 8.2.1
   eslint: 8.26.0
@@ -120,8 +122,8 @@ packages:
       es-html-parser: 0.0.8
     dev: true
 
-  /@humanwhocodes/config-array/0.11.6:
-    resolution: {integrity: sha512-jJr+hPTJYKyDILJfhNSHsjiwXYf26Flsz8DvNndOsHs5pwSnpGUEy8yzF0JYhCEvTDdV2vuOK5tt8BVhwO5/hg==}
+  /@humanwhocodes/config-array/0.11.7:
+    resolution: {integrity: sha512-kBbPWzN8oVMLb0hOUYXhmxggL/1cJE6ydvjDIGi9EnAGUyA7cLVKQg+d/Dsm+KZwx2czGHrCmMVLiyg8s5JPKw==}
     engines: {node: '>=10.10.0'}
     dependencies:
       '@humanwhocodes/object-schema': 1.2.1
@@ -169,6 +171,17 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+    dev: true
+
+  /@soybeanjs/cli/0.0.1:
+    resolution: {integrity: sha512-IM5zea75UqAQoLDi4B5bLwuSBvYy4XMjRn5E/1qSsmcxNpd/IxwknMW/dW+pShe5aykUVDXCnFKQDgOSqAmLnA==}
+    hasBin: true
+    dependencies:
+      commander: 9.4.1
+      execa: 5.1.1
+      kolorist: 1.6.0
+      minimist: 1.2.7
+      prompts: 2.4.2
     dev: true
 
   /@types/fs-extra/9.0.13:
@@ -655,7 +668,6 @@ packages:
   /commander/9.4.1:
     resolution: {integrity: sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==}
     engines: {node: ^12.20.0 || >=14}
-    dev: false
 
   /concat-map/0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
@@ -1418,7 +1430,7 @@ packages:
     hasBin: true
     dependencies:
       '@eslint/eslintrc': 1.3.3
-      '@humanwhocodes/config-array': 0.11.6
+      '@humanwhocodes/config-array': 0.11.7
       '@humanwhocodes/module-importer': 1.0.1
       '@nodelib/fs.walk': 1.2.8
       ajv: 6.12.6
@@ -2201,7 +2213,6 @@ packages:
 
   /kolorist/1.6.0:
     resolution: {integrity: sha512-dLkz37Ab97HWMx9KTes3Tbi3D1ln9fCAy2zr2YVExJasDRPGRaKcoE4fycWNtnCAJfjFqe0cnY+f8KT2JePEXQ==}
-    dev: false
 
   /levn/0.3.0:
     resolution: {integrity: sha512-0OO4y2iOHix2W6ujICbKIaEQXvFQHue65vUG3pb5EUomzPI90z9hsA1VsO/dbIIpC53J8gxM9Q4Oho0jrCM/yA==}

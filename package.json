@@ -10,8 +10,10 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
-    "ipkg": "pnpm i --registry https://registry.npmmirror.com/",
     "build": "tsup",
     "esno": "esno",
     "lint": "eslint . --fix",
@@ -19,8 +21,7 @@
     "publish-pkg": "pnpm -r publish --access public",
     "release": "pnpm update-version && pnpm publish-pkg",
     "prepare": "husky install",
-    "soybean": "dist/index.js",
-    "commit": "pnpm soybean git-commit"
+    "commit": "soybean git-commit"
   },
   "dependencies": {
     "commander": "^9.4.1",
@@ -30,6 +31,7 @@
     "prompts": "^2.4.2"
   },
   "devDependencies": {
+    "@soybeanjs/cli": "^0.0.1",
     "@types/prompts": "^2.4.1",
     "bumpp": "^8.2.1",
     "eslint": "^8.26.0",
