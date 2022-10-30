@@ -1,0 +1,43 @@
+{
+  "name": "@soybeanjs/cli",
+  "version": "0.0.1",
+  "description": "SoybeanJS's command lint tools",
+  "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
+  "license": "MIT",
+  "bin": {
+    "soybean": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "ipkg": "pnpm i --registry https://registry.npmmirror.com/",
+    "build": "tsup",
+    "esno": "esno",
+    "lint": "eslint . --fix",
+    "update-version": "bumpp package.json",
+    "publish-pkg": "pnpm -r publish --access public",
+    "release": "pnpm update-version && pnpm publish-pkg",
+    "prepare": "husky install",
+    "soybean": "dist/index.js",
+    "commit": "pnpm soybean git-commit"
+  },
+  "dependencies": {
+    "commander": "^9.4.1",
+    "execa": "5.1.1",
+    "kolorist": "^1.6.0",
+    "minimist": "^1.2.7",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/prompts": "^2.4.1",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.26.0",
+    "eslint-config-soybeanjs": "0.1.1",
+    "esno": "^0.16.3",
+    "husky": "^8.0.1",
+    "tsup": "^6.3.0",
+    "typescript": "^4.8.4",
+    "zx": "^7.1.1"
+  }
+}
