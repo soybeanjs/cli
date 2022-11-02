@@ -15,13 +15,16 @@
   },
   "scripts": {
     "build": "tsup",
+    "cleanup": "rm -rf ./node_modules ./**/node_modules ./dist ./**/dist ./pnpm-lock.yaml ./**/pnpm-lock.yaml",
+    "commit": "soybean git-commit",
     "esno": "esno",
     "lint": "eslint . --fix",
+    "update-pkg": "ncu --deep -u",
     "update-version": "bumpp package.json",
     "publish-pkg": "pnpm -r publish --access public",
     "release": "pnpm update-version && pnpm publish-pkg",
-    "prepare": "husky install",
-    "commit": "soybean git-commit"
+    "sync-pkg": "esno ./scripts/sync.ts",
+    "prepare": "husky install"
   },
   "dependencies": {
     "commander": "^9.4.1",
@@ -31,13 +34,14 @@
     "prompts": "^2.4.2"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "^0.0.1",
+    "@soybeanjs/cli": "^0.1.0",
     "@types/prompts": "^2.4.1",
     "bumpp": "^8.2.1",
     "eslint": "^8.26.0",
     "eslint-config-soybeanjs": "0.1.1",
     "esno": "^0.16.3",
     "husky": "^8.0.1",
+    "npm-check-updates": "^16.3.16",
     "tsup": "^6.3.0",
     "typescript": "^4.8.4",
     "zx": "^7.1.1"
