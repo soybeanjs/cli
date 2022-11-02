@@ -2,8 +2,19 @@
   "name": "@soybeanjs/cli",
   "version": "0.1.0",
   "description": "SoybeanJS's command lint tools",
-  "author": "Soybean <honghuangdc@gmail.com> (https://github.com/honghuangdc)",
+  "author": {
+    "name": "Soybean",
+    "email": "honghuangdc@gmail.com",
+    "url": "https://github.com/honghuangdc"
+  },
   "license": "MIT",
+  "homepage": "https://github.com/honghuangdc/soybean-cli",
+  "repository": {
+    "url": "https://github.com/honghuangdc/soybean-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/honghuangdc/soybean-cli/issues"
+  },
   "bin": {
     "soybean": "dist/index.js"
   },
