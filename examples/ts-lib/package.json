@@ -1,29 +1,7 @@
 {
-  "name": "@soybeanjs/cli",
-  "version": "0.1.2",
-  "description": "SoybeanJS's command lint tools",
-  "author": {
-    "name": "Soybean",
-    "email": "honghuangdc@gmail.com",
-    "url": "https://github.com/honghuangdc"
-  },
-  "license": "MIT",
-  "homepage": "https://github.com/honghuangdc/soybean-cli",
-  "repository": {
-    "url": "https://github.com/honghuangdc/soybean-cli.git"
-  },
-  "bugs": {
-    "url": "https://github.com/honghuangdc/soybean-cli/issues"
-  },
-  "bin": {
-    "soybean": "dist/index.js"
-  },
-  "files": [
-    "dist"
-  ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
+  "name": "ts-lib",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
     "build": "tsup",
     "lint": "eslint . --fix",
@@ -34,12 +12,11 @@
     "update-version": "bumpp package.json",
     "publish-pkg": "pnpm -r publish --access public",
     "release": "pnpm update-version && pnpm publish-pkg",
-    "sync-pkg": "esno ./scripts/sync.ts",
-    "prepare": "husky install"
+    "sync-pkg": "esno ./scripts/sync.ts"
   },
   "dependencies": {
     "commander": "^9.4.1",
-    "execa": "5.1.1",
+    "execa": "6.1.0",
     "kolorist": "^1.6.0",
     "minimist": "^1.2.7",
     "prompts": "^2.4.2"
@@ -51,7 +28,6 @@
     "eslint": "^8.26.0",
     "eslint-config-soybeanjs": "0.1.2",
     "esno": "^0.16.3",
-    "husky": "^8.0.1",
     "npm-check-updates": "^16.3.16",
     "tsup": "^6.4.0",
     "typescript": "^4.8.4",
