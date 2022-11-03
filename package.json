@@ -26,10 +26,10 @@
   },
   "scripts": {
     "build": "tsup",
-    "cleanup": "rm -rf ./node_modules ./**/node_modules ./dist ./**/dist ./pnpm-lock.yaml ./**/pnpm-lock.yaml",
+    "lint": "eslint . --fix",
     "commit": "soybean git-commit",
     "esno": "esno",
-    "lint": "eslint . --fix",
+    "cleanup": "esno ./scripts/cleanup.ts",
     "update-pkg": "ncu --deep -u",
     "update-version": "bumpp package.json",
     "publish-pkg": "pnpm -r publish --access public",

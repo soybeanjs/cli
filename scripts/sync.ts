@@ -1,4 +1,5 @@
 #!/usr/bin/env zx
+
 import { fetch } from 'zx';
 import pkg from '../package.json';
 
