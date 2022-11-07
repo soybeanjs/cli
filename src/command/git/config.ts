@@ -22,6 +22,7 @@ export const scopes = [
   ['styles', '样式相关'],
   ['deps', '项目依赖'],
   ['auth', '对 auth 修改'],
+  ['release', '版本发布'],
   ['other', '其他修改']
 ].map(([value, description]) => {
   return {
