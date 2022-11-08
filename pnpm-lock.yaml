@@ -8,6 +8,8 @@ importers:
       '@types/prompts': ^2.4.1
       bumpp: ^8.2.1
       commander: ^9.4.1
+      cz-git: ^1.3.12
+      czg: ^1.3.12
       eslint: ^8.26.0
       eslint-config-soybeanjs: 0.1.2
       esno: ^0.16.3
@@ -31,6 +33,8 @@ importers:
       '@soybeanjs/cli': 'link:'
       '@types/prompts': 2.4.1
       bumpp: 8.2.1
+      cz-git: 1.3.12
+      czg: 1.3.12
       eslint: 8.26.0
       eslint-config-soybeanjs: 0.1.2_wyqvi574yv7oiwfeinomdzmc3m
       esno: 0.16.3
@@ -1059,6 +1063,15 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       type-fest: 1.4.0
+    dev: true
+
+  /cz-git/1.3.12:
+    resolution: {integrity: sha512-grTgbgjsRpvkYNjm8kmpvHHw/LkkS3SlQOOwgamhRZo7c5qQfts1QZdkJ6RP0K61BcxyH5siMz8qC/MDoW/tBA==}
+    dev: true
+
+  /czg/1.3.12:
+    resolution: {integrity: sha512-p+Jm5AVatbaMeo2lRyuj5xm9iuxe/A6s9WA/Jfu+g3FWYHkG+StsNXJw1u8i1qqfmbu2hj9rXgF0lTltwHHKSA==}
+    hasBin: true
     dev: true
 
   /data-uri-to-buffer/4.0.0:
