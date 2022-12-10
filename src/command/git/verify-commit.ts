@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import { red } from 'kolorist';
+import { bgRed, red, green } from 'kolorist';
 import { types, scopes } from './config';
 
 export function verifyGitCommit() {
@@ -14,6 +14,10 @@ export function verifyGitCommit() {
   );
 
   if (!REG_EXP.test(commitMsg) && !commitMsg.includes(RELEASE_MSG)) {
-    throw new Error(red('提交信息不符合 Angular 规范'));
+    throw new Error(
+      `${bgRed(' ERROR ')} ${red('Git提交信息不符合 Angular 规范!\n\n')}${green(
+        '推荐使用命令 pnpm commit 生成符合规范的Git提交信息'
+      )}`
+    );
   }
 }

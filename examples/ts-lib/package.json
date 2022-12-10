@@ -23,14 +23,14 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "workspace:*",
-    "@types/prompts": "^2.4.1",
+    "@types/prompts": "^2.4.2",
     "bumpp": "^8.2.1",
-    "eslint": "^8.26.0",
-    "eslint-config-soybeanjs": "0.1.2",
+    "eslint": "^8.29.0",
+    "eslint-config-soybeanjs": "0.2.1",
     "esno": "^0.16.3",
-    "npm-check-updates": "^16.3.16",
-    "tsup": "^6.4.0",
-    "typescript": "^4.8.4",
+    "npm-check-updates": "^16.5.5",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4",
     "zx": "^7.1.1"
   }
 }

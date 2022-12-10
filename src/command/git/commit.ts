@@ -1,9 +1,9 @@
-import promptos from 'prompts';
+import prompts from 'prompts';
 import execa from 'execa';
 import { types, scopes } from './config';
 
 export async function gitCommit() {
-  const result = await promptos([
+  const result = await prompts([
     {
       name: 'types',
       type: 'select',
@@ -25,5 +25,5 @@ export async function gitCommit() {
 
   const commitMsg = `${result.types}(${result.scopes}): ${result.description}`;
 
-  await execa('git', ['commit', '-m', commitMsg]);
+  execa('git', ['commit', '-m', commitMsg], { stdio: 'inherit' });
 }
