@@ -2,7 +2,7 @@ module.exports = {
   extends: ['soybeanjs'],
   overrides: [
     {
-      files: ['./scripts/*.ts'],
+      files: ['src/scripts/*.ts', 'scripts/*.ts'],
       rules: {
         'no-unused-expressions': 'off'
       }

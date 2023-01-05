@@ -1,9 +1,10 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['src/index.ts', 'src/config/commitlint.config.js'],
+  entry: ['src/index.ts'],
   splitting: false,
   sourcemap: false,
   clean: false,
+  dts: true,
   format: ['esm', 'cjs']
 });
