@@ -3,7 +3,7 @@ import { program } from 'commander';
 import { blue } from 'kolorist';
 import pkg from '../package.json';
 import { gitCommit, verifyGitCommit } from './command';
-import { cleanup, initSimpleGitHooks, updatePkg } from './scripts';
+import { cleanup, cleanupDeep, initSimpleGitHooks, updatePkg, prettierFormat } from './scripts';
 
 program
   .command('git-commit')
@@ -23,12 +23,19 @@ program
   .command('cleanup')
   .description('清空依赖和构建产物')
   .action(() => {
+    cleanupDeep();
+  });
+
+program
+  .command('cleanup-deep')
+  .description('清空依赖和构建产物(包含深层级)')
+  .action(() => {
     cleanup();
   });
 
 program
   .command('init-git-hooks')
-  .description('初始化git钩子')
+  .description('初始化simple-git-hooks钩子')
   .action(() => {
     initSimpleGitHooks();
   });
@@ -38,6 +45,13 @@ program
   .description('升级依赖')
   .action(() => {
     updatePkg();
+  });
+
+program
+  .command('prettier-format')
+  .description('prettier格式化')
+  .action(() => {
+    prettierFormat();
   });
 
 // 配置options

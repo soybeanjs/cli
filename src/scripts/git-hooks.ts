@@ -1,8 +1,16 @@
-import { $ } from 'zx';
+import { existsSync } from 'fs';
+import { execa } from 'execa';
+import { rimraf } from 'rimraf';
 
 export async function initSimpleGitHooks() {
-  await $`pnpm rimraf .husky`;
-  await $`git config core.hooksPath .git/hooks/`;
-  await $`rimraf .git/hooks`;
-  await $`pnpm simple-git-hooks`;
+  const huskyDir = `${process.cwd()}/.husky`;
+  const existHusky = existsSync(huskyDir);
+
+  if (existHusky) {
+    await rimraf('.husky');
+    await execa('git', ['config', 'core.hooksPath', '.git/hooks/'], { stdio: 'inherit' });
+  }
+
+  await rimraf('.git/hooks');
+  await execa('npx', ['simple-git-hooks'], { stdio: 'inherit' });
 }

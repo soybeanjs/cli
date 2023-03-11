@@ -1,5 +1,5 @@
-import { $ } from 'zx';
+import { execa } from 'execa';
 
 export async function updatePkg() {
-  await $`ncu --deep -u`;
+  execa('npx', ['ncu', '--deep', '-u'], { stdio: 'inherit' });
 }

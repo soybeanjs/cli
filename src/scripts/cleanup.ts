@@ -1,5 +1,15 @@
-import { $ } from 'zx';
+import { rimraf } from 'rimraf';
 
-export async function cleanup() {
-  await $`pnpm rimraf node_modules dist package-lock.json yarn.lock pnpm-lock.yaml ./**/node_modules ./**/dist ./**/package-lock.json ./**/yarn.lock ./**/pnpm-lock.yaml`;
+const pathStrs = ['node_modules', 'dist', 'package-lock.json', 'yarn.lock', 'pnpm-lock.yaml'];
+
+export function cleanup() {
+  rimraf(pathStrs);
+}
+
+export async function cleanupDeep() {
+  const deepPathStrs = pathStrs.map(item => `./**/${item}`);
+
+  const allPathStrs = pathStrs.concat(deepPathStrs);
+
+  rimraf(allPathStrs);
 }

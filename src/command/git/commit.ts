@@ -1,5 +1,5 @@
 import prompts from 'prompts';
-import execa from 'execa';
+import { execa } from 'execa';
 import { types, scopes } from './config';
 
 export async function gitCommit() {
