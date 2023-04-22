@@ -1,6 +1,6 @@
 {
   "name": "@soybeanjs/cli",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "SoybeanJS's command lint tools",
   "author": {
     "name": "Soybean",
