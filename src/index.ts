@@ -3,7 +3,7 @@ import { program } from 'commander';
 import { blue } from 'kolorist';
 import pkg from '../package.json';
 import { gitCommit, verifyGitCommit } from './command';
-import { cleanup, cleanupDeep, initSimpleGitHooks, updatePkg, prettierFormat } from './scripts';
+import { cleanup, initSimpleGitHooks, updatePkg, prettierFormat } from './scripts';
 
 program
   .command('git-commit')
@@ -22,13 +22,6 @@ program
 program
   .command('cleanup')
   .description('清空依赖和构建产物')
-  .action(() => {
-    cleanupDeep();
-  });
-
-program
-  .command('cleanup-deep')
-  .description('清空依赖和构建产物(包含深层级)')
   .action(() => {
     cleanup();
   });

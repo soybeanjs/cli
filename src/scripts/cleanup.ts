@@ -1,15 +1,14 @@
 import { rimraf } from 'rimraf';
+import { glob } from 'glob';
 
-const pathStrs = ['node_modules', 'dist', 'package-lock.json', 'yarn.lock', 'pnpm-lock.yaml'];
+const NODE_MODULE_PATH = 'node_modules';
 
-export function cleanup() {
-  rimraf(pathStrs);
-}
+const pathStrs = [NODE_MODULE_PATH, 'dist', 'package-lock.json', 'yarn.lock', 'pnpm-lock.yaml'];
 
-export async function cleanupDeep() {
-  const deepPathStrs = pathStrs.map(item => `./**/${item}`);
+const deepPathStrs = pathStrs.map(item => `./**/${item}`);
 
-  const allPathStrs = pathStrs.concat(deepPathStrs);
+export async function cleanup() {
+  const paths = await glob(deepPathStrs, { ignore: 'node_modules/**' });
 
-  rimraf(allPathStrs);
+  rimraf(paths.concat([NODE_MODULE_PATH]));
 }
