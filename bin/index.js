@@ -271,7 +271,7 @@ var import_kolorist2 = require("kolorist");
 // package.json
 var package_default = {
   name: "@soybeanjs/cli",
-  version: "0.1.7",
+  version: "0.1.8",
   description: "SoybeanJS's command lint tools",
   author: {
     name: "Soybean",
@@ -306,20 +306,19 @@ var package_default = {
   },
   dependencies: {
     commander: "^10.0.1",
+    enquirer: "^2.3.6",
     execa: "7.1.1",
-    kolorist: "^1.7.0",
+    kolorist: "^1.8.0",
     minimist: "^1.2.8",
     "npm-check-updates": "^16.10.9",
-    prompts: "^2.4.2",
     rimraf: "^5.0.0"
   },
   devDependencies: {
     "@soybeanjs/cli": "link:",
-    "@types/prompts": "^2.4.4",
     bumpp: "^9.1.0",
     eslint: "^8.39.0",
     "eslint-config-soybeanjs": "0.3.3",
-    "lint-staged": "^13.2.1",
+    "lint-staged": "^13.2.2",
     "simple-git-hooks": "^2.8.1",
     tsup: "^6.7.0",
     tsx: "^3.12.6",
@@ -340,7 +339,7 @@ var package_default = {
 };
 
 // src/command/git/commit.ts
-var import_prompts = __toESM(require("prompts"));
+var import_enquirer = __toESM(require("enquirer"));
 var import_execa = require("execa");
 
 // src/command/git/config.ts
@@ -378,18 +377,18 @@ var scopes = [
 
 // src/command/git/commit.ts
 async function gitCommit() {
-  const result = await (0, import_prompts.default)([
+  const result = await import_enquirer.default.prompt([
     {
       name: "types",
       type: "select",
       message: "\u8BF7\u9009\u62E9\u63D0\u4EA4\u7684\u7C7B\u578B",
-      choices: types
+      choices: types.map((item) => ({ name: item.value, message: item.title }))
     },
     {
       name: "scopes",
       type: "select",
       message: "\u9009\u62E9\u4E00\u4E2Ascope",
-      choices: scopes
+      choices: scopes.map((item) => ({ name: item.value, message: item.title }))
     },
     {
       name: "description",
