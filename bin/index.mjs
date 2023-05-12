@@ -270,7 +270,7 @@ import { blue } from "kolorist";
 // package.json
 var package_default = {
   name: "@soybeanjs/cli",
-  version: "0.1.8",
+  version: "0.1.9",
   description: "SoybeanJS's command lint tools",
   author: {
     name: "Soybean",
@@ -284,6 +284,9 @@ var package_default = {
   },
   bugs: {
     url: "https://github.com/honghuangdc/soybean-cli/issues"
+  },
+  publishConfig: {
+    registry: "https://registry.npmjs.org/"
   },
   bin: {
     soybean: "bin/index.mjs",
@@ -304,24 +307,24 @@ var package_default = {
     release: "pnpm update-version && pnpm publish-pkg"
   },
   dependencies: {
-    commander: "^10.0.1",
-    enquirer: "^2.3.6",
+    commander: "10.0.1",
+    enquirer: "2.3.6",
     execa: "7.1.1",
-    kolorist: "^1.8.0",
-    minimist: "^1.2.8",
-    "npm-check-updates": "^16.10.9",
-    rimraf: "^5.0.0"
+    kolorist: "1.8.0",
+    minimist: "1.2.8",
+    "npm-check-updates": "16.10.12",
+    rimraf: "5.0.0"
   },
   devDependencies: {
     "@soybeanjs/cli": "link:",
-    bumpp: "^9.1.0",
-    eslint: "^8.39.0",
-    "eslint-config-soybeanjs": "0.3.3",
-    "lint-staged": "^13.2.2",
-    "simple-git-hooks": "^2.8.1",
-    tsup: "^6.7.0",
-    tsx: "^3.12.6",
-    typescript: "^5.0.4"
+    bumpp: "9.1.0",
+    eslint: "8.40.0",
+    "eslint-config-soybeanjs": "0.3.7",
+    "lint-staged": "13.2.2",
+    "simple-git-hooks": "2.8.1",
+    tsup: "6.7.0",
+    tsx: "3.12.7",
+    typescript: "5.0.4"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soybean git-commit-verify",
@@ -331,9 +334,6 @@ var package_default = {
     "*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}": [
       "eslint . --fix"
     ]
-  },
-  publishConfig: {
-    registry: "https://registry.npmjs.org/"
   }
 };
 
@@ -1760,7 +1760,7 @@ minimatch.Minimatch = Minimatch;
 minimatch.escape = escape;
 minimatch.unescape = unescape;
 
-// node_modules/.pnpm/lru-cache@9.1.0/node_modules/lru-cache/dist/mjs/index.js
+// node_modules/.pnpm/lru-cache@9.1.1/node_modules/lru-cache/dist/mjs/index.js
 var perf = typeof performance === "object" && performance && typeof performance.now === "function" ? performance : Date;
 var warned = /* @__PURE__ */ new Set();
 var PROCESS = typeof process === "object" && !!process ? process : {};
@@ -2135,7 +2135,8 @@ var LRUCache = class {
         status.ttl = ttl;
         status.start = start;
         status.now = cachedNow || getNow();
-        status.remainingTTL = status.now + ttl - start;
+        const age = status.now - start;
+        status.remainingTTL = ttl - age;
       }
     };
     let cachedNow = 0;
@@ -2155,7 +2156,13 @@ var LRUCache = class {
       if (index === void 0) {
         return 0;
       }
-      return ttls[index] === 0 || starts[index] === 0 ? Infinity : starts[index] + ttls[index] - (cachedNow || getNow());
+      const ttl = ttls[index];
+      const start = starts[index];
+      if (ttl === 0 || start === 0) {
+        return Infinity;
+      }
+      const age = (cachedNow || getNow()) - start;
+      return ttl - age;
     };
     this.#isStale = (index) => {
       return ttls[index] !== 0 && starts[index] !== 0 && (cachedNow || getNow()) - starts[index] > ttls[index];
@@ -2982,7 +2989,7 @@ var LRUCache = class {
   }
 };
 
-// node_modules/.pnpm/path-scurry@1.7.0/node_modules/path-scurry/dist/mjs/index.js
+// node_modules/.pnpm/path-scurry@1.8.0/node_modules/path-scurry/dist/mjs/index.js
 import { posix, win32 } from "path";
 import { fileURLToPath } from "url";
 import * as actualFS from "fs";
@@ -3590,7 +3597,7 @@ var Minipass = class extends Stream {
   }
 };
 
-// node_modules/.pnpm/path-scurry@1.7.0/node_modules/path-scurry/dist/mjs/index.js
+// node_modules/.pnpm/path-scurry@1.8.0/node_modules/path-scurry/dist/mjs/index.js
 var realpathSync = rps.native;
 var defaultFS = {
   lstatSync,
@@ -3667,6 +3674,7 @@ var ChildrenCache = class extends LRUCache {
     });
   }
 };
+var setAsCwd = Symbol("PathScurry setAsCwd");
 var PathBase = class {
   /**
    * the basename of this path
@@ -3920,8 +3928,7 @@ var PathBase = class {
       return this.#relative = this.name;
     }
     const pv = p.relative();
-    const rp = pv + (!pv || !p.parent ? "" : this.sep) + name;
-    return this.#relative = rp;
+    return pv + (!pv || !p.parent ? "" : this.sep) + name;
   }
   /**
    * The relative path from the cwd, using / as the path separator.
@@ -3940,8 +3947,7 @@ var PathBase = class {
       return this.#relativePosix = this.fullpathPosix();
     }
     const pv = p.relativePosix();
-    const rp = pv + (!pv || !p.parent ? "" : "/") + name;
-    return this.#relativePosix = rp;
+    return pv + (!pv || !p.parent ? "" : "/") + name;
   }
   /**
    * The fully resolved path string for this Path entry
@@ -4517,6 +4523,32 @@ var PathBase = class {
       return this.#realpath = this.resolve(rp);
     } catch (_) {
       this.#markENOREALPATH();
+    }
+  }
+  /**
+   * Internal method to mark this Path object as the scurry cwd,
+   * called by {@link PathScurry#chdir}
+   *
+   * @internal
+   */
+  [setAsCwd](oldCwd) {
+    if (oldCwd === this)
+      return;
+    const changed = /* @__PURE__ */ new Set([]);
+    let rp = [];
+    let p = this;
+    while (p && p.parent) {
+      changed.add(p);
+      p.#relative = rp.join(this.sep);
+      p.#relativePosix = rp.join("/");
+      p = p.parent;
+      rp.push("..");
+    }
+    p = oldCwd;
+    while (p && p.parent && !changed.has(p)) {
+      p.#relative = void 0;
+      p.#relativePosix = void 0;
+      p = p.parent;
     }
   }
 };
@@ -5175,6 +5207,11 @@ var PathScurryBase = class {
     process2();
     return results;
   }
+  chdir(path2 = this.cwd) {
+    const oldCwd = this.cwd;
+    this.cwd = typeof path2 === "string" ? this.cwd.resolve(path2) : path2;
+    this.cwd[setAsCwd](oldCwd);
+  }
 };
 var PathScurryWin32 = class extends PathScurryBase {
   /**
@@ -5246,10 +5283,10 @@ var PathScurryDarwin = class extends PathScurryPosix {
 var Path = process.platform === "win32" ? PathWin32 : PathPosix;
 var PathScurry = process.platform === "win32" ? PathScurryWin32 : process.platform === "darwin" ? PathScurryDarwin : PathScurryPosix;
 
-// node_modules/.pnpm/glob@10.2.1/node_modules/glob/dist/mjs/glob.js
+// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/glob.js
 import { fileURLToPath as fileURLToPath2 } from "url";
 
-// node_modules/.pnpm/glob@10.2.1/node_modules/glob/dist/mjs/pattern.js
+// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/pattern.js
 var isPatternList = (pl) => pl.length >= 1;
 var isGlobList = (gl) => gl.length >= 1;
 var Pattern = class {
@@ -5414,7 +5451,7 @@ var Pattern = class {
   }
 };
 
-// node_modules/.pnpm/glob@10.2.1/node_modules/glob/dist/mjs/ignore.js
+// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/ignore.js
 var defaultPlatform2 = typeof process === "object" && process && typeof process.platform === "string" ? process.platform : "linux";
 var Ignore = class {
   relative;
@@ -5489,7 +5526,7 @@ var Ignore = class {
   }
 };
 
-// node_modules/.pnpm/glob@10.2.1/node_modules/glob/dist/mjs/processor.js
+// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/processor.js
 var HasWalkedCache = class {
   store;
   constructor(store = /* @__PURE__ */ new Map()) {
@@ -5716,7 +5753,7 @@ var Processor = class {
   }
 };
 
-// node_modules/.pnpm/glob@10.2.1/node_modules/glob/dist/mjs/walker.js
+// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/walker.js
 var makeIgnore = (ignore, opts) => typeof ignore === "string" ? new Ignore([ignore], opts) : Array.isArray(ignore) ? new Ignore(ignore, opts) : ignore;
 var GlobUtil = class {
   path;
@@ -6020,7 +6057,7 @@ var GlobStream = class extends GlobUtil {
   }
 };
 
-// node_modules/.pnpm/glob@10.2.1/node_modules/glob/dist/mjs/glob.js
+// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/glob.js
 var defaultPlatform3 = typeof process === "object" && process && typeof process.platform === "string" ? process.platform : "linux";
 var Glob = class {
   absolute;
@@ -6124,6 +6161,7 @@ var Glob = class {
       });
     }
     this.nocase = this.scurry.nocase;
+    const nocaseMagicOnly = this.platform === "darwin" || this.platform === "win32";
     const mmo = {
       // default nocase based on platform
       ...opts,
@@ -6131,7 +6169,7 @@ var Glob = class {
       matchBase: this.matchBase,
       nobrace: this.nobrace,
       nocase: this.nocase,
-      nocaseMagicOnly: true,
+      nocaseMagicOnly,
       nocomment: true,
       noext: this.noext,
       nonegate: true,
@@ -6208,7 +6246,7 @@ var Glob = class {
   }
 };
 
-// node_modules/.pnpm/glob@10.2.1/node_modules/glob/dist/mjs/has-magic.js
+// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/has-magic.js
 var hasMagic = (pattern, options = {}) => {
   if (!Array.isArray(pattern)) {
     pattern = [pattern];
@@ -6220,7 +6258,7 @@ var hasMagic = (pattern, options = {}) => {
   return false;
 };
 
-// node_modules/.pnpm/glob@10.2.1/node_modules/glob/dist/mjs/index.js
+// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/index.js
 function globStreamSync(pattern, options = {}) {
   return new Glob(pattern, options).streamSync();
 }
