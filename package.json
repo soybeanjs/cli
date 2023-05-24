@@ -32,9 +32,10 @@
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy update-pkg",
-    "update-version": "bumpp package.json",
+    "update-version": "bumpp package.json --execute=\"pnpm gen-log\" --commit --all --push --tag",
     "publish-pkg": "pnpm -r publish --access public",
-    "release": "pnpm update-version && pnpm publish-pkg"
+    "release": "pnpm update-version && pnpm publish-pkg",
+    "gen-log": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
     "commander": "10.0.1",
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@soybeanjs/cli": "link:",
     "bumpp": "9.1.0",
+    "conventional-changelog-cli": "^2.2.2",
     "eslint": "8.40.0",
     "eslint-config-soybeanjs": "0.3.7",
     "lint-staged": "13.2.2",
