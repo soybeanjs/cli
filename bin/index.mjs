@@ -354,7 +354,6 @@ var types = [
   { value: "refactor", title: "refactor: \u4EE3\u7801\u91CD\u6784\uFF0C\u6CA1\u6709\u52A0\u65B0\u529F\u80FD\u6216\u8005\u4FEE\u590Dbug" },
   { value: "perf", title: "perf:     \u4F18\u5316\u76F8\u5173\uFF0C\u6BD4\u5982\u63D0\u5347\u6027\u80FD\u3001\u4F53\u9A8C" },
   { value: "test", title: "test:     \u6DFB\u52A0\u6D4B\u8BD5\u7528\u4F8B" },
-  { value: "build", title: "build:    \u4F9D\u8D56\u76F8\u5173\u7684\u5185\u5BB9" },
   { value: "ci", title: "ci:       CI\u914D\u7F6E\u76F8\u5173\uFF0C\u4F8B\u5982\u5BF9k8s\uFF0Cdocker\u7684\u914D\u7F6E\u6587\u4EF6\u7684\u4FEE\u6539" },
   { value: "chore", title: "chore:    \u6539\u53D8\u6784\u5EFA\u6D41\u7A0B\u3001\u6216\u8005\u589E\u52A0\u4F9D\u8D56\u5E93\u3001\u5DE5\u5177\u7B49" },
   { value: "revert", title: "revert:   \u56DE\u6EDA\u5230\u4E0A\u4E00\u4E2A\u7248\u672C" }
