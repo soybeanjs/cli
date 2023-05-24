@@ -35,10 +35,9 @@ pnpm soy -h
 
 底层调用 prettier --write 达到格式化文件的目的
 
-默认忽略的格式化文件：
+默认忽略的格式化文件夹货文件：
 
-- js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro
-  > 以上文件通过 eslint 去格式化
+- js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro (通过 eslint 去格式化)
 - node_modules
 - _.min._
 - CHANGELOG.md
@@ -52,3 +51,4 @@ pnpm soy -h
 - pnpm-lock.yaml
 - yarn.lock
 - **snapshots**
+  
