@@ -48,6 +48,7 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
+    "@types/node": "^20.2.3",
     "bumpp": "9.1.0",
     "conventional-changelog-cli": "^2.2.2",
     "eslint": "8.41.0",

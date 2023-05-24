@@ -270,7 +270,7 @@ import { blue } from "kolorist";
 // package.json
 var package_default = {
   name: "@soybeanjs/cli",
-  version: "0.1.9",
+  version: "0.2.0",
   description: "SoybeanJS's command lint tools",
   author: {
     name: "Soybean",
@@ -302,9 +302,10 @@ var package_default = {
     commit: "soy git-commit",
     cleanup: "soy cleanup",
     "update-pkg": "soy update-pkg",
-    "update-version": "bumpp package.json",
+    "update-version": 'bumpp package.json --execute="pnpm gen-log" --commit --all --push --tag',
     "publish-pkg": "pnpm -r publish --access public",
-    release: "pnpm update-version && pnpm publish-pkg"
+    release: "pnpm update-version && pnpm publish-pkg",
+    "gen-log": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   dependencies: {
     commander: "10.0.1",
@@ -313,13 +314,15 @@ var package_default = {
     kolorist: "1.8.0",
     minimist: "1.2.8",
     "npm-check-updates": "16.10.12",
-    rimraf: "5.0.0"
+    rimraf: "5.0.1"
   },
   devDependencies: {
     "@soybeanjs/cli": "link:",
+    "@types/node": "^20.2.3",
     bumpp: "9.1.0",
-    eslint: "8.40.0",
-    "eslint-config-soybeanjs": "0.3.7",
+    "conventional-changelog-cli": "^2.2.2",
+    eslint: "8.41.0",
+    "eslint-config-soybeanjs": "0.3.8",
     "lint-staged": "13.2.2",
     "simple-git-hooks": "2.8.1",
     tsup: "6.7.0",
@@ -421,10 +424,10 @@ function verifyGitCommit() {
 // src/scripts/cleanup.ts
 import { rimraf } from "rimraf";
 
-// node_modules/.pnpm/minimatch@9.0.0/node_modules/minimatch/dist/mjs/index.js
+// node_modules/.pnpm/minimatch@9.0.1/node_modules/minimatch/dist/mjs/index.js
 var import_brace_expansion = __toESM(require_brace_expansion(), 1);
 
-// node_modules/.pnpm/minimatch@9.0.0/node_modules/minimatch/dist/mjs/assert-valid-pattern.js
+// node_modules/.pnpm/minimatch@9.0.1/node_modules/minimatch/dist/mjs/assert-valid-pattern.js
 var MAX_PATTERN_LENGTH = 1024 * 64;
 var assertValidPattern = (pattern) => {
   if (typeof pattern !== "string") {
@@ -435,7 +438,7 @@ var assertValidPattern = (pattern) => {
   }
 };
 
-// node_modules/.pnpm/minimatch@9.0.0/node_modules/minimatch/dist/mjs/brace-expressions.js
+// node_modules/.pnpm/minimatch@9.0.1/node_modules/minimatch/dist/mjs/brace-expressions.js
 var posixClasses = {
   "[:alnum:]": ["\\p{L}\\p{Nl}\\p{Nd}", true],
   "[:alpha:]": ["\\p{L}\\p{Nl}", true],
@@ -545,12 +548,12 @@ var parseClass = (glob2, position) => {
   return [comb, uflag, endPos - pos, true];
 };
 
-// node_modules/.pnpm/minimatch@9.0.0/node_modules/minimatch/dist/mjs/unescape.js
+// node_modules/.pnpm/minimatch@9.0.1/node_modules/minimatch/dist/mjs/unescape.js
 var unescape = (s, { windowsPathsNoEscape = false } = {}) => {
   return windowsPathsNoEscape ? s.replace(/\[([^\/\\])\]/g, "$1") : s.replace(/((?!\\).|^)\[([^\/\\])\]/g, "$1$2").replace(/\\([^\/])/g, "$1");
 };
 
-// node_modules/.pnpm/minimatch@9.0.0/node_modules/minimatch/dist/mjs/ast.js
+// node_modules/.pnpm/minimatch@9.0.1/node_modules/minimatch/dist/mjs/ast.js
 var types2 = /* @__PURE__ */ new Set(["!", "?", "+", "*", "@"]);
 var isExtglobType = (c) => types2.has(c);
 var startNoTraversal = "(?!\\.\\.?(?:$|/))";
@@ -1036,12 +1039,12 @@ parseGlob_fn = function(glob2, hasMagic2, noEmpty = false) {
 __privateAdd(AST, _parseAST);
 __privateAdd(AST, _parseGlob);
 
-// node_modules/.pnpm/minimatch@9.0.0/node_modules/minimatch/dist/mjs/escape.js
+// node_modules/.pnpm/minimatch@9.0.1/node_modules/minimatch/dist/mjs/escape.js
 var escape = (s, { windowsPathsNoEscape = false } = {}) => {
   return windowsPathsNoEscape ? s.replace(/[?*()[\]]/g, "[$&]") : s.replace(/[?*()[\]\\]/g, "\\$&");
 };
 
-// node_modules/.pnpm/minimatch@9.0.0/node_modules/minimatch/dist/mjs/index.js
+// node_modules/.pnpm/minimatch@9.0.1/node_modules/minimatch/dist/mjs/index.js
 var minimatch = (p, pattern, options = {}) => {
   assertValidPattern(pattern);
   if (!options.nocomment && pattern.charAt(0) === "#") {
@@ -1528,26 +1531,21 @@ var Minimatch = class {
   matchOne(file, pattern, partial = false) {
     const options = this.options;
     if (this.isWindows) {
-      const fileUNC = file[0] === "" && file[1] === "" && file[2] === "?" && typeof file[3] === "string" && /^[a-z]:$/i.test(file[3]);
-      const patternUNC = pattern[0] === "" && pattern[1] === "" && pattern[2] === "?" && typeof pattern[3] === "string" && /^[a-z]:$/i.test(pattern[3]);
-      if (fileUNC && patternUNC) {
-        const fd = file[3];
-        const pd = pattern[3];
+      const fileDrive = typeof file[0] === "string" && /^[a-z]:$/i.test(file[0]);
+      const fileUNC = !fileDrive && file[0] === "" && file[1] === "" && file[2] === "?" && /^[a-z]:$/i.test(file[3]);
+      const patternDrive = typeof pattern[0] === "string" && /^[a-z]:$/i.test(pattern[0]);
+      const patternUNC = !patternDrive && pattern[0] === "" && pattern[1] === "" && pattern[2] === "?" && typeof pattern[3] === "string" && /^[a-z]:$/i.test(pattern[3]);
+      const fdi = fileUNC ? 3 : fileDrive ? 0 : void 0;
+      const pdi = patternUNC ? 3 : patternDrive ? 0 : void 0;
+      if (typeof fdi === "number" && typeof pdi === "number") {
+        const [fd, pd] = [file[fdi], pattern[pdi]];
         if (fd.toLowerCase() === pd.toLowerCase()) {
-          file[3] = pd;
-        }
-      } else if (patternUNC && typeof file[0] === "string") {
-        const pd = pattern[3];
-        const fd = file[0];
-        if (pd.toLowerCase() === fd.toLowerCase()) {
-          pattern[3] = fd;
-          pattern = pattern.slice(3);
-        }
-      } else if (fileUNC && typeof pattern[0] === "string") {
-        const fd = file[3];
-        if (fd.toLowerCase() === pattern[0].toLowerCase()) {
-          pattern[0] = fd;
-          file = file.slice(3);
+          pattern[pdi] = fd;
+          if (pdi > fdi) {
+            pattern = pattern.slice(pdi);
+          } else if (fdi > pdi) {
+            file = file.slice(fdi);
+          }
         }
       }
     }
@@ -2989,14 +2987,14 @@ var LRUCache = class {
   }
 };
 
-// node_modules/.pnpm/path-scurry@1.8.0/node_modules/path-scurry/dist/mjs/index.js
+// node_modules/.pnpm/path-scurry@1.9.2/node_modules/path-scurry/dist/mjs/index.js
 import { posix, win32 } from "path";
 import { fileURLToPath } from "url";
 import * as actualFS from "fs";
 import { lstatSync, readdir as readdirCB, readdirSync, readlinkSync, realpathSync as rps } from "fs";
 import { lstat, readdir, readlink, realpath } from "fs/promises";
 
-// node_modules/.pnpm/minipass@5.0.0/node_modules/minipass/index.mjs
+// node_modules/.pnpm/minipass@6.0.2/node_modules/minipass/index.mjs
 import EE from "events";
 import Stream from "stream";
 import stringdecoder from "string_decoder";
@@ -3597,7 +3595,7 @@ var Minipass = class extends Stream {
   }
 };
 
-// node_modules/.pnpm/path-scurry@1.8.0/node_modules/path-scurry/dist/mjs/index.js
+// node_modules/.pnpm/path-scurry@1.9.2/node_modules/path-scurry/dist/mjs/index.js
 var realpathSync = rps.native;
 var defaultFS = {
   lstatSync,
@@ -3794,6 +3792,16 @@ var PathBase = class {
   #children;
   #linkTarget;
   #realpath;
+  /**
+   * This property is for compatibility with the Dirent class as of
+   * Node v20, where Dirent['path'] refers to the path of the directory
+   * that was passed to readdir.  So, somewhat counterintuitively, this
+   * property refers to the *parent* path, not the path object itself.
+   * For root entries, it's the path to the entry itself.
+   */
+  get path() {
+    return (this.parent || this).fullpath();
+  }
   /**
    * Do not create new Path objects directly.  They should always be accessed
    * via the PathScurry class or other methods on the Path class.
@@ -5283,10 +5291,10 @@ var PathScurryDarwin = class extends PathScurryPosix {
 var Path = process.platform === "win32" ? PathWin32 : PathPosix;
 var PathScurry = process.platform === "win32" ? PathScurryWin32 : process.platform === "darwin" ? PathScurryDarwin : PathScurryPosix;
 
-// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/glob.js
+// node_modules/.pnpm/glob@10.2.6/node_modules/glob/dist/mjs/glob.js
 import { fileURLToPath as fileURLToPath2 } from "url";
 
-// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/pattern.js
+// node_modules/.pnpm/glob@10.2.6/node_modules/glob/dist/mjs/pattern.js
 var isPatternList = (pl) => pl.length >= 1;
 var isGlobList = (gl) => gl.length >= 1;
 var Pattern = class {
@@ -5451,7 +5459,7 @@ var Pattern = class {
   }
 };
 
-// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/ignore.js
+// node_modules/.pnpm/glob@10.2.6/node_modules/glob/dist/mjs/ignore.js
 var defaultPlatform2 = typeof process === "object" && process && typeof process.platform === "string" ? process.platform : "linux";
 var Ignore = class {
   relative;
@@ -5526,7 +5534,7 @@ var Ignore = class {
   }
 };
 
-// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/processor.js
+// node_modules/.pnpm/glob@10.2.6/node_modules/glob/dist/mjs/processor.js
 var HasWalkedCache = class {
   store;
   constructor(store = /* @__PURE__ */ new Map()) {
@@ -5753,7 +5761,7 @@ var Processor = class {
   }
 };
 
-// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/walker.js
+// node_modules/.pnpm/glob@10.2.6/node_modules/glob/dist/mjs/walker.js
 var makeIgnore = (ignore, opts) => typeof ignore === "string" ? new Ignore([ignore], opts) : Array.isArray(ignore) ? new Ignore(ignore, opts) : ignore;
 var GlobUtil = class {
   path;
@@ -6057,7 +6065,7 @@ var GlobStream = class extends GlobUtil {
   }
 };
 
-// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/glob.js
+// node_modules/.pnpm/glob@10.2.6/node_modules/glob/dist/mjs/glob.js
 var defaultPlatform3 = typeof process === "object" && process && typeof process.platform === "string" ? process.platform : "linux";
 var Glob = class {
   absolute;
@@ -6246,7 +6254,7 @@ var Glob = class {
   }
 };
 
-// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/has-magic.js
+// node_modules/.pnpm/glob@10.2.6/node_modules/glob/dist/mjs/has-magic.js
 var hasMagic = (pattern, options = {}) => {
   if (!Array.isArray(pattern)) {
     pattern = [pattern];
@@ -6258,7 +6266,7 @@ var hasMagic = (pattern, options = {}) => {
   return false;
 };
 
-// node_modules/.pnpm/glob@10.2.3/node_modules/glob/dist/mjs/index.js
+// node_modules/.pnpm/glob@10.2.6/node_modules/glob/dist/mjs/index.js
 function globStreamSync(pattern, options = {}) {
   return new Glob(pattern, options).streamSync();
 }

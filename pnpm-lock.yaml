@@ -27,6 +27,9 @@ devDependencies:
   '@soybeanjs/cli':
     specifier: 'link:'
     version: 'link:'
+  '@types/node':
+    specifier: ^20.2.3
+    version: 20.2.3
   bumpp:
     specifier: 9.1.0
     version: 9.1.0
@@ -698,6 +701,10 @@ packages:
 
   /@types/minimist@1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
+    dev: true
+
+  /@types/node@20.2.3:
+    resolution: {integrity: sha512-pg9d0yC4rVNWQzX8U7xb4olIOFuuVL9za3bzMT2pu2SU0SNEi66i2qrvhE2qt0HvkhuCaWJu7pLNOt/Pj8BIrw==}
     dev: true
 
   /@types/normalize-package-data@2.4.1:
