@@ -32,10 +32,7 @@
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy update-pkg",
-    "update-version": "bumpp package.json --execute=\"pnpm gen-log\" --commit --all --push --tag",
-    "publish-pkg": "pnpm -r publish --access public",
-    "release": "pnpm update-version && pnpm publish-pkg",
-    "gen-log": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "publish-pkg": "pnpm -r publish --access public"
   },
   "dependencies": {
     "commander": "10.0.1",
@@ -49,8 +46,6 @@
   "devDependencies": {
     "@soybeanjs/cli": "link:",
     "@types/node": "^20.2.3",
-    "bumpp": "9.1.0",
-    "conventional-changelog-cli": "^2.2.2",
     "eslint": "8.41.0",
     "eslint-config-soybeanjs": "0.3.8",
     "lint-staged": "13.2.2",
@@ -60,8 +55,8 @@
     "typescript": "5.0.4"
   },
   "simple-git-hooks": {
-    "commit-msg": "pnpm soybean git-commit-verify",
-    "pre-commit": "pnpm exec lint-staged --concurrent false"
+    "commit-msg": "pnpm soy git-commit-verify",
+    "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}": [
