@@ -32,8 +32,8 @@
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy update-pkg",
-    "release": "soy release",
-    "publish-pkg": "pnpm -r publish --access public"
+    "publish-pkg": "pnpm -r publish --access public && pnpm release",
+    "release": "soy release"
   },
   "dependencies": {
     "changelogen": "0.5.3",
