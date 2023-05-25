@@ -2,8 +2,8 @@
 import { program } from 'commander';
 import { blue } from 'kolorist';
 import pkg from '../package.json';
-import { gitCommit, verifyGitCommit } from './command';
-import { cleanup, initSimpleGitHooks, updatePkg, prettierFormat } from './scripts';
+import { gitCommit, gitCommitVerify } from './command';
+import { cleanup, initSimpleGitHooks, updatePkg, prettierFormat, release } from './scripts';
 
 program
   .command('git-commit')
@@ -16,7 +16,7 @@ program
   .command('git-commit-verify')
   .description('校验git的commit是否符合 Angular 规范')
   .action(() => {
-    verifyGitCommit();
+    gitCommitVerify();
   });
 
 program
@@ -45,6 +45,13 @@ program
   .description('prettier格式化')
   .action(() => {
     prettierFormat();
+  });
+
+program
+  .command('release')
+  .description('版本发布')
+  .action(() => {
+    release();
   });
 
 // 配置options

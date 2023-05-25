@@ -1,6 +1,6 @@
 import enquirer from 'enquirer';
 import { execa } from 'execa';
-import { types, scopes } from './config';
+import { gitCommitTypes, gitCommitScopes } from '../configs';
 
 interface PromptObject {
   types: string;
@@ -14,13 +14,13 @@ export async function gitCommit() {
       name: 'types',
       type: 'select',
       message: '请选择提交的类型',
-      choices: types.map(item => ({ name: item.value, message: item.title }))
+      choices: gitCommitTypes.map(item => ({ name: item.value, message: item.title }))
     },
     {
       name: 'scopes',
       type: 'select',
       message: '选择一个scope',
-      choices: scopes.map(item => ({ name: item.value, message: item.title }))
+      choices: gitCommitScopes.map(item => ({ name: item.value, message: item.title }))
     },
     {
       name: 'description',

@@ -1,2 +1,2 @@
-export * from './git/commit';
-export * from './git/verify-commit';
+export * from './git-commit';
+export * from './git-verify';
