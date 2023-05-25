@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.2.6
+
+[compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.2.5...v0.2.6)
+
+
+### 🚀 Enhancements
+
+  - **projects:** Add release command ([1a4a641](https://github.com/honghuangdc/soybean-cli/commit/1a4a641))
+
+### ❤️  Contributors
+
+- Soybean ([@soybeanjs](http://github.com/soybeanjs))
+
 ## [0.2.4](https://github.com/soybeanjs/cli/compare/v0.2.3...v0.2.4) (2023-05-24)
 
 
