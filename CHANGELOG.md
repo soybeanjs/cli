@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.2.7
+
+[compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.2.6...v0.2.7)
+
+
+### 🏡 Chore
+
+  - **projects:** Add release command status ([d9ee450](https://github.com/honghuangdc/soybean-cli/commit/d9ee450))
+
+### ❤️  Contributors
+
+- Soybean ([@soybeanjs](http://github.com/soybeanjs))
+
 ## v0.2.6
 
 [compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.2.5...v0.2.6)
