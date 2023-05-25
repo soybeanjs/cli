@@ -11,7 +11,7 @@ export function gitCommitVerify() {
 
   const scopes = gitCommitScopes.map(item => item.value).join('|');
 
-  const REG_EXP = new RegExp(`(${types})!*(\\((${scopes}))\\))*!*:\\s.{1,100}`);
+  const REG_EXP = new RegExp(`(${types})!*(\\((${scopes})\\))*!*:\\s.{1,100}`);
 
   if (!REG_EXP.test(commitMsg)) {
     throw new Error(

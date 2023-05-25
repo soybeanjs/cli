@@ -270,7 +270,7 @@ import { blue } from "kolorist";
 // package.json
 var package_default = {
   name: "@soybeanjs/cli",
-  version: "0.2.5",
+  version: "0.2.6",
   description: "SoybeanJS's command lint tools",
   author: {
     name: "Soybean",
@@ -407,7 +407,7 @@ function gitCommitVerify() {
   const commitMsg = readFileSync(gitMsgPath, "utf-8").trim();
   const types2 = gitCommitTypes.map((item) => item.value).join("|");
   const scopes = gitCommitScopes.map((item) => item.value).join("|");
-  const REG_EXP = new RegExp(`(${types2})!*(\\((${scopes}))\\))*!*:\\s.{1,100}`);
+  const REG_EXP = new RegExp(`(${types2})!*(\\((${scopes})\\))*!*:\\s.{1,100}`);
   if (!REG_EXP.test(commitMsg)) {
     throw new Error(
       `${bgRed(" ERROR ")} ${red("Git\u63D0\u4EA4\u4FE1\u606F\u4E0D\u7B26\u5408 Angular \u89C4\u8303!\n\n")}${green(
@@ -6366,7 +6366,7 @@ function prettierFormat() {
 // src/scripts/release.ts
 import { execa as execa5 } from "execa";
 async function release() {
-  await execa5("npx", ["changelogen", "--release --push --no-github"]);
+  await execa5("npx", ["changelogen", "--release", "--push", "--no-github"], { stdio: "inherit" });
 }
 
 // src/index.ts
