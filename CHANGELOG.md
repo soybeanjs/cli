@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.2.10
+
+[compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.2.9...v0.2.10)
+
+
+### 📖 Documentation
+
+  - **projects:** Update README.md ([4daf5e2](https://github.com/honghuangdc/soybean-cli/commit/4daf5e2))
+
+### ❤️  Contributors
+
+- Soybean ([@soybeanjs](http://github.com/soybeanjs))
+
 ## v0.2.9
 
 [compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.2.8...v0.2.9)
