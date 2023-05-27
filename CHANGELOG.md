@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.2.12...v0.3.0
+
+[compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.2.12...v0.3.0)
+
+### 🏡 Chore
+
+- **projects:** Remove release command ([3996991](https://github.com/honghuangdc/soybean-cli/commit/3996991))
+- **projects:** Use unbuild replace tsup ([042b701](https://github.com/honghuangdc/soybean-cli/commit/042b701))
+- **projects:** Add update-version script ([8d78d27](https://github.com/honghuangdc/soybean-cli/commit/8d78d27))
+- Release v0.3.0 ([9090bd5](https://github.com/honghuangdc/soybean-cli/commit/9090bd5))
+
+### ❤️ Contributors
+
+- Soybean ([@soybeanjs](http://github.com/soybeanjs))
+
 ## v0.2.12
 
 [compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.2.11...v0.2.12)
