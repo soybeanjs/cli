@@ -36,7 +36,6 @@
     "release": "soy release && pnpm publish-pkg"
   },
   "dependencies": {
-    "changelogen": "0.5.3",
     "commander": "10.0.1",
     "enquirer": "2.3.6",
     "execa": "7.1.1",

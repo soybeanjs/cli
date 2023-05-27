@@ -30,7 +30,6 @@ pnpm soy -h
 | init-git-hooks    | 初始化 simple-gi t-hooks 钩子                 |
 | update-pkg        | 升级依赖                                      |
 | prettier-format   | prettier 格式化                               |
-| release           | 版本发布，自动变更版本，生成日志 CHANGELOG.md |
 
 ### prettier-format
 

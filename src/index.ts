@@ -3,7 +3,7 @@ import { program } from 'commander';
 import { blue } from 'kolorist';
 import pkg from '../package.json';
 import { gitCommit, gitCommitVerify } from './command';
-import { cleanup, initSimpleGitHooks, updatePkg, prettierFormat, release } from './scripts';
+import { cleanup, initSimpleGitHooks, updatePkg, prettierFormat } from './scripts';
 
 program
   .command('git-commit')
@@ -45,13 +45,6 @@ program
   .description('prettier格式化')
   .action(() => {
     prettierFormat();
-  });
-
-program
-  .command('release')
-  .description('版本发布')
-  .action(() => {
-    release();
   });
 
 // 配置options
