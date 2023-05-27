@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.2.12
+
+[compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.2.11...v0.2.12)
+
+
+### 🏡 Chore
+
+  - **projects:** Add githublogen replace changelogithub ([908bcd4](https://github.com/honghuangdc/soybean-cli/commit/908bcd4))
+  - **projects:** Update lint-staged config ([456077a](https://github.com/honghuangdc/soybean-cli/commit/456077a))
+
+### ❤️  Contributors
+
+- Soybean ([@soybeanjs](http://github.com/soybeanjs))
+
 ## v0.2.11
 
 [compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.2.10...v0.2.11)
