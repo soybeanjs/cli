@@ -19,21 +19,22 @@
     "registry": "https://registry.npmjs.org/"
   },
   "bin": {
-    "soybean": "bin/index.mjs",
-    "soy": "bin/index.mjs"
+    "soybean": "dist/index.mjs",
+    "soy": "dist/index.mjs"
   },
   "files": [
-    "bin"
+    "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "pnpm typecheck && unbuild",
     "lint": "eslint . --fix",
     "format": "soy prettier-format",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy update-pkg",
     "publish-pkg": "pnpm -r publish --access public",
-    "release": "soy release && pnpm publish-pkg"
+    "typecheck": "tsc --noEmit",
+    "release": "pnpm update-version && pnpm build && pnpm publish-pkg"
   },
   "dependencies": {
     "commander": "10.0.1",
@@ -46,21 +47,21 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
-    "@types/node": "^20.2.3",
+    "@types/node": "20.2.3",
     "eslint": "8.41.0",
     "eslint-config-soybeanjs": "0.3.8",
     "lint-staged": "13.2.2",
     "simple-git-hooks": "2.8.1",
-    "tsup": "6.7.0",
     "tsx": "3.12.7",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "unbuild": "1.2.1"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{js,mjs,jsx,ts,mts,tsx,json,vue,svelte}": "eslint . --fix",
-    "*.!{js,mjs,jsx,ts,mts,tsx,json,vue,svelte}": "format"
+    "*.{js,mjs,jsx,ts,mts,tsx,json,vue,svelte,astro}": "eslint . --fix",
+    "*.!{js,mjs,jsx,ts,mts,tsx,json,vue,svelte,astro}": "format"
   }
 }
