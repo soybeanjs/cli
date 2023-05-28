@@ -1,7 +1,7 @@
 {
   "name": "@soybeanjs/cli",
   "version": "0.3.0",
-  "description": "SoybeanJS's command lint tools",
+  "description": "SoybeanJS's command line tools",
   "author": {
     "name": "Soybean",
     "email": "honghuangdc@gmail.com",
@@ -48,10 +48,10 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
-    "@types/node": "20.2.3",
+    "@types/node": "20.2.5",
     "bumpp": "9.1.0",
     "eslint": "8.41.0",
-    "eslint-config-soybeanjs": "0.3.8",
+    "eslint-config-soybeanjs": "0.4.7",
     "lint-staged": "13.2.2",
     "simple-git-hooks": "2.8.1",
     "tsx": "3.12.7",
