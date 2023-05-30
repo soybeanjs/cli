@@ -3,7 +3,6 @@
     "afzalsayed96.icones",
     "antfu.iconify",
     "antfu.unocss",
-    "chakrounanas.turbo-console-log",
     "christian-kohler.path-intellisense",
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
@@ -21,6 +20,7 @@
     "sdras.vue-vscode-snippets",
     "vue.volar",
     "vue.vscode-typescript-vue-plugin",
+    "whtouche.vscode-js-console-utils",
     "zhuangtongfa.material-theme"
   ]
 }

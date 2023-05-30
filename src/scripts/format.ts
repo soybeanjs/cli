@@ -14,6 +14,7 @@ export function prettierFormat() {
     '!package-lock.json',
     '!pnpm-lock.yaml',
     '!yarn.lock',
+    '!.github',
     '!__snapshots__'
   ];
 
