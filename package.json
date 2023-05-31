@@ -18,6 +18,12 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "exports": {
+    "./lint-staged": {
+      "import": "./dist/lint-staged.config.mjs",
+      "require": "./dist/lint-staged.config.cjs"
+    }
+  },
   "bin": {
     "soybean": "dist/index.mjs",
     "soy": "dist/index.mjs"
@@ -42,6 +48,7 @@
     "enquirer": "2.3.6",
     "execa": "7.1.1",
     "kolorist": "1.8.0",
+    "lint-staged": "13.2.2",
     "minimist": "1.2.8",
     "npm-check-updates": "16.10.12",
     "rimraf": "5.0.1"
@@ -52,7 +59,6 @@
     "bumpp": "9.1.0",
     "eslint": "8.41.0",
     "eslint-config-soybeanjs": "0.4.7",
-    "lint-staged": "13.2.2",
     "simple-git-hooks": "2.8.1",
     "tsx": "3.12.7",
     "typescript": "5.0.4",
@@ -60,10 +66,6 @@
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
-    "pre-commit": "pnpm typecheck && pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,mjs,jsx,ts,mts,tsx,json,vue,svelte,astro}": "eslint . --fix",
-    "*.!{js,mjs,jsx,ts,mts,tsx,json,vue,svelte,astro}": "format"
+    "pre-commit": "pnpm typecheck && pnpm soy lint-staged"
   }
 }
