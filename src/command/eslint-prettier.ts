@@ -9,5 +9,3 @@ export async function eslintPretter() {
     stdio: 'inherit'
   });
 }
-
-eslintPretter();

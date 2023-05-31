@@ -44,7 +44,7 @@
     "release": "pnpm update-version && pnpm build && pnpm publish-pkg"
   },
   "dependencies": {
-    "commander": "10.0.1",
+    "cac": "^6.7.14",
     "enquirer": "2.3.6",
     "execa": "7.1.1",
     "kolorist": "1.8.0",
