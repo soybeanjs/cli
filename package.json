@@ -8,12 +8,12 @@
     "url": "https://github.com/honghuangdc"
   },
   "license": "MIT",
-  "homepage": "https://github.com/soybeanjs/soybean-cli",
+  "homepage": "https://github.com/soybeanjs/cli",
   "repository": {
-    "url": "https://github.com/soybeanjs/soybean-cli.git"
+    "url": "https://github.com/soybeanjs/cli.git"
   },
   "bugs": {
-    "url": "https://github.com/soybeanjs/soybean-cli/issues"
+    "url": "https://github.com/soybeanjs/cli/issues"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
