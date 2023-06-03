@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.3.1...v0.3.2
+## v0.3.2
 
 [compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.3.1...v0.3.2)
 
@@ -17,7 +17,7 @@
 
 - Soybean ([@soybeanjs](http://github.com/soybeanjs))
 
-## v0.3.0...v0.3.1
+## v0.3.1
 
 [compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.3.0...v0.3.1)
 
@@ -35,7 +35,7 @@
 
 - Soybean ([@soybeanjs](http://github.com/soybeanjs))
 
-## v0.2.12...v0.3.0
+## v0.3.0
 
 [compare changes](https://github.com/honghuangdc/soybean-cli/compare/v0.2.12...v0.3.0)
 

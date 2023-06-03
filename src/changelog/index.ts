@@ -62,11 +62,20 @@ async function getGithubTokenFromPkg(cwd: string) {
 export async function initOptions() {
   const options = createDefaultOptions();
 
-  const githubToken = await getGithubTokenFromPkg(options.cwd);
-  options.githubToken = options.githubToken || githubToken;
-  options.from = await getLastGitTag();
-  options.to = await getCurrentGitBranch();
+  if (!options.githubToken) {
+    const githubToken = await getGithubTokenFromPkg(options.cwd);
+    options.githubToken = githubToken;
+  }
+
+  if (!options.from) {
+    options.from = await getLastGitTag();
+  }
+  if (!options.to) {
+    options.to = await getCurrentGitBranch();
+  }
+
   options.github = await getGitHubRepo();
+
   options.prerelease = isPrerelease(options.to);
 
   if (options.to === options.from) {
