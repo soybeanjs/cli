@@ -6,3 +6,4 @@ export * from './update-pkg';
 export * from './format';
 export * from './eslint-prettier';
 export * from './lint-staged';
+export * from './changelog';

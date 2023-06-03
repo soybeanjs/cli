@@ -38,27 +38,31 @@
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy update-pkg",
-    "update-version": "bumpp --commit --push --tag",
+    "update-version": "bumpp **/package.json !**/node_modules --execute=\"pnpm soy changelog\" --commit=\"chore(projects): release v%s\" --push --tag",
     "publish-pkg": "pnpm -r publish --access public",
     "typecheck": "tsc --noEmit",
     "release": "pnpm update-version && pnpm build && pnpm publish-pkg"
   },
   "dependencies": {
-    "cac": "^6.7.14",
+    "bumpp": "^9.1.0",
+    "cac": "6.7.14",
+    "convert-gitmoji": "^0.1.3",
+    "dayjs": "^1.11.8",
     "enquirer": "2.3.6",
     "execa": "7.1.1",
     "kolorist": "1.8.0",
     "lint-staged": "13.2.2",
     "minimist": "1.2.8",
     "npm-check-updates": "16.10.12",
+    "ofetch": "1.0.1",
     "rimraf": "5.0.1"
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
     "@types/node": "20.2.5",
-    "bumpp": "9.1.0",
     "eslint": "8.41.0",
     "eslint-config-soybeanjs": "0.4.7",
+    "githublogen": "link:../githublogen",
     "simple-git-hooks": "2.8.1",
     "tsx": "3.12.7",
     "typescript": "5.0.4",
@@ -67,5 +71,6 @@
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
     "pre-commit": "pnpm typecheck && pnpm soy lint-staged"
-  }
+  },
+  "github-token": "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"
 }

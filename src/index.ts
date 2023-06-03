@@ -9,7 +9,8 @@ import {
   updatePkg,
   prettierFormat,
   eslintPretter,
-  lintStaged
+  lintStaged,
+  genChangelog
 } from './command';
 
 const cli = cac('soybean');
@@ -24,7 +25,8 @@ type Command =
   | 'update-pkg'
   | 'prettier-format'
   | 'eslint-prettier'
-  | 'lint-staged';
+  | 'lint-staged'
+  | 'changelog';
 
 type CommandWithAction = Record<Command, { desc: string; action: () => Promise<void> | void }>;
 
@@ -60,6 +62,10 @@ const commands: CommandWithAction = {
   'lint-staged': {
     desc: '执行lint-staged',
     action: lintStaged
+  },
+  changelog: {
+    desc: '生成changelog',
+    action: genChangelog
   }
 };
 
