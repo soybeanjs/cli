@@ -71,8 +71,8 @@ const commands: CommandWithAction<CommandArg> = {
   },
   changelog: {
     desc: '生成changelog',
-    action: args => {
-      genChangelog(args?.total);
+    action: async args => {
+      await genChangelog(args?.total);
     }
   }
 };

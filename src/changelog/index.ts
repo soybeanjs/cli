@@ -136,7 +136,7 @@ export async function generateChangelog(total = false) {
 
   if (total) {
     md = await generateChangelogByTags(options);
-    writeMarkdown(md, options.output, true);
+    await writeMarkdown(md, options.output, true);
     return;
   }
 
@@ -147,5 +147,5 @@ export async function generateChangelog(total = false) {
   }
 
   md = await generateChangelogByTag(options);
-  writeMarkdown(md, options.output, false);
+  await writeMarkdown(md, options.output, false);
 }
