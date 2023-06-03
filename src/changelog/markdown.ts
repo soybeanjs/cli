@@ -88,7 +88,7 @@ function formatSection(commits: GitCommit[], sectionName: string, options: Chang
   return lines;
 }
 
-export function getGitUserAvatar(userName: string) {
+function getGitUserAvatar(userName: string) {
   const avatarUrl = `https://github.com/${userName}.png?size=48`;
 
   return avatarUrl;
@@ -119,7 +119,7 @@ export function generateMarkdown(params: {
   if (showTitle) {
     const today = dayjs().format('YYYY-MM-DD');
 
-    const title = `## [${options.to}](${url})(${today}})`;
+    const title = `## [${options.to}](${url})(${today})`;
 
     lines.push(title);
   }
@@ -158,12 +158,32 @@ export function generateMarkdown(params: {
   return markdown;
 }
 
-export async function writeMarkdown(md: string, mdPath: string) {
+export async function isVersionInMarkdown(version: string, mdPath: string) {
+  let isIn = false;
+
+  const VERSION_REG_OF_MARKDOWN = /## \[v\d+\.\d+\.\d+\]/g;
+
+  const md = await readFile(mdPath, 'utf8');
+
+  if (md) {
+    const matches = md.match(VERSION_REG_OF_MARKDOWN);
+
+    if (matches?.length) {
+      const versionInMarkdown = `## [${version}]`;
+
+      isIn = matches.includes(versionInMarkdown);
+    }
+  }
+
+  return isIn;
+}
+
+export async function writeMarkdown(md: string, mdPath: string, override = false) {
   let changelogMD: string;
 
   const changelogPrefix = '# Changelog';
 
-  if (existsSync(mdPath)) {
+  if (!override && existsSync(mdPath)) {
     changelogMD = await readFile(mdPath, 'utf8');
     if (!changelogMD.startsWith(changelogPrefix)) {
       changelogMD = `${changelogPrefix}\n\n${changelogMD}`;

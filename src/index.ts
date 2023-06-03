@@ -15,7 +15,7 @@ import {
 
 const cli = cac('soybean');
 
-cli.version(version).help();
+cli.version(version).option('--total', 'Generate changelog by total tags').help();
 
 type Command =
   | 'git-commit'
@@ -28,9 +28,15 @@ type Command =
   | 'lint-staged'
   | 'changelog';
 
-type CommandWithAction = Record<Command, { desc: string; action: () => Promise<void> | void }>;
+type CommandAction<A extends object> = (args?: A) => Promise<void> | void;
 
-const commands: CommandWithAction = {
+type CommandWithAction<A extends object = object> = Record<Command, { desc: string; action: CommandAction<A> }>;
+
+interface CommandArg {
+  total?: boolean;
+}
+
+const commands: CommandWithAction<CommandArg> = {
   'git-commit': {
     desc: '生成符合 Angular 规范的 git commit',
     action: gitCommit
@@ -65,7 +71,9 @@ const commands: CommandWithAction = {
   },
   changelog: {
     desc: '生成changelog',
-    action: genChangelog
+    action: args => {
+      genChangelog(args?.total);
+    }
   }
 };
 

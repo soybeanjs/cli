@@ -40,6 +40,7 @@ export interface ChangelogOption {
   githubToken: string;
   from: string;
   to: string;
+  tags: string[];
   prerelease: boolean;
   capitalize: boolean;
   /**
@@ -56,4 +57,5 @@ export interface ChangelogOption {
    */
   group?: boolean | 'multiple';
   output: string;
+  overrideChangelog: boolean;
 }

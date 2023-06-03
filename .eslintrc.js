@@ -7,5 +7,8 @@ module.exports = {
         'no-unused-expressions': 'off'
       }
     }
-  ]
+  ],
+  rules: {
+    'no-await-in-loop': 'off'
+  }
 };

@@ -2,10 +2,28 @@ import { ofetch } from 'ofetch';
 import { execCommand, notNullish } from '../shared';
 import type { RawGitCommit, GitCommit, GitCommitAuthor, Reference, AuthorInfo } from '../types';
 
-export async function getLastGitTag(delta = 0) {
+export async function getTotalGitTags() {
   const tagStr = await execCommand('git', ['--no-pager', 'tag', '-l', '--sort=creatordate']);
 
   const tags = tagStr.split('\n');
+
+  return tags;
+}
+
+export function getFromToTags(tags: string[]) {
+  const result: { from: string; to: string }[] = [];
+
+  tags.forEach((tag, index) => {
+    if (index < tags.length - 1) {
+      result.push({ from: tag, to: tags[index + 1] });
+    }
+  });
+
+  return result;
+}
+
+export async function getLastGitTag(delta = 0) {
+  const tags = await getTotalGitTags();
 
   return tags[tags.length + delta - 1];
 }
