@@ -1,7 +1,7 @@
 # Changelog
 
 
-## [v0.4.2](https://github.com/soybeanjs/cli/compare/v0.4.1...v0.4.2)(2023-06-05)
+## [v0.4.2](https://github.com/soybeanjs/cli/compare/v0.4.1...v0.4.2) (2023-06-04)
 
 ### 🚀 Features
 
@@ -29,7 +29,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.4.1](https://github.com/soybeanjs/cli/compare/v0.4.0...v0.4.1)(2023-06-05)
+## [v0.4.1](https://github.com/soybeanjs/cli/compare/v0.4.0...v0.4.1) (2023-06-01)
 
 ### 🐞 Bug Fixes
 
@@ -43,7 +43,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.4.0](https://github.com/soybeanjs/cli/compare/v0.3.2...v0.4.0)(2023-06-05)
+## [v0.4.0](https://github.com/soybeanjs/cli/compare/v0.3.2...v0.4.0) (2023-06-01)
 
 ### 🚀 Features
 
@@ -63,7 +63,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.3.2](https://github.com/soybeanjs/cli/compare/v0.3.1...v0.3.2)(2023-06-05)
+## [v0.3.2](https://github.com/soybeanjs/cli/compare/v0.3.1...v0.3.2) (2023-05-31)
 
 ### 📖 Documentation
 
@@ -78,7 +78,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.3.1](https://github.com/soybeanjs/cli/compare/v0.3.0...v0.3.1)(2023-06-05)
+## [v0.3.1](https://github.com/soybeanjs/cli/compare/v0.3.0...v0.3.1) (2023-05-31)
 
 ### 📖 Documentation
 
@@ -94,7 +94,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.3.0](https://github.com/soybeanjs/cli/compare/v0.2.12...v0.3.0)(2023-06-05)
+## [v0.3.0](https://github.com/soybeanjs/cli/compare/v0.2.12...v0.3.0) (2023-05-28)
 
 ### 🏡 Chore
 
@@ -107,7 +107,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.2.12](https://github.com/soybeanjs/cli/compare/v0.2.11...v0.2.12)(2023-06-05)
+## [v0.2.12](https://github.com/soybeanjs/cli/compare/v0.2.11...v0.2.12) (2023-05-27)
 
 ### 🏡 Chore
 
@@ -119,7 +119,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.2.11](https://github.com/soybeanjs/cli/compare/v0.2.10...v0.2.11)(2023-06-05)
+## [v0.2.11](https://github.com/soybeanjs/cli/compare/v0.2.10...v0.2.11) (2023-05-25)
 
 ### 🏡 Chore
 
@@ -130,7 +130,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.2.10](https://github.com/soybeanjs/cli/compare/v0.2.9...v0.2.10)(2023-06-05)
+## [v0.2.10](https://github.com/soybeanjs/cli/compare/v0.2.9...v0.2.10) (2023-05-25)
 
 ### 📖 Documentation
 
@@ -144,7 +144,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.2.9](https://github.com/soybeanjs/cli/compare/v0.2.8...v0.2.9)(2023-06-05)
+## [v0.2.9](https://github.com/soybeanjs/cli/compare/v0.2.8...v0.2.9) (2023-05-25)
 
 ### 🏡 Chore
 
@@ -155,7 +155,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.2.8](https://github.com/soybeanjs/cli/compare/v0.2.7...v0.2.8)(2023-06-05)
+## [v0.2.8](https://github.com/soybeanjs/cli/compare/v0.2.7...v0.2.8) (2023-05-25)
 
 ### 🏡 Chore
 
@@ -166,7 +166,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.2.7](https://github.com/soybeanjs/cli/compare/v0.2.6...v0.2.7)(2023-06-05)
+## [v0.2.7](https://github.com/soybeanjs/cli/compare/v0.2.6...v0.2.7) (2023-05-25)
 
 ### 🏡 Chore
 
@@ -177,7 +177,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.2.6](https://github.com/soybeanjs/cli/compare/v0.2.5...v0.2.6)(2023-06-05)
+## [v0.2.6](https://github.com/soybeanjs/cli/compare/v0.2.5...v0.2.6) (2023-05-25)
 
 ### 🚀 Features
 
@@ -191,7 +191,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.2.5](https://github.com/soybeanjs/cli/compare/v0.2.4...v0.2.5)(2023-06-05)
+## [v0.2.5](https://github.com/soybeanjs/cli/compare/v0.2.4...v0.2.5) (2023-05-25)
 
 ### 📖 Documentation
 
@@ -208,7 +208,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.2.4](https://github.com/soybeanjs/cli/compare/v0.2.3...v0.2.4)(2023-06-05)
+## [v0.2.4](https://github.com/soybeanjs/cli/compare/v0.2.3...v0.2.4) (2023-05-25)
 
 ### 🐞 Bug Fixes
 
@@ -229,7 +229,7 @@
 ![soybeanjs](https://github.com/soybeanjs.png?size=48) 
 [github-actions[bot]](mailto:41898282+github-actions[bot]@users.noreply.github.com)
 
-## [v0.2.3](https://github.com/soybeanjs/cli/compare/v0.2.2...v0.2.3)(2023-06-05)
+## [v0.2.3](https://github.com/soybeanjs/cli/compare/v0.2.2...v0.2.3) (2023-05-25)
 
 ### 🏡 Chore
 
@@ -242,7 +242,7 @@
 ![soybeanjs](https://github.com/soybeanjs.png?size=48) 
 [Soybean](mailto:49704545+honghuangdc@users.noreply.github.com)
 
-## [v0.2.2](https://github.com/soybeanjs/cli/compare/v0.2.1...v0.2.2)(2023-06-05)
+## [v0.2.2](https://github.com/soybeanjs/cli/compare/v0.2.1...v0.2.2) (2023-05-25)
 
 ### 🏡 Chore
 
@@ -253,7 +253,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.2.1](https://github.com/soybeanjs/cli/compare/v0.2.0...v0.2.1)(2023-06-05)
+## [v0.2.1](https://github.com/soybeanjs/cli/compare/v0.2.0...v0.2.1) (2023-05-25)
 
 ### 🏡 Chore
 
@@ -267,7 +267,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.2.0](https://github.com/soybeanjs/cli/compare/v0.1.9...v0.2.0)(2023-06-05)
+## [v0.2.0](https://github.com/soybeanjs/cli/compare/v0.1.9...v0.2.0) (2023-05-13)
 
 ### 📦 Build
 
@@ -281,7 +281,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.9](https://github.com/soybeanjs/cli/compare/v0.1.8...v0.1.9)(2023-06-05)
+## [v0.1.9](https://github.com/soybeanjs/cli/compare/v0.1.8...v0.1.9) (2023-04-27)
 
 ### 💅 Refactors
 
@@ -295,7 +295,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.8](https://github.com/soybeanjs/cli/compare/v0.1.7...v0.1.8)(2023-06-05)
+## [v0.1.8](https://github.com/soybeanjs/cli/compare/v0.1.7...v0.1.8) (2023-04-22)
 
 ### 🐞 Bug Fixes
 
@@ -309,7 +309,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.7](https://github.com/soybeanjs/cli/compare/v0.1.6...v0.1.7)(2023-06-05)
+## [v0.1.7](https://github.com/soybeanjs/cli/compare/v0.1.6...v0.1.7) (2023-03-11)
 
 ### 💅 Refactors
 
@@ -323,7 +323,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.6](https://github.com/soybeanjs/cli/compare/v0.1.5...v0.1.6)(2023-06-05)
+## [v0.1.6](https://github.com/soybeanjs/cli/compare/v0.1.5...v0.1.6) (2023-01-05)
 
 ### 📦 Build
 
@@ -337,7 +337,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.5](https://github.com/soybeanjs/cli/compare/v0.1.4...v0.1.5)(2023-06-05)
+## [v0.1.5](https://github.com/soybeanjs/cli/compare/v0.1.4...v0.1.5) (2023-01-05)
 
 ### 🚀 Features
 
@@ -351,7 +351,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.4](https://github.com/soybeanjs/cli/compare/v0.1.3...v0.1.4)(2023-06-05)
+## [v0.1.4](https://github.com/soybeanjs/cli/compare/v0.1.3...v0.1.4) (2022-12-10)
 
 ### 🐞 Bug Fixes
 
@@ -374,7 +374,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.3](https://github.com/soybeanjs/cli/compare/v0.1.2...v0.1.3)(2023-06-05)
+## [v0.1.3](https://github.com/soybeanjs/cli/compare/v0.1.2...v0.1.3) (2022-11-08)
 
 ### 🐞 Bug Fixes
 
@@ -393,7 +393,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.2](https://github.com/soybeanjs/cli/compare/v0.1.1...v0.1.2)(2023-06-05)
+## [v0.1.2](https://github.com/soybeanjs/cli/compare/v0.1.1...v0.1.2) (2022-11-03)
 
 ### 📦 Build
 
@@ -408,7 +408,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.1](https://github.com/soybeanjs/cli/compare/v0.1.0...v0.1.1)(2023-06-05)
+## [v0.1.1](https://github.com/soybeanjs/cli/compare/v0.1.0...v0.1.1) (2022-11-03)
 
 ### 📦 Build
 
