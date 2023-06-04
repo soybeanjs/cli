@@ -1,3 +1,4 @@
+import cliProgress from 'cli-progress';
 import { readFile } from 'fs/promises';
 import {
   getTotalGitTags,
@@ -118,7 +119,12 @@ async function generateChangelogByTag(options: ChangelogOption) {
 async function generateChangelogByTags(options: ChangelogOption) {
   const tags = getFromToTags(options.tags);
 
+  const bar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
+  bar.start(tags.length, 0);
+
   let md = '';
+
+  const resolvedLogins = new Map<string, string>();
 
   for (let i = 0; i < tags.length; i += 1) {
     const { from, to } = tags[i];
@@ -126,13 +132,18 @@ async function generateChangelogByTags(options: ChangelogOption) {
     const { commits, contributors } = await getGitCommitsAndResolvedAuthors(
       gitCommits,
       options.github,
-      options.githubToken
+      options.githubToken,
+      resolvedLogins
     );
     const opts = { ...options, from, to };
     const nextMd = generateMarkdown({ commits, options: opts, showTitle: true, contributors });
 
     md = `${nextMd}\n\n${md}`;
+
+    bar.update(i + 1);
   }
+
+  bar.stop();
 
   return md;
 }

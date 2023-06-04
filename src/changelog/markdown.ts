@@ -5,8 +5,6 @@ import { convert } from 'convert-gitmoji';
 import { partition, groupBy, capitalize, join } from '../shared';
 import type { Reference, GitCommit, ChangelogOption, AuthorInfo } from '../types';
 
-const VERSION_REG_OF_MARKDOWN = /## \[v\d+\.\d+\.\d+\]/g;
-
 function formatReferences(references: Reference[], github: string, type: 'issues' | 'hash'): string {
   const refs = references
     .filter(i => {
@@ -96,14 +94,28 @@ function getGitUserAvatar(userName: string) {
   return avatarUrl;
 }
 
-function createUserAvatar(userName: string) {
-  const el = `<a href="https://github.com/${userName}" data-hovercard-type="user" data-hovercard-url="/users/yanbowe/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self">
-  <img src="${getGitUserAvatar(
-    userName
-  )}" alt="@${userName}" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
-</a>`;
+function createContributorLine(contributors: AuthorInfo[]) {
+  let loginLine = '';
+  let unloginLine = '';
 
-  return el;
+  contributors.forEach((contributor, index) => {
+    const { name, email, login } = contributor;
+
+    if (!login) {
+      let line = `[${name}](mailto:${email})`;
+
+      if (index < contributors.length - 1) {
+        line += ', ';
+      }
+
+      unloginLine += line;
+    } else {
+      const avatar = getGitUserAvatar(login);
+      loginLine += `![${login}](${avatar}) `;
+    }
+  });
+
+  return `${loginLine}\n${unloginLine}`;
 }
 
 export function generateMarkdown(params: {
@@ -112,6 +124,8 @@ export function generateMarkdown(params: {
   showTitle: boolean;
   contributors: AuthorInfo[];
 }) {
+  const VERSION_REG = /v\d+\.\d+\.\d+/;
+
   const { commits, options, showTitle, contributors } = params;
 
   const lines: string[] = [];
@@ -121,7 +135,7 @@ export function generateMarkdown(params: {
   if (showTitle) {
     const today = dayjs().format('YYYY-MM-DD');
 
-    const version = VERSION_REG_OF_MARKDOWN.test(options.to) ? options.to : options.newVersion;
+    const version = VERSION_REG.test(options.to) ? options.to : options.newVersion;
 
     const title = `## [${version}](${url})(${today})`;
 
@@ -150,7 +164,7 @@ export function generateMarkdown(params: {
   if (showTitle) {
     lines.push('', '### ❤️ Contributors', '');
 
-    const contributorLine = contributors.map(item => createUserAvatar(item.login)).join(' ');
+    const contributorLine = createContributorLine(contributors);
 
     lines.push(contributorLine);
   }
@@ -163,6 +177,8 @@ export function generateMarkdown(params: {
 }
 
 export async function isVersionInMarkdown(version: string, mdPath: string) {
+  const VERSION_REG_OF_MARKDOWN = /## \[v\d+\.\d+\.\d+\]/g;
+
   let isIn = false;
 
   const md = await readFile(mdPath, 'utf8');

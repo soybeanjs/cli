@@ -202,7 +202,13 @@ async function getResolvedAuthorLogin(params: {
   return login;
 }
 
-export async function getGitCommitsAndResolvedAuthors(commits: GitCommit[], github: string, githubToken: string) {
+// eslint-disable-next-line max-params
+export async function getGitCommitsAndResolvedAuthors(
+  commits: GitCommit[],
+  github: string,
+  githubToken: string,
+  resolvedLogins?: Map<string, string>
+) {
   const resultCommits: GitCommit[] = [];
 
   const map = new Map<string, AuthorInfo>();
@@ -227,17 +233,22 @@ export async function getGitCommitsAndResolvedAuthors(commits: GitCommit[], gith
           login: ''
         };
 
-        if (!map.has(email)) {
+        if (!resolvedLogins?.has(email)) {
           // eslint-disable-next-line no-await-in-loop
-          resolvedAuthor.login = await getResolvedAuthorLogin({ github, githubToken, commitHashes, email });
+          const login = await getResolvedAuthorLogin({ github, githubToken, commitHashes, email });
+          resolvedAuthor.login = login;
 
-          map.set(author.email, resolvedAuthor);
+          resolvedLogins?.set(email, login);
         } else {
-          const resolvedItem = map.get(author.email)!;
-          Object.assign(resolvedAuthor, resolvedItem);
+          const login = resolvedLogins?.get(email) || '';
+          resolvedAuthor.login = login;
         }
 
         resolvedAuthors.push(resolvedAuthor);
+
+        if (!map.has(email)) {
+          map.set(email, resolvedAuthor);
+        }
       }
     }
 
@@ -251,5 +262,3 @@ export async function getGitCommitsAndResolvedAuthors(commits: GitCommit[], gith
     contributors: Array.from(map.values())
   };
 }
-
-getTotalGitTags();
