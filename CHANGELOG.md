@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v0.5.0](https://github.com/soybeanjs/cli/compare/v0.4.2...main)
+
+### 🐞 Bug Fixes
+
+- **projects**: Fix version date - by @soybeanjs [<samp>(b50d8)</samp>](https://github.com/soybeanjs/cli/commit/b50d804)
+
+### 🔥 Performance
+
+- **projects**: Changelog contributor - by @soybeanjs [<samp>(a3cf8)</samp>](https://github.com/soybeanjs/cli/commit/a3cf896)
+
+### 📖 Documentation
+
+- **projects**: Update CHANGELOG.md - by @soybeanjs [<samp>(94d6f)</samp>](https://github.com/soybeanjs/cli/commit/94d6f97)
+
+### ❤️ Contributors
+
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
+
 ## [v0.4.2](https://github.com/soybeanjs/cli/compare/v0.4.1...v0.4.2) (2023-06-04)
 
 ### 🚀 Features
