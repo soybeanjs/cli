@@ -5,6 +5,32 @@
 
 ### 🚀 Features
 
+- **projects**: Add changelog command - by @soybeanjs [<samp>(8bc95)</samp>](https://github.com/soybeanjs/cli/commit/8bc95c6)
+- **projects**: Generate changelog by total tags - by @soybeanjs [<samp>(9ee85)</samp>](https://github.com/soybeanjs/cli/commit/9ee85ff)
+- **projects**: Add release command - by @soybeanjs [<samp>(00890)</samp>](https://github.com/soybeanjs/cli/commit/008908b)
+- **projects**: Changelog version support the latest verison in package.json - by @soybeanjs [<samp>(8cea1)</samp>](https://github.com/soybeanjs/cli/commit/8cea197)
+
+### 🐞 Bug Fixes
+
+- **projects**: Fix generate changelog timing - by @soybeanjs [<samp>(a6f41)</samp>](https://github.com/soybeanjs/cli/commit/a6f41fe)
+- **projects**: Fix release command - by @soybeanjs [<samp>(3e3c4)</samp>](https://github.com/soybeanjs/cli/commit/3e3c44f)
+- **projects**: Fix execa can't run in commonjs - by @soybeanjs [<samp>(646a7)</samp>](https://github.com/soybeanjs/cli/commit/646a7b3)
+- **projects**: Release command add git push - by @soybeanjs [<samp>(52828)</samp>](https://github.com/soybeanjs/cli/commit/52828ff)
+
+### 📖 Documentation
+
+- **projects**: Update CHANGELOG.md title - by @soybeanjs [<samp>(4085e)</samp>](https://github.com/soybeanjs/cli/commit/4085eb7)
+
+### ❤️ Contributors
+
+<a href="https://github.com/soybeanjs" data-hovercard-type="user" data-hovercard-url="/users/yanbowe/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self">
+  <img src="https://github.com/soybeanjs.png?size=48" alt="@soybeanjs" size="32" height="32" width="32" data-view-component="true" class="avatar circle">
+</a>
+
+## [v0.4.2](https://github.com/soybeanjs/cli/compare/v0.4.1...main)(2023-06-04)
+
+### 🚀 Features
+
 - **projects**: Add changelog command - by **Soybean** [<samp>(8bc95)</samp>](https://github.com/soybeanjs/cli/commit/8bc95c6)
 - **projects**: Generate changelog by total tags - by **Soybean** [<samp>(9ee85)</samp>](https://github.com/soybeanjs/cli/commit/9ee85ff)
 - **projects**: Add release command - by **Soybean** [<samp>(00890)</samp>](https://github.com/soybeanjs/cli/commit/008908b)
