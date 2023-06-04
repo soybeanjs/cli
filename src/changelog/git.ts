@@ -182,9 +182,7 @@ async function getResolvedAuthorLogin(params: {
   }
 
   try {
-    const data = await ofetch(`https://api.github.com/search/users?q=${encodeURIComponent(email)}`, {
-      headers: getHeaders(githubToken)
-    });
+    const data = await ofetch(`https://api.github.com/search/users?q=${encodeURIComponent(email)}`);
     login = data.items[0].login;
   } catch {}
 

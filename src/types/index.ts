@@ -58,4 +58,6 @@ export interface ChangelogOption {
   group?: boolean | 'multiple';
   output: string;
   overrideChangelog: boolean;
+  /** version from package.json, with preffix "v" */
+  newVersion: string;
 }

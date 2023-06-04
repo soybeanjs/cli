@@ -45,30 +45,41 @@ function createDefaultOptions() {
       breakingChanges: '🚨 Breaking Changes'
     },
     output: 'CHANGELOG.md',
-    overrideChangelog: false
+    overrideChangelog: false,
+    newVersion: ''
   };
 
   return options;
 }
 
-async function getGithubTokenFromPkg(cwd: string) {
+async function getOptionsFromPkg(cwd: string) {
   let githubToken = '';
+  let newVersion = '';
 
   try {
     const pkgJson = await readFile(`${cwd}/package.json`, 'utf-8');
     const pkg = JSON.parse(pkgJson);
     githubToken = pkg?.['github-token'] || '';
+    newVersion = pkg?.version || '';
   } catch {}
 
-  return githubToken;
+  return {
+    githubToken,
+    newVersion
+  };
 }
 
 export async function initOptions() {
   const options = createDefaultOptions();
 
+  const { githubToken, newVersion } = await getOptionsFromPkg(options.cwd);
+
   if (!options.githubToken) {
-    const githubToken = await getGithubTokenFromPkg(options.cwd);
     options.githubToken = githubToken;
+  }
+
+  if (newVersion) {
+    options.newVersion = `v${newVersion}`;
   }
 
   if (!options.from) {

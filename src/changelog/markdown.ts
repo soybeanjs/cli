@@ -5,6 +5,8 @@ import { convert } from 'convert-gitmoji';
 import { partition, groupBy, capitalize, join } from '../shared';
 import type { Reference, GitCommit, ChangelogOption, AuthorInfo } from '../types';
 
+const VERSION_REG_OF_MARKDOWN = /## \[v\d+\.\d+\.\d+\]/g;
+
 function formatReferences(references: Reference[], github: string, type: 'issues' | 'hash'): string {
   const refs = references
     .filter(i => {
@@ -119,7 +121,9 @@ export function generateMarkdown(params: {
   if (showTitle) {
     const today = dayjs().format('YYYY-MM-DD');
 
-    const title = `## [${options.to}](${url})(${today})`;
+    const version = VERSION_REG_OF_MARKDOWN.test(options.to) ? options.to : options.newVersion;
+
+    const title = `## [${version}](${url})(${today})`;
 
     lines.push(title);
   }
@@ -160,8 +164,6 @@ export function generateMarkdown(params: {
 
 export async function isVersionInMarkdown(version: string, mdPath: string) {
   let isIn = false;
-
-  const VERSION_REG_OF_MARKDOWN = /## \[v\d+\.\d+\.\d+\]/g;
 
   const md = await readFile(mdPath, 'utf8');
 
