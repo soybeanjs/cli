@@ -41,6 +41,7 @@ export interface ChangelogOption {
   from: string;
   to: string;
   tags: string[];
+  tagDateMap: Map<string, string>;
   prerelease: boolean;
   capitalize: boolean;
   /**

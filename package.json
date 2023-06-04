@@ -63,7 +63,6 @@
     "@types/node": "20.2.5",
     "eslint": "8.41.0",
     "eslint-config-soybeanjs": "0.4.7",
-    "githublogen": "link:../githublogen",
     "simple-git-hooks": "2.8.1",
     "tsx": "3.12.7",
     "typescript": "5.0.4",

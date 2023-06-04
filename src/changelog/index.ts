@@ -2,6 +2,7 @@ import cliProgress from 'cli-progress';
 import { readFile } from 'fs/promises';
 import {
   getTotalGitTags,
+  getTagDateMap,
   getLastGitTag,
   getFromToTags,
   getCurrentGitBranch,
@@ -39,6 +40,7 @@ function createDefaultOptions() {
     from: '',
     to: '',
     tags: [],
+    tagDateMap: new Map(),
     prerelease: false,
     capitalize: true,
     emoji: true,
@@ -97,6 +99,8 @@ export async function initOptions() {
   }
 
   options.tags = await getTotalGitTags();
+
+  options.tagDateMap = await getTagDateMap();
 
   options.github = await getGitHubRepo();
 

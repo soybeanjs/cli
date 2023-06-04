@@ -1,7 +1,7 @@
 # Changelog
 
 
-## [v0.4.2](https://github.com/soybeanjs/cli/compare/v0.4.1...v0.4.2)(2023-06-04)
+## [v0.4.2](https://github.com/soybeanjs/cli/compare/v0.4.1...v0.4.2)(2023-06-05)
 
 ### 🚀 Features
 
@@ -29,7 +29,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.4.1](https://github.com/soybeanjs/cli/compare/v0.4.0...v0.4.1)(2023-06-04)
+## [v0.4.1](https://github.com/soybeanjs/cli/compare/v0.4.0...v0.4.1)(2023-06-05)
 
 ### 🐞 Bug Fixes
 
@@ -43,193 +43,181 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.4.0](https://github.com/soybeanjs/cli/compare/v0.3.2...v0.4.0)(2023-06-04)
+## [v0.4.0](https://github.com/soybeanjs/cli/compare/v0.3.2...v0.4.0)(2023-06-05)
 
 ### 🚀 Features
 
-- **projects**: Add eslint-prettier and lint-staged command - by **Soybean** [<samp>(27330)</samp>](https://github.com/soybeanjs/cli/commit/2733099)
+- **projects**: Add eslint-prettier and lint-staged command - by @soybeanjs [<samp>(27330)</samp>](https://github.com/soybeanjs/cli/commit/2733099)
 
 ### 📖 Documentation
 
-- **projects**: CHANGELOG.md - by **Soybean** [<samp>(26ad9)</samp>](https://github.com/soybeanjs/cli/commit/26ad987)
+- **projects**: CHANGELOG.md - by @soybeanjs [<samp>(26ad9)</samp>](https://github.com/soybeanjs/cli/commit/26ad987)
 
 ### 🏡 Chore
 
-- Release v0.4.0 - by **Soybean** [<samp>(74a68)</samp>](https://github.com/soybeanjs/cli/commit/74a6831)
-- **projects**: Update repository url - by **Soybean** [<samp>(53f2f)</samp>](https://github.com/soybeanjs/cli/commit/53f2f21)
-- **projects**: Use cac replace commander - by **Soybean** [<samp>(1163e)</samp>](https://github.com/soybeanjs/cli/commit/1163ef7)
+- Release v0.4.0 - by @soybeanjs [<samp>(74a68)</samp>](https://github.com/soybeanjs/cli/commit/74a6831)
+- **projects**: Update repository url - by @soybeanjs [<samp>(53f2f)</samp>](https://github.com/soybeanjs/cli/commit/53f2f21)
+- **projects**: Use cac replace commander - by @soybeanjs [<samp>(1163e)</samp>](https://github.com/soybeanjs/cli/commit/1163ef7)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.3.2](https://github.com/soybeanjs/cli/compare/v0.3.1...v0.3.2)(2023-06-04)
+## [v0.3.2](https://github.com/soybeanjs/cli/compare/v0.3.1...v0.3.2)(2023-06-05)
 
 ### 📖 Documentation
 
-- **projects**: CHANGELOG.md - by **Soybean** [<samp>(f05a7)</samp>](https://github.com/soybeanjs/cli/commit/f05a724)
-- **projects**: Update README.md - by **Soybean** [<samp>(5b293)</samp>](https://github.com/soybeanjs/cli/commit/5b293d3)
+- **projects**: CHANGELOG.md - by @soybeanjs [<samp>(f05a7)</samp>](https://github.com/soybeanjs/cli/commit/f05a724)
+- **projects**: Update README.md - by @soybeanjs [<samp>(5b293)</samp>](https://github.com/soybeanjs/cli/commit/5b293d3)
 
 ### 🏡 Chore
 
-- Release v0.3.2 - by **Soybean** [<samp>(ee5c6)</samp>](https://github.com/soybeanjs/cli/commit/ee5c6ed)
+- Release v0.3.2 - by @soybeanjs [<samp>(ee5c6)</samp>](https://github.com/soybeanjs/cli/commit/ee5c6ed)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.3.1](https://github.com/soybeanjs/cli/compare/v0.3.0...v0.3.1)(2023-06-04)
+## [v0.3.1](https://github.com/soybeanjs/cli/compare/v0.3.0...v0.3.1)(2023-06-05)
 
 ### 📖 Documentation
 
-- **projects**: CHANGELOG.md - by **Soybean** [<samp>(86d2a)</samp>](https://github.com/soybeanjs/cli/commit/86d2ac1)
+- **projects**: CHANGELOG.md - by @soybeanjs [<samp>(86d2a)</samp>](https://github.com/soybeanjs/cli/commit/86d2ac1)
 
 ### 🏡 Chore
 
-- Release v0.3.1 - by **Soybean** [<samp>(14952)</samp>](https://github.com/soybeanjs/cli/commit/14952b4)
-- **deps**: Update deps - by **Soybean** [<samp>(0a8d0)</samp>](https://github.com/soybeanjs/cli/commit/0a8d0aa)
-- **projects**: Update prettier write files - by **Soybean** [<samp>(0a2cc)</samp>](https://github.com/soybeanjs/cli/commit/0a2ccd4)
+- Release v0.3.1 - by @soybeanjs [<samp>(14952)</samp>](https://github.com/soybeanjs/cli/commit/14952b4)
+- **deps**: Update deps - by @soybeanjs [<samp>(0a8d0)</samp>](https://github.com/soybeanjs/cli/commit/0a8d0aa)
+- **projects**: Update prettier write files - by @soybeanjs [<samp>(0a2cc)</samp>](https://github.com/soybeanjs/cli/commit/0a2ccd4)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.3.0](https://github.com/soybeanjs/cli/compare/v0.2.12...v0.3.0)(2023-06-04)
+## [v0.3.0](https://github.com/soybeanjs/cli/compare/v0.2.12...v0.3.0)(2023-06-05)
 
 ### 🏡 Chore
 
-- Release v0.3.0 - by **Soybean** [<samp>(9090b)</samp>](https://github.com/soybeanjs/cli/commit/9090bd5)
-- **projects**: Remove release command - by **Soybean** [<samp>(39969)</samp>](https://github.com/soybeanjs/cli/commit/3996991)
-- **projects**: Use unbuild replace tsup - by **Soybean** [<samp>(042b7)</samp>](https://github.com/soybeanjs/cli/commit/042b701)
-- **projects**: Add update-version script - by **Soybean** [<samp>(8d78d)</samp>](https://github.com/soybeanjs/cli/commit/8d78d27)
+- Release v0.3.0 - by @soybeanjs [<samp>(9090b)</samp>](https://github.com/soybeanjs/cli/commit/9090bd5)
+- **projects**: Remove release command - by @soybeanjs [<samp>(39969)</samp>](https://github.com/soybeanjs/cli/commit/3996991)
+- **projects**: Use unbuild replace tsup - by @soybeanjs [<samp>(042b7)</samp>](https://github.com/soybeanjs/cli/commit/042b701)
+- **projects**: Add update-version script - by @soybeanjs [<samp>(8d78d)</samp>](https://github.com/soybeanjs/cli/commit/8d78d27)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.2.12](https://github.com/soybeanjs/cli/compare/v0.2.11...v0.2.12)(2023-06-04)
+## [v0.2.12](https://github.com/soybeanjs/cli/compare/v0.2.11...v0.2.12)(2023-06-05)
 
 ### 🏡 Chore
 
-- **projects**: Add githublogen replace changelogithub - by **Soybean** [<samp>(908bc)</samp>](https://github.com/soybeanjs/cli/commit/908bcd4)
-- **projects**: Update lint-staged config - by **Soybean** [<samp>(45607)</samp>](https://github.com/soybeanjs/cli/commit/456077a)
-- **release**: V0.2.12 - by **Soybean** [<samp>(84370)</samp>](https://github.com/soybeanjs/cli/commit/843703e)
+- **projects**: Add githublogen replace changelogithub - by @soybeanjs [<samp>(908bc)</samp>](https://github.com/soybeanjs/cli/commit/908bcd4)
+- **projects**: Update lint-staged config - by @soybeanjs [<samp>(45607)</samp>](https://github.com/soybeanjs/cli/commit/456077a)
+- **release**: V0.2.12 - by @soybeanjs [<samp>(84370)</samp>](https://github.com/soybeanjs/cli/commit/843703e)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.2.11](https://github.com/soybeanjs/cli/compare/v0.2.10...v0.2.11)(2023-06-04)
+## [v0.2.11](https://github.com/soybeanjs/cli/compare/v0.2.10...v0.2.11)(2023-06-05)
 
 ### 🏡 Chore
 
-- **projects**: Update changelogithub config - by **Soybean** [<samp>(c053a)</samp>](https://github.com/soybeanjs/cli/commit/c053aa7)
-- **release**: V0.2.11 - by **Soybean** [<samp>(dc223)</samp>](https://github.com/soybeanjs/cli/commit/dc22399)
+- **projects**: Update changelogithub config - by @soybeanjs [<samp>(c053a)</samp>](https://github.com/soybeanjs/cli/commit/c053aa7)
+- **release**: V0.2.11 - by @soybeanjs [<samp>(dc223)</samp>](https://github.com/soybeanjs/cli/commit/dc22399)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.2.10](https://github.com/soybeanjs/cli/compare/v0.2.9...v0.2.10)(2023-06-04)
+## [v0.2.10](https://github.com/soybeanjs/cli/compare/v0.2.9...v0.2.10)(2023-06-05)
 
 ### 📖 Documentation
 
-- **projects**: Update README.md - by **Soybean** [<samp>(4daf5)</samp>](https://github.com/soybeanjs/cli/commit/4daf5e2)
+- **projects**: Update README.md - by @soybeanjs [<samp>(4daf5)</samp>](https://github.com/soybeanjs/cli/commit/4daf5e2)
 
 ### 🏡 Chore
 
-- **release**: V0.2.10 - by **Soybean** [<samp>(51a79)</samp>](https://github.com/soybeanjs/cli/commit/51a799e)
+- **release**: V0.2.10 - by @soybeanjs [<samp>(51a79)</samp>](https://github.com/soybeanjs/cli/commit/51a799e)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.2.9](https://github.com/soybeanjs/cli/compare/v0.2.8...v0.2.9)(2023-06-04)
+## [v0.2.9](https://github.com/soybeanjs/cli/compare/v0.2.8...v0.2.9)(2023-06-05)
 
 ### 🏡 Chore
 
-- **projects**: Fix release script - by **Soybean** [<samp>(52bfe)</samp>](https://github.com/soybeanjs/cli/commit/52bfe9a)
-- **release**: V0.2.9 - by **Soybean** [<samp>(4bc57)</samp>](https://github.com/soybeanjs/cli/commit/4bc578b)
+- **projects**: Fix release script - by @soybeanjs [<samp>(52bfe)</samp>](https://github.com/soybeanjs/cli/commit/52bfe9a)
+- **release**: V0.2.9 - by @soybeanjs [<samp>(4bc57)</samp>](https://github.com/soybeanjs/cli/commit/4bc578b)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.2.8](https://github.com/soybeanjs/cli/compare/v0.2.7...v0.2.8)(2023-06-04)
+## [v0.2.8](https://github.com/soybeanjs/cli/compare/v0.2.7...v0.2.8)(2023-06-05)
 
 ### 🏡 Chore
 
-- **projects**: Update release script - by **Soybean** [<samp>(d39ee)</samp>](https://github.com/soybeanjs/cli/commit/d39ee91)
-- **release**: V0.2.8 - by **Soybean** [<samp>(af12d)</samp>](https://github.com/soybeanjs/cli/commit/af12d78)
+- **projects**: Update release script - by @soybeanjs [<samp>(d39ee)</samp>](https://github.com/soybeanjs/cli/commit/d39ee91)
+- **release**: V0.2.8 - by @soybeanjs [<samp>(af12d)</samp>](https://github.com/soybeanjs/cli/commit/af12d78)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.2.7](https://github.com/soybeanjs/cli/compare/v0.2.6...v0.2.7)(2023-06-04)
+## [v0.2.7](https://github.com/soybeanjs/cli/compare/v0.2.6...v0.2.7)(2023-06-05)
 
 ### 🏡 Chore
 
-- **projects**: Add release command status - by **Soybean** [<samp>(d9ee4)</samp>](https://github.com/soybeanjs/cli/commit/d9ee450)
-- **release**: V0.2.7 - by **Soybean** [<samp>(c057a)</samp>](https://github.com/soybeanjs/cli/commit/c057aad)
+- **projects**: Add release command status - by @soybeanjs [<samp>(d9ee4)</samp>](https://github.com/soybeanjs/cli/commit/d9ee450)
+- **release**: V0.2.7 - by @soybeanjs [<samp>(c057a)</samp>](https://github.com/soybeanjs/cli/commit/c057aad)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.2.6](https://github.com/soybeanjs/cli/compare/v0.2.5...v0.2.6)(2023-06-04)
+## [v0.2.6](https://github.com/soybeanjs/cli/compare/v0.2.5...v0.2.6)(2023-06-05)
 
 ### 🚀 Features
 
-- **projects**: Add release command - by **Soybean** [<samp>(1a4a6)</samp>](https://github.com/soybeanjs/cli/commit/1a4a641)
+- **projects**: Add release command - by @soybeanjs [<samp>(1a4a6)</samp>](https://github.com/soybeanjs/cli/commit/1a4a641)
 
 ### 🏡 Chore
 
-- **release**: V0.2.6 - by **Soybean** [<samp>(fa7ea)</samp>](https://github.com/soybeanjs/cli/commit/fa7ea00)
+- **release**: V0.2.6 - by @soybeanjs [<samp>(fa7ea)</samp>](https://github.com/soybeanjs/cli/commit/fa7ea00)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.2.5](https://github.com/soybeanjs/cli/compare/v0.2.4...v0.2.5)(2023-06-04)
+## [v0.2.5](https://github.com/soybeanjs/cli/compare/v0.2.4...v0.2.5)(2023-06-05)
 
 ### 📖 Documentation
 
-- **projects**: Update README.md [更新README.md] - by **Soybean** [<samp>(a2b1b)</samp>](https://github.com/soybeanjs/cli/commit/a2b1b34)
+- **projects**: Update README.md [更新README.md] - by @soybeanjs [<samp>(a2b1b)</samp>](https://github.com/soybeanjs/cli/commit/a2b1b34)
 
 ### 🏡 Chore
 
-- Release v0.2.5 - by **Soybean** [<samp>(45884)</samp>](https://github.com/soybeanjs/cli/commit/45884c2)
-- **projects**: Remove bumpp and conventional-changelog-cli [去除依赖bumpp和conventional-changelog-cli] - by **Soybean** [<samp>(4bac6)</samp>](https://github.com/soybeanjs/cli/commit/4bac6d4)
-- **projects**: Update package.json [更新package.json] - by **Soybean** [<samp>(dd3e1)</samp>](https://github.com/soybeanjs/cli/commit/dd3e1f9)
-- **projects**: Add bumpp - by **Soybean** [<samp>(14c09)</samp>](https://github.com/soybeanjs/cli/commit/14c092e)
+- Release v0.2.5 - by @soybeanjs [<samp>(45884)</samp>](https://github.com/soybeanjs/cli/commit/45884c2)
+- **projects**: Remove bumpp and conventional-changelog-cli [去除依赖bumpp和conventional-changelog-cli] - by @soybeanjs [<samp>(4bac6)</samp>](https://github.com/soybeanjs/cli/commit/4bac6d4)
+- **projects**: Update package.json [更新package.json] - by @soybeanjs [<samp>(dd3e1)</samp>](https://github.com/soybeanjs/cli/commit/dd3e1f9)
+- **projects**: Add bumpp - by @soybeanjs [<samp>(14c09)</samp>](https://github.com/soybeanjs/cli/commit/14c092e)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.2.4](https://github.com/soybeanjs/cli/compare/v0.2.3...v0.2.4)(2023-06-04)
+## [v0.2.4](https://github.com/soybeanjs/cli/compare/v0.2.3...v0.2.4)(2023-06-05)
 
 ### 🐞 Bug Fixes
 
-- **projects**: Fix github workflow - by **Soybean** [<samp>(7f2c8)</samp>](https://github.com/soybeanjs/cli/commit/7f2c82f)
-- **projects**: Fix github workflow - by **Soybean** [<samp>(253b4)</samp>](https://github.com/soybeanjs/cli/commit/253b418)
+- **projects**: Fix github workflow - by @soybeanjs [<samp>(7f2c8)</samp>](https://github.com/soybeanjs/cli/commit/7f2c82f)
+- **projects**: Fix github workflow - by @soybeanjs [<samp>(253b4)</samp>](https://github.com/soybeanjs/cli/commit/253b418)
 
 ### 📖 Documentation
 
-- **projects**: Update CHANGELOG.md [更新日志文件] - by **Soybean** [<samp>(18271)</samp>](https://github.com/soybeanjs/cli/commit/18271b7)
+- **projects**: Update CHANGELOG.md [更新日志文件] - by @soybeanjs [<samp>(18271)</samp>](https://github.com/soybeanjs/cli/commit/18271b7)
 
 ### 🏡 Chore
 
@@ -238,50 +226,48 @@
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48) 
+[github-actions[bot]](mailto:41898282+github-actions[bot]@users.noreply.github.com)
 
-[Soybean](mailto:honghuangdc@gmail.com), [github-actions[bot]](mailto:41898282+github-actions[bot]@users.noreply.github.com)
-
-## [v0.2.3](https://github.com/soybeanjs/cli/compare/v0.2.2...v0.2.3)(2023-06-04)
+## [v0.2.3](https://github.com/soybeanjs/cli/compare/v0.2.2...v0.2.3)(2023-06-05)
 
 ### 🏡 Chore
 
-- Release v0.2.3 - by **Soybean** [<samp>(87bfa)</samp>](https://github.com/soybeanjs/cli/commit/87bfa39)
+- Release v0.2.3 - by @soybeanjs [<samp>(87bfa)</samp>](https://github.com/soybeanjs/cli/commit/87bfa39)
 - **project**: Create release-please.yml [创建github workflows] - by **Soybean** [<samp>(4edff)</samp>](https://github.com/soybeanjs/cli/commit/4edff44)
-- **projects**: Remove github action - by **Soybean** [<samp>(a6530)</samp>](https://github.com/soybeanjs/cli/commit/a65308e)
+- **projects**: Remove github action - by @soybeanjs [<samp>(a6530)</samp>](https://github.com/soybeanjs/cli/commit/a65308e)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48) 
+[Soybean](mailto:49704545+honghuangdc@users.noreply.github.com)
 
-[Soybean](mailto:honghuangdc@gmail.com), [Soybean](mailto:49704545+honghuangdc@users.noreply.github.com)
-
-## [v0.2.2](https://github.com/soybeanjs/cli/compare/v0.2.1...v0.2.2)(2023-06-04)
+## [v0.2.2](https://github.com/soybeanjs/cli/compare/v0.2.1...v0.2.2)(2023-06-05)
 
 ### 🏡 Chore
 
-- Release v0.2.2 - by **Soybean** [<samp>(df1ad)</samp>](https://github.com/soybeanjs/cli/commit/df1ad48)
-- **projects**: Add changelog [添加日志] - by **Soybean** [<samp>(f72dc)</samp>](https://github.com/soybeanjs/cli/commit/f72dce8)
+- Release v0.2.2 - by @soybeanjs [<samp>(df1ad)</samp>](https://github.com/soybeanjs/cli/commit/df1ad48)
+- **projects**: Add changelog [添加日志] - by @soybeanjs [<samp>(f72dc)</samp>](https://github.com/soybeanjs/cli/commit/f72dce8)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.2.1](https://github.com/soybeanjs/cli/compare/v0.2.0...v0.2.1)(2023-06-04)
+## [v0.2.1](https://github.com/soybeanjs/cli/compare/v0.2.0...v0.2.1)(2023-06-05)
 
 ### 🏡 Chore
 
-- Release v0.2.1 - by **Soybean** [<samp>(65537)</samp>](https://github.com/soybeanjs/cli/commit/65537b0)
-- **deps**: Update deps [升级依赖] - by **Soybean** [<samp>(367eb)</samp>](https://github.com/soybeanjs/cli/commit/367eb63)
-- **projects**: Add github action [添加github action] - by **Soybean** [<samp>(85872)</samp>](https://github.com/soybeanjs/cli/commit/858724c)
-- **projects**: Update commit config [更新git commit配置] - by **Soybean** [<samp>(a0ebc)</samp>](https://github.com/soybeanjs/cli/commit/a0ebc05)
-- **types**: Add node type - by **Soybean** [<samp>(aba8d)</samp>](https://github.com/soybeanjs/cli/commit/aba8db1)
+- Release v0.2.1 - by @soybeanjs [<samp>(65537)</samp>](https://github.com/soybeanjs/cli/commit/65537b0)
+- **deps**: Update deps [升级依赖] - by @soybeanjs [<samp>(367eb)</samp>](https://github.com/soybeanjs/cli/commit/367eb63)
+- **projects**: Add github action [添加github action] - by @soybeanjs [<samp>(85872)</samp>](https://github.com/soybeanjs/cli/commit/858724c)
+- **projects**: Update commit config [更新git commit配置] - by @soybeanjs [<samp>(a0ebc)</samp>](https://github.com/soybeanjs/cli/commit/a0ebc05)
+- **types**: Add node type - by @soybeanjs [<samp>(aba8d)</samp>](https://github.com/soybeanjs/cli/commit/aba8db1)
 
 ### ❤️ Contributors
 
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-[Soybean](mailto:honghuangdc@gmail.com)
-
-## [v0.2.0](https://github.com/soybeanjs/cli/compare/v0.1.9...v0.2.0)(2023-06-04)
+## [v0.2.0](https://github.com/soybeanjs/cli/compare/v0.1.9...v0.2.0)(2023-06-05)
 
 ### 📦 Build
 
@@ -295,7 +281,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.9](https://github.com/soybeanjs/cli/compare/v0.1.8...v0.1.9)(2023-06-04)
+## [v0.1.9](https://github.com/soybeanjs/cli/compare/v0.1.8...v0.1.9)(2023-06-05)
 
 ### 💅 Refactors
 
@@ -309,7 +295,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.8](https://github.com/soybeanjs/cli/compare/v0.1.7...v0.1.8)(2023-06-04)
+## [v0.1.8](https://github.com/soybeanjs/cli/compare/v0.1.7...v0.1.8)(2023-06-05)
 
 ### 🐞 Bug Fixes
 
@@ -323,7 +309,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.7](https://github.com/soybeanjs/cli/compare/v0.1.6...v0.1.7)(2023-06-04)
+## [v0.1.7](https://github.com/soybeanjs/cli/compare/v0.1.6...v0.1.7)(2023-06-05)
 
 ### 💅 Refactors
 
@@ -337,7 +323,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.6](https://github.com/soybeanjs/cli/compare/v0.1.5...v0.1.6)(2023-06-04)
+## [v0.1.6](https://github.com/soybeanjs/cli/compare/v0.1.5...v0.1.6)(2023-06-05)
 
 ### 📦 Build
 
@@ -351,7 +337,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.5](https://github.com/soybeanjs/cli/compare/v0.1.4...v0.1.5)(2023-06-04)
+## [v0.1.5](https://github.com/soybeanjs/cli/compare/v0.1.4...v0.1.5)(2023-06-05)
 
 ### 🚀 Features
 
@@ -365,7 +351,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.4](https://github.com/soybeanjs/cli/compare/v0.1.3...v0.1.4)(2023-06-04)
+## [v0.1.4](https://github.com/soybeanjs/cli/compare/v0.1.3...v0.1.4)(2023-06-05)
 
 ### 🐞 Bug Fixes
 
@@ -388,7 +374,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.3](https://github.com/soybeanjs/cli/compare/v0.1.2...v0.1.3)(2023-06-04)
+## [v0.1.3](https://github.com/soybeanjs/cli/compare/v0.1.2...v0.1.3)(2023-06-05)
 
 ### 🐞 Bug Fixes
 
@@ -407,7 +393,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.2](https://github.com/soybeanjs/cli/compare/v0.1.1...v0.1.2)(2023-06-04)
+## [v0.1.2](https://github.com/soybeanjs/cli/compare/v0.1.1...v0.1.2)(2023-06-05)
 
 ### 📦 Build
 
@@ -422,7 +408,7 @@
 
 ![soybeanjs](https://github.com/soybeanjs.png?size=48)
 
-## [v0.1.1](https://github.com/soybeanjs/cli/compare/v0.1.0...v0.1.1)(2023-06-04)
+## [v0.1.1](https://github.com/soybeanjs/cli/compare/v0.1.0...v0.1.1)(2023-06-05)
 
 ### 📦 Build
 
