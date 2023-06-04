@@ -6,6 +6,7 @@ export async function release() {
     execute: 'npx soy changelog',
     all: true,
     tag: true,
-    commit: 'chore(projects): release v%s'
+    commit: 'chore(projects): release v%s',
+    push: true
   });
 }
