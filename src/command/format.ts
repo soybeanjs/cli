@@ -1,4 +1,4 @@
-import { execa } from 'execa';
+import { execCommand } from '../shared';
 
 export function prettierFormat() {
   const formatFiles = [
@@ -18,7 +18,7 @@ export function prettierFormat() {
     '!__snapshots__'
   ];
 
-  execa('npx', ['prettier', '.', '--write', ...formatFiles], {
+  execCommand('npx', ['prettier', '.', '--write', ...formatFiles], {
     stdio: 'inherit'
   });
 }

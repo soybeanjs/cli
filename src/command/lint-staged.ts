@@ -1,5 +1,5 @@
-import { execa } from 'execa';
+import { execCommand } from '../shared';
 
 export function lintStaged() {
-  execa('npx', ['lint-staged', '--config', '@soybeanjs/cli/lint-staged'], { stdio: 'inherit' });
+  execCommand('npx', ['lint-staged', '--config', '@soybeanjs/cli/lint-staged'], { stdio: 'inherit' });
 }

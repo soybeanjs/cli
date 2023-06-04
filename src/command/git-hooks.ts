@@ -1,5 +1,5 @@
 import { existsSync } from 'fs';
-import { execa } from 'execa';
+import { execCommand } from '../shared';
 import { rimraf } from 'rimraf';
 
 export async function initSimpleGitHooks() {
@@ -8,9 +8,9 @@ export async function initSimpleGitHooks() {
 
   if (existHusky) {
     await rimraf('.husky');
-    await execa('git', ['config', 'core.hooksPath', '.git/hooks/'], { stdio: 'inherit' });
+    await execCommand('git', ['config', 'core.hooksPath', '.git/hooks/'], { stdio: 'inherit' });
   }
 
   await rimraf('.git/hooks');
-  await execa('npx', ['simple-git-hooks'], { stdio: 'inherit' });
+  await execCommand('npx', ['simple-git-hooks'], { stdio: 'inherit' });
 }

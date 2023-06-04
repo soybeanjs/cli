@@ -1,5 +1,5 @@
 import enquirer from 'enquirer';
-import { execa } from 'execa';
+import { execCommand } from '../shared';
 import { gitCommitTypes, gitCommitScopes } from '../configs';
 
 interface PromptObject {
@@ -31,5 +31,5 @@ export async function gitCommit() {
 
   const commitMsg = `${result.types}(${result.scopes}): ${result.description}`;
 
-  execa('git', ['commit', '-m', commitMsg], { stdio: 'inherit' });
+  execCommand('git', ['commit', '-m', commitMsg], { stdio: 'inherit' });
 }

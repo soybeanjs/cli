@@ -1,5 +1,5 @@
-import { execa } from 'execa';
+import { execCommand } from '../shared';
 
 export async function updatePkg() {
-  execa('npx', ['ncu', '--deep', '-u'], { stdio: 'inherit' });
+  execCommand('npx', ['ncu', '--deep', '-u'], { stdio: 'inherit' });
 }

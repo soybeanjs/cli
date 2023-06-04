@@ -1,11 +1,11 @@
-import { execa } from 'execa';
+import { execCommand } from '../shared';
 
 export async function eslintPretter() {
-  await execa('npx', ['eslint', '.', '--fix'], {
+  await execCommand('npx', ['eslint', '.', '--fix'], {
     stdio: 'inherit'
   });
 
-  await execa('npx', ['soy', 'prettier-format'], {
+  await execCommand('npx', ['soy', 'prettier-format'], {
     stdio: 'inherit'
   });
 }

@@ -253,3 +253,5 @@ export async function getGitCommitsAndResolvedAuthors(commits: GitCommit[], gith
     contributors: Array.from(map.values())
   };
 }
+
+getTotalGitTags();
