@@ -10,7 +10,8 @@ import {
   prettierFormat,
   eslintPretter,
   lintStaged,
-  genChangelog
+  genChangelog,
+  release
 } from './command';
 
 const cli = cac('soybean');
@@ -26,7 +27,8 @@ type Command =
   | 'prettier-format'
   | 'eslint-prettier'
   | 'lint-staged'
-  | 'changelog';
+  | 'changelog'
+  | 'release';
 
 type CommandAction<A extends object> = (args?: A) => Promise<void> | void;
 
@@ -74,6 +76,10 @@ const commands: CommandWithAction<CommandArg> = {
     action: async args => {
       await genChangelog(args?.total);
     }
+  },
+  release: {
+    desc: '发布：更新版本号、生成changelog、提交代码',
+    action: release
   }
 };
 

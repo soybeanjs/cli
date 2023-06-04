@@ -38,10 +38,9 @@
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy update-pkg",
-    "update-version": "bumpp **/package.json !**/node_modules --execute=\"pnpm soy changelog && git add .\" --tag --commit=\"chore(projects): release v%s\"",
     "publish-pkg": "pnpm -r publish --access public",
     "typecheck": "tsc --noEmit",
-    "release": "pnpm update-version && pnpm build && pnpm publish-pkg"
+    "release": "soy release && pnpm build && pnpm publish-pkg"
   },
   "dependencies": {
     "bumpp": "9.1.0",

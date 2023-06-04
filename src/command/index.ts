@@ -7,3 +7,4 @@ export * from './format';
 export * from './eslint-prettier';
 export * from './lint-staged';
 export * from './changelog';
+export * from './release';
