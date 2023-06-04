@@ -72,5 +72,5 @@
     "commit-msg": "pnpm soy git-commit-verify",
     "pre-commit": "pnpm typecheck && pnpm soy lint-staged"
   },
-  "github-token": "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"
+  "github-token": "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"
 }
