@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v0.5.1-beta.0](https://github.com/soybeanjs/cli/compare/v0.5.0...main) (23-06-06)
+
+### 🐞 Bug Fixes
+
+- **projects**: Fix changelog new version without date - by @soybeanjs [<samp>(36138)</samp>](https://github.com/soybeanjs/cli/commit/361388b)
+
+### 📖 Documentation
+
+- **projects**: Update README.md - by @soybeanjs [<samp>(6f217)</samp>](https://github.com/soybeanjs/cli/commit/6f21797)
+
+### 🏡 Chore
+
+- **projects**: Update github_token - by @soybeanjs [<samp>(15651)</samp>](https://github.com/soybeanjs/cli/commit/1565138)
+
+### ❤️ Contributors
+
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
+
 ## [v0.5.0](https://github.com/soybeanjs/cli/compare/v0.4.2...v0.5.0) (2023-06-05)
 
 ### 🐞 Bug Fixes
