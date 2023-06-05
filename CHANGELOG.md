@@ -1,7 +1,7 @@
 # Changelog
 
 
-## [v0.5.0](https://github.com/soybeanjs/cli/compare/v0.4.2...main)
+## [v0.5.0](https://github.com/soybeanjs/cli/compare/v0.4.2...v0.5.0) (2023-06-05)
 
 ### 🐞 Bug Fixes
 
@@ -14,6 +14,10 @@
 ### 📖 Documentation
 
 - **projects**: Update CHANGELOG.md - by @soybeanjs [<samp>(94d6f)</samp>](https://github.com/soybeanjs/cli/commit/94d6f97)
+
+### 🏡 Chore
+
+- **projects**: Release v0.5.0 - by @soybeanjs [<samp>(44a9d)</samp>](https://github.com/soybeanjs/cli/commit/44a9d62)
 
 ### ❤️ Contributors
 

@@ -1,5 +1,6 @@
 import { existsSync } from 'fs';
 import { readFile, writeFile } from 'fs/promises';
+import dayjs from 'dayjs';
 import { convert } from 'convert-gitmoji';
 import { partition, groupBy, capitalize, join } from '../shared';
 import type { Reference, GitCommit, ChangelogOption, AuthorInfo } from '../types';
@@ -132,9 +133,11 @@ export function generateMarkdown(params: {
   const url = `https://github.com/${options.github}/compare/${options.from}...${options.to}`;
 
   if (showTitle) {
-    const version = VERSION_REG.test(options.to) ? options.to : options.newVersion;
+    const isNewVersion = !VERSION_REG.test(options.to);
 
-    const date = options.tagDateMap.get(options.to);
+    const version = isNewVersion ? options.newVersion : options.to;
+
+    const date = isNewVersion ? dayjs().format('YY-MM-DD') : options.tagDateMap.get(options.to);
 
     let title = `## [${version}](${url})`;
 
