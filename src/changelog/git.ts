@@ -1,6 +1,7 @@
 import { ofetch } from 'ofetch';
 import dayjs from 'dayjs';
 import { execCommand, notNullish } from '../shared';
+import { VERSION_REG } from './constant';
 import type { RawGitCommit, GitCommit, GitCommitAuthor, Reference, AuthorInfo } from '../types';
 
 export async function getTotalGitTags() {
@@ -20,17 +21,17 @@ export async function getTagDateMap() {
     '--pretty=format:%ci %d'
   ]);
 
-  const TAG_MARK = '(tag: ';
+  const TAG_MARK = 'tag: ';
 
   const map = new Map<string, string>();
 
   const dates = tagDateStr.split('\n').filter(item => item.includes(TAG_MARK));
+
   dates.forEach(item => {
     const [dateStr, tagStr] = item.split(TAG_MARK);
 
-    const date = dayjs(dateStr.trim()).format('YYYY-MM-DD');
+    const date = dayjs(dateStr).format('YYYY-MM-DD');
 
-    const VERSION_REG = /v\d+\.\d+\.\d+/;
     const tag = tagStr.match(VERSION_REG)?.[0];
     if (tag && date) {
       map.set(tag.trim(), date);

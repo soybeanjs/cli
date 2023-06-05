@@ -3,6 +3,7 @@ import { readFile, writeFile } from 'fs/promises';
 import dayjs from 'dayjs';
 import { convert } from 'convert-gitmoji';
 import { partition, groupBy, capitalize, join } from '../shared';
+import { VERSION_REG, VERSION_REG_OF_MARKDOWN } from './constant';
 import type { Reference, GitCommit, ChangelogOption, AuthorInfo } from '../types';
 
 function formatReferences(references: Reference[], github: string, type: 'issues' | 'hash'): string {
@@ -124,8 +125,6 @@ export function generateMarkdown(params: {
   showTitle: boolean;
   contributors: AuthorInfo[];
 }) {
-  const VERSION_REG = /v\d+\.\d+\.\d+/;
-
   const { commits, options, showTitle, contributors } = params;
 
   const lines: string[] = [];
@@ -183,8 +182,6 @@ export function generateMarkdown(params: {
 }
 
 export async function isVersionInMarkdown(version: string, mdPath: string) {
-  const VERSION_REG_OF_MARKDOWN = /## \[v\d+\.\d+\.\d+\]/g;
-
   let isIn = false;
 
   const md = await readFile(mdPath, 'utf8');
