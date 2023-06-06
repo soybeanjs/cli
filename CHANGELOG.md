@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.5.3](https://github.com/soybeanjs/cli/compare/v0.5.2...main) (23-06-07)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: extract code about changelog into library @soybeanjs/changelog &nbsp;-&nbsp; by @soybeanjs [<samp>(52838)</samp>](https://github.com/soybeanjs/cli/commit/52838c5)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.5.2](https://github.com/soybeanjs/cli/compare/v0.5.1...v0.5.2) (2023-06-06)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
