@@ -2,7 +2,7 @@ import { ofetch } from 'ofetch';
 import dayjs from 'dayjs';
 import { execCommand, notNullish } from '../shared';
 import { VERSION_REG } from './constant';
-import type { RawGitCommit, GitCommit, GitCommitAuthor, Reference, AuthorInfo } from '../types';
+import type { RawGitCommit, GitCommit, GitCommitAuthor, GithubConfig, Reference, AuthorInfo } from '../types';
 
 export async function getTotalGitTags() {
   const tagStr = await execCommand('git', ['--no-pager', 'tag', '-l', '--sort=creatordate']);
@@ -197,14 +197,7 @@ function getHeaders(githubToken: string) {
   };
 }
 
-async function getResolvedAuthorLogin(params: {
-  github: string;
-  githubToken: string;
-  commitHashes: string[];
-  email: string;
-}) {
-  const { github, githubToken, commitHashes, email } = params;
-
+async function getResolvedAuthorLogin(github: GithubConfig, commitHashes: string[], email: string) {
   let login = '';
 
   try {
@@ -216,15 +209,17 @@ async function getResolvedAuthorLogin(params: {
     return login;
   }
 
+  const { repo, token } = github;
+
   // token not provided, skip github resolving
-  if (!githubToken) {
+  if (!token) {
     return login;
   }
 
   if (commitHashes.length) {
     try {
-      const data = await ofetch(`https://api.github.com/repos/${github}/commits/${commitHashes[0]}`, {
-        headers: getHeaders(githubToken)
+      const data = await ofetch(`https://api.github.com/repos/${repo}/commits/${commitHashes[0]}`, {
+        headers: getHeaders(token)
       });
       login = data?.author?.login || '';
     } catch (e) {}
@@ -236,7 +231,7 @@ async function getResolvedAuthorLogin(params: {
 
   try {
     const data = await ofetch(`https://api.github.com/search/users?q=${encodeURIComponent(email)}`, {
-      headers: getHeaders(githubToken)
+      headers: getHeaders(token)
     });
     login = data.items[0].login;
   } catch (e) {}
@@ -244,21 +239,19 @@ async function getResolvedAuthorLogin(params: {
   return login;
 }
 
-// eslint-disable-next-line max-params
 export async function getGitCommitsAndResolvedAuthors(
   commits: GitCommit[],
-  github: string,
-  githubToken: string,
+  github: GithubConfig,
   resolvedLogins?: Map<string, string>
 ) {
   const resultCommits: GitCommit[] = [];
 
   const map = new Map<string, AuthorInfo>();
 
-  for (const commit of commits) {
+  for await (const commit of commits) {
     const resolvedAuthors: AuthorInfo[] = [];
 
-    for (const [index, author] of Object.entries(commit.authors)) {
+    for await (const [index, author] of Object.entries(commit.authors)) {
       const { email, name } = author;
 
       if (email && name) {
@@ -276,8 +269,7 @@ export async function getGitCommitsAndResolvedAuthors(
         };
 
         if (!resolvedLogins?.has(email)) {
-          // eslint-disable-next-line no-await-in-loop
-          const login = await getResolvedAuthorLogin({ github, githubToken, commitHashes, email });
+          const login = await getResolvedAuthorLogin(github, commitHashes, email);
           resolvedAuthor.login = login;
 
           resolvedLogins?.set(email, login);

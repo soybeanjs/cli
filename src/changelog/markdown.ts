@@ -26,8 +26,8 @@ function formatReferences(references: Reference[], github: string, type: 'issues
 }
 
 function formatLine(commit: GitCommit, options: ChangelogOption) {
-  const prRefs = formatReferences(commit.references, options.github, 'issues');
-  const hashRefs = formatReferences(commit.references, options.github, 'hash');
+  const prRefs = formatReferences(commit.references, options.github.repo, 'issues');
+  const hashRefs = formatReferences(commit.references, options.github.repo, 'hash');
 
   let authors = join([...new Set(commit.resolvedAuthors.map(i => (i.login ? `@${i.login}` : `**${i.name}**`)))]).trim();
 
@@ -138,7 +138,7 @@ export function generateMarkdown(params: {
 
   const lines: string[] = [];
 
-  const url = `https://github.com/${options.github}/compare/${options.from}...${options.to}`;
+  const url = `https://github.com/${options.github.repo}/compare/${options.from}...${options.to}`;
 
   if (showTitle) {
     const isNewVersion = !VERSION_REG.test(options.to);

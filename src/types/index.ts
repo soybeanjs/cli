@@ -32,12 +32,16 @@ export interface GitCommit extends RawGitCommit {
 
 export type SemverBumpType = 'major' | 'premajor' | 'minor' | 'preminor' | 'patch' | 'prepatch' | 'prerelease';
 
+export interface GithubConfig {
+  repo: string;
+  token: string;
+}
+
 export interface ChangelogOption {
   cwd: string;
   types: Record<string, { title: string; semver?: SemverBumpType }>;
   scopeMap: Record<string, string>;
-  github: string;
-  githubToken: string;
+  github: GithubConfig;
   from: string;
   to: string;
   tags: string[];

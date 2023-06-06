@@ -35,8 +35,10 @@ function createDefaultOptions() {
       ci: { title: '🤖 CI' }
     },
     scopeMap: {},
-    github: '',
-    githubToken: process.env.GITHUB_TOKEN || '',
+    github: {
+      repo: '',
+      token: process.env.GITHUB_TOKEN || ''
+    },
     from: '',
     to: '',
     tags: [],
@@ -77,32 +79,22 @@ export async function initOptions() {
 
   const { githubToken, newVersion } = await getOptionsFromPkg(options.cwd);
 
-  if (!options.githubToken) {
-    options.githubToken = githubToken;
-  }
+  options.github.token ||= githubToken;
+  options.github.repo = await getGitHubRepo();
 
-  if (newVersion) {
-    options.newVersion = `v${newVersion}`;
-  }
+  options.newVersion ||= `v${newVersion}`;
+  options.from ||= await getLastGitTag();
+  options.to ||= await getCurrentGitBranch();
 
-  if (!options.from) {
-    options.from = await getLastGitTag();
-  }
-  if (!options.to) {
-    options.to = await getCurrentGitBranch();
-  }
   if (options.to === options.from) {
     const lastTag = await getLastGitTag(-1);
     const firstCommit = await getFirstGitCommit();
-
     options.from = lastTag || firstCommit;
   }
 
   options.tags = await getTotalGitTags();
 
   options.tagDateMap = await getTagDateMap();
-
-  options.github = await getGitHubRepo();
 
   options.prerelease = isPrerelease(options.to);
 
@@ -111,11 +103,7 @@ export async function initOptions() {
 
 async function generateChangelogByTag(options: ChangelogOption) {
   const gitCommits = await getGitCommits(options.from, options.to, options.scopeMap);
-  const { commits, contributors } = await getGitCommitsAndResolvedAuthors(
-    gitCommits,
-    options.github,
-    options.githubToken
-  );
+  const { commits, contributors } = await getGitCommitsAndResolvedAuthors(gitCommits, options.github);
   const md = generateMarkdown({ commits, options, showTitle: true, contributors });
   return md;
 }
@@ -130,21 +118,16 @@ async function generateChangelogByTags(options: ChangelogOption) {
 
   const resolvedLogins = new Map<string, string>();
 
-  for (let i = 0; i < tags.length; i += 1) {
-    const { from, to } = tags[i];
+  for await (const [index, tag] of tags.entries()) {
+    const { from, to } = tag;
     const gitCommits = await getGitCommits(from, to, options.scopeMap);
-    const { commits, contributors } = await getGitCommitsAndResolvedAuthors(
-      gitCommits,
-      options.github,
-      options.githubToken,
-      resolvedLogins
-    );
+    const { commits, contributors } = await getGitCommitsAndResolvedAuthors(gitCommits, options.github, resolvedLogins);
     const opts = { ...options, from, to };
     const nextMd = generateMarkdown({ commits, options: opts, showTitle: true, contributors });
 
     md = `${nextMd}\n\n${md}`;
 
-    bar.update(i + 1);
+    bar.update(index + 1);
   }
 
   bar.stop();
