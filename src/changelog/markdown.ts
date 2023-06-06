@@ -89,8 +89,16 @@ function formatSection(commits: GitCommit[], sectionName: string, options: Chang
   return lines;
 }
 
+function getUserGithub(userName: string) {
+  const githubUrl = `https://github.com/${userName}`;
+
+  return githubUrl;
+}
+
 function getGitUserAvatar(userName: string) {
-  const avatarUrl = `https://github.com/${userName}.png?size=48`;
+  const githubUrl = getUserGithub(userName);
+
+  const avatarUrl = `${githubUrl}.png?size=48`;
 
   return avatarUrl;
 }
@@ -106,13 +114,14 @@ function createContributorLine(contributors: AuthorInfo[]) {
       let line = `[${name}](mailto:${email})`;
 
       if (index < contributors.length - 1) {
-        line += ', ';
+        line += ',&nbsp;';
       }
 
       unloginLine += line;
     } else {
+      const githubUrl = getUserGithub(login);
       const avatar = getGitUserAvatar(login);
-      loginLine += `![${login}](${avatar}) `;
+      loginLine += `[![${login}](${avatar})](${githubUrl})&nbsp;&nbsp;`;
     }
   });
 
@@ -167,7 +176,7 @@ export function generateMarkdown(params: {
   }
 
   if (showTitle) {
-    lines.push('', '### ❤️ Contributors', '');
+    lines.push('', '### &nbsp;&nbsp;&nbsp;❤️ Contributors', '');
 
     const contributorLine = createContributorLine(contributors);
 
@@ -176,9 +185,7 @@ export function generateMarkdown(params: {
 
   const md = convert(lines.join('\n').trim(), true);
 
-  const markdown = md.replace(/&nbsp;/g, '');
-
-  return markdown;
+  return md;
 }
 
 export async function isVersionInMarkdown(version: string, mdPath: string) {

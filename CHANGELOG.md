@@ -39,7 +39,7 @@
 
 ### ❤️ Contributors
 
-![soybeanjs](https://github.com/soybeanjs.png?size=48)
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs) &nbsp; [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)
 
 ## [v0.4.2](https://github.com/soybeanjs/cli/compare/v0.4.1...v0.4.2) (2023-06-04)
 

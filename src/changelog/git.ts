@@ -207,17 +207,17 @@ async function getResolvedAuthorLogin(params: {
 
   let login = '';
 
-  // token not provided, skip github resolving
-  if (!githubToken) {
-    return login;
-  }
-
   try {
-    const data = await ofetch(`https://api.github.com/search/users?q=${encodeURIComponent(email)}`);
-    login = data.items[0].login;
+    const data = await ofetch(`https://ungh.cc/users/find/${email}`);
+    login = data?.user?.username || '';
   } catch {}
 
   if (login) {
+    return login;
+  }
+
+  // token not provided, skip github resolving
+  if (!githubToken) {
     return login;
   }
 
@@ -229,6 +229,17 @@ async function getResolvedAuthorLogin(params: {
       login = data?.author?.login || '';
     } catch (e) {}
   }
+
+  if (login) {
+    return login;
+  }
+
+  try {
+    const data = await ofetch(`https://api.github.com/search/users?q=${encodeURIComponent(email)}`, {
+      headers: getHeaders(githubToken)
+    });
+    login = data.items[0].login;
+  } catch (e) {}
 
   return login;
 }
