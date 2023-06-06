@@ -13,6 +13,7 @@ import {
   genChangelog,
   release
 } from './command';
+import type { CliOption } from './types';
 
 const cli = cac('soybean');
 
@@ -88,3 +89,9 @@ Object.entries(commands).forEach(([command, { desc, action }]) => {
 });
 
 cli.parse();
+
+export function defineConfig(config?: Partial<CliOption>) {
+  return config;
+}
+
+export type { CliOption };

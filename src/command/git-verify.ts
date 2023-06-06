@@ -1,17 +1,12 @@
 import { readFileSync } from 'fs';
 import { bgRed, red, green } from 'kolorist';
-import { gitCommitTypes, gitCommitScopes } from '../configs';
 
 export function gitCommitVerify() {
-  const gitMsgPath = './.git/COMMIT_EDITMSG';
+  const gitMsgPath = `${process.cwd()}/.git/COMMIT_EDITMSG`;
 
   const commitMsg = readFileSync(gitMsgPath, 'utf-8').trim();
 
-  const types = gitCommitTypes.map(item => item.value).join('|');
-
-  const scopes = gitCommitScopes.map(item => item.value).join('|');
-
-  const REG_EXP = new RegExp(`(${types})!*(\\((${scopes})\\))*!*:\\s.{1,100}`);
+  const REG_EXP = /(?<type>[a-z]+)(\((?<scope>.+)\))?(?<breaking>!)?: (?<description>.+)/i;
 
   if (!REG_EXP.test(commitMsg)) {
     throw new Error(

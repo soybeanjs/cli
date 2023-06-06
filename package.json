@@ -43,23 +43,20 @@
     "release": "soy release && pnpm build && pnpm publish-pkg"
   },
   "dependencies": {
+    "@soybeanjs/changelog": "0.0.2",
     "bumpp": "9.1.0",
+    "c12": "1.4.1",
     "cac": "6.7.14",
-    "cli-progress": "^3.12.0",
-    "convert-gitmoji": "0.1.3",
-    "dayjs": "1.11.8",
     "enquirer": "2.3.6",
     "execa": "7.1.1",
     "kolorist": "1.8.0",
     "lint-staged": "13.2.2",
     "minimist": "1.2.8",
     "npm-check-updates": "16.10.12",
-    "ofetch": "1.0.1",
     "rimraf": "5.0.1"
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
-    "@types/cli-progress": "^3.11.0",
     "@types/node": "20.2.5",
     "eslint": "8.41.0",
     "eslint-config-soybeanjs": "0.4.7",

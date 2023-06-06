@@ -1,5 +1,9 @@
-import { generateChangelog } from '../changelog';
+import { generateChangelog, generateTotalChangelog } from '@soybeanjs/changelog';
 
-export async function genChangelog(total = false) {
-  await generateChangelog(total);
+export function genChangelog(total = false) {
+  if (total) {
+    generateTotalChangelog();
+  } else {
+    generateChangelog();
+  }
 }
