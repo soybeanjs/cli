@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v0.5.1](https://github.com/soybeanjs/cli/compare/v0.5.1-beta.0...main) (23-06-06)
+
+### 🚀 Features
+
+- **projects**: Changelog support alpha and beta version - by @soybeanjs [<samp>(a23e4)</samp>](https://github.com/soybeanjs/cli/commit/a23e4a8)
+
+### 🔥 Performance
+
+- **projects**: Perf changelog get github user - by @soybeanjs [<samp>(38587)</samp>](https://github.com/soybeanjs/cli/commit/3858753)
+
+### ❤️ Contributors
+
+![soybeanjs](https://github.com/soybeanjs.png?size=48)
+
 ## [v0.5.1-beta.0](https://github.com/soybeanjs/cli/compare/v0.5.0...main) (23-06-06)
 
 ### 🐞 Bug Fixes
