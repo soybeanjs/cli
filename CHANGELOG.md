@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.5.4](https://github.com/soybeanjs/cli/compare/v0.5.3...main) (23-06-07)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: add githubToken for @soybeanjs/changelog &nbsp;-&nbsp; by @soybeanjs [<samp>(142ff)</samp>](https://github.com/soybeanjs/cli/commit/142ff1b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.5.3](https://github.com/soybeanjs/cli/compare/v0.5.2...main) (23-06-07)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
