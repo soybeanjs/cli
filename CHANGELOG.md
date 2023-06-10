@@ -1,6 +1,7 @@
 # Changelog
 
-## [v0.5.5](https://github.com/soybeanjs/cli/compare/v0.5.4...main) (23-06-11)
+
+## [v0.5.5](https://github.com/soybeanjs/cli/compare/v0.5.4...v0.5.5) (2023-06-11)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
@@ -12,28 +13,39 @@
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
-- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(60453)</samp>](https://github.com/soybeanjs/cli/commit/604537a)
-- **projects**: update package.json &nbsp;-&nbsp; by @soybeanjs [<samp>(f064f)</samp>](https://github.com/soybeanjs/cli/commit/f064fe1)
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(60453)</samp>](https://github.com/soybeanjs/cli/commit/604537a)
+- **projects**:
+  - update package.json &nbsp;-&nbsp; by @soybeanjs [<samp>(f064f)</samp>](https://github.com/soybeanjs/cli/commit/f064fe1)
+  - release v0.5.5 &nbsp;-&nbsp; by @soybeanjs [<samp>(7509f)</samp>](https://github.com/soybeanjs/cli/commit/7509fa3)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v0.5.4](https://github.com/soybeanjs/cli/compare/v0.5.3...main) (23-06-07)
+## [v0.5.4](https://github.com/soybeanjs/cli/compare/v0.5.3...v0.5.4) (2023-06-07)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
 - **projects**: add githubToken for @soybeanjs/changelog &nbsp;-&nbsp; by @soybeanjs [<samp>(142ff)</samp>](https://github.com/soybeanjs/cli/commit/142ff1b)
 
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: release v0.5.4 &nbsp;-&nbsp; by @soybeanjs [<samp>(e96fc)</samp>](https://github.com/soybeanjs/cli/commit/e96fce8)
+
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v0.5.3](https://github.com/soybeanjs/cli/compare/v0.5.2...main) (23-06-07)
+## [v0.5.3](https://github.com/soybeanjs/cli/compare/v0.5.2...v0.5.3) (2023-06-07)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
 - **projects**: extract code about changelog into library @soybeanjs/changelog &nbsp;-&nbsp; by @soybeanjs [<samp>(52838)</samp>](https://github.com/soybeanjs/cli/commit/52838c5)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: release v0.5.3 &nbsp;-&nbsp; by @soybeanjs [<samp>(20f2e)</samp>](https://github.com/soybeanjs/cli/commit/20f2e74)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
@@ -314,14 +326,14 @@
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
 
-- **projects**: update README.md [更新 README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(a2b1b)</samp>](https://github.com/soybeanjs/cli/commit/a2b1b34)
+- **projects**: update README.md [更新README.md] &nbsp;-&nbsp; by @soybeanjs [<samp>(a2b1b)</samp>](https://github.com/soybeanjs/cli/commit/a2b1b34)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
 - release v0.2.5 &nbsp;-&nbsp; by @soybeanjs [<samp>(45884)</samp>](https://github.com/soybeanjs/cli/commit/45884c2)
 - **projects**:
-  - remove bumpp and conventional-changelog-cli [去除依赖 bumpp 和 conventional-changelog-cli] &nbsp;-&nbsp; by @soybeanjs [<samp>(4bac6)</samp>](https://github.com/soybeanjs/cli/commit/4bac6d4)
-  - update package.json [更新 package.json] &nbsp;-&nbsp; by @soybeanjs [<samp>(dd3e1)</samp>](https://github.com/soybeanjs/cli/commit/dd3e1f9)
+  - remove bumpp and conventional-changelog-cli [去除依赖bumpp和conventional-changelog-cli] &nbsp;-&nbsp; by @soybeanjs [<samp>(4bac6)</samp>](https://github.com/soybeanjs/cli/commit/4bac6d4)
+  - update package.json [更新package.json] &nbsp;-&nbsp; by @soybeanjs [<samp>(dd3e1)</samp>](https://github.com/soybeanjs/cli/commit/dd3e1f9)
   - add bumpp &nbsp;-&nbsp; by @soybeanjs [<samp>(14c09)</samp>](https://github.com/soybeanjs/cli/commit/14c092e)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
@@ -356,7 +368,7 @@
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
 - release v0.2.3 &nbsp;-&nbsp; by @soybeanjs [<samp>(87bfa)</samp>](https://github.com/soybeanjs/cli/commit/87bfa39)
-- **project**: create release-please.yml [创建 github workflows] &nbsp;-&nbsp; by **Soybean** [<samp>(4edff)</samp>](https://github.com/soybeanjs/cli/commit/4edff44)
+- **project**: create release-please.yml [创建github workflows] &nbsp;-&nbsp; by **Soybean** [<samp>(4edff)</samp>](https://github.com/soybeanjs/cli/commit/4edff44)
 - **projects**: remove github action &nbsp;-&nbsp; by @soybeanjs [<samp>(a6530)</samp>](https://github.com/soybeanjs/cli/commit/a65308e)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
@@ -383,8 +395,8 @@
 - **deps**:
   - update deps [升级依赖] &nbsp;-&nbsp; by @soybeanjs [<samp>(367eb)</samp>](https://github.com/soybeanjs/cli/commit/367eb63)
 - **projects**:
-  - add github action [添加 github action] &nbsp;-&nbsp; by @soybeanjs [<samp>(85872)</samp>](https://github.com/soybeanjs/cli/commit/858724c)
-  - update commit config [更新 git commit 配置] &nbsp;-&nbsp; by @soybeanjs [<samp>(a0ebc)</samp>](https://github.com/soybeanjs/cli/commit/a0ebc05)
+  - add github action [添加github action] &nbsp;-&nbsp; by @soybeanjs [<samp>(85872)</samp>](https://github.com/soybeanjs/cli/commit/858724c)
+  - update commit config [更新git commit配置] &nbsp;-&nbsp; by @soybeanjs [<samp>(a0ebc)</samp>](https://github.com/soybeanjs/cli/commit/a0ebc05)
 - **types**:
   - add node type &nbsp;-&nbsp; by @soybeanjs [<samp>(aba8d)</samp>](https://github.com/soybeanjs/cli/commit/aba8db1)
 
@@ -424,7 +436,7 @@
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
-- **projects**: fix cleanup on windows [修复 cleanup 命令在 windows 上的问题] &nbsp;-&nbsp; by @soybeanjs [<samp>(baa02)</samp>](https://github.com/soybeanjs/cli/commit/baa02bb)
+- **projects**: fix cleanup on windows [修复cleanup命令在windows上的问题] &nbsp;-&nbsp; by @soybeanjs [<samp>(baa02)</samp>](https://github.com/soybeanjs/cli/commit/baa02bb)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -552,3 +564,6 @@
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
+
+
