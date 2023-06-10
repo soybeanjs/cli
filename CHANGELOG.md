@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v0.5.6](https://github.com/soybeanjs/cli/compare/v0.5.5...main) (23-06-11)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update CHANGELOG.md &nbsp;-&nbsp; by @soybeanjs [<samp>(a0e10)</samp>](https://github.com/soybeanjs/cli/commit/a0e10f5)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: add github token export &nbsp;-&nbsp; by @soybeanjs [<samp>(89371)</samp>](https://github.com/soybeanjs/cli/commit/8937103)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.5.5](https://github.com/soybeanjs/cli/compare/v0.5.4...v0.5.5) (2023-06-11)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
