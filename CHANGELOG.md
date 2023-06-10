@@ -1,5 +1,24 @@
 # Changelog
 
+## [v0.5.5](https://github.com/soybeanjs/cli/compare/v0.5.4...main) (23-06-11)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add cli config &nbsp;-&nbsp; by @soybeanjs [<samp>(05d27)</samp>](https://github.com/soybeanjs/cli/commit/05d2746)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix release command &nbsp;-&nbsp; by @soybeanjs [<samp>(2d6a3)</samp>](https://github.com/soybeanjs/cli/commit/2d6a3ac)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(60453)</samp>](https://github.com/soybeanjs/cli/commit/604537a)
+- **projects**: update package.json &nbsp;-&nbsp; by @soybeanjs [<samp>(f064f)</samp>](https://github.com/soybeanjs/cli/commit/f064fe1)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.5.4](https://github.com/soybeanjs/cli/compare/v0.5.3...main) (23-06-07)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
