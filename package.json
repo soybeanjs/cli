@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
-    "@types/node": "20.2.6",
+    "@types/node": "20.3.0",
     "eslint": "8.42.0",
     "eslint-config-soybeanjs": "0.4.9",
     "simple-git-hooks": "2.8.1",
