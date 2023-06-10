@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [v0.5.7](https://github.com/soybeanjs/cli/compare/v0.5.6...main) (23-06-11)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**:
+  - fix module export &nbsp;-&nbsp; by @soybeanjs [<samp>(96956)</samp>](https://github.com/soybeanjs/cli/commit/9695627)
+  - fix circel dependency &nbsp;-&nbsp; by @soybeanjs [<samp>(4ad1e)</samp>](https://github.com/soybeanjs/cli/commit/4ad1e97)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.5.6](https://github.com/soybeanjs/cli/compare/v0.5.5...main) (23-06-11)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
