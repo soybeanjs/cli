@@ -41,4 +41,8 @@ export interface CliOption {
    * lint-staged config
    */
   lintStagedConfig: Record<string, string | string[]>;
+  /**
+   * use soybean token
+   */
+  useSoybeanToken: boolean;
 }

@@ -13,7 +13,7 @@ import {
   genChangelog,
   release
 } from './command';
-import { loadCliOptions, SOYBEAN_GITHUB_TOKEN } from './config';
+import { loadCliOptions } from './config';
 import type { CliOption } from './types';
 
 type Command =
@@ -153,7 +153,5 @@ setupCli();
 export function defineConfig(config?: Partial<CliOption>) {
   return config;
 }
-
-export { SOYBEAN_GITHUB_TOKEN };
 
 export type { CliOption };

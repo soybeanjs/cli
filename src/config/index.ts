@@ -61,7 +61,8 @@ const defaultOptions: CliOption = {
   lintStagedConfig: {
     [eslintExt]: 'eslint --fix',
     '*': 'soy prettier-write'
-  }
+  },
+  useSoybeanToken: false
 };
 
 export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = process.cwd()) {
@@ -69,7 +70,8 @@ export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = proce
     name: 'soybean',
     defaults: defaultOptions,
     overrides,
-    cwd
+    cwd,
+    packageJson: true
   });
 
   return config as CliOption;
