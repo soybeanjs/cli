@@ -1,5 +1,5 @@
-import { execCommand } from '../shared';
+export async function execLintStaged(config: Record<string, string | string[]>) {
+  const lintStaged = (await import('lint-staged')).default;
 
-export function lintStaged() {
-  execCommand('npx', ['lint-staged', '--config', '@soybeanjs/cli/lint-staged'], { stdio: 'inherit' });
+  return lintStaged({ config, allowEmpty: true });
 }

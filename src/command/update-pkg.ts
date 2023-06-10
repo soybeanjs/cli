@@ -1,5 +1,5 @@
 import { execCommand } from '../shared';
 
-export async function updatePkg() {
-  execCommand('npx', ['ncu', '--deep', '-u'], { stdio: 'inherit' });
+export async function ncu(args: string[] = ['--deep', '-u']) {
+  execCommand('npx', ['ncu', ...args], { stdio: 'inherit' });
 }

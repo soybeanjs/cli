@@ -1,6 +1,6 @@
 import enquirer from 'enquirer';
 import { execCommand } from '../shared';
-import { gitCommitTypes, gitCommitScopes } from '../configs';
+import type { CliOption } from '../types';
 
 interface PromptObject {
   types: string;
@@ -8,19 +8,38 @@ interface PromptObject {
   description: string;
 }
 
-export async function gitCommit() {
+export async function gitCommit(
+  gitCommitTypes: CliOption['gitCommitTypes'],
+  gitCommitScopes: CliOption['gitCommitScopes']
+) {
+  const typesChoices = gitCommitTypes.map(([name, title]) => {
+    const nameWithSuffix = `${name}:`;
+
+    const message = `${nameWithSuffix.padEnd(12)}${title}`;
+
+    return {
+      name,
+      message
+    };
+  });
+
+  const scopesChoices = gitCommitScopes.map(([name, title]) => ({
+    name,
+    message: `${name.padEnd(30)} (${title})`
+  }));
+
   const result = await enquirer.prompt<PromptObject>([
     {
       name: 'types',
       type: 'select',
       message: '请选择提交的类型',
-      choices: gitCommitTypes.map(item => ({ name: item.value, message: item.title }))
+      choices: typesChoices
     },
     {
       name: 'scopes',
       type: 'select',
       message: '选择一个scope',
-      choices: gitCommitScopes.map(item => ({ name: item.value, message: item.title }))
+      choices: scopesChoices
     },
     {
       name: 'description',

@@ -1,7 +1,7 @@
-import versionBumpp from 'bumpp';
-
 export async function release() {
-  await versionBumpp({
+  const { versionBump } = await import('bumpp');
+
+  await versionBump({
     files: ['**/package.json', '!**/node_modules'],
     execute: 'npx soy changelog',
     all: true,

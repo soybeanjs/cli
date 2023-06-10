@@ -1,8 +1,8 @@
 import { readFileSync } from 'fs';
 import { bgRed, red, green } from 'kolorist';
 
-export function gitCommitVerify() {
-  const gitMsgPath = `${process.cwd()}/.git/COMMIT_EDITMSG`;
+export function gitCommitVerify(cwd = process.cwd()) {
+  const gitMsgPath = `${cwd}/.git/COMMIT_EDITMSG`;
 
   const commitMsg = readFileSync(gitMsgPath, 'utf-8').trim();
 

@@ -1,18 +1,10 @@
-import { readFile } from 'fs/promises';
 import { generateChangelog, generateTotalChangelog } from '@soybeanjs/changelog';
+import type { ChangelogOption } from '@soybeanjs/changelog';
 
-export async function genChangelog(total = false) {
-  let githubToken = '';
-
-  try {
-    const pkgJson = await readFile(`${process.cwd()}/package.json`, 'utf-8');
-    const pkg = JSON.parse(pkgJson);
-    githubToken = pkg?.['github-token'] || '';
-  } catch {}
-
+export async function genChangelog(options?: Partial<ChangelogOption>, total = false) {
   if (total) {
-    generateTotalChangelog({ github: { token: githubToken, repo: '' } });
+    generateTotalChangelog(options);
   } else {
-    generateChangelog({ github: { token: githubToken, repo: '' } });
+    generateChangelog(options);
   }
 }

@@ -6,26 +6,26 @@ import {
   gitCommitVerify,
   cleanup,
   initSimpleGitHooks,
-  updatePkg,
-  prettierFormat,
+  ncu,
+  prettierWrite,
   eslintPretter,
-  lintStaged,
+  execLintStaged,
   genChangelog,
   release
 } from './command';
+import { loadCliOptions } from './config';
 import type { CliOption } from './types';
-
-const cli = cac('soybean');
-
-cli.version(version).option('--total', 'Generate changelog by total tags').help();
 
 type Command =
   | 'git-commit'
   | 'git-commit-verify'
   | 'cleanup'
   | 'init-git-hooks'
+  | 'init-simple-git-hooks'
   | 'update-pkg'
+  | 'ncu'
   | 'prettier-format'
+  | 'prettier-write'
   | 'eslint-prettier'
   | 'lint-staged'
   | 'changelog'
@@ -39,56 +39,116 @@ interface CommandArg {
   total?: boolean;
 }
 
-const commands: CommandWithAction<CommandArg> = {
-  'git-commit': {
-    desc: '生成符合 Angular 规范的 git commit',
-    action: gitCommit
-  },
-  'git-commit-verify': {
-    desc: '校验git的commit是否符合 Angular 规范',
-    action: gitCommitVerify
-  },
-  cleanup: {
-    desc: '清空依赖和构建产物',
-    action: cleanup
-  },
-  'init-git-hooks': {
-    desc: '初始化simple-git-hooks钩子',
-    action: initSimpleGitHooks
-  },
-  'update-pkg': {
-    desc: '升级依赖',
-    action: updatePkg
-  },
-  'prettier-format': {
-    desc: 'prettier格式化',
-    action: prettierFormat
-  },
-  'eslint-prettier': {
-    desc: 'eslint和prettier格式化',
-    action: eslintPretter
-  },
-  'lint-staged': {
-    desc: '执行lint-staged',
-    action: lintStaged
-  },
-  changelog: {
-    desc: '生成changelog',
-    action: async args => {
-      await genChangelog(args?.total);
+async function setupCli() {
+  const cliOptions = await loadCliOptions();
+
+  const cli = cac('soybean');
+
+  cli.version(version).option('--total', 'Generate changelog by total tags').help();
+
+  const commands: CommandWithAction<CommandArg> = {
+    'git-commit': {
+      desc: '生成符合 Angular 规范的 git commit',
+      action: () => {
+        gitCommit(cliOptions.gitCommitTypes, cliOptions.gitCommitScopes);
+      }
+    },
+    'git-commit-verify': {
+      desc: '校验 git 的 commit 是否符合 Angular 规范',
+      action: () => {
+        gitCommitVerify(cliOptions.cwd);
+      }
+    },
+    cleanup: {
+      desc: '清空依赖和构建产物',
+      action: () => {
+        cleanup(cliOptions.cleanupDirs);
+      }
+    },
+    'init-simple-git-hooks': {
+      desc: '初始化 simple-git-hooks 钩子',
+      action: () => {
+        initSimpleGitHooks(cliOptions.cwd);
+      }
+    },
+    ncu: {
+      desc: '命令 npm-check-updates, 升级依赖',
+      action: () => {
+        ncu(cliOptions.ncuCommandArgs);
+      }
+    },
+    'prettier-write': {
+      desc: '执行 prettier --write 格式化',
+      action: () => {
+        prettierWrite(cliOptions.prettierWriteGlob);
+      }
+    },
+    'lint-staged': {
+      desc: '执行lint-staged',
+      action: () => {
+        execLintStaged(cliOptions.lintStagedConfig)
+          .then(passed => {
+            process.exitCode = passed ? 0 : 1;
+          })
+          .catch(() => {
+            process.exitCode = 1;
+          });
+      }
+    },
+    changelog: {
+      desc: '生成changelog',
+      action: async args => {
+        await genChangelog(cliOptions.changelogOptions, args?.total);
+      }
+    },
+    release: {
+      desc: '发布：更新版本号、生成changelog、提交代码',
+      action: release
+    },
+    /**
+     * @deprecated
+     */
+    'init-git-hooks': {
+      desc: '该命令已废弃，请使用 init-simple-git-hooks',
+      action: () => {
+        initSimpleGitHooks(cliOptions.cwd);
+      }
+    },
+    /**
+     * @deprecated
+     */
+    'update-pkg': {
+      desc: '该命令已废弃，请使用 ncu',
+      action: () => {
+        ncu(cliOptions.ncuCommandArgs);
+      }
+    },
+    /**
+     * @deprecated
+     */
+    'prettier-format': {
+      desc: '该命令已废弃，请使用 prettier-write',
+      action: () => {
+        prettierWrite(cliOptions.prettierWriteGlob);
+      }
+    },
+    /**
+     * @deprecated
+     */
+    'eslint-prettier': {
+      desc: '该命令已废弃',
+      action: eslintPretter
     }
-  },
-  release: {
-    desc: '发布：更新版本号、生成changelog、提交代码',
-    action: release
-  }
-};
+  };
 
-Object.entries(commands).forEach(([command, { desc, action }]) => {
-  cli.command(command, desc).action(action);
-});
+  Object.entries(commands).forEach(([command, { desc, action }]) => {
+    cli.command(command, desc).action(action);
+  });
 
-cli.parse();
+  cli.parse();
+}
+
+setupCli();
 
 export function defineConfig(config?: Partial<CliOption>) {
   return config;
