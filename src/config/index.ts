@@ -74,3 +74,5 @@ export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = proce
 
   return config as CliOption;
 }
+
+export const SOYBEAN_GITHUB_TOKEN = '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';
