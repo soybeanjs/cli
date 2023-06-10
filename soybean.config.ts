@@ -1,5 +1,5 @@
-import { SOYBEAN_GITHUB_TOKEN } from './src/config';
-import type { CliOption } from './src/types';
+import { SOYBEAN_GITHUB_TOKEN } from '@soybeanjs/cli';
+import type { CliOption } from '@soybeanjs/cli';
 
 const config: Partial<CliOption> = {
   changelogOptions: {
