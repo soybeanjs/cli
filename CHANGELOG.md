@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v0.6.0](https://github.com/soybeanjs/cli/compare/v0.5.8...main) (23-06-12)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix cleanup command &nbsp;-&nbsp; by @soybeanjs [<samp>(befe8)</samp>](https://github.com/soybeanjs/cli/commit/befe85c)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: fix CHANGELOG.md &nbsp;-&nbsp; by @soybeanjs [<samp>(44a99)</samp>](https://github.com/soybeanjs/cli/commit/44a9977)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.5.8](https://github.com/soybeanjs/cli/compare/v0.5.7...v0.5.8) (2023-06-12)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
