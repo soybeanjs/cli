@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [v0.5.8](https://github.com/soybeanjs/cli/compare/v0.5.7...main) (23-06-12)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**:
+  - 修复git路径 &nbsp;-&nbsp; by **刘璐** [<samp>(bfbc1)</samp>](https://github.com/soybeanjs/cli/commit/bfbc106)
+  - use path.join to concat path &nbsp;-&nbsp; by @soybeanjs [<samp>(aba7f)</samp>](https://github.com/soybeanjs/cli/commit/aba7f2b)
+  - fix useSoybeanToken &nbsp;-&nbsp; by @soybeanjs [<samp>(35f9b)</samp>](https://github.com/soybeanjs/cli/commit/35f9bfd)
+
+### &nbsp;&nbsp;&nbsp;🔥 Performance
+
+- **projects**: use for-of replace forEach &nbsp;-&nbsp; by @soybeanjs [<samp>(34172)</samp>](https://github.com/soybeanjs/cli/commit/3417279)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update README.md &nbsp;-&nbsp; by @soybeanjs [<samp>(47929)</samp>](https://github.com/soybeanjs/cli/commit/47929ee)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+[刘璐](mailto:hi.alue@qq.com)
+
 ## [v0.5.7](https://github.com/soybeanjs/cli/compare/v0.5.6...main) (23-06-11)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
