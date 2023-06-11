@@ -139,9 +139,9 @@ async function setupCli() {
     }
   };
 
-  Object.entries(commands).forEach(([command, { desc, action }]) => {
+  for await (const [command, { desc, action }] of Object.entries(commands)) {
     cli.command(command, desc).action(action);
-  });
+  }
 
   cli.parse();
 }
