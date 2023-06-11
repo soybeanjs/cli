@@ -1,7 +1,7 @@
 # Changelog
 
 
-## [v0.5.8](https://github.com/soybeanjs/cli/compare/v0.5.7...main) (23-06-12)
+## [v0.5.8](https://github.com/soybeanjs/cli/compare/v0.5.7...v0.5.8) (2023-06-12)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -18,12 +18,16 @@
 
 - **projects**: update README.md &nbsp;-&nbsp; by @soybeanjs [<samp>(47929)</samp>](https://github.com/soybeanjs/cli/commit/47929ee)
 
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: release v0.5.8 &nbsp;-&nbsp; by @soybeanjs [<samp>(aaba8)</samp>](https://github.com/soybeanjs/cli/commit/aaba8cf)
+
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 [刘璐](mailto:hi.alue@qq.com)
 
-## [v0.5.7](https://github.com/soybeanjs/cli/compare/v0.5.6...main) (23-06-11)
+## [v0.5.7](https://github.com/soybeanjs/cli/compare/v0.5.6...v0.5.7) (2023-06-11)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -31,11 +35,15 @@
   - fix module export &nbsp;-&nbsp; by @soybeanjs [<samp>(96956)</samp>](https://github.com/soybeanjs/cli/commit/9695627)
   - fix circel dependency &nbsp;-&nbsp; by @soybeanjs [<samp>(4ad1e)</samp>](https://github.com/soybeanjs/cli/commit/4ad1e97)
 
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: release v0.5.7 &nbsp;-&nbsp; by @soybeanjs [<samp>(3b989)</samp>](https://github.com/soybeanjs/cli/commit/3b9895a)
+
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v0.5.6](https://github.com/soybeanjs/cli/compare/v0.5.5...main) (23-06-11)
+## [v0.5.6](https://github.com/soybeanjs/cli/compare/v0.5.5...v0.5.6) (2023-06-11)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
 
@@ -43,7 +51,9 @@
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
-- **projects**: add github token export &nbsp;-&nbsp; by @soybeanjs [<samp>(89371)</samp>](https://github.com/soybeanjs/cli/commit/8937103)
+- **projects**:
+  - add github token export &nbsp;-&nbsp; by @soybeanjs [<samp>(89371)</samp>](https://github.com/soybeanjs/cli/commit/8937103)
+  - release v0.5.6 &nbsp;-&nbsp; by @soybeanjs [<samp>(743f3)</samp>](https://github.com/soybeanjs/cli/commit/743f3f5)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
