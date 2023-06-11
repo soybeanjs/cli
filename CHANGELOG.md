@@ -1,7 +1,17 @@
 # Changelog
 
 
-## [v0.6.0](https://github.com/soybeanjs/cli/compare/v0.5.8...main) (23-06-12)
+## [v0.6.0](https://github.com/soybeanjs/cli/compare/v0.6.0...v0.6.0) (23-06-12)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update @soybeanjs/changelog &nbsp;-&nbsp; by @soybeanjs [<samp>(f9194)</samp>](https://github.com/soybeanjs/cli/commit/f919493)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
+## [v0.6.0](https://github.com/soybeanjs/cli/compare/v0.5.8...v0.6.0) (2023-06-12)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -10,6 +20,10 @@
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
 
 - **projects**: fix CHANGELOG.md &nbsp;-&nbsp; by @soybeanjs [<samp>(44a99)</samp>](https://github.com/soybeanjs/cli/commit/44a9977)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: release v0.6.0 &nbsp;-&nbsp; by @soybeanjs [<samp>(b3fd0)</samp>](https://github.com/soybeanjs/cli/commit/b3fd087)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
