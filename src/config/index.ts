@@ -65,6 +65,8 @@ const defaultOptions: CliOption = {
   useSoybeanToken: false
 };
 
+const SOYBEAN_GITHUB_TOKEN = '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';
+
 export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = process.cwd()) {
   const { config } = await loadConfig<Partial<CliOption>>({
     name: 'soybean',
@@ -74,7 +76,9 @@ export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = proce
     packageJson: true
   });
 
+  if (config?.useSoybeanToken) {
+    config.changelogOptions = { ...config.changelogOptions, github: { repo: '', token: SOYBEAN_GITHUB_TOKEN } };
+  }
+
   return config as CliOption;
 }
-
-export const SOYBEAN_GITHUB_TOKEN = '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';

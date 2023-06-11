@@ -85,14 +85,12 @@ async function setupCli() {
     },
     'lint-staged': {
       desc: '执行lint-staged',
-      action: () => {
-        execLintStaged(cliOptions.lintStagedConfig)
-          .then(passed => {
-            process.exitCode = passed ? 0 : 1;
-          })
-          .catch(() => {
-            process.exitCode = 1;
-          });
+      action: async () => {
+        const passed = await execLintStaged(cliOptions.lintStagedConfig).catch(() => {
+          process.exitCode = 1;
+        });
+
+        process.exitCode = passed ? 0 : 1;
       }
     },
     changelog: {
