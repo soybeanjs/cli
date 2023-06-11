@@ -56,7 +56,7 @@ async function setupCli() {
     'git-commit-verify': {
       desc: '校验 git 的 commit 是否符合 Angular 规范',
       action: () => {
-        gitCommitVerify(cliOptions.cwd);
+        gitCommitVerify();
       }
     },
     cleanup: {
