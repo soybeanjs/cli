@@ -47,7 +47,7 @@
     "release": "soy release && pnpm build && pnpm publish-pkg"
   },
   "dependencies": {
-    "@soybeanjs/changelog": "0.0.2",
+    "@soybeanjs/changelog": "0.0.3",
     "bumpp": "9.1.1",
     "c12": "1.4.1",
     "cac": "6.7.14",

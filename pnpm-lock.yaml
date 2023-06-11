@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@soybeanjs/changelog':
-    specifier: 0.0.2
-    version: 0.0.2
+    specifier: 0.0.3
+    version: 0.0.3
   bumpp:
     specifier: 9.1.1
     version: 9.1.1
@@ -867,14 +867,14 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
-  /@soybeanjs/changelog@0.0.2:
-    resolution: {integrity: sha512-QVeusuUBSdarl9eBzu54xd0ujHHjIjKsr1SEsa86UtZcdbbUTL+JNW/PYjxJO4v+elv5AafXEIaUeDHgEcNZjg==}
+  /@soybeanjs/changelog@0.0.3:
+    resolution: {integrity: sha512-WVvSX5lDuCP0jSY3HcHuzHPioMBTQZx1soeuGf7S0//m94tp+y871/+sO7QsyoPkNypYAlqwnMjz5JmpJue5dQ==}
     dependencies:
       cli-progress: 3.12.0
       convert-gitmoji: 0.1.3
       dayjs: 1.11.8
       execa: 7.1.1
-      ofetch: 1.0.1
+      ofetch: 1.1.0
     dev: false
 
   /@szmarczak/http-timer@5.0.1:
@@ -3966,8 +3966,8 @@ packages:
       es-abstract: 1.21.2
     dev: true
 
-  /ofetch@1.0.1:
-    resolution: {integrity: sha512-icBz2JYfEpt+wZz1FRoGcrMigjNKjzvufE26m9+yUiacRQRHwnNlGRPiDnW4op7WX/MR6aniwS8xw8jyVelF2g==}
+  /ofetch@1.1.0:
+    resolution: {integrity: sha512-yjq2ZUUMto1ITpge2J5vNlUfteLzxfHn9aJC55WtVGD3okKwSfPoLaKpcHXmmKd2kZZUGo+jdkFuuj09Blyeig==}
     dependencies:
       destr: 1.2.2
       node-fetch-native: 1.2.0
