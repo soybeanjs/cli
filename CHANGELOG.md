@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [v0.6.2](https://github.com/soybeanjs/cli/compare/v0.6.1...v0.6.2) (23-06-13)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(5f406)</samp>](https://github.com/soybeanjs/cli/commit/5f406d9)
+- **projects**: update token &nbsp;-&nbsp; by @soybeanjs [<samp>(76eba)</samp>](https://github.com/soybeanjs/cli/commit/76ebacc)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v0.6.1](https://github.com/soybeanjs/cli/compare/v0.6.0...v0.6.1) (23-06-12)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
