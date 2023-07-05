@@ -44,7 +44,8 @@
     "ncu": "soy ncu",
     "publish-pkg": "pnpm -r publish --access public",
     "typecheck": "tsc --noEmit",
-    "release": "soy release && pnpm build && pnpm publish-pkg"
+    "release": "soy release && pnpm build && pnpm publish-pkg",
+    "prepare": "pnpm -r run stub"
   },
   "dependencies": {
     "@soybeanjs/changelog": "0.0.4",
