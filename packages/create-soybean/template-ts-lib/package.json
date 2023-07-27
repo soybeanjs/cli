@@ -1,6 +1,6 @@
 {
   "name": "ts-lib-starter",
-  "version": "0.0.1",
+  "version": "0.6.3",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",

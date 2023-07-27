@@ -1,6 +1,23 @@
 # Changelog
 
 
+## [v0.6.3](https://github.com/soybeanjs/cli/compare/v0.6.2...v0.6.3) (23-07-27)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix types &nbsp;-&nbsp; by @honghuangdc [<samp>(18d10)</samp>](https://github.com/soybeanjs/cli/commit/18d10fc)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**:
+  - add monorepo support & add create-soybean &nbsp;-&nbsp; by @honghuangdc [<samp>(b2445)</samp>](https://github.com/soybeanjs/cli/commit/b2445ce)
+  - update package.json &nbsp;-&nbsp; by @honghuangdc [<samp>(5127b)</samp>](https://github.com/soybeanjs/cli/commit/5127b18)
+  - update deps & update config &nbsp;-&nbsp; by @honghuangdc [<samp>(a4eca)</samp>](https://github.com/soybeanjs/cli/commit/a4ecaff)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.6.2](https://github.com/soybeanjs/cli/compare/v0.6.1...v0.6.2) (23-06-13)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
