@@ -1,6 +1,6 @@
 import { execCommand } from '../shared';
 
-export async function eslintPretter() {
+export async function eslintPrettier() {
   await execCommand('npx', ['eslint', '.', '--fix'], {
     stdio: 'inherit'
   });

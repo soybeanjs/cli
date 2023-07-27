@@ -8,7 +8,7 @@ import {
   initSimpleGitHooks,
   ncu,
   prettierWrite,
-  eslintPretter,
+  eslintPrettier,
   execLintStaged,
   genChangelog,
   release
@@ -48,13 +48,13 @@ async function setupCli() {
 
   const commands: CommandWithAction<CommandArg> = {
     'git-commit': {
-      desc: '生成符合 Angular 规范的 git commit',
+      desc: '生成符合 Conventional Commits 规范的提交信息',
       action: () => {
         gitCommit(cliOptions.gitCommitTypes, cliOptions.gitCommitScopes);
       }
     },
     'git-commit-verify': {
-      desc: '校验 git 的 commit 是否符合 Angular 规范',
+      desc: '校验 git 提交信息是否符合 Conventional Commits 规范',
       action: () => {
         gitCommitVerify();
       }
@@ -135,7 +135,7 @@ async function setupCli() {
      */
     'eslint-prettier': {
       desc: '该命令已废弃',
-      action: eslintPretter
+      action: eslintPrettier
     }
   };
 

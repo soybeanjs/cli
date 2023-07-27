@@ -1,4 +1,5 @@
 import { loadConfig } from 'c12';
+import { readFile } from 'fs/promises';
 import type { CliOption } from '../types';
 
 const eslintExt = '*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}';
@@ -61,11 +62,10 @@ const defaultOptions: CliOption = {
   lintStagedConfig: {
     [eslintExt]: 'eslint --fix',
     '*': 'soy prettier-write'
-  },
-  useSoybeanToken: false
+  }
 };
 
-const SOYBEAN_GITHUB_TOKEN = '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';
+const SOYBEAN_GITHUB_TOKEN = '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';
 
 export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = process.cwd()) {
   const { config } = await loadConfig<Partial<CliOption>>({
@@ -76,9 +76,30 @@ export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = proce
     packageJson: true
   });
 
-  if (config?.useSoybeanToken) {
+  const has = await hasSoybeanInfoFromPkgJson(cwd);
+
+  if (config && has) {
     config.changelogOptions = { ...config.changelogOptions, github: { repo: '', token: SOYBEAN_GITHUB_TOKEN } };
   }
 
   return config as CliOption;
+}
+
+async function hasSoybeanInfoFromPkgJson(cwd: string) {
+  let hasSoybeanInfo = false;
+
+  const REG = 'soybean';
+
+  try {
+    const pkgJson = await readFile(`${cwd}/package.json`, 'utf-8');
+    const pkg = JSON.parse(pkgJson);
+    hasSoybeanInfo =
+      pkg.name?.includes(REG) ||
+      pkg.repository?.url?.includes(REG) ||
+      pkg.author?.includes(REG) ||
+      pkg.author?.name?.includes(REG) ||
+      pkg.author?.url?.includes(REG);
+  } catch {}
+
+  return hasSoybeanInfo;
 }
