@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.6.5](https://github.com/soybeanjs/cli/compare/v0.6.4...v0.6.5) (23-07-28)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix create-soybean build &nbsp;-&nbsp; by @honghuangdc [<samp>(cb942)</samp>](https://github.com/soybeanjs/cli/commit/cb942e8)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.6.4](https://github.com/soybeanjs/cli/compare/v0.6.3...v0.6.4) (23-07-28)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
