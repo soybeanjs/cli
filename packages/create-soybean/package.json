@@ -12,7 +12,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "bin": {
-    "create-soybean": "dist/index.mjs"
+    "create-soybean": "dist/index.mjs",
+    "create-soy": "dist/index.mjs"
   },
   "files": [
     "dist"
@@ -21,7 +22,15 @@
     "build": "pnpm typecheck && unbuild",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "consola": "^3.2.3",
+    "kolorist": "1.8.0",
+    "minimist": "1.2.8",
+    "prompts": "^2.4.2"
+  },
   "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/prompts": "^2.4.4",
     "typescript": "5.1.6",
     "unbuild": "1.2.1"
   }

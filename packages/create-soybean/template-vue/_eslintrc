@@ -4,7 +4,7 @@
     {
       "files": ["*.vue"],
       "rules": {
-        "no-undef": "off" // use tsc to check the ts code of the vue
+        "no-undef": "off"
       }
     }
   ]

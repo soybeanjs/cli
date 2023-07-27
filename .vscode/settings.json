@@ -1,4 +1,5 @@
 {
+  "cSpell.words": ["consola", "kolorist"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },

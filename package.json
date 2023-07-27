@@ -36,7 +36,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "pnpm typecheck && unbuild",
+    "build": "pnpm typecheck && unbuild && pnpm build-pkg",
+    "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "lint": "eslint . --fix",
     "format": "soy prettier-write",
     "commit": "soy git-commit",

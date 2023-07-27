@@ -1,1 +1,3 @@
-export function tsLibFn() {}
+export function fn() {
+  return 'fn';
+}
