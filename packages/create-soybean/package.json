@@ -16,7 +16,8 @@
     "create-soy": "dist/index.mjs"
   },
   "files": [
-    "dist"
+    "dist",
+    "template-*"
   ],
   "scripts": {
     "build": "pnpm typecheck && unbuild",
