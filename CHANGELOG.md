@@ -16,7 +16,7 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)
 
 ## [v0.6.2](https://github.com/soybeanjs/cli/compare/v0.6.1...v0.6.2) (23-06-13)
 
