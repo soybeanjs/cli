@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [v0.6.6](https://github.com/soybeanjs/cli/compare/v0.6.5...v0.6.6) (23-08-04)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**:
+  - update &nbsp;-&nbsp; by @honghuangdc [<samp>(35d9d)</samp>](https://github.com/soybeanjs/cli/commit/35d9d6d)
+  - update deps & update config &nbsp;-&nbsp; by @honghuangdc [<samp>(0d001)</samp>](https://github.com/soybeanjs/cli/commit/0d0013f)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.6.5](https://github.com/soybeanjs/cli/compare/v0.6.4...v0.6.5) (23-07-28)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
