@@ -16,12 +16,29 @@
   ],
   "scripts": {
     "build": "pnpm typecheck && unbuild",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --fix",
+    "format": "soy prettier-write",
+    "commit": "soy git-commit",
+    "cleanup": "soy cleanup",
+    "ncu": "soy ncu",
+    "publish-pkg": "pnpm publish --access public",
+    "release": "soy release && pnpm build && pnpm publish-pkg"
+  },
+  "dependencies": {
+    "cli-progress": "3.12.0",
+    "consola": "3.2.3",
+    "dayjs": "1.11.9",
+    "execa": "7.2.0",
+    "kolorist": "1.8.0",
+    "ofetch": "1.1.1"
   },
   "devDependencies": {
-    "@types/node": "20.4.5",
-    "eslint": "8.45.0",
-    "eslint-config-soybeanjs": "0.5.3",
+    "@types/cli-progress": "3.11.0",
+    "@types/node": "20.4.6",
+    "eslint": "8.46.0",
+    "eslint-config-soybeanjs": "0.5.4",
+    "tsx": "3.12.7",
     "typescript": "5.1.6",
     "unbuild": "1.2.1"
   }

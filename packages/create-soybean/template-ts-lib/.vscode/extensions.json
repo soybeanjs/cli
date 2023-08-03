@@ -8,10 +8,6 @@
     "formulahendry.auto-close-tag",
     "formulahendry.auto-rename-tag",
     "kisstkondoros.vscode-gutter-preview",
-    "mariusalchimavicius.json-to-ts",
-    "mhutchie.git-graph",
-    "sdras.vue-vscode-snippets",
-    "vue.volar",
-    "vue.vscode-typescript-vue-plugin"
+    "mhutchie.git-graph"
   ]
 }
