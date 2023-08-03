@@ -24,14 +24,14 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "consola": "^3.2.3",
+    "consola": "3.2.3",
     "kolorist": "1.8.0",
     "minimist": "1.2.8",
-    "prompts": "^2.4.2"
+    "prompts": "2.4.2"
   },
   "devDependencies": {
-    "@types/minimist": "^1.2.2",
-    "@types/prompts": "^2.4.4",
+    "@types/minimist": "1.2.2",
+    "@types/prompts": "2.4.4",
     "typescript": "5.1.6",
     "unbuild": "1.2.1"
   }
