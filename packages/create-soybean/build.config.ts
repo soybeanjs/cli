@@ -4,6 +4,9 @@ export default defineBuildConfig({
   entries: ['src/index'],
   clean: true,
   rollup: {
-    inlineDependencies: true
+    inlineDependencies: true,
+    esbuild: {
+      minify: true
+    }
   }
 });

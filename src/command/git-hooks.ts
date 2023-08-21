@@ -7,7 +7,7 @@ export async function initSimpleGitHooks(cwd = process.cwd()) {
   const huskyDir = path.join(cwd, '.husky');
   const existHusky = existsSync(huskyDir);
 
-  const gitHooksDir = path.join(cwd, '.git/hooks');
+  const gitHooksDir = path.join(cwd, '.git', 'hooks');
 
   if (existHusky) {
     await rimraf(huskyDir);

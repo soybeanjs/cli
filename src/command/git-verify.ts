@@ -6,7 +6,7 @@ import { execCommand } from '../shared';
 export async function gitCommitVerify() {
   const gitPath = await execCommand('git', ['rev-parse', '--show-toplevel']);
 
-  const gitMsgPath = path.join(gitPath, '.git/COMMIT_EDITMSG');
+  const gitMsgPath = path.join(gitPath, '.git', 'COMMIT_EDITMSG');
 
   const commitMsg = readFileSync(gitMsgPath, 'utf-8').trim();
 
