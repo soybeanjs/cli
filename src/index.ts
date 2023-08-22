@@ -49,38 +49,38 @@ async function setupCli() {
   const commands: CommandWithAction<CommandArg> = {
     'git-commit': {
       desc: '生成符合 Conventional Commits 规范的提交信息',
-      action: () => {
-        gitCommit(cliOptions.gitCommitTypes, cliOptions.gitCommitScopes);
+      action: async () => {
+        await gitCommit(cliOptions.gitCommitTypes, cliOptions.gitCommitScopes);
       }
     },
     'git-commit-verify': {
       desc: '校验 git 提交信息是否符合 Conventional Commits 规范',
-      action: () => {
-        gitCommitVerify();
+      action: async () => {
+        await gitCommitVerify();
       }
     },
     cleanup: {
       desc: '清空依赖和构建产物',
-      action: () => {
-        cleanup(cliOptions.cleanupDirs);
+      action: async () => {
+        await cleanup(cliOptions.cleanupDirs);
       }
     },
     'init-simple-git-hooks': {
       desc: '初始化 simple-git-hooks 钩子',
-      action: () => {
-        initSimpleGitHooks(cliOptions.cwd);
+      action: async () => {
+        await initSimpleGitHooks(cliOptions.cwd);
       }
     },
     ncu: {
       desc: '命令 npm-check-updates, 升级依赖',
-      action: () => {
-        ncu(cliOptions.ncuCommandArgs);
+      action: async () => {
+        await ncu(cliOptions.ncuCommandArgs);
       }
     },
     'prettier-write': {
       desc: '执行 prettier --write 格式化',
-      action: () => {
-        prettierWrite(cliOptions.prettierWriteGlob);
+      action: async () => {
+        await prettierWrite(cliOptions.prettierWriteGlob);
       }
     },
     'lint-staged': {
@@ -101,15 +101,17 @@ async function setupCli() {
     },
     release: {
       desc: '发布：更新版本号、生成changelog、提交代码',
-      action: release
+      action: async () => {
+        await release();
+      }
     },
     /**
      * @deprecated
      */
     'init-git-hooks': {
       desc: '该命令已废弃，请使用 init-simple-git-hooks',
-      action: () => {
-        initSimpleGitHooks(cliOptions.cwd);
+      action: async () => {
+        await initSimpleGitHooks(cliOptions.cwd);
       }
     },
     /**
@@ -117,8 +119,8 @@ async function setupCli() {
      */
     'update-pkg': {
       desc: '该命令已废弃，请使用 ncu',
-      action: () => {
-        ncu(cliOptions.ncuCommandArgs);
+      action: async () => {
+        await ncu(cliOptions.ncuCommandArgs);
       }
     },
     /**
@@ -126,8 +128,8 @@ async function setupCli() {
      */
     'prettier-format': {
       desc: '该命令已废弃，请使用 prettier-write',
-      action: () => {
-        prettierWrite(cliOptions.prettierWriteGlob);
+      action: async () => {
+        await prettierWrite(cliOptions.prettierWriteGlob);
       }
     },
     /**
@@ -135,7 +137,9 @@ async function setupCli() {
      */
     'eslint-prettier': {
       desc: '该命令已废弃',
-      action: eslintPrettier
+      action: async () => {
+        await eslintPrettier();
+      }
     }
   };
 

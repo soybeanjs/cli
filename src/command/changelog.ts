@@ -3,8 +3,8 @@ import type { ChangelogOption } from '@soybeanjs/changelog';
 
 export async function genChangelog(options?: Partial<ChangelogOption>, total = false) {
   if (total) {
-    generateTotalChangelog(options);
+    await generateTotalChangelog(options);
   } else {
-    generateChangelog(options);
+    await generateChangelog(options);
   }
 }
