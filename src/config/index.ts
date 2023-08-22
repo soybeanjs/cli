@@ -65,7 +65,7 @@ const defaultOptions: CliOption = {
   }
 };
 
-const SOYBEAN_GITHUB_TOKEN = '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';
+const SOYBEAN_GITHUB_TOKEN = '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';
 
 export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = process.cwd()) {
   const { config } = await loadConfig<Partial<CliOption>>({

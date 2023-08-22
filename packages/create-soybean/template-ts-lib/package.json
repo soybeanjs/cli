@@ -31,12 +31,12 @@
     "dayjs": "1.11.9",
     "execa": "8.0.1",
     "kolorist": "1.8.0",
-    "ofetch": "1.1.1"
+    "ofetch": "1.2.0"
   },
   "devDependencies": {
     "@soybeanjs/cli": "0.6.7",
     "@types/cli-progress": "3.11.0",
-    "@types/node": "20.5.1",
+    "@types/node": "20.5.2",
     "eslint": "8.47.0",
     "eslint-config-soybeanjs": "0.5.5",
     "tsx": "3.12.7",
