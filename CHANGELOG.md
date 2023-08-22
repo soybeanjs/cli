@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.6.9](https://github.com/soybeanjs/cli/compare/v0.6.8...v0.6.9) (23-08-23)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: decrease bumpp version &nbsp;-&nbsp; by @honghuangdc [<samp>(deba6)</samp>](https://github.com/soybeanjs/cli/commit/deba635)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.6.8](https://github.com/soybeanjs/cli/compare/v0.6.7...v0.6.8) (23-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
