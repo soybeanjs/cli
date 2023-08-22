@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.7.0](https://github.com/soybeanjs/cli/compare/v0.6.9...v0.7.0) (23-08-23)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix command action &nbsp;-&nbsp; by @honghuangdc [<samp>(4657f)</samp>](https://github.com/soybeanjs/cli/commit/4657fe1)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.6.9](https://github.com/soybeanjs/cli/compare/v0.6.8...v0.6.9) (23-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
