@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v0.7.2](https://github.com/soybeanjs/cli/compare/v0.7.1...v0.7.2) (23-08-23)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(ef5d3)</samp>](https://github.com/soybeanjs/cli/commit/ef5d3d4)
+
+### &nbsp;&nbsp;&nbsp;🤖 CI
+
+- **projects**: update github action release.yml &nbsp;-&nbsp; by @honghuangdc [<samp>(45f7c)</samp>](https://github.com/soybeanjs/cli/commit/45f7cb6)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.7.1](https://github.com/soybeanjs/cli/compare/v0.7.0...v0.7.1) (23-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
