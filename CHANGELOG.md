@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.7.1](https://github.com/soybeanjs/cli/compare/v0.7.0...v0.7.1) (23-08-23)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: encrypto token &nbsp;-&nbsp; by @honghuangdc [<samp>(824ea)</samp>](https://github.com/soybeanjs/cli/commit/824ea94)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.7.0](https://github.com/soybeanjs/cli/compare/v0.6.9...v0.7.0) (23-08-23)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
