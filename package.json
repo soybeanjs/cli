@@ -54,6 +54,7 @@
     "c12": "1.4.2",
     "cac": "6.7.14",
     "consola": "3.2.3",
+    "crypto-js": "^4.1.1",
     "enquirer": "2.4.1",
     "execa": "8.0.1",
     "kolorist": "1.8.0",
@@ -64,6 +65,7 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
+    "@types/crypto-js": "^4.1.1",
     "@types/node": "20.5.2",
     "eslint": "8.47.0",
     "eslint-config-soybeanjs": "0.5.5",

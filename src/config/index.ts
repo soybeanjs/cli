@@ -1,6 +1,7 @@
 import { loadConfig } from 'c12';
 import { readFile } from 'fs/promises';
 import type { CliOption } from '../types';
+import { Crypto } from '../shared';
 
 const eslintExt = '*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}';
 
@@ -65,7 +66,7 @@ const defaultOptions: CliOption = {
   }
 };
 
-const SOYBEAN_GITHUB_TOKEN = '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';
+const SOYBEAN_GT = 'U2FsdGVkX1+vLW5S5+vcx+LKGSR2PtJOAZUZsVCTKM0+ecI3hDuARJn6kdLzzR1LVl0179NmgMoX6fV28TMu3A==';
 
 export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = process.cwd()) {
   const { config } = await loadConfig<Partial<CliOption>>({
@@ -79,7 +80,12 @@ export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = proce
   const has = await hasSoybeanInfoFromPkgJson(cwd);
 
   if (config && has) {
-    config.changelogOptions = { ...config.changelogOptions, github: { repo: '', token: SOYBEAN_GITHUB_TOKEN } };
+    const crypto = new Crypto<string>('SOYBEAN_JS');
+
+    config.changelogOptions = {
+      ...config.changelogOptions,
+      github: { repo: '', token: crypto.deCrypto(SOYBEAN_GT) || '' }
+    };
   }
 
   return config as CliOption;
