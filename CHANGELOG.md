@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.7.4](https://github.com/soybeanjs/cli/compare/v0.7.3...v0.7.4) (23-10-12)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update template pkg version &nbsp;-&nbsp; by @honghuangdc [<samp>(8a8aa)</samp>](https://github.com/soybeanjs/cli/commit/8a8aa3e)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.7.3](https://github.com/soybeanjs/cli/compare/v0.7.2...v0.7.3) (23-10-12)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
