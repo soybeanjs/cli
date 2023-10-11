@@ -1,7 +1,7 @@
 import { loadConfig } from 'c12';
 import { readFile } from 'fs/promises';
-import type { CliOption } from '../types';
 import { Crypto } from '../shared';
+import type { CliOption } from '../types';
 
 const eslintExt = '*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}';
 
@@ -16,30 +16,28 @@ const defaultOptions: CliOption = {
     '!node_modules/**'
   ],
   gitCommitTypes: [
-    ['init', '项目初始化'],
-    ['feat', '添加新特性'],
-    ['fix', '修复bug'],
-    ['docs', '仅仅修改文档'],
-    ['style', '仅仅修改了空格、格式缩进、逗号等等，不改变代码逻辑'],
-    ['refactor', '代码重构，没有加新功能或者修复bug'],
-    ['perf', '优化相关，比如提升性能、体验'],
-    ['test', '添加测试用例'],
-    ['build', '依赖相关的内容'],
-    ['ci', 'CI配置相关，例如对k8s，docker的配置文件的修改'],
-    ['chore', '改变构建流程、或者增加依赖库、工具等'],
-    ['revert', '回滚到上一个版本']
+    ['feat', 'A new feature'],
+    ['fix', 'A bug fix'],
+    ['docs', 'Documentation only changes'],
+    ['style', 'Changes that do not affect the meaning of the code'],
+    ['refactor', 'A code change that neither fixes a bug nor adds a feature'],
+    ['perf', 'A code change that improves performance'],
+    ['test', 'Adding missing tests or correcting existing tests'],
+    ['build', 'Changes that affect the build system or external dependencies'],
+    ['ci', 'Changes to our CI configuration files and scripts'],
+    ['chore', "Other changes that don't modify src or test files"],
+    ['revert', 'Reverts a previous commit']
   ],
   gitCommitScopes: [
-    ['projects', '项目搭建'],
-    ['components', '组件相关'],
-    ['hooks', 'hook 相关'],
-    ['utils', 'utils 相关'],
-    ['types', 'ts类型相关'],
-    ['styles', '样式相关'],
-    ['deps', '项目依赖'],
-    ['auth', '对 auth 修改'],
-    ['release', '版本发布'],
-    ['other', '其他修改']
+    ['projects', 'project'],
+    ['components', 'components'],
+    ['hooks', 'hook functions'],
+    ['utils', 'utils functions'],
+    ['types', 'TS declaration'],
+    ['styles', 'style'],
+    ['deps', 'project dependencies'],
+    ['release', 'release project'],
+    ['other', 'other changes']
   ],
   ncuCommandArgs: ['--deep', '-u'],
   changelogOptions: {},

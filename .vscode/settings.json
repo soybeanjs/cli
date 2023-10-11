@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["consola", "execa", "kolorist"],
+  "cSpell.words": ["bumpp", "consola", "EDITMSG", "execa", "kolorist"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },

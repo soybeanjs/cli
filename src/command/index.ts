@@ -1,5 +1,4 @@
 export * from './git-commit';
-export * from './git-verify';
 export * from './cleanup';
 export * from './git-hooks';
 export * from './ncu';

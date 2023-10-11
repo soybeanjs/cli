@@ -16,5 +16,6 @@ export async function initSimpleGitHooks(cwd = process.cwd()) {
   }
 
   await rimraf(gitHooksDir);
+
   await execCommand('npx', ['simple-git-hooks'], { stdio: 'inherit' });
 }

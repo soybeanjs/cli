@@ -39,6 +39,8 @@ interface CommandArg {
   total?: boolean;
 }
 
+const DEPRECATED_MSG = 'the command is deprecated, it will be removed in the next major version 1.0.0';
+
 async function setupCli() {
   const cliOptions = await loadCliOptions();
 
@@ -47,44 +49,38 @@ async function setupCli() {
   cli.version(version).option('--total', 'Generate changelog by total tags').help();
 
   const commands: CommandWithAction<CommandArg> = {
+    cleanup: {
+      desc: 'delete dirs: node_modules, dist, etc.',
+      action: async () => {
+        await cleanup(cliOptions.cleanupDirs);
+      }
+    },
+    ncu: {
+      desc: 'npm-check-updates, it can update package.json dependencies to the latest version',
+      action: async () => {
+        await ncu(cliOptions.ncuCommandArgs);
+      }
+    },
     'git-commit': {
-      desc: '生成符合 Conventional Commits 规范的提交信息',
+      desc: 'git commit, generate commit message which match Conventional Commits standard',
       action: async () => {
         await gitCommit(cliOptions.gitCommitTypes, cliOptions.gitCommitScopes);
       }
     },
     'git-commit-verify': {
-      desc: '校验 git 提交信息是否符合 Conventional Commits 规范',
+      desc: 'verify git commit message, make sure it match Conventional Commits standard',
       action: async () => {
         await gitCommitVerify();
       }
     },
-    cleanup: {
-      desc: '清空依赖和构建产物',
-      action: async () => {
-        await cleanup(cliOptions.cleanupDirs);
-      }
-    },
-    'init-simple-git-hooks': {
-      desc: '初始化 simple-git-hooks 钩子',
-      action: async () => {
-        await initSimpleGitHooks(cliOptions.cwd);
-      }
-    },
-    ncu: {
-      desc: '命令 npm-check-updates, 升级依赖',
-      action: async () => {
-        await ncu(cliOptions.ncuCommandArgs);
-      }
-    },
     'prettier-write': {
-      desc: '执行 prettier --write 格式化',
+      desc: 'run prettier --write',
       action: async () => {
         await prettierWrite(cliOptions.prettierWriteGlob);
       }
     },
     'lint-staged': {
-      desc: '执行lint-staged',
+      desc: 'run lint-staged',
       action: async () => {
         const passed = await execLintStaged(cliOptions.lintStagedConfig).catch(() => {
           process.exitCode = 1;
@@ -94,13 +90,13 @@ async function setupCli() {
       }
     },
     changelog: {
-      desc: '生成changelog',
+      desc: 'generate changelog',
       action: async args => {
         await genChangelog(cliOptions.changelogOptions, args?.total);
       }
     },
     release: {
-      desc: '发布：更新版本号、生成changelog、提交代码',
+      desc: 'release: update version, generate changelog, commit code',
       action: async () => {
         await release();
       }
@@ -108,8 +104,17 @@ async function setupCli() {
     /**
      * @deprecated
      */
+    'init-simple-git-hooks': {
+      desc: `init simple-git-hooks and remove husky (${DEPRECATED_MSG})`,
+      action: async () => {
+        await initSimpleGitHooks(cliOptions.cwd);
+      }
+    },
+    /**
+     * @deprecated
+     */
     'init-git-hooks': {
-      desc: '该命令已废弃，请使用 init-simple-git-hooks',
+      desc: `same as init-simple-git-hooks (${DEPRECATED_MSG})`,
       action: async () => {
         await initSimpleGitHooks(cliOptions.cwd);
       }
@@ -118,7 +123,7 @@ async function setupCli() {
      * @deprecated
      */
     'update-pkg': {
-      desc: '该命令已废弃，请使用 ncu',
+      desc: `same as ncu (${DEPRECATED_MSG})`,
       action: async () => {
         await ncu(cliOptions.ncuCommandArgs);
       }
@@ -127,7 +132,7 @@ async function setupCli() {
      * @deprecated
      */
     'prettier-format': {
-      desc: '该命令已废弃，请使用 prettier-write',
+      desc: `same as prettier-write (${DEPRECATED_MSG})`,
       action: async () => {
         await prettierWrite(cliOptions.prettierWriteGlob);
       }
@@ -136,7 +141,7 @@ async function setupCli() {
      * @deprecated
      */
     'eslint-prettier': {
-      desc: '该命令已废弃',
+      desc: DEPRECATED_MSG,
       action: async () => {
         await eslintPrettier();
       }

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import fs from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { blue, cyan, green, lightBlue, red, reset } from 'kolorist';
@@ -90,7 +90,7 @@ async function setupCli() {
         }
       },
       {
-        type: () => (!fs.existsSync(targetDir) || isPathEmpty(targetDir) ? null : 'confirm'),
+        type: () => (!existsSync(targetDir) || isPathEmpty(targetDir) ? null : 'confirm'),
         name: 'overwrite',
         message: () =>
           `${
@@ -141,8 +141,8 @@ async function setupCli() {
 
   if (overwrite) {
     emptyDir(root);
-  } else if (!fs.existsSync(root)) {
-    fs.mkdirSync(root, { recursive: true });
+  } else if (!existsSync(root)) {
+    mkdirSync(root, { recursive: true });
   }
 
   const $template: string = template || argTemplate;
@@ -154,18 +154,18 @@ async function setupCli() {
   const write = (file: string, content?: string) => {
     const targetPath = path.join(root, renameFiles[file] ?? file);
     if (content) {
-      fs.writeFileSync(targetPath, content);
+      writeFileSync(targetPath, content);
     } else {
       copy(path.join(templateDir, file), targetPath);
     }
   };
 
-  const files = fs.readdirSync(templateDir);
+  const files = readdirSync(templateDir);
   for (const file of files.filter(f => f !== 'package.json')) {
     write(file);
   }
 
-  const pkg = JSON.parse(fs.readFileSync(path.join(templateDir, `package.json`), 'utf-8'));
+  const pkg = JSON.parse(readFileSync(path.join(templateDir, `package.json`), 'utf-8'));
 
   pkg.name = packageName || getProjectName();
 

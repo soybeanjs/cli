@@ -1,4 +1,7 @@
+import path from 'node:path';
+import { readFileSync } from 'node:fs';
 import enquirer from 'enquirer';
+import { bgRed, red, green } from 'kolorist';
 import { execCommand } from '../shared';
 import type { CliOption } from '../types';
 
@@ -8,6 +11,11 @@ interface PromptObject {
   description: string;
 }
 
+/**
+ * git commit with Conventional Commits standard
+ * @param gitCommitTypes
+ * @param gitCommitScopes
+ */
 export async function gitCommit(
   gitCommitTypes: CliOption['gitCommitTypes'],
   gitCommitScopes: CliOption['gitCommitScopes']
@@ -32,23 +40,44 @@ export async function gitCommit(
     {
       name: 'types',
       type: 'select',
-      message: '请选择提交的类型',
+      message: 'Please select a type',
       choices: typesChoices
     },
     {
       name: 'scopes',
       type: 'select',
-      message: '选择一个scope',
+      message: 'Please select a scope',
       choices: scopesChoices
     },
     {
       name: 'description',
       type: 'text',
-      message: '请输入提交描述'
+      message: 'Please enter a description'
     }
   ]);
 
   const commitMsg = `${result.types}(${result.scopes}): ${result.description}`;
 
-  execCommand('git', ['commit', '-m', commitMsg], { stdio: 'inherit' });
+  await execCommand('git', ['commit', '-m', commitMsg], { stdio: 'inherit' });
+}
+
+/**
+ * git commit message verify
+ */
+export async function gitCommitVerify() {
+  const gitPath = await execCommand('git', ['rev-parse', '--show-toplevel']);
+
+  const gitMsgPath = path.join(gitPath, '.git', 'COMMIT_EDITMSG');
+
+  const commitMsg = readFileSync(gitMsgPath, 'utf8').trim();
+
+  const REG_EXP = /(?<type>[a-z]+)(\((?<scope>.+)\))?(?<breaking>!)?: (?<description>.+)/i;
+
+  if (!REG_EXP.test(commitMsg)) {
+    throw new Error(
+      `${bgRed(' ERROR ')} ${red('git commit message must match the Conventional Commits standard!')}\n\n${green(
+        'Recommended to use the command `pnpm commit` to generate Conventional Commits compliant commit information.\nGet more info about Conventional Commits, follow this link: https://conventionalcommits.org'
+      )}`
+    );
+  }
 }
