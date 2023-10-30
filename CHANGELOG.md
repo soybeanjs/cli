@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [v0.7.5](https://github.com/soybeanjs/cli/compare/v0.7.4...v0.7.5) (23-10-31)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(c586e)</samp>](https://github.com/soybeanjs/cli/commit/c586e97)
+- **projects**: vscode settings &nbsp;-&nbsp; by @honghuangdc [<samp>(9ba38)</samp>](https://github.com/soybeanjs/cli/commit/9ba3829)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.7.4](https://github.com/soybeanjs/cli/compare/v0.7.3...v0.7.4) (23-10-12)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
