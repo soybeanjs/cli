@@ -35,11 +35,11 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "0.7.4",
-    "@types/cli-progress": "3.11.3",
-    "@types/node": "20.8.4",
-    "eslint": "8.51.0",
-    "eslint-config-soybeanjs": "0.5.7",
-    "tsx": "3.13.0",
+    "@types/cli-progress": "3.11.4",
+    "@types/node": "20.8.9",
+    "eslint": "8.52.0",
+    "eslint-config-soybeanjs": "0.5.8",
+    "tsx": "3.14.0",
     "typescript": "5.2.2",
     "unbuild": "2.0.0"
   }

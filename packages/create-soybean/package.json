@@ -30,8 +30,8 @@
     "prompts": "2.4.2"
   },
   "devDependencies": {
-    "@types/minimist": "1.2.3",
-    "@types/prompts": "2.4.6",
+    "@types/minimist": "1.2.4",
+    "@types/prompts": "2.4.7",
     "typescript": "5.2.2",
     "unbuild": "2.0.0"
   }
