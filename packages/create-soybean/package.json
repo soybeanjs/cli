@@ -17,7 +17,7 @@
   },
   "files": [
     "dist",
-    "template-*"
+    "template-*/*"
   ],
   "scripts": {
     "build": "pnpm typecheck && unbuild",
