@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.7.7-beta.0](https://github.com/soybeanjs/cli/compare/v0.7.6...v0.7.7-beta.0) (23-11-06)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix create-soybean template &nbsp;-&nbsp; by @honghuangdc [<samp>(a8311)</samp>](https://github.com/soybeanjs/cli/commit/a831124)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.7.6](https://github.com/soybeanjs/cli/compare/v0.7.5...v0.7.6) (23-11-06)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
