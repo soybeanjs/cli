@@ -66,8 +66,8 @@
   "devDependencies": {
     "@soybeanjs/cli": "link:",
     "@types/crypto-js": "4.1.3",
-    "@types/node": "20.8.9",
-    "eslint": "8.52.0",
+    "@types/node": "20.8.10",
+    "eslint": "8.53.0",
     "eslint-config-soybeanjs": "0.5.8",
     "simple-git-hooks": "2.9.0",
     "tsx": "3.14.0",
