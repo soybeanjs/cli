@@ -1,6 +1,6 @@
 {
   "name": "ts-lib-starter",
-  "version": "0.7.7-beta.1",
+  "version": "0.7.7-beta.2",
   "private": true,
   "exports": {
     ".": {

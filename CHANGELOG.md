@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.7.7-beta.2](https://github.com/soybeanjs/cli/compare/v0.7.7-beta.1...v0.7.7-beta.2) (23-11-06)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix create-soybean build export &nbsp;-&nbsp; by @honghuangdc [<samp>(11e0c)</samp>](https://github.com/soybeanjs/cli/commit/11e0c52)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.7.7-beta.1](https://github.com/soybeanjs/cli/compare/v0.7.7-beta.0...v0.7.7-beta.1) (23-11-06)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
