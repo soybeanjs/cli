@@ -17,7 +17,8 @@
   },
   "files": [
     "dist",
-    "template-*/*"
+    "template-vue",
+    "template-ts-lib"
   ],
   "scripts": {
     "build": "pnpm typecheck && unbuild",
