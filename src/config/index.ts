@@ -64,7 +64,7 @@ const defaultOptions: CliOption = {
   }
 };
 
-const SOYBEAN_GT = 'U2FsdGVkX1+vLW5S5+vcx+LKGSR2PtJOAZUZsVCTKM0+ecI3hDuARJn6kdLzzR1LVl0179NmgMoX6fV28TMu3A==';
+const SOYBEAN_GT = 'U2FsdGVkX18dc7x8PmAq30sl+nyGmi5VJJwninmYBRs8vVILEIjY+kT/F8ajm/6gRTMbDAEmx5WKInQBzeNSig==';
 
 export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = process.cwd()) {
   const { config } = await loadConfig<Partial<CliOption>>({
