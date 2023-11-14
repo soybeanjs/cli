@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.7.9](https://github.com/soybeanjs/cli/compare/v0.7.8...v0.7.9) (23-11-15)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix version &nbsp;-&nbsp; by @honghuangdc [<samp>(88b4b)</samp>](https://github.com/soybeanjs/cli/commit/88b4bcc)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.7.8](https://github.com/soybeanjs/cli/compare/v0.7.7...v0.7.8) (23-11-15)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
