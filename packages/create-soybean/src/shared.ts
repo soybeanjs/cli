@@ -1,4 +1,4 @@
-import { readdirSync, existsSync, rmSync, mkdirSync, statSync, copyFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readdirSync, rmSync, statSync } from 'node:fs';
 import path from 'node:path';
 
 export function formatTargetDir(targetDir?: string) {

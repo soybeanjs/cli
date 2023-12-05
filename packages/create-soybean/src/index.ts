@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs';
+import process from 'node:process';
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { blue, cyan, green, lightBlue, red, reset } from 'kolorist';
@@ -7,7 +8,7 @@ import minimist from 'minimist';
 import prompts from 'prompts';
 import type { Answers } from 'prompts';
 import { consola } from 'consola';
-import { formatTargetDir, isPathEmpty, isValidPackageName, toValidPackageName, emptyDir, copy } from './shared';
+import { copy, emptyDir, formatTargetDir, isPathEmpty, isValidPackageName, toValidPackageName } from './shared';
 
 type TemplateType = 'vue' | 'ts-lib' | 'react' | 'react-native' | 'solid';
 
@@ -102,6 +103,7 @@ async function setupCli() {
           if (overwrite === false) {
             throw new Error(`${red('✖')} Operation cancelled`);
           }
+
           return null;
         },
         name: 'overwriteChecker'

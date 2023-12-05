@@ -44,14 +44,15 @@ pnpm soy -h
 - 导入 defineConfig 函数
 
   ```ts
-  import { defineConfig } from "@soybeanjs/cli";
+  import { defineConfig } from '@soybeanjs/cli';
 
   export default defineConfig({
-    //options
+    // options
   });
   ```
 
 - 配置参考
+
   ```ts
-  import type { CliOption } from "@soybeanjs/cli";
+  import type { CliOption } from '@soybeanjs/cli';
   ```

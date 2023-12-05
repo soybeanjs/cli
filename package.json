@@ -1,8 +1,9 @@
 {
   "name": "@soybeanjs/cli",
+  "type": "module",
   "version": "0.7.9",
-  "description": "SoybeanJS's command line tools",
   "packageManager": "pnpm@8.11.0",
+  "description": "SoybeanJS's command line tools",
   "author": {
     "name": "Soybean",
     "email": "soybeanjs@outlook.com",
@@ -21,9 +22,9 @@
   },
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     }
   },
   "main": "dist/index.cjs",
@@ -40,6 +41,7 @@
     "build": "pnpm typecheck && unbuild && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "stub": "pnpm -r run stub",
+    "check": "eslint .",
     "lint": "eslint . --fix",
     "format": "soy prettier-write",
     "commit": "soy git-commit",
@@ -66,10 +68,10 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
+    "@soybeanjs/eslint-config": "1.0.2",
     "@types/crypto-js": "4.2.1",
     "@types/node": "20.10.3",
     "eslint": "8.55.0",
-    "eslint-config-soybeanjs": "0.5.8",
     "simple-git-hooks": "2.9.0",
     "tsx": "4.6.2",
     "typescript": "5.3.2",

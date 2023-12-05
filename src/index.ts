@@ -1,16 +1,17 @@
 #!/usr/bin/env node
+import process from 'node:process';
 import cac from 'cac';
 import { version } from '../package.json';
 import {
-  gitCommit,
-  gitCommitVerify,
   cleanup,
-  initSimpleGitHooks,
-  ncu,
-  prettierWrite,
   eslintPrettier,
   execLintStaged,
   genChangelog,
+  gitCommit,
+  gitCommitVerify,
+  initSimpleGitHooks,
+  ncu,
+  prettierWrite,
   release
 } from './command';
 import { loadCliOptions } from './config';

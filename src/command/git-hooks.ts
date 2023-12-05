@@ -1,7 +1,8 @@
-import path from 'path';
-import { existsSync } from 'fs';
-import { execCommand } from '../shared';
+import process from 'node:process';
+import path from 'node:path';
+import { existsSync } from 'node:fs';
 import { rimraf } from 'rimraf';
+import { execCommand } from '../shared';
 
 export async function initSimpleGitHooks(cwd = process.cwd()) {
   const huskyDir = path.join(cwd, '.husky');
