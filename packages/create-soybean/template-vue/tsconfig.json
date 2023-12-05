@@ -15,6 +15,7 @@
     "strict": true,
     "strictNullChecks": true,
     "noUnusedLocals": true,
+    "outDir": "./dist",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
