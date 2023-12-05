@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [v0.8.0](https://github.com/soybeanjs/cli/compare/v0.7.9...v0.8.0) (23-12-06)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: update deps and use eslint flat config &nbsp;-&nbsp; by @honghuangdc [<samp>(37658)</samp>](https://github.com/soybeanjs/cli/commit/376583a)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(7cc52)</samp>](https://github.com/soybeanjs/cli/commit/7cc524c)
+- **projects**: update config &nbsp;-&nbsp; by @honghuangdc [<samp>(01437)</samp>](https://github.com/soybeanjs/cli/commit/01437f9)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.7.9](https://github.com/soybeanjs/cli/compare/v0.7.8...v0.7.9) (23-11-15)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
