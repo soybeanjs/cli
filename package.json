@@ -2,6 +2,7 @@
   "name": "@soybeanjs/cli",
   "version": "0.7.9",
   "description": "SoybeanJS's command line tools",
+  "packageManager": "pnpm@8.11.0",
   "author": {
     "name": "Soybean",
     "email": "soybeanjs@outlook.com",
@@ -58,20 +59,20 @@
     "enquirer": "2.4.1",
     "execa": "8.0.1",
     "kolorist": "1.8.0",
-    "lint-staged": "15.1.0",
+    "lint-staged": "15.2.0",
     "minimist": "1.2.8",
-    "npm-check-updates": "16.14.6",
+    "npm-check-updates": "16.14.11",
     "rimraf": "5.0.5"
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
     "@types/crypto-js": "4.2.1",
-    "@types/node": "20.9.0",
-    "eslint": "8.53.0",
+    "@types/node": "20.10.3",
+    "eslint": "8.55.0",
     "eslint-config-soybeanjs": "0.5.8",
     "simple-git-hooks": "2.9.0",
-    "tsx": "4.1.2",
-    "typescript": "5.2.2",
+    "tsx": "4.6.2",
+    "typescript": "5.3.2",
     "unbuild": "2.0.0"
   }
 }
