@@ -5,7 +5,9 @@
     "quickfix.biome": true,
     "source.organizeImports.biome": true
   },
-  "editor.defaultFormatter": "biomejs.biome",
-  "editor.formatOnSave": true,
+  "[javascript][javascriptreact][typescript][typescriptreact][jsonc][json]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true
+  },
   "prettier.enable": false
 }
