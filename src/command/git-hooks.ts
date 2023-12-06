@@ -1,6 +1,6 @@
-import process from 'node:process';
-import path from 'node:path';
 import { existsSync } from 'node:fs';
+import path from 'node:path';
+import process from 'node:process';
 import { rimraf } from 'rimraf';
 import { execCommand } from '../shared';
 

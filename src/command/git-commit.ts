@@ -1,5 +1,5 @@
-import path from 'node:path';
 import { readFileSync } from 'node:fs';
+import path from 'node:path';
 import enquirer from 'enquirer';
 import { bgRed, green, red } from 'kolorist';
 import { execCommand } from '../shared';
@@ -71,9 +71,9 @@ export async function gitCommitVerify() {
 
   const commitMsg = readFileSync(gitMsgPath, 'utf8').trim();
 
-  const REG_EXP = /(?<type>[a-z]+)(\((?<scope>.+)\))?(?<breaking>!)?: (?<description>.+)/i;
+  const regExp = /(?<type>[a-z]+)(\((?<scope>.+)\))?(?<breaking>!)?: (?<description>.+)/i;
 
-  if (!REG_EXP.test(commitMsg)) {
+  if (!regExp.test(commitMsg)) {
     throw new Error(
       `${bgRed(' ERROR ')} ${red('git commit message must match the Conventional Commits standard!')}\n\n${green(
         'Recommended to use the command `pnpm commit` to generate Conventional Commits compliant commit information.\nGet more info about Conventional Commits, follow this link: https://conventionalcommits.org'

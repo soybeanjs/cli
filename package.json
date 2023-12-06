@@ -41,14 +41,13 @@
     "build": "pnpm typecheck && unbuild && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "stub": "pnpm -r run stub",
-    "check": "eslint .",
-    "lint": "eslint . --fix",
-    "format": "soy prettier-write",
+    "check": "biome check --apply .",
+    "lint": "biome lint .",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy ncu",
     "publish-pkg": "pnpm -r publish --access public",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit --skipLibCheck",
     "release": "soy release && pnpm build && pnpm publish-pkg"
   },
   "dependencies": {
@@ -67,11 +66,10 @@
     "rimraf": "5.0.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
     "@soybeanjs/cli": "link:",
-    "@soybeanjs/eslint-config": "1.0.2",
     "@types/crypto-js": "4.2.1",
     "@types/node": "20.10.3",
-    "eslint": "8.55.0",
     "simple-git-hooks": "2.9.0",
     "tsx": "4.6.2",
     "typescript": "5.3.2",

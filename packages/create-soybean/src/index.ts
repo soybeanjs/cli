@@ -1,13 +1,13 @@
 #!/usr/bin/env node
-import process from 'node:process';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import process from 'node:process';
 import { fileURLToPath } from 'node:url';
+import { consola } from 'consola';
 import { blue, cyan, green, lightBlue, red, reset } from 'kolorist';
 import minimist from 'minimist';
 import prompts from 'prompts';
 import type { Answers } from 'prompts';
-import { consola } from 'consola';
 import { copy, emptyDir, formatTargetDir, isPathEmpty, isValidPackageName, toValidPackageName } from './shared';
 
 type TemplateType = 'vue' | 'ts-lib' | 'react' | 'react-native' | 'solid';
@@ -167,7 +167,7 @@ async function setupCli() {
     write(file);
   }
 
-  const pkg = JSON.parse(readFileSync(path.join(templateDir, `package.json`), 'utf-8'));
+  const pkg = JSON.parse(readFileSync(path.join(templateDir, 'package.json'), 'utf-8'));
 
   pkg.name = packageName || getProjectName();
 
@@ -175,7 +175,7 @@ async function setupCli() {
 
   const cdProjectName = path.relative(cwd, root);
 
-  consola.info(`\nDone. Now run:\n`);
+  consola.info('\nDone. Now run:\n');
 
   if (root !== cwd) {
     consola.info(`  cd ${cdProjectName.includes(' ') ? `"${cdProjectName}"` : cdProjectName}`);

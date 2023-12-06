@@ -1,35 +1,11 @@
 {
-  "cSpell.words": [
-    "bumpp",
-    "consola",
-    "EDITMSG",
-    "execa",
-    "kolorist",
-    "ofetch"
-  ],
+  "biome_lsp.trace.server": "verbose",
+  "cSpell.words": ["bumpp", "consola", "EDITMSG", "execa", "kolorist", "ofetch"],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never"
+    "quickfix.biome": true,
+    "source.organizeImports.biome": true
   },
-  "editor.formatOnSave": false,
-  "eslint.experimental.useFlatConfig": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "vue",
-    "svelte",
-    "astro",
-    "html",
-    "markdown",
-    "json",
-    "jsonc",
-    "yaml",
-    "css",
-    "html",
-    "toml",
-    "markdown"
-  ],
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
   "prettier.enable": false
 }

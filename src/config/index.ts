@@ -1,5 +1,5 @@
-import process from 'node:process';
 import { readFile } from 'node:fs/promises';
+import process from 'node:process';
 import { loadConfig } from 'c12';
 import { Crypto } from '../shared';
 import type { CliOption } from '../types';
@@ -26,7 +26,7 @@ const defaultOptions: CliOption = {
     ['test', 'Adding missing tests or correcting existing tests'],
     ['build', 'Changes that affect the build system or external dependencies'],
     ['ci', 'Changes to our CI configuration files and scripts'],
-    ['chore', 'Other changes that don\'t modify src or test files'],
+    ['chore', "Other changes that don't modify src or test files"],
     ['revert', 'Reverts a previous commit']
   ],
   gitCommitScopes: [
@@ -93,16 +93,17 @@ export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = proce
 async function hasSoybeanInfoFromPkgJson(cwd: string) {
   let hasSoybeanInfo = false;
 
-  const REG = 'soybean';
+  const reg = 'soybean';
 
   try {
     const pkgJson = await readFile(`${cwd}/package.json`, 'utf-8');
     const pkg = JSON.parse(pkgJson);
-    hasSoybeanInfo = pkg.name?.includes(REG)
-    || pkg.repository?.url?.includes(REG)
-    || pkg.author?.includes(REG)
-    || pkg.author?.name?.includes(REG)
-    || pkg.author?.url?.includes(REG);
+    hasSoybeanInfo =
+      pkg.name?.includes(reg) ||
+      pkg.repository?.url?.includes(reg) ||
+      pkg.author?.includes(reg) ||
+      pkg.author?.name?.includes(reg) ||
+      pkg.author?.url?.includes(reg);
   } catch {}
 
   return hasSoybeanInfo;
