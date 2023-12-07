@@ -52,6 +52,7 @@ const TEMPLATES = templates.map(t => t.type);
 
 const renameFiles: Record<string, string | undefined> = {
   _editorconfig: '.editorconfig',
+  _gitattributes: '.gitattributes',
   _gitignore: '.gitignore',
   _npmrc: '.npmrc',
   _prettierrc: '.prettierrc'

@@ -22,8 +22,10 @@
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy ncu",
+    "release-pkg": "soy release",
     "publish-pkg": "pnpm publish --access public",
-    "release": "run-s \"soy release\" build publish-pkg"
+    "release": "run-s release-pkg build publish-pkg",
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "cli-progress": "3.12.0",
@@ -34,7 +36,7 @@
     "ofetch": "1.3.3"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "0.8.0",
+    "@soybeanjs/cli": "0.8.2",
     "@soybeanjs/eslint-config": "1.0.5",
     "@types/cli-progress": "3.11.5",
     "@types/node": "20.10.4",
@@ -45,5 +47,12 @@
     "tsx": "4.6.2",
     "typescript": "5.3.3",
     "unbuild": "2.0.0"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm soy git-commit-verify",
+    "pre-commit": "pnpm typecheck && pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
