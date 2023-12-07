@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.8.1](https://github.com/soybeanjs/cli/compare/v0.8.0...v0.8.1) (23-12-08)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update deps, config, template &nbsp;-&nbsp; by @honghuangdc [<samp>(9df58)</samp>](https://github.com/soybeanjs/cli/commit/9df58e9)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.8.0](https://github.com/soybeanjs/cli/compare/v0.7.9...v0.8.0) (23-12-06)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
