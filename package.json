@@ -34,22 +34,21 @@
     "soybean": "dist/index.cjs",
     "soy": "dist/index.cjs"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
-    "build": "pnpm typecheck && unbuild && pnpm build-pkg",
-    "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "stub": "pnpm -r run stub",
-    "check": "eslint .",
+    "build": "run-s typecheck build-only build-pkg",
+    "build-only": "unbuild",
+    "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "lint": "eslint . --fix",
-    "format": "soy prettier-write",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy ncu",
+    "typecheck": "tsc --noEmit --skipLibCheck",
     "publish-pkg": "pnpm -r publish --access public",
-    "typecheck": "tsc --noEmit",
-    "release": "soy release && pnpm build && pnpm publish-pkg"
+    "release-pkg": "soy release",
+    "release": "run-s release-pkg build publish-pkg",
+    "prepare": "pnpm build-only && simple-git-hooks"
   },
   "dependencies": {
     "@soybeanjs/changelog": "0.3.4",
@@ -61,20 +60,28 @@
     "enquirer": "2.4.1",
     "execa": "8.0.1",
     "kolorist": "1.8.0",
-    "lint-staged": "15.2.0",
     "minimist": "1.2.8",
     "npm-check-updates": "16.14.11",
     "rimraf": "5.0.5"
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
-    "@soybeanjs/eslint-config": "1.0.2",
+    "@soybeanjs/eslint-config": "1.0.5",
     "@types/crypto-js": "4.2.1",
-    "@types/node": "20.10.3",
+    "@types/node": "20.10.4",
     "eslint": "8.55.0",
+    "lint-staged": "15.2.0",
+    "npm-run-all": "4.1.5",
     "simple-git-hooks": "2.9.0",
     "tsx": "4.6.2",
-    "typescript": "5.3.2",
+    "typescript": "5.3.3",
     "unbuild": "2.0.0"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm soy git-commit-verify",
+    "pre-commit": "pnpm typecheck && pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }

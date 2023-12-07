@@ -1,1 +1,3 @@
-export function fn() {}
+export function fn() {
+  return 1;
+}

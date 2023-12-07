@@ -26,7 +26,7 @@ const defaultOptions: CliOption = {
     ['test', 'Adding missing tests or correcting existing tests'],
     ['build', 'Changes that affect the build system or external dependencies'],
     ['ci', 'Changes to our CI configuration files and scripts'],
-    ['chore', 'Other changes that don\'t modify src or test files'],
+    ['chore', "Other changes that don't modify src or test files"],
     ['revert', 'Reverts a previous commit']
   ],
   gitCommitScopes: [
@@ -98,11 +98,12 @@ async function hasSoybeanInfoFromPkgJson(cwd: string) {
   try {
     const pkgJson = await readFile(`${cwd}/package.json`, 'utf-8');
     const pkg = JSON.parse(pkgJson);
-    hasSoybeanInfo = pkg.name?.includes(REG)
-    || pkg.repository?.url?.includes(REG)
-    || pkg.author?.includes(REG)
-    || pkg.author?.name?.includes(REG)
-    || pkg.author?.url?.includes(REG);
+    hasSoybeanInfo =
+      pkg.name?.includes(REG) ||
+      pkg.repository?.url?.includes(REG) ||
+      pkg.author?.includes(REG) ||
+      pkg.author?.name?.includes(REG) ||
+      pkg.author?.url?.includes(REG);
   } catch {}
 
   return hasSoybeanInfo;

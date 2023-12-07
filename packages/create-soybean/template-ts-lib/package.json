@@ -1,5 +1,6 @@
 {
   "name": "ts-lib-starter",
+  "type": "module",
   "version": "0.8.0",
   "private": true,
   "exports": {
@@ -12,19 +13,17 @@
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
-    "build": "pnpm typecheck && unbuild",
-    "typecheck": "tsc --noEmit",
+    "build": "run-s typecheck build-only",
+    "build-only": "unbuild",
+    "typecheck": "tsc --noEmit --skipLibCheck",
     "lint": "eslint . --fix",
-    "format": "soy prettier-write",
     "commit": "soy git-commit",
     "cleanup": "soy cleanup",
     "update-pkg": "soy ncu",
     "publish-pkg": "pnpm publish --access public",
-    "release": "soy release && pnpm build && pnpm publish-pkg"
+    "release": "run-s \"soy release\" build publish-pkg"
   },
   "dependencies": {
     "cli-progress": "3.12.0",
@@ -36,12 +35,15 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "0.8.0",
-    "@soybeanjs/eslint-config": "1.0.2",
+    "@soybeanjs/eslint-config": "1.0.5",
     "@types/cli-progress": "3.11.5",
-    "@types/node": "20.10.3",
+    "@types/node": "20.10.4",
     "eslint": "8.55.0",
+    "lint-staged": "15.2.0",
+    "npm-run-all": "4.1.5",
+    "simple-git-hooks": "2.9.0",
     "tsx": "4.6.2",
-    "typescript": "5.3.2",
+    "typescript": "5.3.3",
     "unbuild": "2.0.0"
   }
 }

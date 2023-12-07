@@ -51,9 +51,10 @@ const templates: Template[] = [
 const TEMPLATES = templates.map(t => t.type);
 
 const renameFiles: Record<string, string | undefined> = {
+  _editorconfig: '.editorconfig',
   _gitignore: '.gitignore',
-  _eslintrc: '.eslintrc',
-  _npmrc: '.npmrc'
+  _npmrc: '.npmrc',
+  _prettierrc: '.prettierrc'
 };
 
 const defaultTargetDir = 'create-soybean-project';

@@ -1,44 +1,41 @@
 import type { ChangelogOption } from '@soybeanjs/changelog';
 
 export interface CliOption {
-  /**
-   * the project root directory
-   */
+  /** The project root directory */
   cwd: string;
   /**
-   * cleanup dirs
+   * Cleanup dirs
+   *
+   * Glob pattern syntax {@link https://github.com/isaacs/minimatch}
+   *
    * @default
    * ```json
    * ["** /dist", "** /pnpm-lock.yaml", "** /node_modules", "!node_modules/**"]
    * ```
-   * @description glob pattern syntax {@link https://github.com/isaacs/minimatch}
    */
   cleanupDirs: string[];
-  /**
-   * git commit types
-   */
+  /** Git commit types */
   gitCommitTypes: [string, string][];
-  /**
-   * git commit scopes
-   */
+  /** Git commit scopes */
   gitCommitScopes: [string, string][];
   /**
-   * npm-check-updates command args
-   * @default ["--deep","-u"]
+   * Npm-check-updates command args
+   *
+   * @default ['--deep', '-u']
    */
   ncuCommandArgs: string[];
   /**
-   * options of generate changelog
+   * Options of generate changelog
+   *
    * @link https://github.com/soybeanjs/changelog
    */
   changelogOptions: Partial<ChangelogOption>;
   /**
-   * prettier write glob
-   * @description glob pattern syntax {@link https://github.com/micromatch/micromatch}
+   * Prettier write glob
+   *
+   * Glob pattern syntax {@link https://github.com/micromatch/micromatch}
    */
   prettierWriteGlob: string[];
-  /**
-   * lint-staged config
-   */
+  /** Lint-staged config */
   lintStagedConfig: Record<string, string | string[]>;
 }

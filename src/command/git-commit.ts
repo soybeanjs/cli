@@ -12,7 +12,8 @@ interface PromptObject {
 }
 
 /**
- * git commit with Conventional Commits standard
+ * Git commit with Conventional Commits standard
+ *
  * @param gitCommitTypes
  * @param gitCommitScopes
  */
@@ -61,9 +62,7 @@ export async function gitCommit(
   await execCommand('git', ['commit', '-m', commitMsg], { stdio: 'inherit' });
 }
 
-/**
- * git commit message verify
- */
+/** Git commit message verify */
 export async function gitCommitVerify() {
   const gitPath = await execCommand('git', ['rev-parse', '--show-toplevel']);
 
@@ -71,7 +70,7 @@ export async function gitCommitVerify() {
 
   const commitMsg = readFileSync(gitMsgPath, 'utf8').trim();
 
-  const REG_EXP = /(?<type>[a-z]+)(\((?<scope>.+)\))?(?<breaking>!)?: (?<description>.+)/i;
+  const REG_EXP = /(?<type>[a-z]+)(?:\((?<scope>.+)\))?(?<breaking>!)?: (?<description>.+)/i;
 
   if (!REG_EXP.test(commitMsg)) {
     throw new Error(

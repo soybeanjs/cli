@@ -1,5 +1,6 @@
 {
   "name": "template-solid",
+  "type": "module",
   "version": "0.8.0",
   "scripts": {}
 }

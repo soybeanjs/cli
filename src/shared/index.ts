@@ -19,9 +19,7 @@ export class Crypto<T> {
     return AES.encrypt(newData, this.secret).toString();
   }
 
-  /**
-   * @param cipherText
-   */
+  /** @param cipherText */
   deCrypto(cipherText: string) {
     const bytes = AES.decrypt(cipherText, this.secret);
     const originalText = bytes.toString(enc.Utf8);
