@@ -1,8 +1,9 @@
+import { URL, fileURLToPath } from 'node:url';
 import { defineBuildConfig } from 'unbuild';
 
 export default defineBuildConfig({
   alias: {
-    '@': './src'
+    '@': fileURLToPath(new URL('./src', import.meta.url))
   },
   entries: ['src/index'],
   clean: true,
