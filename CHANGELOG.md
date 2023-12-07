@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.8.3](https://github.com/soybeanjs/cli/compare/v0.8.2...v0.8.3) (23-12-08)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix ts template alias &nbsp;-&nbsp; by @honghuangdc [<samp>(e917f)</samp>](https://github.com/soybeanjs/cli/commit/e917fd8)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.8.2](https://github.com/soybeanjs/cli/compare/v0.8.1...v0.8.2) (23-12-08)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
