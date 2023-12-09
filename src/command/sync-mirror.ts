@@ -8,8 +8,8 @@ import pkg from '../../package.json';
  * @param pkgName Package name, id has multiple packages, you can use ',' to separate them.
  * @param showLog Show log. Defaults to true
  */
-export async function syncNpmmirror(pkgName?: string, showLog = true) {
-  if (!pkgName) {
+export async function syncNpmmirror(pkgName?: string | boolean, showLog = true) {
+  if (!pkgName || pkgName === true) {
     await syncNpmmirrorAction(pkg.name, showLog);
 
     return;
