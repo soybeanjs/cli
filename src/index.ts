@@ -18,6 +18,14 @@ interface CommandArg {
   push?: boolean;
   /** Generate changelog by total tags */
   total?: boolean;
+  /**
+   * The glob pattern of dirs to cleanup
+   *
+   * If not set, it will use the default value
+   *
+   * Multiple values use "," to separate them
+   */
+  cleanupDir?: string;
 }
 
 async function setupCli() {
@@ -33,12 +41,23 @@ async function setupCli() {
     )
     .option('-p, --push', 'Indicates whether to push the git commit and tag')
     .option('-t, --total', 'Generate changelog by total tags')
+    .option(
+      '-c, --cleanupDir <dir>',
+      'The glob pattern of dirs to cleanup, If not set, it will use the default value, Multiple values use "," to separate them'
+    )
     .help();
 
   const commands: CommandWithAction<CommandArg> = {
     cleanup: {
       desc: 'delete dirs: node_modules, dist, etc.',
-      action: async () => {
+      action: async args => {
+        const cleanupDirs = args?.cleanupDir?.split(',') || [];
+        const formattedDirs = cleanupDirs.map(dir => dir.trim()).filter(Boolean);
+
+        if (formattedDirs.length) {
+          cliOptions.cleanupDirs = formattedDirs;
+        }
+
         await cleanup(cliOptions.cleanupDirs);
       }
     },
