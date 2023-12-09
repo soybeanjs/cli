@@ -43,4 +43,4 @@ jobs:
           NPM_CONFIG_PROVENANCE: true
 
       - name: Sync Npmmirror
-        run: pnpm soy sync-npmmirror --syncName=@soybeanjs/cli,create-soybean
+        run: npx @soybeanjs/cli sync-npmmirror --syncName=@soybeanjs/cli,create-soybean
