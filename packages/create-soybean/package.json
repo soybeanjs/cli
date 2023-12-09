@@ -4,10 +4,17 @@
   "description": "SoybeanJS's command line to create different project templates",
   "author": {
     "name": "Soybean",
-    "email": "honghuangdc@gmail.com",
-    "url": "https://github.com/honghuangdc"
+    "email": "soybeanjs@outlook.com",
+    "url": "https://github.com/soybeanjs"
   },
   "license": "MIT",
+  "homepage": "https://github.com/soybeanjs/cli/tree/main/packages/create-soybean",
+  "repository": {
+    "url": "https://github.com/soybeanjs/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/soybeanjs/cli/issues"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
