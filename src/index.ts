@@ -12,8 +12,7 @@ import {
   initSimpleGitHooks,
   ncu,
   prettierWrite,
-  release,
-  syncNpmmirror
+  release
 } from './command';
 import { loadCliOptions } from './config';
 import type { CliOption } from './types';
@@ -25,7 +24,6 @@ type Command =
   | 'git-commit-verify'
   | 'changelog'
   | 'release'
-  | 'sync-npmmirror'
   // @deprecated
   | 'prettier-format'
   | 'prettier-write'
@@ -46,14 +44,6 @@ interface CommandArg {
   push?: boolean;
   /** Generate changelog by total tags */
   total?: boolean;
-  /**
-   * The package name of sync npmmirror
-   *
-   * If it has multiple packages, you can use ',' to separate them
-   */
-  syncName?: string;
-  /** Whether show sync package log */
-  syncLog?: boolean;
 }
 
 const DEPRECATED_MSG = 'the command is deprecated, it will be removed in the next major version 1.0.0';
@@ -113,12 +103,6 @@ async function setupCli() {
       desc: 'release: update version, generate changelog, commit code',
       action: async args => {
         await release(args?.execute, args?.push);
-      }
-    },
-    'sync-npmmirror': {
-      desc: 'sync npmmirror',
-      action: async args => {
-        await syncNpmmirror(args?.syncName, args?.syncLog);
       }
     },
     /** @deprecated */

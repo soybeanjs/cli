@@ -3,7 +3,6 @@ export * from './cleanup';
 export * from './ncu';
 export * from './changelog';
 export * from './release';
-export * from './sync-mirror';
 
 // @deprecated
 export * from './lint-staged';
