@@ -1,6 +1,19 @@
 # Changelog
 
 
+## [v1.0.0-beta.0](https://github.com/soybeanjs/cli/compare/v0.8.10...v1.0.0-beta.0) (23-12-10)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**:
+  - remove deprecated command &nbsp;-&nbsp; by @honghuangdc [<samp>(7e15f)</samp>](https://github.com/soybeanjs/cli/commit/7e15f0b)
+  - add short options &nbsp;-&nbsp; by @honghuangdc [<samp>(14ecd)</samp>](https://github.com/soybeanjs/cli/commit/14ecdb8)
+  - add option cleanupDir for cleanup command &nbsp;-&nbsp; by @honghuangdc [<samp>(3ec57)</samp>](https://github.com/soybeanjs/cli/commit/3ec577a)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.8.10](https://github.com/soybeanjs/cli/compare/v0.8.9...v0.8.10) (23-12-10)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
