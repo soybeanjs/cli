@@ -40,6 +40,10 @@ type CommandAction<A extends object> = (args?: A) => Promise<void> | void;
 type CommandWithAction<A extends object = object> = Record<Command, { desc: string; action: CommandAction<A> }>;
 
 interface CommandArg {
+  /** Execute additional command after bumping and before git commit. Defaults to 'npx soy changelog' */
+  execute?: string;
+  /** Indicates whether to push the git commit and tag. Defaults to true */
+  push?: boolean;
   /** Generate changelog by total tags */
   total?: boolean;
   /**
@@ -61,6 +65,11 @@ async function setupCli() {
 
   cli
     .version(version)
+    .option(
+      '--execute [command]',
+      "Execute additional command after bumping and before git commit. Defaults to 'npx soy changelog'"
+    )
+    .option('--push', 'Indicates whether to push the git commit and tag')
     .option('--total', 'Generate changelog by total tags')
     .option(
       '--syncName [name]',
@@ -102,14 +111,13 @@ async function setupCli() {
     },
     release: {
       desc: 'release: update version, generate changelog, commit code',
-      action: async () => {
-        await release();
+      action: async args => {
+        await release(args?.execute, args?.push);
       }
     },
     'sync-npmmirror': {
       desc: 'sync npmmirror',
       action: async args => {
-        console.log('args: ', args);
         await syncNpmmirror(args?.syncName, args?.syncLog);
       }
     },
