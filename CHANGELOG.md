@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [v0.8.5](https://github.com/soybeanjs/cli/compare/v0.8.4...v0.8.5) (23-12-09)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**:
+  - sync-npmmirror support multi packages &nbsp;-&nbsp; by @honghuangdc [<samp>(c4899)</samp>](https://github.com/soybeanjs/cli/commit/c489965)
+  - add release command wqoptions &nbsp;-&nbsp; by @honghuangdc [<samp>(759c9)</samp>](https://github.com/soybeanjs/cli/commit/759c9d7)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update README.md &nbsp;-&nbsp; by @honghuangdc [<samp>(bf31f)</samp>](https://github.com/soybeanjs/cli/commit/bf31f15)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.8.4](https://github.com/soybeanjs/cli/compare/v0.8.3...v0.8.4) (23-12-09)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
