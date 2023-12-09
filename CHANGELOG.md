@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.8.8](https://github.com/soybeanjs/cli/compare/v0.8.7...v0.8.8) (23-12-09)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix release.yml &nbsp;-&nbsp; by @honghuangdc [<samp>(ffdf8)</samp>](https://github.com/soybeanjs/cli/commit/ffdf83b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.8.7](https://github.com/soybeanjs/cli/compare/v0.8.6...v0.8.7) (23-12-09)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
