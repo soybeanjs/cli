@@ -1,6 +1,27 @@
 # Changelog
 
 
+## [v0.8.6](https://github.com/soybeanjs/cli/compare/v0.8.5...v0.8.6) (23-12-09)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update README.md &nbsp;-&nbsp; by @honghuangdc [<samp>(e8dd5)</samp>](https://github.com/soybeanjs/cli/commit/e8dd574)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**:
+  - update packageManager &nbsp;-&nbsp; by @honghuangdc [<samp>(ee2de)</samp>](https://github.com/soybeanjs/cli/commit/ee2debd)
+  - update deps, config &nbsp;-&nbsp; by @honghuangdc [<samp>(09a7a)</samp>](https://github.com/soybeanjs/cli/commit/09a7a9e)
+  - perf template-vue &nbsp;-&nbsp; by @honghuangdc [<samp>(50433)</samp>](https://github.com/soybeanjs/cli/commit/5043307)
+
+### &nbsp;&nbsp;&nbsp;🤖 CI
+
+- **projects**: update release.yml &nbsp;-&nbsp; by @honghuangdc [<samp>(fec98)</samp>](https://github.com/soybeanjs/cli/commit/fec98a6)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.8.5](https://github.com/soybeanjs/cli/compare/v0.8.4...v0.8.5) (23-12-09)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
