@@ -40,13 +40,13 @@ type CommandAction<A extends object> = (args?: A) => Promise<void> | void;
 type CommandWithAction<A extends object = object> = Record<Command, { desc: string; action: CommandAction<A> }>;
 
 interface CommandArg {
-  /** Execute additional command after bumping and before git commit. Defaults to 'npx soy changelog' */
-  // execute?: string;
-  /** Indicates whether to push the git commit and tag. Defaults to true */
-  // push?: boolean;
   /** Generate changelog by total tags */
   total?: boolean;
-  /** The package name of sync npmmirror */
+  /**
+   * The package name of sync npmmirror
+   *
+   * If it has multiple packages, you can use ',' to separate them
+   */
   syncName?: string;
   /** Whether show sync package log */
   syncLog?: boolean;
@@ -59,7 +59,15 @@ async function setupCli() {
 
   const cli = cac('soybean');
 
-  cli.version(version).option('--total', 'Generate changelog by total tags').help();
+  cli
+    .version(version)
+    .option('--total', 'Generate changelog by total tags')
+    .option(
+      '--syncName [name]',
+      'The package name of sync npmmirror, if it has multiple packages, you can use "," to separate them'
+    )
+    .option('--syncLog', 'Whether show sync package log')
+    .help();
 
   const commands: CommandWithAction<CommandArg> = {
     cleanup: {
@@ -101,6 +109,7 @@ async function setupCli() {
     'sync-npmmirror': {
       desc: 'sync npmmirror',
       action: async args => {
+        console.log('args: ', args);
         await syncNpmmirror(args?.syncName, args?.syncLog);
       }
     },
