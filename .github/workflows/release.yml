@@ -41,3 +41,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           NPM_CONFIG_PROVENANCE: true
+
+      - name: Sync Npmmirror
+        run: pnpm soy sync-npmmirror --syncName=@soybeanjs/cli,create-soybean
