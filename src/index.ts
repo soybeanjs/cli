@@ -61,11 +61,6 @@ async function setupCli() {
     )
     .option('--push', 'Indicates whether to push the git commit and tag')
     .option('--total', 'Generate changelog by total tags')
-    .option(
-      '--syncName [name]',
-      'The package name of sync npmmirror, if it has multiple packages, you can use "," to separate them'
-    )
-    .option('--syncLog', 'Whether show sync package log')
     .help();
 
   const commands: CommandWithAction<CommandArg> = {
