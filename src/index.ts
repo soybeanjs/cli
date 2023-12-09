@@ -28,11 +28,11 @@ async function setupCli() {
   cli
     .version(version)
     .option(
-      '--execute [command]',
+      '-e, --execute [command]',
       "Execute additional command after bumping and before git commit. Defaults to 'npx soy changelog'"
     )
-    .option('--push', 'Indicates whether to push the git commit and tag')
-    .option('--total', 'Generate changelog by total tags')
+    .option('-p, --push', 'Indicates whether to push the git commit and tag')
+    .option('-t, --total', 'Generate changelog by total tags')
     .help();
 
   const commands: CommandWithAction<CommandArg> = {
