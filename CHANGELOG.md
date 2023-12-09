@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v0.8.4](https://github.com/soybeanjs/cli/compare/v0.8.3...v0.8.4) (23-12-09)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add command: sync-npmmirror &nbsp;-&nbsp; by @honghuangdc [<samp>(2fabc)</samp>](https://github.com/soybeanjs/cli/commit/2fabca6)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update create-soybean config, add README.md &nbsp;-&nbsp; by @honghuangdc [<samp>(3dcf2)</samp>](https://github.com/soybeanjs/cli/commit/3dcf2a7)
+
+### &nbsp;&nbsp;&nbsp;🤖 CI
+
+- **projects**: update relase.yml &nbsp;-&nbsp; by @honghuangdc [<samp>(fa282)</samp>](https://github.com/soybeanjs/cli/commit/fa28282)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.8.3](https://github.com/soybeanjs/cli/compare/v0.8.2...v0.8.3) (23-12-08)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
