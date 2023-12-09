@@ -26,8 +26,8 @@
   "scripts": {
     "build": "pnpm typecheck && pnpm build-only",
     "build-only": "unbuild",
-    "typecheck": "tsc --noEmit --skipLibCheck",
-    "publish-pkg": "pnpm publish --access public --no-git-checks"
+    "publish-pkg": "pnpm publish --access public --no-git-checks",
+    "typecheck": "tsc --noEmit --skipLibCheck"
   },
   "dependencies": {
     "consola": "3.2.3",

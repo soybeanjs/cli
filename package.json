@@ -20,6 +20,10 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "bin": {
+    "soybean": "dist/index.cjs",
+    "soy": "dist/index.cjs"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -30,23 +34,19 @@
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "bin": {
-    "soybean": "dist/index.cjs",
-    "soy": "dist/index.cjs"
-  },
   "files": ["dist"],
   "scripts": {
-    "stub": "pnpm -r run stub",
     "build": "unbuild && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
-    "lint": "eslint . --fix",
-    "commit": "soy git-commit",
     "cleanup": "soy cleanup",
-    "update-pkg": "soy ncu",
-    "typecheck": "tsc --noEmit --skipLibCheck",
+    "commit": "soy git-commit",
+    "lint": "eslint . --fix",
+    "prepare": "simple-git-hooks",
     "publish-pkg": "pnpm -r publish --access public",
     "release": "soy release",
-    "prepare": "simple-git-hooks"
+    "stub": "pnpm -r run stub",
+    "typecheck": "tsc --noEmit --skipLibCheck",
+    "update-pkg": "soy ncu"
   },
   "dependencies": {
     "@soybeanjs/changelog": "0.3.4",
@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
-    "@soybeanjs/eslint-config": "1.0.5",
+    "@soybeanjs/eslint-config": "1.0.9",
     "@types/crypto-js": "4.2.1",
     "@types/node": "20.10.4",
     "eslint": "8.55.0",
@@ -76,7 +76,7 @@
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
-    "pre-commit": "pnpm typecheck && pnpm lint-staged"
+    "pre-commit": "pnpm typecheck"
   },
   "lint-staged": {
     "*": "eslint --fix"
