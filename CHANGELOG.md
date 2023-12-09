@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.8.10](https://github.com/soybeanjs/cli/compare/v0.8.9...v0.8.10) (23-12-10)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: remove options of sync-npmmirror &nbsp;-&nbsp; by @honghuangdc [<samp>(0b17b)</samp>](https://github.com/soybeanjs/cli/commit/0b17b90)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.8.9](https://github.com/soybeanjs/cli/compare/v0.8.8...v0.8.9) (23-12-10)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
