@@ -34,9 +34,7 @@
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "unbuild && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",

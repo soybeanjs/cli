@@ -30,12 +30,4 @@ export interface CliOption {
    * @link https://github.com/soybeanjs/changelog
    */
   changelogOptions: Partial<ChangelogOption>;
-  /**
-   * Prettier write glob
-   *
-   * Glob pattern syntax {@link https://github.com/micromatch/micromatch}
-   */
-  prettierWriteGlob: string[];
-  /** Lint-staged config */
-  lintStagedConfig: Record<string, string | string[]>;
 }

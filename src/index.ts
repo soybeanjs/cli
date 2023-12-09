@@ -1,37 +1,11 @@
 #!/usr/bin/env node
-import process from 'node:process';
 import cac from 'cac';
 import { version } from '../package.json';
-import {
-  cleanup,
-  eslintPrettier,
-  execLintStaged,
-  genChangelog,
-  gitCommit,
-  gitCommitVerify,
-  initSimpleGitHooks,
-  ncu,
-  prettierWrite,
-  release
-} from './command';
+import { cleanup, genChangelog, gitCommit, gitCommitVerify, ncu, release } from './command';
 import { loadCliOptions } from './config';
 import type { CliOption } from './types';
 
-type Command =
-  | 'cleanup'
-  | 'ncu'
-  | 'git-commit'
-  | 'git-commit-verify'
-  | 'changelog'
-  | 'release'
-  // @deprecated
-  | 'prettier-format'
-  | 'prettier-write'
-  | 'eslint-prettier'
-  | 'lint-staged'
-  | 'init-git-hooks'
-  | 'init-simple-git-hooks'
-  | 'update-pkg';
+type Command = 'cleanup' | 'ncu' | 'git-commit' | 'git-commit-verify' | 'changelog' | 'release';
 
 type CommandAction<A extends object> = (args?: A) => Promise<void> | void;
 
@@ -45,8 +19,6 @@ interface CommandArg {
   /** Generate changelog by total tags */
   total?: boolean;
 }
-
-const DEPRECATED_MSG = 'the command is deprecated, it will be removed in the next major version 1.0.0';
 
 async function setupCli() {
   const cliOptions = await loadCliOptions();
@@ -98,59 +70,6 @@ async function setupCli() {
       desc: 'release: update version, generate changelog, commit code',
       action: async args => {
         await release(args?.execute, args?.push);
-      }
-    },
-    /** @deprecated */
-    'prettier-write': {
-      desc: `run prettier --write (${DEPRECATED_MSG})`,
-      action: async () => {
-        await prettierWrite(cliOptions.prettierWriteGlob);
-      }
-    },
-    /** @deprecated */
-    'lint-staged': {
-      desc: `run lint-staged (${DEPRECATED_MSG})`,
-      action: async () => {
-        const passed = await execLintStaged(cliOptions.lintStagedConfig).catch(() => {
-          process.exitCode = 1;
-        });
-
-        process.exitCode = passed ? 0 : 1;
-      }
-    },
-    /** @deprecated */
-    'init-simple-git-hooks': {
-      desc: `init simple-git-hooks and remove husky (${DEPRECATED_MSG})`,
-      action: async () => {
-        await initSimpleGitHooks(cliOptions.cwd);
-      }
-    },
-    /** @deprecated */
-    'init-git-hooks': {
-      desc: `same as init-simple-git-hooks (${DEPRECATED_MSG})`,
-      action: async () => {
-        await initSimpleGitHooks(cliOptions.cwd);
-      }
-    },
-    /** @deprecated */
-    'update-pkg': {
-      desc: `same as ncu (${DEPRECATED_MSG})`,
-      action: async () => {
-        await ncu(cliOptions.ncuCommandArgs);
-      }
-    },
-    /** @deprecated */
-    'prettier-format': {
-      desc: `same as prettier-write (${DEPRECATED_MSG})`,
-      action: async () => {
-        await prettierWrite(cliOptions.prettierWriteGlob);
-      }
-    },
-    /** @deprecated */
-    'eslint-prettier': {
-      desc: DEPRECATED_MSG,
-      action: async () => {
-        await eslintPrettier();
       }
     }
   };

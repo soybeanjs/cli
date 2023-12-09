@@ -1,10 +1,9 @@
 import process from 'node:process';
+import path from 'node:path';
 import { readFile } from 'node:fs/promises';
 import { loadConfig } from 'c12';
 import { Crypto } from '../shared';
 import type { CliOption } from '../types';
-
-const eslintExt = '*.{js,jsx,mjs,cjs,json,ts,tsx,mts,cts,vue,svelte,astro}';
 
 const defaultOptions: CliOption = {
   cwd: process.cwd(),
@@ -41,28 +40,7 @@ const defaultOptions: CliOption = {
     ['other', 'other changes']
   ],
   ncuCommandArgs: ['--deep', '-u'],
-  changelogOptions: {},
-  prettierWriteGlob: [
-    `!**/${eslintExt}`,
-    '!*.min.*',
-    '!CHANGELOG.md',
-    '!dist',
-    '!LICENSE*',
-    '!output',
-    '!coverage',
-    '!public',
-    '!temp',
-    '!package-lock.json',
-    '!pnpm-lock.yaml',
-    '!yarn.lock',
-    '!.github',
-    '!__snapshots__',
-    '!node_modules'
-  ],
-  lintStagedConfig: {
-    [eslintExt]: 'eslint --fix',
-    '*': 'soy prettier-write'
-  }
+  changelogOptions: {}
 };
 
 const SOYBEAN_GT = 'U2FsdGVkX18dc7x8PmAq30sl+nyGmi5VJJwninmYBRs8vVILEIjY+kT/F8ajm/6gRTMbDAEmx5WKInQBzeNSig==';
@@ -96,7 +74,7 @@ async function hasSoybeanInfoFromPkgJson(cwd: string) {
   const REG = 'soybean';
 
   try {
-    const pkgJson = await readFile(`${cwd}/package.json`, 'utf-8');
+    const pkgJson = await readFile(path.join(cwd, 'package.json'), 'utf-8');
     const pkg = JSON.parse(pkgJson);
     hasSoybeanInfo =
       pkg.name?.includes(REG) ||
