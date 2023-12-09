@@ -1,6 +1,6 @@
 {
   "name": "create-soybean",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "description": "SoybeanJS's command line to create different project templates",
   "author": {
     "name": "Soybean",
@@ -22,7 +22,11 @@
     "create-soybean": "dist/index.mjs",
     "create-soy": "dist/index.mjs"
   },
-  "files": ["dist", "template-ts-lib", "template-vue"],
+  "files": [
+    "dist",
+    "template-ts-lib",
+    "template-vue"
+  ],
   "scripts": {
     "build": "pnpm typecheck && pnpm build-only",
     "build-only": "unbuild",

@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [v0.8.9](https://github.com/soybeanjs/cli/compare/v0.8.8...v0.8.9) (23-12-10)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix templates vscode settings &nbsp;-&nbsp; by @honghuangdc [<samp>(ea412)</samp>](https://github.com/soybeanjs/cli/commit/ea4122b)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: remove command sync-npmmirror &nbsp;-&nbsp; by @honghuangdc [<samp>(1c589)</samp>](https://github.com/soybeanjs/cli/commit/1c589b6)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update vscode settings &nbsp;-&nbsp; by @honghuangdc [<samp>(edbb7)</samp>](https://github.com/soybeanjs/cli/commit/edbb733)
+
+### &nbsp;&nbsp;&nbsp;🤖 CI
+
+- **projects**: update release.yml &nbsp;-&nbsp; by @honghuangdc [<samp>(5facb)</samp>](https://github.com/soybeanjs/cli/commit/5facb25)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.8.8](https://github.com/soybeanjs/cli/compare/v0.8.7...v0.8.8) (23-12-09)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
