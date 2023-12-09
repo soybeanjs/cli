@@ -5,6 +5,6 @@
   },
   "editor.formatOnSave": false,
   "eslint.experimental.useFlatConfig": true,
-  "eslint.validate": ["html", "css", "jsonc"],
+  "eslint.validate": ["html", "css", "json", "jsonc"],
   "prettier.enable": false
 }
