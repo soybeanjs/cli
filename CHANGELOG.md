@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v0.8.7](https://github.com/soybeanjs/cli/compare/v0.8.6...v0.8.7) (23-12-09)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix command sync-npmmirror --syncName &nbsp;-&nbsp; by @honghuangdc [<samp>(ec545)</samp>](https://github.com/soybeanjs/cli/commit/ec545f2)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v0.8.6](https://github.com/soybeanjs/cli/compare/v0.8.5...v0.8.6) (23-12-09)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
