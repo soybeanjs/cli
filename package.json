@@ -37,8 +37,7 @@
   "files": ["dist"],
   "scripts": {
     "stub": "pnpm -r run stub",
-    "build": "run-s typecheck build-only build-pkg",
-    "build-only": "unbuild",
+    "build": "unbuild && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "lint": "eslint . --fix",
     "commit": "soy git-commit",
@@ -46,9 +45,8 @@
     "update-pkg": "soy ncu",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "publish-pkg": "pnpm -r publish --access public",
-    "release-pkg": "soy release",
-    "release": "run-s release-pkg build publish-pkg",
-    "prepare": "pnpm build-only && simple-git-hooks"
+    "release": "soy release",
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "@soybeanjs/changelog": "0.3.4",
@@ -71,7 +69,6 @@
     "@types/node": "20.10.4",
     "eslint": "8.55.0",
     "lint-staged": "15.2.0",
-    "npm-run-all": "4.1.5",
     "simple-git-hooks": "2.9.0",
     "tsx": "4.6.2",
     "typescript": "5.3.3",

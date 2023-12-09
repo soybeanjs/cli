@@ -12,33 +12,44 @@ import {
   initSimpleGitHooks,
   ncu,
   prettierWrite,
-  release
+  release,
+  syncNpmmirror
 } from './command';
 import { loadCliOptions } from './config';
 import type { CliOption } from './types';
 
 type Command =
+  | 'cleanup'
+  | 'ncu'
   | 'git-commit'
   | 'git-commit-verify'
-  | 'cleanup'
-  | 'init-git-hooks'
-  | 'init-simple-git-hooks'
-  | 'update-pkg'
-  | 'ncu'
+  | 'changelog'
+  | 'release'
+  | 'sync-npmmirror'
+  // @deprecated
   | 'prettier-format'
   | 'prettier-write'
   | 'eslint-prettier'
   | 'lint-staged'
-  | 'changelog'
-  | 'release';
+  | 'init-git-hooks'
+  | 'init-simple-git-hooks'
+  | 'update-pkg';
 
 type CommandAction<A extends object> = (args?: A) => Promise<void> | void;
 
 type CommandWithAction<A extends object = object> = Record<Command, { desc: string; action: CommandAction<A> }>;
 
 interface CommandArg {
+  /** Execute additional command after bumping and before git commit. Defaults to 'npx soy changelog' */
+  // execute?: string;
+  /** Indicates whether to push the git commit and tag. Defaults to true */
+  // push?: boolean;
   /** Generate changelog by total tags */
   total?: boolean;
+  /** The package name of sync npmmirror */
+  syncName?: string;
+  /** Whether show sync package log */
+  syncLog?: boolean;
 }
 
 const DEPRECATED_MSG = 'the command is deprecated, it will be removed in the next major version 1.0.0';
@@ -85,6 +96,12 @@ async function setupCli() {
       desc: 'release: update version, generate changelog, commit code',
       action: async () => {
         await release();
+      }
+    },
+    'sync-npmmirror': {
+      desc: 'sync npmmirror',
+      action: async args => {
+        await syncNpmmirror(args?.syncName, args?.syncLog);
       }
     },
     /** @deprecated */
