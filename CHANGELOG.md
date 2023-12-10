@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v1.0.0-beta.6](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.5...v1.0.0-beta.6) (23-12-11)
+
+### &nbsp;&nbsp;&nbsp;🔥 Performance
+
+- **projects**: remove useless files & update README.md &nbsp;-&nbsp; by @honghuangdc [<samp>(fe1a2)</samp>](https://github.com/soybeanjs/cli/commit/fe1a26e)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update create-soybean README.md &nbsp;-&nbsp; by @honghuangdc [<samp>(2df10)</samp>](https://github.com/soybeanjs/cli/commit/2df10f6)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update templates pkg versions &nbsp;-&nbsp; by @honghuangdc [<samp>(21a7e)</samp>](https://github.com/soybeanjs/cli/commit/21a7e20)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.0-beta.5](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.4...v1.0.0-beta.5) (23-12-11)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
