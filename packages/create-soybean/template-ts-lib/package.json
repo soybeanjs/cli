@@ -1,7 +1,7 @@
 {
   "name": "ts-lib-starter",
   "type": "module",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "private": true,
   "packageManager": "pnpm@8.12.0",
   "exports": {
@@ -14,7 +14,9 @@
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "unbuild",
     "cleanup": "soy cleanup",

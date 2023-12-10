@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.0.0-beta.4](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.3...v1.0.0-beta.4) (23-12-11)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix bin in package.json &nbsp;-&nbsp; by @honghuangdc [<samp>(563ca)</samp>](https://github.com/soybeanjs/cli/commit/563ca9e)
+
+### &nbsp;&nbsp;&nbsp;🎨 Styles
+
+- **projects**: format code &nbsp;-&nbsp; by @honghuangdc [<samp>(51f39)</samp>](https://github.com/soybeanjs/cli/commit/51f39ca)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.0-beta.3](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.2...v1.0.0-beta.3) (23-12-10)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
