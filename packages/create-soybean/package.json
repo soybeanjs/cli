@@ -22,11 +22,7 @@
     "create-soybean": "dist/index.mjs",
     "create-soy": "dist/index.mjs"
   },
-  "files": [
-    "dist",
-    "template-ts-lib",
-    "template-vue"
-  ],
+  "files": ["dist", "template-ts-lib", "template-vue"],
   "scripts": {
     "build": "pnpm typecheck && pnpm build-only",
     "build-only": "unbuild",

@@ -34,9 +34,7 @@
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "unbuild && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
@@ -85,7 +83,7 @@
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
-    "pre-commit": "pnpm typecheck"
+    "pre-commit": "pnpm typecheck && pnpm lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"
