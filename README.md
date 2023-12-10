@@ -29,13 +29,6 @@ pnpm soy -h
 | ncu                   | 命令 npm-check-updates, 升级依赖                                   |
 | changelog             | 根据两次 tag 生成 changelog (--total: 根据所有 tag 生成 changelog) |
 | release               | 发布：更新版本号、生成 changelog、提交代码                         |
-| init-simple-git-hooks | 该命令已废弃,下个大版本将会移除 初始化 simple-git-hooks 钩子       |
-| prettier-write        | 该命令已废弃,下个大版本将会移除 执行 prettier --write 格式化       |
-| lint-staged           | 该命令已废弃,下个大版本将会移除 执行 lint-staged                   |
-| init-git-hooks        | 该命令已废弃,下个大版本将会移除 等同于init-simple-git-hooks        |
-| update-pkg            | 该命令已废弃,下个大版本将会移除 等同于ncu                          |
-| prettier-format       | 该命令已废弃,下个大版本将会移除 请使用 prettier-write              |
-| eslint-prettier       | 该命令已废弃,下个大版本将会移除                                    |
 
 ## 更多自定义配置
 
