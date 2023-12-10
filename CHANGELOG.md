@@ -15,20 +15,6 @@
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
-## [v1.0.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.1...v1.0.0-beta.2) (23-12-10)
-
-### &nbsp;&nbsp;&nbsp;📖 Documentation
-
-- **projects**: fix CHANGELOG.md &nbsp;-&nbsp; by @honghuangdc [<samp>(7049b)</samp>](https://github.com/soybeanjs/cli/commit/7049b55)
-
-### &nbsp;&nbsp;&nbsp;🏡 Chore
-
-- **deps**: update deps: changelog &nbsp;-&nbsp; by @honghuangdc [<samp>(3c9f5)</samp>](https://github.com/soybeanjs/cli/commit/3c9f5a0)
-
-### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
-[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
-
 ## [v1.0.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.0...v1.0.0-beta.1) (23-12-10)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
