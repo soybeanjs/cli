@@ -14,5 +14,6 @@ export default defineBuildConfig({
     esbuild: {
       minify: true
     }
-  }
+  },
+  sourcemap: false
 });

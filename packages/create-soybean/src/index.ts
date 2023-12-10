@@ -3,14 +3,14 @@ import process from 'node:process';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { blue, cyan, green, lightBlue, red, reset } from 'kolorist';
+import { blue, cyan, green, lightBlue, red, reset, yellow } from 'kolorist';
 import minimist from 'minimist';
 import prompts from 'prompts';
 import type { Answers } from 'prompts';
 import { consola } from 'consola';
 import { copy, emptyDir, formatTargetDir, isPathEmpty, isValidPackageName, toValidPackageName } from './shared';
 
-type TemplateType = 'vue' | 'ts-lib' | 'react' | 'react-native' | 'solid';
+type TemplateType = 'ts-lib-tsup' | 'ts-lib-unbuild' | 'pnpm-monorepo' | 'vue' | 'react' | 'react-native' | 'solid';
 
 type ColorFunc = (str: string | number) => string;
 
@@ -22,14 +22,24 @@ interface Template {
 
 const templates: Template[] = [
   {
+    type: 'ts-lib-tsup',
+    name: 'TypeScript library by tsup',
+    color: blue
+  },
+  {
+    type: 'ts-lib-unbuild',
+    name: 'TypeScript library by unbuild',
+    color: blue
+  },
+  {
+    type: 'pnpm-monorepo',
+    name: 'Pnpm monorepo',
+    color: yellow
+  },
+  {
     type: 'vue',
     name: 'Vue 3',
     color: green
-  },
-  {
-    type: 'ts-lib',
-    name: 'TypeScript library',
-    color: blue
   },
   {
     type: 'react',
