@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.0.0-beta.3](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.2...v1.0.0-beta.3) (23-12-10)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: fix CHANGELOG.md &nbsp;-&nbsp; by @honghuangdc [<samp>(19fb6)</samp>](https://github.com/soybeanjs/cli/commit/19fb644)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.1...v1.0.0-beta.2) (23-12-10)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
