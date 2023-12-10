@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v1.0.0-beta.5](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.4...v1.0.0-beta.5) (23-12-11)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add create-soybean template: ts lib by tsup, pnpm monorepo &nbsp;-&nbsp; by @honghuangdc [<samp>(43be0)</samp>](https://github.com/soybeanjs/cli/commit/43be0a9)
+
+### &nbsp;&nbsp;&nbsp;🎨 Styles
+
+- **projects**: format code &nbsp;-&nbsp; by @honghuangdc [<samp>(7649e)</samp>](https://github.com/soybeanjs/cli/commit/7649e6c)
+
+### &nbsp;&nbsp;&nbsp;🤖 CI
+
+- **projects**: update release.yml &nbsp;-&nbsp; by @honghuangdc [<samp>(48482)</samp>](https://github.com/soybeanjs/cli/commit/4848264)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.0-beta.4](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.3...v1.0.0-beta.4) (23-12-11)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
