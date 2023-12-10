@@ -14,8 +14,8 @@ importers:
   .:
     dependencies:
       '@soybeanjs/changelog':
-        specifier: 0.3.6
-        version: 0.3.6(eslint-plugin-vue@9.19.2)(eslint@8.55.0)(typescript@5.3.3)(vue-eslint-parser@9.3.2)
+        specifier: 0.3.7
+        version: 0.3.7(eslint-plugin-vue@9.19.2)(eslint@8.55.0)(typescript@5.3.3)(vue-eslint-parser@9.3.2)
       bumpp:
         specifier: 9.2.1
         version: 9.2.1(patch_hash=4sumpy4r63kqtcog35l3n5bt4a)
@@ -1098,8 +1098,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
-  /@soybeanjs/changelog@0.3.6(eslint-plugin-vue@9.19.2)(eslint@8.55.0)(typescript@5.3.3)(vue-eslint-parser@9.3.2):
-    resolution: {integrity: sha512-wcpyvGuuGsIg2netvskgcCD2N7OHKcurgTsx7Wcp7tbCLTB8UZKXWsMRAwG+LzhpUdhmi1ygMxa6505DGTkWKw==}
+  /@soybeanjs/changelog@0.3.7(eslint-plugin-vue@9.19.2)(eslint@8.55.0)(typescript@5.3.3)(vue-eslint-parser@9.3.2):
+    resolution: {integrity: sha512-jVKvwjQb8T0mEYUwDzFNIaA8b1NDCqg0N7ME99wxnLE4lO8zLfmeHjkM0d6sHuMbBwpw3csDWVnC4CZQt8SvJA==}
     dependencies:
       '@soybeanjs/eslint-config': 1.0.11(eslint-plugin-vue@9.19.2)(eslint@8.55.0)(typescript@5.3.3)(vue-eslint-parser@9.3.2)
       cli-progress: 3.12.0
