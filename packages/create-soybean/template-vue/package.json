@@ -22,8 +22,8 @@
     "vue-router": "4.2.5"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "0.8.5",
-    "@soybeanjs/eslint-config": "1.0.9",
+    "@soybeanjs/cli": "0.8.10",
+    "@soybeanjs/eslint-config": "1.0.11",
     "@types/node": "20.10.4",
     "@vitejs/plugin-vue": "4.5.2",
     "@vitejs/plugin-vue-jsx": "3.1.0",

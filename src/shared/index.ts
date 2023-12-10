@@ -1,4 +1,4 @@
-import { AES, enc } from 'crypto-js';
+import { createRequire } from 'node:module';
 import type { Options } from 'execa';
 
 export async function execCommand(cmd: string, args: string[], options?: Options) {
@@ -6,6 +6,10 @@ export async function execCommand(cmd: string, args: string[], options?: Options
   const res = await execa(cmd, args, options);
   return res?.stdout?.trim() || '';
 }
+
+const require = createRequire(import.meta.url);
+
+const CryptoJS = require('crypto-js');
 
 export class Crypto<T> {
   secret: string;
@@ -16,13 +20,13 @@ export class Crypto<T> {
 
   enCrypto(data: T) {
     const newData = JSON.stringify(data);
-    return AES.encrypt(newData, this.secret).toString();
+    return CryptoJS.AES.encrypt(newData, this.secret).toString();
   }
 
   /** @param cipherText */
   deCrypto(cipherText: string) {
-    const bytes = AES.decrypt(cipherText, this.secret);
-    const originalText = bytes.toString(enc.Utf8);
+    const bytes = CryptoJS.AES.decrypt(cipherText, this.secret);
+    const originalText = bytes.toString(CryptoJS.enc.Utf8);
     if (originalText) {
       try {
         const result = JSON.parse(originalText);

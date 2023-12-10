@@ -22,7 +22,7 @@
   },
   "bin": {
     "soybean": "dist/index.cjs",
-    "soy": "dist/index.cjs"
+    "soy": "dist/index.mjs"
   },
   "exports": {
     ".": {
@@ -34,9 +34,7 @@
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "unbuild && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
@@ -51,8 +49,8 @@
     "update-pkg": "soy ncu"
   },
   "dependencies": {
-    "@soybeanjs/changelog": "0.3.4",
-    "bumpp": "9.2.0",
+    "@soybeanjs/changelog": "0.3.6",
+    "bumpp": "9.2.1",
     "c12": "1.5.1",
     "cac": "6.7.14",
     "consola": "3.2.3",
@@ -66,7 +64,7 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
-    "@soybeanjs/eslint-config": "1.0.9",
+    "@soybeanjs/eslint-config": "1.0.11",
     "@types/crypto-js": "4.2.1",
     "@types/node": "20.10.4",
     "eslint": "8.55.0",
@@ -77,6 +75,11 @@
     "typescript": "5.3.3",
     "unbuild": "2.0.0",
     "vue-eslint-parser": "9.3.2"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "bumpp@9.2.1": "patches/bumpp@9.2.1.patch"
+    }
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
