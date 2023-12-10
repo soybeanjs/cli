@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
-    "@soybeanjs/eslint-config": "1.0.12",
+    "@soybeanjs/eslint-config": "1.0.13",
     "@types/crypto-js": "4.2.1",
     "@types/node": "20.10.4",
     "eslint": "8.55.0",
