@@ -21,8 +21,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "bin": {
-    "soybean": "dist/index.cjs",
-    "soy": "dist/index.mjs"
+    "soybean": "dist/index.mjs",
+    "soy": "dist/index.cjs"
   },
   "exports": {
     ".": {
