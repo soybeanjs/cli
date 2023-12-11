@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [v1.0.0-beta.7](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.6...v1.0.0-beta.7) (23-12-11)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix export files &nbsp;-&nbsp; by @honghuangdc [<samp>(2d30a)</samp>](https://github.com/soybeanjs/cli/commit/2d30a21)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(cecf7)</samp>](https://github.com/soybeanjs/cli/commit/cecf722)
+- **projects**: update vscode launch.json &nbsp;-&nbsp; by @honghuangdc [<samp>(675eb)</samp>](https://github.com/soybeanjs/cli/commit/675eb09)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.0-beta.6](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.5...v1.0.0-beta.6) (23-12-11)
 
 ### &nbsp;&nbsp;&nbsp;🔥 Performance
