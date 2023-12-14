@@ -59,12 +59,12 @@
     "execa": "8.0.1",
     "kolorist": "1.8.0",
     "minimist": "1.2.8",
-    "npm-check-updates": "16.14.11",
+    "npm-check-updates": "16.14.12",
     "rimraf": "5.0.5"
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
-    "@soybeanjs/eslint-config": "1.0.13",
+    "@soybeanjs/eslint-config": "1.1.2",
     "@types/crypto-js": "4.2.1",
     "@types/node": "20.10.4",
     "eslint": "8.55.0",
