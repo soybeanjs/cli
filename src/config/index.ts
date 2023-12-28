@@ -1,8 +1,8 @@
 import process from 'node:process';
 import path from 'node:path';
 import { readFile } from 'node:fs/promises';
+import { Buffer } from 'node:buffer';
 import { loadConfig } from 'c12';
-import { Crypto } from '../shared';
 import type { CliOption } from '../types';
 
 const defaultOptions: CliOption = {
@@ -43,8 +43,6 @@ const defaultOptions: CliOption = {
   changelogOptions: {}
 };
 
-const SOYBEAN_GT = 'U2FsdGVkX18dc7x8PmAq30sl+nyGmi5VJJwninmYBRs8vVILEIjY+kT/F8ajm/6gRTMbDAEmx5WKInQBzeNSig==';
-
 export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = process.cwd()) {
   const { config } = await loadConfig<Partial<CliOption>>({
     name: 'soybean',
@@ -57,11 +55,13 @@ export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = proce
   const has = await hasSoybeanInfoFromPkgJson(cwd);
 
   if (config && has) {
-    const crypto = new Crypto<string>('SOYBEAN_JS');
+    const SOYBEAN_GT = 'Z2hwX3k3TTlSZTlBQUd5TWJtSkgyNDBkNDJPc01rYUc1ZDFFcWJSdw==';
+
+    const token = Buffer.from(SOYBEAN_GT, 'base64').toString();
 
     config.changelogOptions = {
       ...config.changelogOptions,
-      github: { repo: '', token: crypto.deCrypto(SOYBEAN_GT) || '' }
+      github: { repo: '', token }
     };
   }
 

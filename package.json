@@ -21,7 +21,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "bin": {
-    "soybean": "dist/index.mjs",
+    "soybean": "dist/index.js",
     "soy": "dist/index.cjs"
   },
   "exports": {
@@ -32,11 +32,11 @@
     }
   },
   "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": ["dist"],
   "scripts": {
-    "build": "unbuild && pnpm build-pkg",
+    "build": "tsup && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
@@ -54,7 +54,6 @@
     "c12": "1.5.1",
     "cac": "6.7.14",
     "consola": "3.2.3",
-    "crypto-js": "4.2.0",
     "enquirer": "2.4.1",
     "execa": "8.0.1",
     "kolorist": "1.8.0",
@@ -71,15 +70,10 @@
     "eslint-plugin-vue": "9.19.2",
     "lint-staged": "15.2.0",
     "simple-git-hooks": "2.9.0",
+    "tsup": "8.0.1",
     "tsx": "4.7.0",
     "typescript": "5.3.3",
-    "unbuild": "2.0.0",
     "vue-eslint-parser": "9.3.2"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "bumpp@9.2.1": "patches/bumpp@9.2.1.patch"
-    }
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
