@@ -1,6 +1,34 @@
 # Changelog
 
 
+## [v1.0.0](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.7...v1.0.0) (23-12-29)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: update tsup template &nbsp;-&nbsp; by @honghuangdc [<samp>(527ea)</samp>](https://github.com/soybeanjs/cli/commit/527ea25)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix bumpp &nbsp;-&nbsp; by @honghuangdc [<samp>(f9fa5)</samp>](https://github.com/soybeanjs/cli/commit/f9fa527)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: use tsup replace unbuild &nbsp;-&nbsp; by @honghuangdc [<samp>(419d6)</samp>](https://github.com/soybeanjs/cli/commit/419d6ed)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(32ea7)</samp>](https://github.com/soybeanjs/cli/commit/32ea7e9)
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(14ce6)</samp>](https://github.com/soybeanjs/cli/commit/14ce69b)
+- **projects**:
+  - update pnpm version &nbsp;-&nbsp; by @honghuangdc [<samp>(beb09)</samp>](https://github.com/soybeanjs/cli/commit/beb096e)
+  - update templates package.json &nbsp;-&nbsp; by @honghuangdc [<samp>(30d06)</samp>](https://github.com/soybeanjs/cli/commit/30d0638)
+  - update pnpm version &nbsp;-&nbsp; by @honghuangdc [<samp>(78eb5)</samp>](https://github.com/soybeanjs/cli/commit/78eb50b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.0-beta.7](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.6...v1.0.0-beta.7) (23-12-11)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
