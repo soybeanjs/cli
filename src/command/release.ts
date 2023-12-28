@@ -1,4 +1,4 @@
-import versionBump from 'bumpp';
+import { versionBump } from 'bumpp';
 
 export async function release(execute = 'npx soy changelog', push = true) {
   await versionBump({
