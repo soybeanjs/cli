@@ -7,6 +7,7 @@ export default defineConfig({
   format: ['cjs', 'esm'],
   external: [],
   shims: true,
+  cjsInterop: true,
   sourcemap: false,
   target: 'es6',
   minify: true
