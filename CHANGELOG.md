@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.0.1](https://github.com/soybeanjs/cli/compare/v1.0.0...v1.0.1) (24-01-08)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix create-soybean bin &nbsp;-&nbsp; by @honghuangdc [<samp>(60b94)</samp>](https://github.com/soybeanjs/cli/commit/60b944d)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.0](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.7...v1.0.0) (23-12-29)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
