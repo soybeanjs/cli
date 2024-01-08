@@ -20,8 +20,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "bin": {
-    "create-soybean": "dist/index.mjs",
-    "create-soy": "dist/index.mjs"
+    "create-soybean": "dist/index.js",
+    "create-soy": "dist/index.js"
   },
   "files": ["dist", "template-*"],
   "scripts": {
