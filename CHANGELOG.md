@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [v1.0.2](https://github.com/soybeanjs/cli/compare/v1.0.1...v1.0.2) (24-01-14)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix export &nbsp;-&nbsp; by @honghuangdc [<samp>(d9798)</samp>](https://github.com/soybeanjs/cli/commit/d9798ca)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(51959)</samp>](https://github.com/soybeanjs/cli/commit/5195924)
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(5809b)</samp>](https://github.com/soybeanjs/cli/commit/5809b2e)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.2-beta.0](https://github.com/soybeanjs/cli/compare/v1.0.1...v1.0.2-beta.0) (24-01-14)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
