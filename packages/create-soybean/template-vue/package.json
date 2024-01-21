@@ -18,13 +18,13 @@
   },
   "dependencies": {
     "pinia": "2.1.7",
-    "vue": "3.4.13",
+    "vue": "3.4.15",
     "vue-router": "4.2.5"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "1.0.1",
-    "@soybeanjs/eslint-config": "1.1.5",
-    "@types/node": "20.11.0",
+    "@soybeanjs/cli": "1.0.2",
+    "@soybeanjs/eslint-config": "1.1.7",
+    "@types/node": "20.11.5",
     "@vitejs/plugin-vue": "5.0.3",
     "@vitejs/plugin-vue-jsx": "3.1.0",
     "eslint": "8.56.0",
@@ -32,7 +32,7 @@
     "lint-staged": "15.2.0",
     "simple-git-hooks": "2.9.0",
     "typescript": "5.3.3",
-    "vite": "5.0.11",
+    "vite": "5.0.12",
     "vue-eslint-parser": "9.4.0",
     "vue-tsc": "1.8.27"
   },
