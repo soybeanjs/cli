@@ -43,7 +43,8 @@
     "lint": "eslint . --fix",
     "prepare": "simple-git-hooks",
     "publish-pkg": "pnpm -r publish --access public",
-    "release": "soy release",
+    "release": "soy release -e 'pnpm release-execute'",
+    "release-execute": "tsx ./scripts/release.ts && pnpm soy changelog",
     "stub": "pnpm -r run stub",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "update-pkg": "soy ncu"
@@ -68,6 +69,7 @@
     "@types/prompts": "2.4.9",
     "eslint": "8.56.0",
     "eslint-plugin-vue": "9.20.1",
+    "fast-glob": "3.3.2",
     "lint-staged": "15.2.0",
     "simple-git-hooks": "2.9.0",
     "tsup": "8.0.1",
