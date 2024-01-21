@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [v1.0.3](https://github.com/soybeanjs/cli/compare/v1.0.2...v1.0.3) (24-01-21)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**:
+  - update config &nbsp;-&nbsp; by @honghuangdc [<samp>(030c9)</samp>](https://github.com/soybeanjs/cli/commit/030c9bd)
+  - use prompts replace enquirer &nbsp;-&nbsp; by @honghuangdc [<samp>(09652)</samp>](https://github.com/soybeanjs/cli/commit/0965281)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(c5402)</samp>](https://github.com/soybeanjs/cli/commit/c54027e)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.2](https://github.com/soybeanjs/cli/compare/v1.0.1...v1.0.2) (24-01-14)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
