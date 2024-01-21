@@ -1,6 +1,28 @@
 # Changelog
 
 
+## [v1.0.4](https://github.com/soybeanjs/cli/compare/v1.0.3...v1.0.4) (24-01-21)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: support break change &nbsp;-&nbsp; by @honghuangdc [<samp>(f5261)</samp>](https://github.com/soybeanjs/cli/commit/f526176)
+
+### &nbsp;&nbsp;&nbsp;🔥 Performance
+
+- **projects**: remove minimist &nbsp;-&nbsp; by @honghuangdc [<samp>(831bb)</samp>](https://github.com/soybeanjs/cli/commit/831bb79)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: update prompt description &nbsp;-&nbsp; by @honghuangdc [<samp>(7b7b7)</samp>](https://github.com/soybeanjs/cli/commit/7b7b76d)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update README.md &nbsp;-&nbsp; by @honghuangdc [<samp>(77e20)</samp>](https://github.com/soybeanjs/cli/commit/77e2005)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.3](https://github.com/soybeanjs/cli/compare/v1.0.2...v1.0.3) (24-01-21)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
