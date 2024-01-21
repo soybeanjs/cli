@@ -1,15 +1,9 @@
 import path from 'node:path';
 import { readFileSync } from 'node:fs';
-import enquirer from 'enquirer';
+import prompts from 'prompts';
 import { bgRed, green, red } from 'kolorist';
 import { execCommand } from '../shared';
 import type { CliOption } from '../types';
-
-interface PromptObject {
-  types: string;
-  scopes: string;
-  description: string;
-}
 
 /**
  * Git commit with Conventional Commits standard
@@ -21,23 +15,23 @@ export async function gitCommit(
   gitCommitTypes: CliOption['gitCommitTypes'],
   gitCommitScopes: CliOption['gitCommitScopes']
 ) {
-  const typesChoices = gitCommitTypes.map(([name, title]) => {
-    const nameWithSuffix = `${name}:`;
+  const typesChoices = gitCommitTypes.map(([value, msg]) => {
+    const nameWithSuffix = `${value}:`;
 
-    const message = `${nameWithSuffix.padEnd(12)}${title}`;
+    const title = `${nameWithSuffix.padEnd(12)}${msg}`;
 
     return {
-      name,
-      message
+      value,
+      title
     };
   });
 
-  const scopesChoices = gitCommitScopes.map(([name, title]) => ({
-    name,
-    message: `${name.padEnd(30)} (${title})`
+  const scopesChoices = gitCommitScopes.map(([value, msg]) => ({
+    value,
+    title: `${value.padEnd(30)} (${msg})`
   }));
 
-  const result = await enquirer.prompt<PromptObject>([
+  const result = await prompts([
     {
       name: 'types',
       type: 'select',
@@ -51,13 +45,21 @@ export async function gitCommit(
       choices: scopesChoices
     },
     {
+      name: 'breaking',
+      type: 'confirm',
+      message: 'Are there any breaking changes?',
+      initial: false
+    },
+    {
       name: 'description',
       type: 'text',
       message: 'Please enter a description'
     }
   ]);
 
-  const commitMsg = `${result.types}(${result.scopes}): ${result.description}`;
+  const breaking = result.breaking ? `!` : '';
+
+  const commitMsg = `${result.types}(${result.scopes})${breaking}: ${result.description}`;
 
   await execCommand('git', ['commit', '-m', commitMsg], { stdio: 'inherit' });
 }

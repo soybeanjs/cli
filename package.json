@@ -54,11 +54,11 @@
     "c12": "1.6.1",
     "cac": "6.7.14",
     "consola": "3.2.3",
-    "enquirer": "2.4.1",
     "execa": "8.0.1",
     "kolorist": "1.8.0",
     "minimist": "1.2.8",
     "npm-check-updates": "16.14.12",
+    "prompts": "2.4.2",
     "rimraf": "5.0.5"
   },
   "devDependencies": {
@@ -66,6 +66,7 @@
     "@soybeanjs/eslint-config": "1.1.7",
     "@types/crypto-js": "4.2.1",
     "@types/node": "20.11.5",
+    "@types/prompts": "2.4.9",
     "eslint": "8.56.0",
     "eslint-plugin-vue": "9.20.1",
     "lint-staged": "15.2.0",
