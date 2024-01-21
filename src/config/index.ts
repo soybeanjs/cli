@@ -1,7 +1,4 @@
 import process from 'node:process';
-import path from 'node:path';
-import { readFile } from 'node:fs/promises';
-import { Buffer } from 'node:buffer';
 import { loadConfig } from 'c12';
 import type { CliOption } from '../types';
 
@@ -52,37 +49,5 @@ export async function loadCliOptions(overrides?: Partial<CliOption>, cwd = proce
     packageJson: true
   });
 
-  const has = await hasSoybeanInfoFromPkgJson(cwd);
-
-  if (config && has) {
-    const SOYBEAN_GT = 'Z2hwX3k3TTlSZTlBQUd5TWJtSkgyNDBkNDJPc01rYUc1ZDFFcWJSdw==';
-
-    const token = Buffer.from(SOYBEAN_GT, 'base64').toString();
-
-    config.changelogOptions = {
-      ...config.changelogOptions,
-      github: { repo: '', token }
-    };
-  }
-
   return config as CliOption;
-}
-
-async function hasSoybeanInfoFromPkgJson(cwd: string) {
-  let hasSoybeanInfo = false;
-
-  const REG = 'soybean';
-
-  try {
-    const pkgJson = await readFile(path.join(cwd, 'package.json'), 'utf-8');
-    const pkg = JSON.parse(pkgJson);
-    hasSoybeanInfo =
-      pkg.name?.includes(REG) ||
-      pkg.repository?.url?.includes(REG) ||
-      pkg.author?.includes(REG) ||
-      pkg.author?.name?.includes(REG) ||
-      pkg.author?.url?.includes(REG);
-  } catch {}
-
-  return hasSoybeanInfo;
 }
