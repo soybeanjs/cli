@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.0.5](https://github.com/soybeanjs/cli/compare/v1.0.4...v1.0.5) (24-01-21)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update cli version of create-soybean template &nbsp;-&nbsp; by @honghuangdc [<samp>(695e8)</samp>](https://github.com/soybeanjs/cli/commit/695e89a)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.4](https://github.com/soybeanjs/cli/compare/v1.0.3...v1.0.4) (24-01-21)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
