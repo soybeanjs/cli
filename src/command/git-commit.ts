@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { readFileSync } from 'node:fs';
 import prompts from 'prompts';
-import { bgRed, green, red } from 'kolorist';
+import { bgRed, green, red, yellow } from 'kolorist';
 import { execCommand } from '../shared';
 import type { CliOption } from '../types';
 
@@ -47,7 +47,7 @@ export async function gitCommit(
     {
       name: 'description',
       type: 'text',
-      message: 'Please enter a description, if it is a breaking change, please add a `!` prefix'
+      message: `Please enter a description (add prefix ${yellow('!')} to indicate breaking change)`
     }
   ]);
 
