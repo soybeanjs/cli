@@ -45,21 +45,17 @@ export async function gitCommit(
       choices: scopesChoices
     },
     {
-      name: 'breaking',
-      type: 'confirm',
-      message: 'Are there any breaking changes?',
-      initial: false
-    },
-    {
       name: 'description',
       type: 'text',
-      message: 'Please enter a description'
+      message: 'Please enter a description, if it is a breaking change, please add a `!` prefix'
     }
   ]);
 
-  const breaking = result.breaking ? `!` : '';
+  const breaking = result.description.startsWith('!') ? '!' : '';
 
-  const commitMsg = `${result.types}(${result.scopes})${breaking}: ${result.description}`;
+  const description = result.description.replace(/^!/, '').trim();
+
+  const commitMsg = `${result.types}(${result.scopes})${breaking}: ${description}`;
 
   await execCommand('git', ['commit', '-m', commitMsg], { stdio: 'inherit' });
 }
