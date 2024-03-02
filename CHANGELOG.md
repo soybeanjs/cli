@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.0.7](https://github.com/soybeanjs/cli/compare/v1.0.6...v1.0.7) (24-03-03)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: use enquirer replace prompts &nbsp;-&nbsp; by @honghuangdc [<samp>(bff7d)</samp>](https://github.com/soybeanjs/cli/commit/bff7dd9)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(60bdb)</samp>](https://github.com/soybeanjs/cli/commit/60bdbb3)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.6](https://github.com/soybeanjs/cli/compare/v1.0.5...v1.0.6) (24-01-21)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
