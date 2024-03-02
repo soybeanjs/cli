@@ -16,11 +16,11 @@
   "dependencies": {},
   "devDependencies": {
     "@soybeanjs/cli": "1.0.6",
-    "@soybeanjs/eslint-config": "1.1.7",
-    "eslint": "8.56.0",
-    "lint-staged": "15.2.0",
+    "@soybeanjs/eslint-config": "1.2.2",
+    "eslint": "8.57.0",
+    "lint-staged": "15.2.2",
     "simple-git-hooks": "2.9.0",
-    "tsx": "4.7.0",
+    "tsx": "4.7.1",
     "typescript": "5.3.3"
   },
   "simple-git-hooks": {

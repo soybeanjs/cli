@@ -38,14 +38,14 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.0.6",
-    "@soybeanjs/eslint-config": "1.1.7",
+    "@soybeanjs/eslint-config": "1.2.2",
     "@types/cli-progress": "3.11.5",
-    "@types/node": "20.11.5",
-    "eslint": "8.56.0",
-    "lint-staged": "15.2.0",
+    "@types/node": "20.11.24",
+    "eslint": "8.57.0",
+    "lint-staged": "15.2.2",
     "simple-git-hooks": "2.9.0",
-    "tsup": "8.0.1",
-    "tsx": "4.7.0",
+    "tsup": "8.0.2",
+    "tsx": "4.7.1",
     "typescript": "5.3.3"
   },
   "simple-git-hooks": {
