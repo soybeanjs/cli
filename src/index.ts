@@ -5,7 +5,7 @@ import { cleanup, genChangelog, gitCommit, gitCommitVerify, ncu, release } from 
 import { loadCliOptions } from './config';
 import type { CliOption } from './types';
 
-type Command = 'cleanup' | 'ncu' | 'git-commit' | 'git-commit-verify' | 'changelog' | 'release';
+type Command = 'cleanup' | 'ncu' | 'update-pkg' | 'git-commit' | 'git-commit-verify' | 'changelog' | 'release';
 
 type CommandAction<A extends object> = (args?: A) => Promise<void> | void;
 
@@ -65,6 +65,12 @@ async function setupCli() {
       desc: 'npm-check-updates, it can update package.json dependencies to the latest version',
       action: async () => {
         await ncu(cliOptions.ncuCommandArgs);
+      }
+    },
+    'update-pkg': {
+      desc: 'equal to command "ncu"',
+      action: async () => {
+        await ncu();
       }
     },
     'git-commit': {
