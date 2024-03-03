@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.0.9](https://github.com/soybeanjs/cli/compare/v1.0.8...v1.0.9) (24-03-03)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update deps: changelog & fix generate changelog &nbsp;-&nbsp; by @honghuangdc [<samp>(8bf19)</samp>](https://github.com/soybeanjs/cli/commit/8bf1976)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.9-beta.0](https://github.com/soybeanjs/cli/compare/v1.0.8...v1.0.9-beta.0) (24-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
