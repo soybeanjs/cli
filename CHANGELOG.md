@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v1.0.8](https://github.com/soybeanjs/cli/compare/v1.0.7...v1.0.8) (24-03-03)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add command "update-pkg" &nbsp;-&nbsp; by @honghuangdc [<samp>(f6ba2)</samp>](https://github.com/soybeanjs/cli/commit/f6ba25b)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(a89e6)</samp>](https://github.com/soybeanjs/cli/commit/a89e61f)
+- **projects**:
+  - update scripts update-pkg &nbsp;-&nbsp; by @honghuangdc [<samp>(4f160)</samp>](https://github.com/soybeanjs/cli/commit/4f16042)
+  - update launch.json &nbsp;-&nbsp; by @honghuangdc [<samp>(9b656)</samp>](https://github.com/soybeanjs/cli/commit/9b656cf)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.8-beta.3](https://github.com/soybeanjs/cli/compare/v1.0.8-beta.2...v1.0.8-beta.3) (24-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
