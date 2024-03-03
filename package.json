@@ -64,7 +64,6 @@
   "devDependencies": {
     "@soybeanjs/cli": "link:",
     "@soybeanjs/eslint-config": "1.2.3",
-    "@types/crypto-js": "4.2.2",
     "@types/node": "20.11.24",
     "eslint": "8.57.0",
     "eslint-plugin-vue": "9.22.0",

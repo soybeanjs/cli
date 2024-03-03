@@ -45,9 +45,6 @@ importers:
       '@soybeanjs/eslint-config':
         specifier: 1.2.3
         version: 1.2.3(eslint-plugin-vue@9.22.0)(eslint@8.57.0)(typescript@5.3.3)(vue-eslint-parser@9.4.2)
-      '@types/crypto-js':
-        specifier: 4.2.2
-        version: 4.2.2
       '@types/node':
         specifier: 20.11.24
         version: 20.11.24
@@ -881,10 +878,6 @@ packages:
       '@tufjs/canonical-json': 1.0.0
       minimatch: 9.0.3
     dev: false
-
-  /@types/crypto-js@4.2.2:
-    resolution: {integrity: sha512-sDOLlVbHhXpAUAL0YHDUUwDZf3iN4Bwi4W6a0W0b+QcAezUbRtH4FVb+9J4h+XFPW7l/gQ9F8qC7P+Ec4k8QVQ==}
-    dev: true
 
   /@types/debug@4.1.12:
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
