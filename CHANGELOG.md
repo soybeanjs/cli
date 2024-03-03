@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.0.8-beta.1](https://github.com/soybeanjs/cli/compare/v1.0.8-beta.0...v1.0.8-beta.1) (24-03-03)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add command "update-pkg" &nbsp;-&nbsp; by @honghuangdc [<samp>(f6ba2)</samp>](https://github.com/soybeanjs/cli/commit/f6ba25b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.8-beta.0](https://github.com/soybeanjs/cli/compare/v1.0.7...v1.0.8-beta.0) (24-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
