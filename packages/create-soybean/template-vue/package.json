@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.0.7",
-    "@soybeanjs/eslint-config": "1.2.2",
+    "@soybeanjs/eslint-config": "1.2.3",
     "@types/node": "20.11.24",
     "@vitejs/plugin-vue": "5.0.4",
     "@vitejs/plugin-vue-jsx": "3.1.0",

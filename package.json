@@ -50,7 +50,7 @@
     "update-pkg": "soy ncu"
   },
   "dependencies": {
-    "@soybeanjs/changelog": "0.3.12",
+    "@soybeanjs/changelog": "0.3.13",
     "bumpp": "9.3.0",
     "c12": "1.9.0",
     "cac": "6.7.14",
@@ -63,7 +63,7 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
-    "@soybeanjs/eslint-config": "1.2.2",
+    "@soybeanjs/eslint-config": "1.2.3",
     "@types/crypto-js": "4.2.2",
     "@types/node": "20.11.24",
     "eslint": "8.57.0",

@@ -16,7 +16,7 @@
   "dependencies": {},
   "devDependencies": {
     "@soybeanjs/cli": "1.0.7",
-    "@soybeanjs/eslint-config": "1.2.2",
+    "@soybeanjs/eslint-config": "1.2.3",
     "eslint": "8.57.0",
     "lint-staged": "15.2.2",
     "simple-git-hooks": "2.9.0",
