@@ -23,18 +23,18 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.0.9",
-    "@soybeanjs/eslint-config": "1.2.3",
-    "@types/node": "20.11.24",
+    "@soybeanjs/eslint-config": "1.2.4",
+    "@types/node": "20.11.26",
     "@vitejs/plugin-vue": "5.0.4",
     "@vitejs/plugin-vue-jsx": "3.1.0",
     "eslint": "8.57.0",
-    "eslint-plugin-vue": "9.22.0",
+    "eslint-plugin-vue": "9.23.0",
     "lint-staged": "15.2.2",
-    "simple-git-hooks": "2.9.0",
-    "typescript": "5.3.3",
-    "vite": "5.1.4",
+    "simple-git-hooks": "2.10.0",
+    "typescript": "5.4.2",
+    "vite": "5.1.6",
     "vue-eslint-parser": "9.4.2",
-    "vue-tsc": "2.0.2"
+    "vue-tsc": "2.0.6"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
