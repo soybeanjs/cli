@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.0.10](https://github.com/soybeanjs/cli/compare/v1.0.9...v1.0.10) (24-03-13)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(80433)</samp>](https://github.com/soybeanjs/cli/commit/80433b1)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.9](https://github.com/soybeanjs/cli/compare/v1.0.8...v1.0.9) (24-03-03)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
