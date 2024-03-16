@@ -37,12 +37,12 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.0.10",
-    "@soybeanjs/eslint-config": "1.2.4",
+    "@soybeanjs/eslint-config": "1.2.5",
     "@types/cli-progress": "3.11.5",
-    "@types/node": "20.11.26",
+    "@types/node": "20.11.28",
     "eslint": "8.57.0",
     "lint-staged": "15.2.2",
-    "simple-git-hooks": "2.10.0",
+    "simple-git-hooks": "2.11.0",
     "tsx": "4.7.1",
     "typescript": "5.4.2",
     "unbuild": "2.0.0"
