@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.0.11](https://github.com/soybeanjs/cli/compare/v1.0.9...v1.0.11) (24-03-17)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(80433)</samp>](https://github.com/soybeanjs/cli/commit/80433b1)
+  - update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(94a9f)</samp>](https://github.com/soybeanjs/cli/commit/94a9f9e)
+- **projects**:
+  - update vscode config &nbsp;-&nbsp; by @honghuangdc [<samp>(47835)</samp>](https://github.com/soybeanjs/cli/commit/478355a)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.10](https://github.com/soybeanjs/cli/compare/v1.0.9...v1.0.10) (24-03-13)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
