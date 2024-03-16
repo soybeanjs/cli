@@ -2,12 +2,12 @@
   "version": "1.0.0",
   "configurations": [
     {
+      "name": "TS Debugger",
       "type": "node",
       "request": "launch",
-      "name": "TS debugger",
-      "skipFiles": ["<node_internals>/**"],
-      "runtimeArgs": ["--loader", "tsx"],
-      "program": "${relativeFile}"
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/tsx",
+      "skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/**"],
+      "program": "${file}"
     }
   ]
 }
