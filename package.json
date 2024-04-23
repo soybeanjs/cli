@@ -50,7 +50,7 @@
     "update-pkg": "soy update-pkg"
   },
   "dependencies": {
-    "@soybeanjs/changelog": "0.3.17",
+    "@soybeanjs/changelog": "0.3.21",
     "bumpp": "9.4.0",
     "c12": "1.10.0",
     "cac": "6.7.14",
