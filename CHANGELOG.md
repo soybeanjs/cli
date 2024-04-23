@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [v1.0.12-beta.1](https://github.com/soybeanjs/cli/compare/v1.0.11...v1.0.12-beta.1) (2024-04-24)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(be6fc)</samp>](https://github.com/soybeanjs/cli/commit/be6fc67)
+- **projects**: update @soybeanjs/changelog & update CHANGELOG.md &nbsp;-&nbsp; by @honghuangdc [<samp>(dd33c)</samp>](https://github.com/soybeanjs/cli/commit/dd33c30)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.11](https://github.com/soybeanjs/cli/compare/v1.0.10...v1.0.11) (2024-03-17)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
