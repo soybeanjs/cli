@@ -1,7 +1,7 @@
 {
   "name": "demo-pkg",
   "type": "module",
-  "version": "1.0.12-beta.1",
+  "version": "1.0.12",
   "private": true,
   "packageManager": "pnpm@8.13.1",
   "scripts": {
