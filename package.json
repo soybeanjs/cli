@@ -1,7 +1,7 @@
 {
   "name": "@soybeanjs/cli",
   "type": "module",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "packageManager": "pnpm@9.0.5",
   "description": "SoybeanJS's command line tools",
   "author": {
