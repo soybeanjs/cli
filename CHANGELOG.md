@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.0.14](https://github.com/soybeanjs/cli/compare/v1.0.13...v1.0.14) (2024-04-27)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add new commit type `optimize` and commit scope `packages` &nbsp;-&nbsp; by @honghuangdc [<samp>(cb1f7)</samp>](https://github.com/soybeanjs/cli/commit/cb1f7cd)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @honghuangdc [<samp>(4cdda)</samp>](https://github.com/soybeanjs/cli/commit/4cdda8b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.13](https://github.com/soybeanjs/cli/compare/v1.0.12...v1.0.13) (2024-04-24)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
