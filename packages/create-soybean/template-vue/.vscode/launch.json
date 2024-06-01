@@ -9,12 +9,14 @@
       "webRoot": "${workspaceFolder}"
     },
     {
-      "name": "TS Debugger",
+      "name": "TS Debugger tsx",
       "type": "node",
       "request": "launch",
-      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/tsx",
-      "skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/**"],
-      "program": "${file}"
+      "program": "${file}",
+      "runtimeExecutable": "tsx",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/**"]
     }
   ]
 }
