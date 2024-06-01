@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [v1.0.15](https://github.com/soybeanjs/cli/compare/v1.0.14...v1.0.15) (2024-06-01)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(8a5ee)</samp>](https://github.com/soybeanjs/cli/commit/8a5ee3b)
+- **projects**:
+  - update deps & update pnpm versions &nbsp;-&nbsp; by @soybeanjs [<samp>(394d2)</samp>](https://github.com/soybeanjs/cli/commit/394d226)
+  - update pnpm versions &nbsp;-&nbsp; by @soybeanjs [<samp>(427c5)</samp>](https://github.com/soybeanjs/cli/commit/427c5a9)
+  - update vscode launch.json &nbsp;-&nbsp; by @soybeanjs [<samp>(4b17c)</samp>](https://github.com/soybeanjs/cli/commit/4b17c63)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.0.14](https://github.com/soybeanjs/cli/compare/v1.0.13...v1.0.14) (2024-04-27)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
