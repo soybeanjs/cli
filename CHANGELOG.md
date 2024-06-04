@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [v1.0.16](https://github.com/soybeanjs/cli/compare/v1.0.15...v1.0.16) (2024-06-05)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(58ce1)</samp>](https://github.com/soybeanjs/cli/commit/58ce17b)
+- **projects**: update template pnpm version &nbsp;-&nbsp; by @soybeanjs [<samp>(bf4d7)</samp>](https://github.com/soybeanjs/cli/commit/bf4d783)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.0.15](https://github.com/soybeanjs/cli/compare/v1.0.14...v1.0.15) (2024-06-01)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
