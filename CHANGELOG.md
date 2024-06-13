@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.0.18](https://github.com/soybeanjs/cli/compare/v1.0.17...v1.0.18) (2024-06-14)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update pnpm version &nbsp;-&nbsp; by @soybeanjs [<samp>(3168b)</samp>](https://github.com/soybeanjs/cli/commit/3168ba1)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.0.17](https://github.com/soybeanjs/cli/compare/v1.0.16...v1.0.17) (2024-06-14)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
