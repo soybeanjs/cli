@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.0.19](https://github.com/soybeanjs/cli/compare/v1.0.18...v1.0.19) (2024-06-15)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(bb26c)</samp>](https://github.com/soybeanjs/cli/commit/bb26c52)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.0.18](https://github.com/soybeanjs/cli/compare/v1.0.17...v1.0.18) (2024-06-14)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
