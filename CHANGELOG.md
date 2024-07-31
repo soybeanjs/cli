@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [v1.1.0](https://github.com/soybeanjs/cli/compare/v1.0.19...v1.1.0) (2024-08-01)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**:
+  - update deps & update template &nbsp;-&nbsp; by @honghuangdc [<samp>(304af)</samp>](https://github.com/soybeanjs/cli/commit/304af72)
+  - update script &nbsp;-&nbsp; by @honghuangdc [<samp>(d5856)</samp>](https://github.com/soybeanjs/cli/commit/d585611)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
+
 ## [v1.0.19](https://github.com/soybeanjs/cli/compare/v1.0.18...v1.0.19) (2024-06-15)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore

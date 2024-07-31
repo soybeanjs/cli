@@ -1,7 +1,7 @@
 {
   "name": "pnpm-monorepo",
   "type": "module",
-  "version": "1.0.19",
+  "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@9.3.0",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@soybeanjs/cli": "1.0.19",
+    "@soybeanjs/cli": "1.1.0",
     "@soybeanjs/eslint-config": "1.4.0",
     "eslint": "9.8.0",
     "lint-staged": "15.2.7",
