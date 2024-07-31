@@ -4,7 +4,7 @@
     "source.organizeImports": "never"
   },
   "editor.formatOnSave": false,
-  "eslint.experimental.useFlatConfig": true,
+  "eslint.useFlatConfig": true,
   "eslint.validate": ["html", "css", "json", "jsonc"],
   "prettier.enable": false
 }
