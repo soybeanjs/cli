@@ -40,6 +40,7 @@
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
+    "commit:zh": "soy git-commit -l=zh-cn",
     "lint": "eslint . --fix",
     "prepare": "simple-git-hooks",
     "publish-pkg": "pnpm -r publish --access public",
