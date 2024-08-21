@@ -4,6 +4,7 @@ import { version } from '../package.json';
 import { cleanup, genChangelog, gitCommit, gitCommitVerify, ncu, release } from './command';
 import { loadCliOptions } from './config';
 import type { CliOption } from './types';
+import type { Lang } from './locales';
 
 type Command = 'cleanup' | 'ncu' | 'update-pkg' | 'git-commit' | 'git-commit-verify' | 'changelog' | 'release';
 
@@ -26,6 +27,12 @@ interface CommandArg {
    * Multiple values use "," to separate them
    */
   cleanupDir?: string;
+  /**
+   * display lang of cli
+   *
+   * @default 'en-us'
+   */
+  lang?: Lang;
 }
 
 async function setupCli() {
@@ -45,6 +52,7 @@ async function setupCli() {
       '-c, --cleanupDir <dir>',
       'The glob pattern of dirs to cleanup, If not set, it will use the default value, Multiple values use "," to separate them'
     )
+    .option('-l, --lang <lang>', 'display lang of cli', { default: 'en-us', type: [String] })
     .help();
 
   const commands: CommandWithAction<CommandArg> = {
@@ -75,14 +83,14 @@ async function setupCli() {
     },
     'git-commit': {
       desc: 'git commit, generate commit message which match Conventional Commits standard',
-      action: async () => {
-        await gitCommit(cliOptions.gitCommitTypes, cliOptions.gitCommitScopes);
+      action: async args => {
+        await gitCommit(args?.lang);
       }
     },
     'git-commit-verify': {
       desc: 'verify git commit message, make sure it match Conventional Commits standard',
-      action: async () => {
-        await gitCommitVerify();
+      action: async args => {
+        await gitCommitVerify(args?.lang, cliOptions.gitCommitVerifyIgnores);
       }
     },
     changelog: {
