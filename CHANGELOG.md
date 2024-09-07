@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [v1.1.1](https://github.com/soybeanjs/cli/compare/v1.1.0...v1.1.1) (2024-09-07)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: git-commit support Chinese mode &nbsp;-&nbsp; by **Azir** [<samp>(9e097)</samp>](https://github.com/soybeanjs/cli/commit/9e097e3)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(d22e8)</samp>](https://github.com/soybeanjs/cli/commit/d22e89a)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+[Azir](mailto:2075125282@qq.com)
+
 ## [v1.1.0](https://github.com/soybeanjs/cli/compare/v1.0.19...v1.1.0) (2024-08-01)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
