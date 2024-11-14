@@ -67,7 +67,7 @@
     "@soybeanjs/eslint-config": "1.4.1",
     "@types/node": "22.5.4",
     "eslint": "9.10.0",
-    "eslint-plugin-vue": "9.28.0",
+    "eslint-plugin-vue": "9.31.0",
     "fast-glob": "3.3.2",
     "lint-staged": "15.2.10",
     "simple-git-hooks": "2.11.1",
