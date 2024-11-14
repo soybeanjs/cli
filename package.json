@@ -65,7 +65,7 @@
   "devDependencies": {
     "@soybeanjs/cli": "link:",
     "@soybeanjs/eslint-config": "1.4.1",
-    "@types/node": "22.5.4",
+    "@types/node": "22.9.0",
     "eslint": "9.10.0",
     "eslint-plugin-vue": "9.28.0",
     "fast-glob": "3.3.2",
