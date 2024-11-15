@@ -72,7 +72,7 @@
     "lint-staged": "15.2.10",
     "simple-git-hooks": "2.11.1",
     "tsup": "8.2.4",
-    "tsx": "4.19.0",
+    "tsx": "4.19.2",
     "typescript": "5.5.4",
     "vue-eslint-parser": "9.4.3"
   },
