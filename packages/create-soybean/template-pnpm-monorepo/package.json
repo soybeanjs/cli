@@ -16,12 +16,12 @@
   "dependencies": {},
   "devDependencies": {
     "@soybeanjs/cli": "1.1.1",
-    "@soybeanjs/eslint-config": "1.4.1",
-    "eslint": "9.10.0",
-    "lint-staged": "15.2.10",
+    "@soybeanjs/eslint-config": "1.4.3",
+    "eslint": "9.16.0",
+    "lint-staged": "15.2.11",
     "simple-git-hooks": "2.11.1",
-    "tsx": "4.19.0",
-    "typescript": "5.5.4"
+    "tsx": "4.19.2",
+    "typescript": "5.7.2"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
