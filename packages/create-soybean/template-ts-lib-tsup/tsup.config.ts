@@ -5,10 +5,14 @@ export default defineConfig({
   clean: true,
   dts: true,
   format: ['cjs', 'esm'],
+  outExtension: ctx => {
+    return {
+      js: ctx.format === 'cjs' ? '.cjs' : '.mjs'
+    };
+  },
   external: [],
   shims: true,
   cjsInterop: true,
   sourcemap: false,
-  target: 'es6',
   minify: true
 });

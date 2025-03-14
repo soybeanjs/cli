@@ -1,3 +1,3 @@
 export function fn() {
-  return 1;
+  return '';
 }
