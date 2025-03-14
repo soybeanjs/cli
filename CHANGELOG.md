@@ -1,6 +1,30 @@
 # Changelog
 
 
+## [v1.2.0](https://github.com/soybeanjs/cli/compare/v1.1.1...v1.2.0) (2025-03-14)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: update create-soybean templates &nbsp;-&nbsp; by @soybeanjs [<samp>(fea25)</samp>](https://github.com/soybeanjs/cli/commit/fea2591)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - bump npm-check-updates from 17.1.1 to 17.1.11 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/cli/issues/9 [<samp>(9d167)</samp>](https://github.com/soybeanjs/cli/commit/9d16792)
+  - bump bumpp from 9.5.2 to 9.8.1 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/cli/issues/11 [<samp>(ebb96)</samp>](https://github.com/soybeanjs/cli/commit/ebb967b)
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(56f8d)</samp>](https://github.com/soybeanjs/cli/commit/56f8dd2)
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(e3107)</samp>](https://github.com/soybeanjs/cli/commit/e31074c)
+- **deps-dev**:
+  - bump eslint from 9.10.0 to 9.14.0 &nbsp;-&nbsp; by **dependabot[bot]** in https://github.com/soybeanjs/cli/issues/7 [<samp>(9fa63)</samp>](https://github.com/soybeanjs/cli/commit/9fa63b7)
+- **projects**:
+  - add dependabot.yml &nbsp;-&nbsp; by @soybeanjs [<samp>(dff89)</samp>](https://github.com/soybeanjs/cli/commit/dff89bd)
+  - remove dependabot.yml &nbsp;-&nbsp; by @soybeanjs [<samp>(b720b)</samp>](https://github.com/soybeanjs/cli/commit/b720b9b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+[dependabot[bot]](mailto:49699333+dependabot[bot]@users.noreply.github.com)
+
 ## [v1.1.1](https://github.com/soybeanjs/cli/compare/v1.1.0...v1.1.1) (2024-09-07)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
