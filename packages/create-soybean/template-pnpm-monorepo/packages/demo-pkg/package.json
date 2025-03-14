@@ -3,12 +3,12 @@
   "type": "module",
   "version": "1.1.1",
   "private": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@10.6.3",
   "scripts": {
     "typecheck": "tsc --noEmit --skipLibCheck"
   },
   "dependencies": {},
   "devDependencies": {
-    "typescript": "5.7.2"
+    "typescript": "5.8.2"
   }
 }

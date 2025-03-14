@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@10.6.3",
   "scripts": {
     "build": "run-s typecheck build-only",
     "build-only": "vite build",
@@ -17,24 +17,24 @@
     "update-pkg": "soy ncu"
   },
   "dependencies": {
-    "pinia": "2.3.0",
+    "pinia": "3.0.1",
     "vue": "3.5.13",
     "vue-router": "4.5.0"
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.1.1",
-    "@soybeanjs/eslint-config": "1.4.3",
-    "@types/node": "22.10.2",
+    "@soybeanjs/eslint-config": "1.6.0",
+    "@types/node": "22.13.10",
     "@vitejs/plugin-vue": "5.2.1",
     "@vitejs/plugin-vue-jsx": "4.1.1",
-    "eslint": "9.16.0",
-    "eslint-plugin-vue": "9.32.0",
-    "lint-staged": "15.2.11",
+    "eslint": "9.22.0",
+    "eslint-plugin-vue": "10.0.0",
+    "lint-staged": "15.5.0",
     "simple-git-hooks": "2.11.1",
-    "typescript": "5.7.2",
-    "vite": "6.0.3",
-    "vue-eslint-parser": "9.4.3",
-    "vue-tsc": "2.1.10"
+    "typescript": "5.8.2",
+    "vite": "6.2.1",
+    "vue-eslint-parser": "10.1.1",
+    "vue-tsc": "2.2.8"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
