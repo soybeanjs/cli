@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.2.1](https://github.com/soybeanjs/cli/compare/v1.2.0...v1.2.1) (2025-03-20)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: update vue-template &nbsp;-&nbsp; by @soybeanjs [<samp>(3ee06)</samp>](https://github.com/soybeanjs/cli/commit/3ee06a8)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(39a27)</samp>](https://github.com/soybeanjs/cli/commit/39a273a)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.2.0](https://github.com/soybeanjs/cli/compare/v1.1.1...v1.2.0) (2025-03-14)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
