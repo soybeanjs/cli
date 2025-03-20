@@ -1,15 +1,18 @@
-import { defineConfig } from '@unocss/vite';
-import transformerDirectives from '@unocss/transformer-directives';
-import transformerVariantGroup from '@unocss/transformer-variant-group';
-import presetWind3 from '@unocss/preset-wind3';
+import { defineConfig, presetWind3, transformerDirectives, transformerVariantGroup } from 'unocss';
 import type { Theme } from '@unocss/preset-uno';
+import { presetSoybeanUI } from '@soybean-ui/unocss-preset';
 
 export default defineConfig<Theme>({
   content: {
     pipeline: {
-      exclude: ['node_modules', 'dist']
+      include: [/\.vue($|\?)/, /.*\/soy-ui.*\.js/]
     }
   },
   transformers: [transformerDirectives(), transformerVariantGroup()],
-  presets: [presetWind3({ dark: 'class' })]
+  presets: [
+    presetWind3({ dark: 'class' }),
+    presetSoybeanUI({
+      color: 'default'
+    })
+  ]
 });

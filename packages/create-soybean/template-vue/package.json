@@ -5,7 +5,7 @@
   "private": true,
   "packageManager": "pnpm@10.6.3",
   "scripts": {
-    "build": "run-s typecheck build-only",
+    "build": "pnpm typecheck && pnpm build-only",
     "build-only": "vite build",
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
@@ -19,18 +19,16 @@
   "dependencies": {
     "@unocss/reset": "66.0.0",
     "pinia": "3.0.1",
+    "soy-ui": "0.0.1-beta.9",
     "vue": "3.5.13",
     "vue-router": "4.5.0"
   },
   "devDependencies": {
+    "@soybean-ui/unocss-preset": "0.0.1-beta.9",
     "@soybeanjs/cli": "1.2.0",
     "@soybeanjs/eslint-config": "1.6.0",
     "@types/node": "22.13.10",
     "@unocss/eslint-config": "66.0.0",
-    "@unocss/preset-uno": "66.0.0",
-    "@unocss/transformer-directives": "66.0.0",
-    "@unocss/transformer-variant-group": "66.0.0",
-    "@unocss/vite": "66.0.0",
     "@vitejs/plugin-vue": "5.2.1",
     "@vitejs/plugin-vue-jsx": "4.1.1",
     "eslint": "9.22.0",
@@ -39,6 +37,7 @@
     "lint-staged": "15.5.0",
     "simple-git-hooks": "2.11.1",
     "typescript": "5.8.2",
+    "unocss": "66.0.0",
     "unplugin-vue-components": "28.4.1",
     "vite": "6.2.1",
     "vue-eslint-parser": "10.1.1",
