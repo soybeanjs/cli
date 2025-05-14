@@ -10,13 +10,7 @@ import type { Answers } from 'prompts';
 import { consola } from 'consola';
 import { copy, emptyDir, formatTargetDir, isPathEmpty, isValidPackageName, toValidPackageName } from './shared';
 
-type TemplateType =
-  | 'template-pnpm-monorepo'
-  | 'template-tsdown'
-  | 'template-tsup'
-  | 'template-unbuild'
-  | 'template-vue'
-  | 'template-vue-tsdown';
+type TemplateType = 'pnpm-monorepo' | 'tsdown' | 'tsup' | 'unbuild' | 'vue' | 'vue-tsdown';
 
 type ColorFunc = (str: string | number) => string;
 
@@ -28,32 +22,32 @@ interface Template {
 
 const templates: Template[] = [
   {
-    type: 'template-pnpm-monorepo',
+    type: 'pnpm-monorepo',
     name: 'Pnpm monorepo',
     color: yellow
   },
   {
-    type: 'template-tsdown',
+    type: 'tsdown',
     name: 'TypeScript library by tsdown',
     color: cyan
   },
   {
-    type: 'template-tsup',
+    type: 'tsup',
     name: 'TypeScript library by tsup',
     color: cyan
   },
   {
-    type: 'template-unbuild',
+    type: 'unbuild',
     name: 'TypeScript library by unbuild',
     color: cyan
   },
   {
-    type: 'template-vue',
+    type: 'vue',
     name: 'Vue 3',
     color: green
   },
   {
-    type: 'template-vue-tsdown',
+    type: 'vue-tsdown',
     name: 'Vue 3 + TypeScript library by tsdown',
     color: green
   }
