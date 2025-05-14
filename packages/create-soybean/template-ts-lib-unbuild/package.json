@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.6.3",
+  "packageManager": "pnpm@10.11.0",
   "sideEffects": false,
   "exports": {
     ".": {
@@ -31,20 +31,20 @@
     "cli-progress": "3.12.0",
     "consola": "3.4.2",
     "dayjs": "1.11.13",
-    "execa": "9.5.2",
+    "execa": "9.5.3",
     "kolorist": "1.8.0",
     "ofetch": "1.4.1"
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.2.1",
-    "@soybeanjs/eslint-config": "1.6.0",
+    "@soybeanjs/eslint-config": "1.6.1",
     "@types/cli-progress": "3.11.6",
-    "@types/node": "22.13.10",
-    "eslint": "9.22.0",
-    "lint-staged": "15.5.0",
-    "simple-git-hooks": "2.11.1",
-    "tsx": "4.19.3",
-    "typescript": "5.8.2",
+    "@types/node": "22.15.18",
+    "eslint": "9.26.0",
+    "lint-staged": "16.0.0",
+    "simple-git-hooks": "2.13.0",
+    "tsx": "4.19.4",
+    "typescript": "5.8.3",
     "unbuild": "3.5.0"
   },
   "simple-git-hooks": {
