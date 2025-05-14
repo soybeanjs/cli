@@ -1,5 +1,5 @@
 {
-  "name": "ts-lib-tsup",
+  "name": "template-tsdown",
   "type": "module",
   "version": "0.0.0",
   "private": true,
@@ -20,7 +20,7 @@
   "types": "./dist/index.d.ts",
   "files": ["dist"],
   "scripts": {
-    "build": "tsup",
+    "build": "tsdown",
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
     "dev": "tsup --watch",
@@ -47,7 +47,7 @@
     "eslint": "9.26.0",
     "lint-staged": "16.0.0",
     "simple-git-hooks": "2.13.0",
-    "tsup": "8.4.0",
+    "tsdown": "0.11.9",
     "tsx": "4.19.4",
     "typescript": "5.8.3"
   },

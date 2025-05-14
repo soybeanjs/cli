@@ -3,14 +3,20 @@ import process from 'node:process';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { blue, green, red, reset, yellow } from 'kolorist';
+import { cyan, green, red, reset, yellow } from 'kolorist';
 import minimist from 'minimist';
 import prompts from 'prompts';
 import type { Answers } from 'prompts';
 import { consola } from 'consola';
 import { copy, emptyDir, formatTargetDir, isPathEmpty, isValidPackageName, toValidPackageName } from './shared';
 
-type TemplateType = 'ts-lib-tsup' | 'ts-lib-unbuild' | 'pnpm-monorepo' | 'vue';
+type TemplateType =
+  | 'template-pnpm-monorepo'
+  | 'template-tsdown'
+  | 'template-tsup'
+  | 'template-unbuild'
+  | 'template-vue'
+  | 'template-vue-tsdown';
 
 type ColorFunc = (str: string | number) => string;
 
@@ -22,23 +28,33 @@ interface Template {
 
 const templates: Template[] = [
   {
-    type: 'ts-lib-tsup',
-    name: 'TypeScript library by tsup',
-    color: blue
-  },
-  {
-    type: 'ts-lib-unbuild',
-    name: 'TypeScript library by unbuild',
-    color: blue
-  },
-  {
-    type: 'pnpm-monorepo',
+    type: 'template-pnpm-monorepo',
     name: 'Pnpm monorepo',
     color: yellow
   },
   {
-    type: 'vue',
+    type: 'template-tsdown',
+    name: 'TypeScript library by tsdown',
+    color: cyan
+  },
+  {
+    type: 'template-tsup',
+    name: 'TypeScript library by tsup',
+    color: cyan
+  },
+  {
+    type: 'template-unbuild',
+    name: 'TypeScript library by unbuild',
+    color: cyan
+  },
+  {
+    type: 'template-vue',
     name: 'Vue 3',
+    color: green
+  },
+  {
+    type: 'template-vue-tsdown',
+    name: 'Vue 3 + TypeScript library by tsdown',
     color: green
   }
 ];

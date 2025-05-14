@@ -1,0 +1,60 @@
+{
+  "name": "template-unbuild",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.11.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "unbuild",
+    "cleanup": "soy cleanup",
+    "commit": "soy git-commit",
+    "lint": "eslint . --fix",
+    "prepare": "simple-git-hooks",
+    "publish-pkg": "pnpm publish --access public",
+    "release": "soy release",
+    "typecheck": "tsc --noEmit --skipLibCheck",
+    "update-pkg": "soy ncu"
+  },
+  "dependencies": {
+    "cli-progress": "3.12.0",
+    "consola": "3.4.2",
+    "dayjs": "1.11.13",
+    "execa": "9.5.3",
+    "kolorist": "1.8.0",
+    "ofetch": "1.4.1"
+  },
+  "devDependencies": {
+    "@soybeanjs/cli": "1.2.1",
+    "@soybeanjs/eslint-config": "1.6.1",
+    "@types/cli-progress": "3.11.6",
+    "@types/node": "22.15.18",
+    "eslint": "9.26.0",
+    "lint-staged": "16.0.0",
+    "simple-git-hooks": "2.13.0",
+    "tsx": "4.19.4",
+    "typescript": "5.8.3",
+    "unbuild": "3.5.0"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm soy git-commit-verify",
+    "pre-commit": "pnpm typecheck && pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
