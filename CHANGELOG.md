@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.3.0-beta.3](https://github.com/soybeanjs/cli/compare/v1.3.0-beta.2...v1.3.0-beta.3) (2025-05-15)
+
+### &nbsp;&nbsp;&nbsp;🛠 Optimizations
+
+- **packages**: optimize create-soybean &nbsp;-&nbsp; by @soybeanjs [<samp>(b04a6)</samp>](https://github.com/soybeanjs/cli/commit/b04a6bc)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.3.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.3.0-beta.1...v1.3.0-beta.2) (2025-05-15)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
