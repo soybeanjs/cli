@@ -1,6 +1,24 @@
 # Changelog
 
 
+## [v1.3.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.2.1...v1.3.0-beta.1) (2025-05-15)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **packages**: create-soybean: add templates &nbsp;-&nbsp; by @soybeanjs [<samp>(aa8f1)</samp>](https://github.com/soybeanjs/cli/commit/aa8f1e4)
+
+### &nbsp;&nbsp;&nbsp;🛠 Optimizations
+
+- **packages**: optimize create-soybean templates &nbsp;-&nbsp; by @soybeanjs [<samp>(edb0d)</samp>](https://github.com/soybeanjs/cli/commit/edb0d50)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(646bd)</samp>](https://github.com/soybeanjs/cli/commit/646bd32)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.2.1](https://github.com/soybeanjs/cli/compare/v1.2.0...v1.2.1) (2025-03-20)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
