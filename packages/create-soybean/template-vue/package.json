@@ -32,7 +32,7 @@
     "@unocss/eslint-config": "66.1.1",
     "@vitejs/plugin-vue": "5.2.4",
     "@vitejs/plugin-vue-jsx": "4.1.2",
-    "elegant-router": "1.0.0",
+    "elegant-router": "1.0.2",
     "eslint": "9.26.0",
     "eslint-plugin-vue": "10.1.0",
     "lint-staged": "16.0.0",

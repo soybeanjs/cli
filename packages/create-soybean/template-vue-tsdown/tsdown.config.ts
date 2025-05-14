@@ -4,13 +4,13 @@ import unpluginVueJsx from 'unplugin-vue-jsx/rolldown';
 
 export default defineConfig({
   entry: ['src/index.ts'],
+  platform: 'neutral',
   plugins: [unpluginVue({ isProduction: true }), unpluginVueJsx()],
-  clean: true,
   dts: {
     vue: true
   },
-  platform: 'neutral',
-  shims: true,
+  clean: true,
+  external: ['vue'],
   sourcemap: false,
   minify: false
 });
