@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.3.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.3.0-beta.1...v1.3.0-beta.2) (2025-05-15)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **packages**: create-soybean: fix template path &nbsp;-&nbsp; by @soybeanjs [<samp>(ef4d0)</samp>](https://github.com/soybeanjs/cli/commit/ef4d013)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.3.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.2.1...v1.3.0-beta.1) (2025-05-15)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
