@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.3.1](https://github.com/soybeanjs/cli/compare/v1.3.0...v1.3.1) (2025-06-10)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(33c35)</samp>](https://github.com/soybeanjs/cli/commit/33c3563)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.3.0](https://github.com/soybeanjs/cli/compare/v1.2.1...v1.3.0) (2025-05-15)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features

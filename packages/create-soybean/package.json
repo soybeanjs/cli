@@ -1,7 +1,7 @@
 {
   "name": "create-soybean",
   "type": "module",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "SoybeanJS's command line to create different project templates",
   "author": {
     "name": "Soybean",
