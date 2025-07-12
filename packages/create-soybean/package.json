@@ -19,13 +19,11 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "bin": {
-      "create-soybean": "dist/index.js",
-      "create-soy": "dist/index.js"
+      "create-soybean": "dist/index.js"
     }
   },
   "bin": {
-    "create-soybean": "dist/index.js",
-    "create-soy": "dist/index.js"
+    "create-soybean": "./src/bin.js"
   },
   "files": ["dist", "template-*"],
   "scripts": {
