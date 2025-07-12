@@ -17,7 +17,11 @@
     "url": "https://github.com/soybeanjs/cli/issues"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "bin": {
+      "create-soybean": "dist/index.js",
+      "create-soy": "dist/index.js"
+    }
   },
   "bin": {
     "create-soybean": "dist/index.js",
@@ -26,7 +30,7 @@
   "files": ["dist", "template-*"],
   "scripts": {
     "build": "pnpm typecheck && pnpm build-only",
-    "build-only": "tsup",
+    "build-only": "tsdown",
     "publish-pkg": "pnpm publish --access public --no-git-checks",
     "typecheck": "tsc --noEmit --skipLibCheck"
   },
@@ -39,7 +43,7 @@
   "devDependencies": {
     "@types/minimist": "1.2.5",
     "@types/prompts": "2.4.9",
-    "tsup": "8.5.0",
+    "tsdown": "0.12.9",
     "typescript": "5.8.3"
   }
 }

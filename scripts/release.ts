@@ -1,12 +1,14 @@
 import process from 'node:process';
 import path from 'node:path';
 import { readFile, writeFile } from 'node:fs/promises';
-import fg from 'fast-glob';
+import { globSync } from 'tinyglobby';
 
 async function updateTemplateVersion() {
   const cwd = process.cwd();
 
-  const globs = fg.sync(path.join(cwd, 'packages/create-soybean/template-*/package.json'));
+  const globs = globSync(path.join(cwd, 'packages/create-soybean/template-*/package.json'), {
+    onlyFiles: true
+  });
 
   const pkgJson = await readFile(path.join(cwd, 'package.json'), 'utf-8');
 

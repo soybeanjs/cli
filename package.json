@@ -18,25 +18,29 @@
     "url": "https://github.com/soybeanjs/cli/issues"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "bin": {
+      "soybean": "dist/index.js",
+      "soy": "dist/index.js"
+    }
   },
   "bin": {
-    "soybean": "dist/index.js",
-    "soy": "dist/index.cjs"
+    "soybean": "./src/bin.js",
+    "soy": "./src/bin.js"
   },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.js"
     }
   },
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": ["dist"],
   "scripts": {
-    "build": "tsup && pnpm build-pkg",
+    "build": "tsdown && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
@@ -60,7 +64,8 @@
     "execa": "9.6.0",
     "kolorist": "1.8.0",
     "npm-check-updates": "18.0.1",
-    "rimraf": "6.0.1"
+    "rimraf": "6.0.1",
+    "tinyglobby": "0.2.14"
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
@@ -68,10 +73,9 @@
     "@types/node": "22.15.30",
     "eslint": "9.28.0",
     "eslint-plugin-vue": "10.2.0",
-    "fast-glob": "3.3.3",
     "lint-staged": "16.1.0",
     "simple-git-hooks": "2.13.0",
-    "tsup": "8.5.0",
+    "tsdown": "0.12.9",
     "tsx": "4.19.4",
     "typescript": "5.8.3",
     "vue-eslint-parser": "10.1.3"
