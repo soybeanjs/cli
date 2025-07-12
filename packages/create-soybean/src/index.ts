@@ -32,16 +32,6 @@ const templates: Template[] = [
     color: cyan
   },
   {
-    type: 'tsup',
-    name: 'TypeScript library by tsup',
-    color: cyan
-  },
-  {
-    type: 'unbuild',
-    name: 'TypeScript library by unbuild',
-    color: cyan
-  },
-  {
     type: 'vue',
     name: 'Vue 3',
     color: green
