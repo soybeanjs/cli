@@ -1,6 +1,29 @@
 # Changelog
 
 
+## [v1.4.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.3.1...v1.4.0-beta.1) (2025-07-13)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **project**: add command stub &nbsp;-&nbsp; by @soybeanjs [<samp>(7a34e)</samp>](https://github.com/soybeanjs/cli/commit/7a34eb0)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix bin &nbsp;-&nbsp; by @soybeanjs [<samp>(cfd85)</samp>](https://github.com/soybeanjs/cli/commit/cfd8580)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: use tsdown replace tsup &nbsp;-&nbsp; by @soybeanjs [<samp>(618f3)</samp>](https://github.com/soybeanjs/cli/commit/618f358)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(0cde7)</samp>](https://github.com/soybeanjs/cli/commit/0cde76e)
+- **templates**: remove tsup and unbuild templates from create-soybean &nbsp;-&nbsp; by @soybeanjs [<samp>(05166)</samp>](https://github.com/soybeanjs/cli/commit/051662b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.3.1](https://github.com/soybeanjs/cli/compare/v1.3.0...v1.3.1) (2025-06-10)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
