@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.4.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.1...v1.4.0-beta.2) (2025-08-27)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **deps**: add picomatch &nbsp;-&nbsp; by @soybeanjs [<samp>(8dfbf)</samp>](https://github.com/soybeanjs/cli/commit/8dfbfc8)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(37600)</samp>](https://github.com/soybeanjs/cli/commit/3760033)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.4.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.3.1...v1.4.0-beta.1) (2025-07-13)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
