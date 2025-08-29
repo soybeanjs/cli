@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.4.0-beta.3](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.2...v1.4.0-beta.3) (2025-08-29)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: remove outdated project templates from README &nbsp;-&nbsp; by @soybeanjs [<samp>(68ad0)</samp>](https://github.com/soybeanjs/cli/commit/68ad0b9)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(07255)</samp>](https://github.com/soybeanjs/cli/commit/0725572)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.4.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.1...v1.4.0-beta.2) (2025-08-27)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
