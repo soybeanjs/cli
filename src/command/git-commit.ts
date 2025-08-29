@@ -1,6 +1,6 @@
 import path from 'node:path';
 import { readFileSync } from 'node:fs';
-import { prompt } from 'enquirer';
+import enquirer from 'enquirer';
 import { execCommand } from '../shared';
 import { locales } from '../locales';
 import type { Lang } from '../locales';
@@ -35,7 +35,7 @@ export async function gitCommit(lang: Lang = 'en-us') {
     message: `${value.padEnd(30)} (${msg})`
   }));
 
-  const result = await prompt<PromptObject>([
+  const result = await enquirer.prompt<PromptObject>([
     {
       name: 'types',
       type: 'select',
