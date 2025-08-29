@@ -4,6 +4,17 @@
     "source.organizeImports": "never"
   },
   "editor.formatOnSave": false,
-  "eslint.validate": ["html", "css", "json", "jsonc"],
+  "eslint.validate": [
+    "html",
+    "css",
+    "scss",
+    "json",
+    "jsonc",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
   "prettier.enable": false
 }
