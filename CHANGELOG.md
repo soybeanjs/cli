@@ -1,6 +1,44 @@
 # Changelog
 
 
+## [v1.4.0](https://github.com/soybeanjs/cli/compare/v1.3.1...v1.4.0) (2025-08-29)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **project**: add command stub &nbsp;-&nbsp; by @soybeanjs [<samp>(7a34e)</samp>](https://github.com/soybeanjs/cli/commit/7a34eb0)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **deps**:
+  - add picomatch &nbsp;-&nbsp; by @soybeanjs [<samp>(8dfbf)</samp>](https://github.com/soybeanjs/cli/commit/8dfbfc8)
+- **projects**:
+  - fix bin &nbsp;-&nbsp; by @soybeanjs [<samp>(cfd85)</samp>](https://github.com/soybeanjs/cli/commit/cfd8580)
+  - fix enquirer import &nbsp;-&nbsp; by @soybeanjs [<samp>(108d4)</samp>](https://github.com/soybeanjs/cli/commit/108d405)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: use tsdown replace tsup &nbsp;-&nbsp; by @soybeanjs [<samp>(618f3)</samp>](https://github.com/soybeanjs/cli/commit/618f358)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: remove outdated project templates from README &nbsp;-&nbsp; by @soybeanjs [<samp>(68ad0)</samp>](https://github.com/soybeanjs/cli/commit/68ad0b9)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(0cde7)</samp>](https://github.com/soybeanjs/cli/commit/0cde76e)
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(37600)</samp>](https://github.com/soybeanjs/cli/commit/3760033)
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(07255)</samp>](https://github.com/soybeanjs/cli/commit/0725572)
+  - update changelog package &nbsp;-&nbsp; by @soybeanjs [<samp>(cf424)</samp>](https://github.com/soybeanjs/cli/commit/cf4248a)
+- **projects**:
+  - update vscode settings &nbsp;-&nbsp; by @soybeanjs [<samp>(e13d4)</samp>](https://github.com/soybeanjs/cli/commit/e13d45c)
+- **templates**:
+  - remove tsup and unbuild templates from create-soybean &nbsp;-&nbsp; by @soybeanjs [<samp>(05166)</samp>](https://github.com/soybeanjs/cli/commit/051662b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.4.0-beta.4](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.3...v1.4.0-beta.4) (2025-08-29)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes

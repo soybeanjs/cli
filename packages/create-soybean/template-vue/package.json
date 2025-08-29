@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@soybean-ui/unocss-preset": "0.0.2-beta.5",
-    "@soybeanjs/cli": "1.4.0-beta.4",
+    "@soybeanjs/cli": "1.4.0",
     "@soybeanjs/eslint-config": "1.7.1",
     "@types/node": "24.3.0",
     "@unocss/eslint-config": "66.4.2",
