@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.4.0-beta.4](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.3...v1.4.0-beta.4) (2025-08-29)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: fix enquirer import &nbsp;-&nbsp; by @soybeanjs [<samp>(108d4)</samp>](https://github.com/soybeanjs/cli/commit/108d405)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update vscode settings &nbsp;-&nbsp; by @soybeanjs [<samp>(e13d4)</samp>](https://github.com/soybeanjs/cli/commit/e13d45c)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.4.0-beta.3](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.2...v1.4.0-beta.3) (2025-08-29)
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
