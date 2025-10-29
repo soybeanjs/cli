@@ -41,7 +41,7 @@
   "devDependencies": {
     "@types/minimist": "1.2.5",
     "@types/prompts": "2.4.9",
-    "tsdown": "0.14.2",
-    "typescript": "5.9.2"
+    "tsdown": "0.15.11",
+    "typescript": "5.9.3"
   }
 }

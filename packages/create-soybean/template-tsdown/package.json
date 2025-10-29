@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.20.0",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -34,22 +34,22 @@
   "dependencies": {
     "cli-progress": "3.12.0",
     "consola": "3.4.2",
-    "dayjs": "1.11.15",
+    "dayjs": "1.11.18",
     "execa": "9.6.0",
     "kolorist": "1.8.0",
-    "ofetch": "1.4.1"
+    "ofetch": "1.5.0"
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.4.0",
     "@soybeanjs/eslint-config": "1.7.1",
     "@types/cli-progress": "3.11.6",
-    "@types/node": "24.3.0",
-    "eslint": "9.34.0",
-    "lint-staged": "16.1.5",
+    "@types/node": "24.9.2",
+    "eslint": "9.38.0",
+    "lint-staged": "16.2.6",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.14.2",
-    "tsx": "4.20.5",
-    "typescript": "5.9.2"
+    "tsdown": "0.15.11",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",

@@ -2,7 +2,7 @@
   "name": "@soybeanjs/cli",
   "type": "module",
   "version": "1.4.0",
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.20.0",
   "description": "SoybeanJS's command line tools",
   "author": {
     "name": "Soybean",
@@ -55,29 +55,29 @@
     "update-pkg": "soy update-pkg"
   },
   "dependencies": {
-    "@soybeanjs/changelog": "0.3.25-beta.1",
-    "bumpp": "10.2.3",
-    "c12": "3.2.0",
+    "@soybeanjs/changelog": "0.4.0-beta.1",
+    "bumpp": "10.3.1",
+    "c12": "3.3.1",
     "cac": "6.7.14",
     "consola": "3.4.2",
     "enquirer": "2.4.1",
     "execa": "9.6.0",
     "kolorist": "1.8.0",
-    "npm-check-updates": "18.0.3",
+    "npm-check-updates": "19.1.2",
     "rimraf": "6.0.1",
-    "tinyglobby": "0.2.14"
+    "tinyglobby": "0.2.15"
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
     "@soybeanjs/eslint-config": "1.7.1",
-    "@types/node": "24.3.0",
-    "eslint": "9.34.0",
-    "eslint-plugin-vue": "10.4.0",
-    "lint-staged": "16.1.5",
+    "@types/node": "24.9.2",
+    "eslint": "9.38.0",
+    "eslint-plugin-vue": "10.5.1",
+    "lint-staged": "16.2.6",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.14.2",
-    "tsx": "4.20.5",
-    "typescript": "5.9.2",
+    "tsdown": "0.15.11",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
     "vue-eslint-parser": "10.2.0"
   },
   "simple-git-hooks": {
