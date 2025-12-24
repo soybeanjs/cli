@@ -15,7 +15,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@soybeanjs/cli": "1.4.3",
+    "@soybeanjs/cli": "1.4.4",
     "@soybeanjs/eslint-config": "1.7.5",
     "eslint": "9.39.2",
     "lint-staged": "16.2.7",

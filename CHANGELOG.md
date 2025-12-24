@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.4.4](https://github.com/soybeanjs/cli/compare/v1.4.3...v1.4.4) (2025-12-24)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **tsdown**: set fixedExtension to false in configuration &nbsp;-&nbsp; by @soybeanjs [<samp>(deecd)</samp>](https://github.com/soybeanjs/cli/commit/deecd6c)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.4.3](https://github.com/soybeanjs/cli/compare/v1.4.2...v1.4.3) (2025-12-24)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
