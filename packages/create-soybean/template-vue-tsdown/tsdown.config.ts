@@ -12,5 +12,6 @@ export default defineConfig({
   clean: true,
   external: ['vue'],
   sourcemap: false,
-  minify: false
+  minify: false,
+  fixedExtension: true
 });
