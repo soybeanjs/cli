@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [v1.4.2-beta.1](https://github.com/soybeanjs/cli/compare/v1.4.1...v1.4.2-beta.1) (2025-12-24)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: refactor template-vue &nbsp;-&nbsp; by @soybeanjs [<samp>(ba151)</samp>](https://github.com/soybeanjs/cli/commit/ba151f6)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(c56c1)</samp>](https://github.com/soybeanjs/cli/commit/c56c195)
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(b9c60)</samp>](https://github.com/soybeanjs/cli/commit/b9c60f4)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.4.1](https://github.com/soybeanjs/cli/compare/v1.4.0...v1.4.1) (2025-10-29)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes

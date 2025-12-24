@@ -40,7 +40,7 @@
     "ofetch": "1.5.1"
   },
   "devDependencies": {
-    "@soybeanjs/cli": "1.4.1",
+    "@soybeanjs/cli": "1.4.2-beta.1",
     "@soybeanjs/eslint-config": "1.7.5",
     "@types/cli-progress": "3.11.6",
     "@types/node": "25.0.3",
