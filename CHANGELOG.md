@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.4.3](https://github.com/soybeanjs/cli/compare/v1.4.2...v1.4.3) (2025-12-24)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **tsdown**: add fixedExtension option to configuration &nbsp;-&nbsp; by @soybeanjs [<samp>(c75fc)</samp>](https://github.com/soybeanjs/cli/commit/c75fcb1)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.4.2](https://github.com/soybeanjs/cli/compare/v1.4.1...v1.4.2) (2025-12-24)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
