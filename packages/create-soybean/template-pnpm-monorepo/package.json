@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.26.2",
   "scripts": {
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
@@ -16,11 +16,11 @@
   "dependencies": {},
   "devDependencies": {
     "@soybeanjs/cli": "1.4.1",
-    "@soybeanjs/eslint-config": "1.7.4",
-    "eslint": "9.39.1",
-    "lint-staged": "16.2.6",
+    "@soybeanjs/eslint-config": "1.7.5",
+    "eslint": "9.39.2",
+    "lint-staged": "16.2.7",
     "simple-git-hooks": "2.13.1",
-    "tsx": "4.20.6",
+    "tsx": "4.21.0",
     "typescript": "5.9.3"
   },
   "simple-git-hooks": {
