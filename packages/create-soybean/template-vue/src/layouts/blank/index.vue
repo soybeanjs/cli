@@ -7,5 +7,3 @@ import { RouterView } from 'vue-router';
     <RouterView />
   </SCard>
 </template>
-
-<style scoped></style>

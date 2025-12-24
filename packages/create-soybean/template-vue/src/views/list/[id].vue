@@ -7,5 +7,3 @@ const route = useRoute('ListId');
 <template>
   <div>list-id: {{ route.params.id }}</div>
 </template>
-
-<style scoped></style>

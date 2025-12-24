@@ -17,17 +17,17 @@
     "update-pkg": "soy ncu"
   },
   "dependencies": {
+    "@soybeanjs/ui": "0.0.7",
     "@unocss/reset": "66.5.10",
     "klona": "2.0.6",
     "pinia": "3.0.4",
-    "soy-ui": "0.0.2-beta.5",
     "vue": "3.5.26",
     "vue-router": "4.6.4"
   },
   "devDependencies": {
-    "@soybean-ui/unocss-preset": "0.0.2-beta.5",
     "@soybeanjs/cli": "1.4.1",
     "@soybeanjs/eslint-config": "1.7.5",
+    "@soybeanjs/unocss-preset": "0.1.7",
     "@types/node": "25.0.3",
     "@unocss/eslint-config": "66.5.10",
     "@vitejs/plugin-vue": "6.0.3",

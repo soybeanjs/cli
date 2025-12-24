@@ -41,5 +41,3 @@ const handleClick = () => {
     <slot name="footer" :count="10"></slot>
   </div>
 </template>
-
-<style scoped></style>

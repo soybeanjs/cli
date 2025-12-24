@@ -11,7 +11,7 @@ declare module 'vue' {
     HelloWorld: typeof import('./../components/HelloWorld.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SButton: typeof import('soy-ui')['SButton']
-    SCard: typeof import('soy-ui')['SCard']
+    SButton: typeof import('@soybeanjs/ui')['SButton']
+    SCard: typeof import('@soybeanjs/ui')['SCard']
   }
 }

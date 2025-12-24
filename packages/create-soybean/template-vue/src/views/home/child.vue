@@ -3,5 +3,3 @@
 <template>
   <div>child</div>
 </template>
-
-<style scoped></style>

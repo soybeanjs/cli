@@ -3,5 +3,3 @@
 <template>
   <div>search-list</div>
 </template>
-
-<style scoped></style>
