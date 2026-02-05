@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["node", "vite/client","@soybeanjs/ui"]
+    "types": ["node", "vite/client", "@soybeanjs/ui"]
   },
   "extends": "./tsconfig.base.json",
   "include": ["./**/*.ts", "./**/*.tsx", "./**/*.vue"]

@@ -1,33 +1,31 @@
 {
   "name": "@soybeanjs/cli",
-  "type": "module",
   "version": "1.4.4",
-  "packageManager": "pnpm@10.28.2",
   "description": "SoybeanJS's command line tools",
+  "homepage": "https://github.com/soybeanjs/cli",
+  "bugs": {
+    "url": "https://github.com/soybeanjs/cli/issues"
+  },
+  "license": "MIT",
   "author": {
     "name": "Soybean",
     "email": "soybeanjs@outlook.com",
     "url": "https://github.com/soybeanjs"
   },
-  "license": "MIT",
-  "homepage": "https://github.com/soybeanjs/cli",
   "repository": {
     "url": "https://github.com/soybeanjs/cli.git"
   },
-  "bugs": {
-    "url": "https://github.com/soybeanjs/cli/issues"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "bin": {
-      "soybean": "dist/index.js",
-      "soy": "dist/index.js"
-    }
-  },
   "bin": {
-    "soybean": "./src/bin.js",
-    "soy": "./src/bin.js"
+    "soy": "./src/bin.js",
+    "soybean": "./src/bin.js"
   },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -35,17 +33,21 @@
       "require": "./dist/index.js"
     }
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "publishConfig": {
+    "bin": {
+      "soybean": "dist/index.js",
+      "soy": "dist/index.js"
+    },
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "tsdown && pnpm build-pkg",
     "build-pkg": "pnpm -r --filter='./packages/*' run build",
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
     "commit:zh": "soy git-commit -l=zh-cn",
-    "lint": "eslint . --fix",
+    "lint": "oxlint --fix",
+    "fmt": "oxfmt",
     "prepare": "simple-git-hooks",
     "publish-pkg": "pnpm -r publish --access public",
     "release": "soy release -e 'pnpm release-execute'",
@@ -69,22 +71,21 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "link:",
-    "@soybeanjs/eslint-config": "1.7.5",
     "@types/node": "25.2.0",
-    "eslint": "9.39.2",
-    "eslint-plugin-vue": "10.7.0",
     "lint-staged": "16.2.7",
+    "oxfmt": "^0.28.0",
+    "oxlint": "^1.43.0",
     "simple-git-hooks": "2.13.1",
     "tsdown": "0.20.3",
     "tsx": "4.21.0",
-    "typescript": "5.9.3",
-    "vue-eslint-parser": "10.2.0"
+    "typescript": "5.9.3"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
     "pre-commit": "pnpm typecheck && pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
-  }
+    "*": "oxlint --fix && oxfmt"
+  },
+  "packageManager": "pnpm@10.28.2"
 }

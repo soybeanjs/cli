@@ -1,9 +1,8 @@
 {
   "name": "template-pnpm-monorepo",
-  "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.28.2",
+  "type": "module",
   "scripts": {
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
@@ -29,5 +28,6 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
-  }
+  },
+  "packageManager": "pnpm@10.28.2"
 }

@@ -22,6 +22,6 @@ export default defineConfig({
       types: [{ from: 'vue-router', names: ['RouterLink', 'RouterView'] }],
       resolvers: [UiResolver()]
     }),
-    ElegantRouter(),
+    ElegantRouter()
   ]
 });

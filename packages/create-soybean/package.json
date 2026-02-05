@@ -1,31 +1,34 @@
 {
   "name": "create-soybean",
-  "type": "module",
   "version": "1.4.4",
   "description": "SoybeanJS's command line to create different project templates",
+  "homepage": "https://github.com/soybeanjs/cli/tree/main/packages/create-soybean",
+  "bugs": {
+    "url": "https://github.com/soybeanjs/cli/issues"
+  },
+  "license": "MIT",
   "author": {
     "name": "Soybean",
     "email": "soybeanjs@outlook.com",
     "url": "https://github.com/soybeanjs"
   },
-  "license": "MIT",
-  "homepage": "https://github.com/soybeanjs/cli/tree/main/packages/create-soybean",
   "repository": {
     "url": "https://github.com/soybeanjs/cli.git"
-  },
-  "bugs": {
-    "url": "https://github.com/soybeanjs/cli/issues"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "bin": {
-      "create-soybean": "dist/index.js"
-    }
   },
   "bin": {
     "create-soybean": "./src/bin.js"
   },
-  "files": ["dist", "template-*"],
+  "files": [
+    "dist",
+    "template-*"
+  ],
+  "type": "module",
+  "publishConfig": {
+    "bin": {
+      "create-soybean": "dist/index.js"
+    },
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "pnpm typecheck && pnpm build-only",
     "build-only": "tsdown",

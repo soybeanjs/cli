@@ -1,13 +1,15 @@
 {
   "name": "template-vue-tsdown",
-  "type": "module",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@10.28.2",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
   "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -15,10 +17,9 @@
       "require": "./dist/index.js"
     }
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "tsdown",
     "cleanup": "soy cleanup",
@@ -61,5 +62,6 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
-  }
+  },
+  "packageManager": "pnpm@10.28.2"
 }

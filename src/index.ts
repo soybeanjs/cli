@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import cac from 'cac';
+import { cac } from 'cac';
 import { version } from '../package.json';
 import { cleanup, genChangelog, gitCommit, gitCommitVerify, ncu, release } from './command';
 import { loadCliOptions } from './config';

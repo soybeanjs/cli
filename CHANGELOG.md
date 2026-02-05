@@ -1,6 +1,5 @@
 # Changelog
 
-
 ## [v1.4.4](https://github.com/soybeanjs/cli/compare/v1.4.3...v1.4.4) (2025-12-24)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
@@ -1178,7 +1177,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.6.1](https://github.com/soybeanjs/cli/compare/v0.6.0...v0.6.1) (2023-06-12)
@@ -1193,7 +1191,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.6.0](https://github.com/soybeanjs/cli/compare/v0.5.8...v0.6.0) (2023-06-12)
@@ -1207,7 +1204,6 @@
 - **projects**: fix CHANGELOG.md &nbsp;-&nbsp; by **Soybean** [<samp>(44a99)</samp>](https://github.com/soybeanjs/cli/commit/44a9977)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1230,7 +1226,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;,&nbsp;[刘璐](mailto:hi.alue@qq.com)
 
 ## [v0.5.7](https://github.com/soybeanjs/cli/compare/v0.5.6...v0.5.7) (2023-06-11)
@@ -1242,7 +1237,6 @@
   - fix circel dependency &nbsp;-&nbsp; by **Soybean** [<samp>(4ad1e)</samp>](https://github.com/soybeanjs/cli/commit/4ad1e97)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1257,7 +1251,6 @@
 - **projects**: add github token export &nbsp;-&nbsp; by **Soybean** [<samp>(89371)</samp>](https://github.com/soybeanjs/cli/commit/8937103)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1278,7 +1271,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.5.4](https://github.com/soybeanjs/cli/compare/v0.5.3...v0.5.4) (2023-06-07)
@@ -1288,7 +1280,6 @@
 - **projects**: add githubToken for @soybeanjs/changelog &nbsp;-&nbsp; by **Soybean** [<samp>(142ff)</samp>](https://github.com/soybeanjs/cli/commit/142ff1b)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1300,7 +1291,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.5.2](https://github.com/soybeanjs/cli/compare/v0.5.1...v0.5.2) (2023-06-06)
@@ -1310,7 +1300,6 @@
 - **projects**: fix version title order of changelog &nbsp;-&nbsp; by **Soybean** [<samp>(81e35)</samp>](https://github.com/soybeanjs/cli/commit/81e35ae)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1338,7 +1327,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.5.1-beta.0](https://github.com/soybeanjs/cli/compare/v0.5.0...v0.5.1-beta.0) (2023-06-06)
@@ -1357,7 +1345,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.5.0](https://github.com/soybeanjs/cli/compare/v0.4.2...v0.5.0) (2023-06-05)
@@ -1375,7 +1362,6 @@
 - **projects**: update CHANGELOG.md &nbsp;-&nbsp; by **Soybean** [<samp>(94d6f)</samp>](https://github.com/soybeanjs/cli/commit/94d6f97)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1403,7 +1389,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.4.1](https://github.com/soybeanjs/cli/compare/v0.4.0...v0.4.1) (2023-06-01)
@@ -1413,7 +1398,6 @@
 - **projects**: fix repository url &nbsp;-&nbsp; by **Soybean** [<samp>(f6515)</samp>](https://github.com/soybeanjs/cli/commit/f6515ec)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1435,7 +1419,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.3.2](https://github.com/soybeanjs/cli/compare/v0.3.1...v0.3.2) (2023-05-31)
@@ -1447,7 +1430,6 @@
   - update README.md &nbsp;-&nbsp; by **Soybean** [<samp>(5b293)</samp>](https://github.com/soybeanjs/cli/commit/5b293d3)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1464,7 +1446,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.3.0](https://github.com/soybeanjs/cli/compare/v0.2.12...v0.3.0) (2023-05-28)
@@ -1477,7 +1458,6 @@
   - add update-version script &nbsp;-&nbsp; by **Soybean** [<samp>(8d78d)</samp>](https://github.com/soybeanjs/cli/commit/8d78d27)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1493,7 +1473,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.2.11](https://github.com/soybeanjs/cli/compare/v0.2.10...v0.2.11) (2023-05-25)
@@ -1504,7 +1483,6 @@
 - **release**: v0.2.11 &nbsp;-&nbsp; by **Soybean** [<samp>(dc223)</samp>](https://github.com/soybeanjs/cli/commit/dc22399)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1520,7 +1498,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.2.9](https://github.com/soybeanjs/cli/compare/v0.2.8...v0.2.9) (2023-05-25)
@@ -1531,7 +1508,6 @@
 - **release**: v0.2.9 &nbsp;-&nbsp; by **Soybean** [<samp>(4bc57)</samp>](https://github.com/soybeanjs/cli/commit/4bc578b)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1544,7 +1520,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.2.7](https://github.com/soybeanjs/cli/compare/v0.2.6...v0.2.7) (2023-05-25)
@@ -1555,7 +1530,6 @@
 - **release**: v0.2.7 &nbsp;-&nbsp; by **Soybean** [<samp>(c057a)</samp>](https://github.com/soybeanjs/cli/commit/c057aad)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1570,7 +1544,6 @@
 - **release**: v0.2.6 &nbsp;-&nbsp; by **Soybean** [<samp>(fa7ea)</samp>](https://github.com/soybeanjs/cli/commit/fa7ea00)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1588,7 +1561,6 @@
   - add bumpp &nbsp;-&nbsp; by **Soybean** [<samp>(14c09)</samp>](https://github.com/soybeanjs/cli/commit/14c092e)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1612,7 +1584,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;,&nbsp;[github-actions[bot]](mailto:41898282+github-actions[bot]@users.noreply.github.com)
 
 ## [v0.2.3](https://github.com/soybeanjs/cli/compare/v0.2.2...v0.2.3) (2023-05-25)
@@ -1635,7 +1606,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.2.1](https://github.com/soybeanjs/cli/compare/v0.2.0...v0.2.1) (2023-05-25)
@@ -1652,7 +1622,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.2.0](https://github.com/soybeanjs/cli/compare/v0.1.9...v0.2.0) (2023-05-13)
@@ -1662,7 +1631,6 @@
 - **deps**: update deps [升级依赖] &nbsp;-&nbsp; by **Soybean** [<samp>(e67d4)</samp>](https://github.com/soybeanjs/cli/commit/e67d488)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1674,7 +1642,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.1.8](https://github.com/soybeanjs/cli/compare/v0.1.7...v0.1.8) (2023-04-22)
@@ -1684,7 +1651,6 @@
 - **projects**: fix cleanup on windows [修复cleanup命令在windows上的问题] &nbsp;-&nbsp; by **Soybean** [<samp>(baa02)</samp>](https://github.com/soybeanjs/cli/commit/baa02bb)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1696,7 +1662,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.1.6](https://github.com/soybeanjs/cli/compare/v0.1.5...v0.1.6) (2023-01-05)
@@ -1707,7 +1672,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.1.5](https://github.com/soybeanjs/cli/compare/v0.1.4...v0.1.5) (2023-01-05)
@@ -1717,7 +1681,6 @@
 - **projects**: add some scripts &nbsp;-&nbsp; by **Soybean** [<samp>(752b7)</samp>](https://github.com/soybeanjs/cli/commit/752b7f6)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1739,7 +1702,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.1.3](https://github.com/soybeanjs/cli/compare/v0.1.2...v0.1.3) (2022-11-08)
@@ -1756,7 +1718,6 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
 ## [v0.1.2](https://github.com/soybeanjs/cli/compare/v0.1.1...v0.1.2) (2022-11-03)
@@ -1768,7 +1729,6 @@
   - update config &nbsp;-&nbsp; by **Soybean** [<samp>(d0d9a)</samp>](https://github.com/soybeanjs/cli/commit/d0d9a94)
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
-
 
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
 
@@ -1783,8 +1743,4 @@
 
 ### &nbsp;&nbsp;&nbsp;❤️ Contributors
 
-
 [![honghuangdc](https://github.com/honghuangdc.png?size=48)](https://github.com/honghuangdc)&nbsp;&nbsp;
-
-
-
