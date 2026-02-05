@@ -1,5 +1,19 @@
 # Changelog
 
+## [v1.5.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.4.4...v1.5.0-beta.1) (2026-02-05)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: refactor create-soybean &nbsp;-&nbsp; by @soybeanjs [<samp>(890c2)</samp>](https://github.com/soybeanjs/cli/commit/890c230)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(00981)</samp>](https://github.com/soybeanjs/cli/commit/009818b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.4.4](https://github.com/soybeanjs/cli/compare/v1.4.3...v1.4.4) (2025-12-24)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
