@@ -1,5 +1,15 @@
 # Changelog
 
+## [v1.5.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.5.0-beta.1...v1.5.0-beta.2) (2026-02-05)
+
+### &nbsp;&nbsp;&nbsp;🛠 Optimizations
+
+- **create-soybean**: optimize create-soybean templates &nbsp;-&nbsp; by @soybeanjs [<samp>(309b4)</samp>](https://github.com/soybeanjs/cli/commit/309b4fb)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.5.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.4.4...v1.5.0-beta.1) (2026-02-05)
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
