@@ -54,7 +54,7 @@
     "release-execute": "tsx ./scripts/release.ts && pnpm soy changelog",
     "stub": "pnpm -r run stub",
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "update-pkg": "soy update-pkg"
+    "upkg": "soy update-pkg"
   },
   "dependencies": {
     "@soybeanjs/changelog": "0.4.3",

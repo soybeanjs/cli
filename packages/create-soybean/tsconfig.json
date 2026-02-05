@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "jsx": "preserve",
     "lib": ["DOM", "ESNext"],
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "paths": {
       "@/*": ["./src/*"]
     },
@@ -12,11 +11,13 @@
     "types": ["node"],
     "strict": true,
     "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": false,
     "noUnusedLocals": true,
-    "outDir": "./dist",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]

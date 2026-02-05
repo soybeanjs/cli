@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "jsx": "preserve",
-    "jsxImportSource": "vue",
     "lib": ["DOM", "ESNext"],
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "Bundler",
     "paths": {
       "@/*": ["./src/*"]
     },
@@ -13,16 +11,13 @@
     "types": ["node"],
     "strict": true,
     "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": false,
     "noUnusedLocals": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "./dist",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "verbatimModuleSyntax": true,
-    "skipLibCheck": true
+    "isolatedModules": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]

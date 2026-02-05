@@ -13,7 +13,6 @@
 "*.less"   eol=lf
 "*.scss"   eol=lf
 "*.sass"   eol=lf
-"*.styl"   eol=lf
 "*.svelte" eol=lf
 "*.md"     eol=lf
 "*.yml"    eol=lf

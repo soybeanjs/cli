@@ -3,14 +3,14 @@ import process from 'node:process';
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { cyan, green, red, reset, yellow } from 'kolorist';
+import { cyan, green, red, reset } from 'kolorist';
 import minimist from 'minimist';
 import prompts from 'prompts';
 import type { Answers } from 'prompts';
 import { consola } from 'consola';
 import { copy, emptyDir, formatTargetDir, isPathEmpty, isValidPackageName, toValidPackageName } from './shared';
 
-type TemplateType = 'pnpm-monorepo' | 'tsdown' | 'tsup' | 'unbuild' | 'vue' | 'vue-tsdown';
+type TemplateType = 'tsdown' | 'vue' | 'vue-tsdown';
 
 type ColorFunc = (str: string | number) => string;
 
@@ -21,11 +21,6 @@ interface Template {
 }
 
 const templates: Template[] = [
-  {
-    type: 'pnpm-monorepo',
-    name: 'Pnpm monorepo',
-    color: yellow
-  },
   {
     type: 'tsdown',
     name: 'TypeScript library by tsdown',
@@ -50,7 +45,8 @@ const renameFiles: Record<string, string | undefined> = {
   _gitattributes: '.gitattributes',
   _gitignore: '.gitignore',
   _npmrc: '.npmrc',
-  _prettierrc: '.prettierrc'
+  '_oxlintrc.json': '.oxlintrc.json',
+  '_oxfmtrc.json': '.oxfmtrc.json'
 };
 
 const defaultTargetDir = 'create-soybean-project';

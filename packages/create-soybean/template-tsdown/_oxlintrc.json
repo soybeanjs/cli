@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error"
+  },
+  "plugins": ["eslint", "typescript", "unicorn", "oxc", "import"],
+  "rules": {
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/no-array-reverse": "off",
+    "unicorn/no-array-sort": "off",
+    "unicorn/no-empty-file": "off",
+    "import/no-unassigned-import": "off",
+    "unicorn/require-module-specifiers": "off"
+  }
+}

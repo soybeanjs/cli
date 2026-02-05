@@ -4,16 +4,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "pnpm typecheck && pnpm build-only",
-    "build-only": "vite build",
+    "build": "vite build",
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
     "dev": "vite",
-    "lint": "eslint . --fix",
+    "lint": "oxlint --fix",
+    "fmt": "oxfmt",
     "prepare": "simple-git-hooks",
     "preview": "vite preview",
     "typecheck": "vue-tsc --noEmit --skipLibCheck",
-    "update-pkg": "soy ncu"
+    "upkg": "soy ncu"
   },
   "dependencies": {
     "@soybeanjs/ui": "0.5.3",
@@ -25,23 +25,19 @@
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.4.4",
-    "@soybeanjs/eslint-config": "1.7.5",
     "@soybeanjs/unocss-preset": "0.2.0",
     "@types/node": "25.2.0",
-    "@unocss/eslint-config": "66.6.0",
     "@vitejs/plugin-vue": "6.0.4",
     "@vitejs/plugin-vue-jsx": "5.1.4",
     "elegant-router": "1.1.2",
-    "eslint": "9.39.2",
-    "eslint-plugin-vue": "10.7.0",
     "lint-staged": "16.2.7",
+    "oxfmt": "^0.28.0",
+    "oxlint": "^1.43.0",
     "simple-git-hooks": "2.13.1",
     "typescript": "5.9.3",
     "unocss": "66.6.0",
     "unplugin-vue-components": "31.0.0",
     "vite": "7.3.1",
-    "vite-plugin-vue-devtools": "8.0.6",
-    "vue-eslint-parser": "10.2.0",
     "vue-tsc": "3.2.4"
   },
   "simple-git-hooks": {
@@ -49,7 +45,7 @@
     "pre-commit": "pnpm typecheck && pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*": "oxlint --fix && oxfmt"
   },
   "packageManager": "pnpm@10.28.2"
 }

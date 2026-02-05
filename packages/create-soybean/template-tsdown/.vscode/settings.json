@@ -1,9 +1,7 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never"
+    "source.fixAll.oxc": "explicit"
   },
-  "editor.formatOnSave": false,
-  "eslint.validate": ["json", "jsonc"],
-  "prettier.enable": false
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": true
 }

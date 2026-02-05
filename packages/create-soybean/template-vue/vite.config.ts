@@ -23,5 +23,10 @@ export default defineConfig({
       resolvers: [UiResolver()]
     }),
     ElegantRouter()
-  ]
+  ],
+  server: {
+    host: '0.0.0.0',
+    port: 9527,
+    open: true
+  }
 });

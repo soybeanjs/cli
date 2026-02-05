@@ -6,7 +6,6 @@
     "dist"
   ],
   "type": "module",
-  "sideEffects": false,
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -25,25 +24,25 @@
     "cleanup": "soy cleanup",
     "commit": "soy git-commit",
     "dev": "tsdown --watch",
-    "lint": "eslint . --fix",
+    "lint": "oxlint --fix",
+    "fmt": "oxfmt",
     "play": "vite",
     "prepare": "simple-git-hooks",
     "publish-pkg": "pnpm publish --access public",
     "release": "soy release",
     "test": "vitest",
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "update-pkg": "soy ncu"
+    "upkg": "soy update-pkg"
   },
   "dependencies": {},
   "devDependencies": {
     "@soybeanjs/cli": "1.4.4",
-    "@soybeanjs/eslint-config": "1.7.5",
     "@types/node": "25.2.0",
     "@vue/test-utils": "2.4.6",
-    "eslint": "9.39.2",
-    "eslint-plugin-vue": "10.7.0",
     "happy-dom": "20.5.0",
     "lint-staged": "16.2.7",
+    "oxfmt": "^0.28.0",
+    "oxlint": "^1.43.0",
     "simple-git-hooks": "2.13.1",
     "tsdown": "0.20.3",
     "tsx": "4.21.0",
@@ -53,7 +52,6 @@
     "vite": "7.3.1",
     "vitest": "4.0.18",
     "vue": "3.5.27",
-    "vue-eslint-parser": "10.2.0",
     "vue-tsc": "3.2.4"
   },
   "simple-git-hooks": {
@@ -61,7 +59,7 @@
     "pre-commit": "pnpm typecheck && pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*": "oxlint --fix && oxfmt"
   },
   "packageManager": "pnpm@10.28.2"
 }
