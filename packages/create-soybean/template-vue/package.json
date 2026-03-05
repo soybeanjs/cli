@@ -16,29 +16,29 @@
     "upkg": "soy ncu"
   },
   "dependencies": {
-    "@soybeanjs/ui": "0.5.3",
-    "@unocss/reset": "66.6.0",
+    "@soybeanjs/ui": "0.9.3",
+    "@unocss/reset": "66.6.5",
     "klona": "2.0.6",
     "pinia": "3.0.4",
-    "vue": "3.5.27",
-    "vue-router": "5.0.2"
+    "vue": "3.5.29",
+    "vue-router": "5.0.3"
   },
   "devDependencies": {
     "@soybeanjs/cli": "1.5.0",
     "@soybeanjs/unocss-preset": "0.2.0",
-    "@types/node": "25.2.0",
+    "@types/node": "25.3.3",
     "@vitejs/plugin-vue": "6.0.4",
     "@vitejs/plugin-vue-jsx": "5.1.4",
-    "elegant-router": "1.1.2",
-    "lint-staged": "16.2.7",
-    "oxfmt": "^0.28.0",
-    "oxlint": "^1.43.0",
+    "elegant-router": "1.3.0",
+    "lint-staged": "16.3.2",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0",
     "simple-git-hooks": "2.13.1",
     "typescript": "5.9.3",
-    "unocss": "66.6.0",
+    "unocss": "66.6.5",
     "unplugin-vue-components": "31.0.0",
     "vite": "7.3.1",
-    "vue-tsc": "3.2.4"
+    "vue-tsc": "3.2.5"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
@@ -47,5 +47,5 @@
   "lint-staged": {
     "*": "oxlint --fix && oxfmt"
   },
-  "packageManager": "pnpm@10.28.2"
+  "packageManager": "pnpm@10.30.3"
 }

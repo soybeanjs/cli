@@ -37,21 +37,21 @@
   "dependencies": {},
   "devDependencies": {
     "@soybeanjs/cli": "1.5.0",
-    "@types/node": "25.2.0",
+    "@types/node": "25.3.3",
     "@vue/test-utils": "2.4.6",
-    "happy-dom": "20.5.0",
-    "lint-staged": "16.2.7",
-    "oxfmt": "^0.28.0",
-    "oxlint": "^1.43.0",
+    "happy-dom": "20.8.3",
+    "lint-staged": "16.3.2",
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.20.3",
+    "tsdown": "0.21.0",
     "tsx": "4.21.0",
     "typescript": "5.9.3",
     "unplugin-vue": "7.1.1",
     "unplugin-vue-jsx": "0.8.1",
     "vite": "7.3.1",
-    "vue": "3.5.27",
-    "vue-tsc": "3.2.4"
+    "vue": "3.5.29",
+    "vue-tsc": "3.2.5"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm soy git-commit-verify",
@@ -60,5 +60,5 @@
   "lint-staged": {
     "*": "oxlint --fix && oxfmt"
   },
-  "packageManager": "pnpm@10.28.2"
+  "packageManager": "pnpm@10.30.3"
 }
