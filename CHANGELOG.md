@@ -1,5 +1,15 @@
 # Changelog
 
+## [v1.6.1](https://github.com/soybeanjs/cli/compare/v1.6.0...v1.6.1) (2026-03-06)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **commands**: update default command to use 'pnpm' instead of 'pnpx' in ncu and release functions &nbsp;-&nbsp; by @soybeanjs [<samp>(9f526)</samp>](https://github.com/soybeanjs/cli/commit/9f5260a)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.6.0](https://github.com/soybeanjs/cli/compare/v1.5.0...v1.6.0) (2026-03-05)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
