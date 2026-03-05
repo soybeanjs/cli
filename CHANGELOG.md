@@ -1,5 +1,19 @@
 # Changelog
 
+## [v1.6.0](https://github.com/soybeanjs/cli/compare/v1.5.0...v1.6.0) (2026-03-05)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **projects**: update command to use 'pnpx' instead of 'npx' in ncu and release functions &nbsp;-&nbsp; by @soybeanjs [<samp>(e5e58)</samp>](https://github.com/soybeanjs/cli/commit/e5e5849)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(f7900)</samp>](https://github.com/soybeanjs/cli/commit/f7900d7)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.5.0](https://github.com/soybeanjs/cli/compare/v1.4.4...v1.5.0) (2026-02-05)
 
 ### &nbsp;&nbsp;&nbsp;🛠 Optimizations
