@@ -13,7 +13,7 @@ type CommandAction<A extends object> = (args?: A) => Promise<void> | void;
 type CommandWithAction<A extends object = object> = Record<Command, { desc: string; action: CommandAction<A> }>;
 
 interface CommandArg {
-  /** Execute additional command after bumping and before git commit. Defaults to 'pnpx soy changelog' */
+  /** Execute additional command after bumping and before git commit. Defaults to 'pnpm soy changelog' */
   execute?: string;
   /** Indicates whether to push the git commit and tag. Defaults to true */
   push?: boolean;
@@ -44,7 +44,7 @@ async function setupCli() {
     .version(version)
     .option(
       '-e, --execute [command]',
-      "Execute additional command after bumping and before git commit. Defaults to 'pnpx soy changelog'"
+      "Execute additional command after bumping and before git commit. Defaults to 'pnpm soy changelog'"
     )
     .option('-p, --push', 'Indicates whether to push the git commit and tag')
     .option('-t, --total', 'Generate changelog by total tags')
