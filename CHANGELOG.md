@@ -1,5 +1,30 @@
 # Changelog
 
+## [v1.7.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.6.1...v1.7.0-beta.1) (2026-03-20)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **changelog**: add check for existing CHANGELOG.md and add it to git if missing &nbsp;-&nbsp; by **Soybean** [<samp>(34d86)</samp>](https://github.com/soybeanjs/cli/commit/34d8659)
+
+### &nbsp;&nbsp;&nbsp;💅 Refactors
+
+- **projects**: remove create-soybean to standalone repository &nbsp;-&nbsp; by **Soybean** [<samp>(bca1e)</samp>](https://github.com/soybeanjs/cli/commit/bca1e26)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps and update config &nbsp;-&nbsp; by **Soybean** [<samp>(a2bf7)</samp>](https://github.com/soybeanjs/cli/commit/a2bf7ef)
+- **release**:
+  - update actions and pnpm versions in release workflow &nbsp;-&nbsp; by **Soybean** [<samp>(b0448)</samp>](https://github.com/soybeanjs/cli/commit/b0448d7)
+- **vscode**:
+  - remove unused extensions from recommendations &nbsp;-&nbsp; by **Soybean** [<samp>(315c1)</samp>](https://github.com/soybeanjs/cli/commit/315c104)
+  - update recommended extensions and remove unused ones &nbsp;-&nbsp; by **Soybean** [<samp>(19d9e)</samp>](https://github.com/soybeanjs/cli/commit/19d9e9b)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+
+[Soybean](mailto:soybeanjs@outlook.com)
+
 ## [v1.6.1](https://github.com/soybeanjs/cli/compare/v1.6.0...v1.6.1) (2026-03-06)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
