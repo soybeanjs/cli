@@ -1,5 +1,16 @@
 # Changelog
 
+## [v1.7.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.7.0-beta.1...v1.7.0-beta.2) (2026-03-20)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **changelog**: correct command to add CHANGELOG.md &nbsp;-&nbsp; by **Soybean** [<samp>(a7b49)</samp>](https://github.com/soybeanjs/cli/commit/a7b49ac)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+
+[Soybean](mailto:soybeanjs@outlook.com)
+
 ## [v1.7.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.6.1...v1.7.0-beta.1) (2026-03-20)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
