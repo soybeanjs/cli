@@ -76,7 +76,7 @@ async function setupCli() {
       }
     },
     'update-pkg': {
-      desc: 'equal to command "ncu"',
+      desc: 'it is deprecated, use "ncu" command instead, it will be removed in future version',
       action: async () => {
         await ncu();
       }
