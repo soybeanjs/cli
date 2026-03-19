@@ -15,6 +15,6 @@ export async function genChangelog(options?: Partial<ChangelogOption>, total = f
   }
 
   if (!hasChangelog) {
-    await execCommand('git', [`add ${changelogPath}`]);
+    await execCommand('git', ['add', 'CHANGELOG.md']);
   }
 }
