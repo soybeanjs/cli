@@ -1,7 +1,0 @@
-{
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "types": ["node", "vite/client", "@soybeanjs/ui"]
-  },
-  "include": ["./**/*.ts", "./**/*.tsx", "./**/*.vue"]
-}

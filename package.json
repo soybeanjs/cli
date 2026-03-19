@@ -50,8 +50,7 @@
     "fmt": "oxfmt",
     "prepare": "simple-git-hooks",
     "publish-pkg": "pnpm -r publish --access public",
-    "release": "soy release -e 'pnpm release-execute'",
-    "release-execute": "tsx ./scripts/release.ts && pnpm soy changelog",
+    "release": "soy release",
     "stub": "pnpm -r run stub",
     "typecheck": "tsc --noEmit --skipLibCheck",
     "upkg": "soy update-pkg"
