@@ -56,7 +56,7 @@
     "rei": "pnpm cleanup && pnpm i"
   },
   "dependencies": {
-    "@soybeanjs/changelog": "^0.4.4",
+    "@soybeanjs/changelog": "^0.4.5",
     "bumpp": "^11.0.1",
     "c12": "^3.3.3",
     "cac": "^7.0.0",

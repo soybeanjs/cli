@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@soybeanjs/changelog':
-        specifier: ^0.4.4
-        version: 0.4.4
+        specifier: ^0.4.5
+        version: 0.4.5
       bumpp:
         specifier: ^11.0.1
         version: 11.0.1
@@ -629,8 +629,8 @@ packages:
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
 
-  '@soybeanjs/changelog@0.4.4':
-    resolution: {integrity: sha512-xPQEdv/N1Vit0WMX86OR6ohUoyBmyoQcIfrRi+MFeVHdg9Dz5P8f9GZ4YxZxtLZUUCq6IOWioA7VRlc1UWJbNw==}
+  '@soybeanjs/changelog@0.4.5':
+    resolution: {integrity: sha512-dSCv1YB2RgH48RO2HcVmfEzv6rBt8bMU3iuugu9buOlZyUsq5zXkk8KGUbH1Q4h34tuPHjMiVV279xTw3PDoIg==}
     engines: {node: '>=18', pnpm: '>=9'}
 
   '@tybys/wasm-util@0.10.1':
@@ -1523,7 +1523,7 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@soybeanjs/changelog@0.4.4':
+  '@soybeanjs/changelog@0.4.5':
     dependencies:
       cli-progress: 3.12.0
       convert-gitmoji: 0.1.5
