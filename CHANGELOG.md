@@ -1,6 +1,25 @@
 # Changelog
 
 
+## [v1.7.1](https://github.com/soybeanjs/cli/compare/v1.7.0...v1.7.1) (2026-03-20)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **npmrc**: remove ignore-workspace-root-check option &nbsp;-&nbsp; by @soybeanjs [<samp>(ac8f7)</samp>](https://github.com/soybeanjs/cli/commit/ac8f755)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update CHANGELOG &nbsp;-&nbsp; by @soybeanjs [<samp>(f4683)</samp>](https://github.com/soybeanjs/cli/commit/f4683c2)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(bf7f5)</samp>](https://github.com/soybeanjs/cli/commit/bf7f55f)
+- **license**: add MIT License file &nbsp;-&nbsp; by @soybeanjs [<samp>(44445)</samp>](https://github.com/soybeanjs/cli/commit/44445e7)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.7.0](https://github.com/soybeanjs/cli/compare/v1.6.1...v1.7.0) (2026-03-20)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
