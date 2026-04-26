@@ -12,7 +12,7 @@ const defaultOptions: CliOption = {
     '**/node_modules',
     '!node_modules/**'
   ],
-  ncuCommandArgs: ['--deep', '-u'],
+  ncuCommandArgs: [],
   changelogOptions: {},
   gitCommitVerifyIgnores: [
     /^((Merge pull request)|(Merge (.*?) into (.*?)|(Merge branch (.*?)))(?:\r?\n)*$)/m,
