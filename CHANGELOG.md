@@ -1,6 +1,25 @@
 # Changelog
 
 
+## [v1.7.2](https://github.com/soybeanjs/cli/compare/v1.7.1...v1.7.2) (2026-04-26)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **ncu**: enhance ncu command to resolve workspace package.json files automatically &nbsp;-&nbsp; by **soybean-js** [<samp>(20c6f)</samp>](https://github.com/soybeanjs/cli/commit/20c6f6a)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by **soybean-js** [<samp>(a4f90)</samp>](https://github.com/soybeanjs/cli/commit/a4f9065)
+  - update deps &nbsp;-&nbsp; by **soybean-js** [<samp>(721c2)</samp>](https://github.com/soybeanjs/cli/commit/721c2ee)
+- **gitattributes**:
+  - simplify line endings configuration &nbsp;-&nbsp; by @soybeanjs [<samp>(5e239)</samp>](https://github.com/soybeanjs/cli/commit/5e2391a)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+[soybean-js](mailto:soybeanjs@163.com),&nbsp;
+
 ## [v1.7.1](https://github.com/soybeanjs/cli/compare/v1.7.0...v1.7.1) (2026-03-20)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
