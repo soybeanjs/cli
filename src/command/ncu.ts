@@ -112,5 +112,9 @@ async function resolveDefaultNcuArgs(cwd = process.cwd()) {
     return ['-u', '--packageFile', 'package.json'];
   }
 
-  return ['-u', '--packageFile', `{${uniquePackageFiles.join(',')}}`];
+  if (uniquePackageFiles.length === 1) {
+    return ['-u', '--packageFile', uniquePackageFiles[0]];
+  }
+
+  return ['-u', ...uniquePackageFiles.flatMap(file => ['--packageFile', file])];
 }
