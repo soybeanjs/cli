@@ -17,7 +17,7 @@ export interface CliOption {
   /**
    * Npm-check-updates command args
    *
-    * If not set, soybean-cli will resolve workspace package.json files automatically and fall back to package.json in single-package repos.
+   * If not set, soybean-cli will resolve workspace package.json files automatically and fall back to package.json in single-package repos.
    */
   ncuCommandArgs: string[];
   /**

@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import { cac } from 'cac';
 import { version } from '../package.json';
-import { cleanup, genChangelog, gitCommit, gitCommitVerify, ncu, release } from './command';
 import { loadCliOptions } from './config';
-import type { CliOption } from './types';
 import type { Lang } from './locales';
+import { cleanup, genChangelog, gitCommit, gitCommitVerify, ncu, release } from './command';
+import type { CliOption } from './types';
 
 type Command = 'cleanup' | 'ncu' | 'update-pkg' | 'git-commit' | 'git-commit-verify' | 'changelog' | 'release';
 

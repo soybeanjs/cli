@@ -1,5 +1,5 @@
-import { join } from 'path';
 import { existsSync } from 'fs';
+import { join } from 'path';
 import { generateChangelog, generateTotalChangelog } from '@soybeanjs/changelog';
 import type { ChangelogOption } from '@soybeanjs/changelog';
 import { execCommand } from '../shared';
