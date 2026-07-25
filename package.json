@@ -1,6 +1,6 @@
 {
   "name": "@soybeanjs/cli",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "description": "SoybeanJS's command line tools",
   "homepage": "https://github.com/soybeanjs/cli",
   "bugs": {

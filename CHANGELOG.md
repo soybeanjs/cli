@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.7.4](https://github.com/soybeanjs/cli/compare/v1.7.3...v1.7.4) (2026-07-25)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **nuc**: enhance pnpm workspace detect &nbsp;-&nbsp; by @soybeanjs [<samp>(d0938)</samp>](https://github.com/soybeanjs/cli/commit/d0938cc)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.7.3](https://github.com/soybeanjs/cli/compare/v1.7.2...v1.7.3) (2026-07-25)
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
