@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.7.3](https://github.com/soybeanjs/cli/compare/v1.7.2...v1.7.3) (2026-07-25)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **projects**: update dep and migrant to vite-plus &nbsp;-&nbsp; by @soybeanjs [<samp>(2ced4)</samp>](https://github.com/soybeanjs/cli/commit/2ced4b3)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.7.2](https://github.com/soybeanjs/cli/compare/v1.7.1...v1.7.2) (2026-04-26)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
