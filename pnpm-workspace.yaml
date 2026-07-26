@@ -7,3 +7,5 @@ shamefullyHoist: true
 allowBuilds:
   esbuild: true
   simple-git-hooks: true
+minimumReleaseAgeExclude:
+  - '@soybeanjs/changelog@0.5.2'
