@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.8.0](https://github.com/soybeanjs/cli/compare/v1.7.4...v1.8.0) (2026-07-27)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **config**: add config command, support custom commit types/scopes and multi-language &nbsp;-&nbsp; by @soybeanjs [<samp>(11844)</samp>](https://github.com/soybeanjs/cli/commit/11844ca)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(3eee6)</samp>](https://github.com/soybeanjs/cli/commit/3eee677)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.7.4](https://github.com/soybeanjs/cli/compare/v1.7.3...v1.7.4) (2026-07-25)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
