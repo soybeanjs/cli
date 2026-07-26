@@ -4,6 +4,7 @@ import enquirer from 'enquirer';
 import { execCommand } from '../shared';
 import { locales } from '../locales';
 import type { Lang } from '../locales';
+import type { CommitItem } from '../types';
 
 interface PromptObject {
   types: string;
@@ -11,17 +12,26 @@ interface PromptObject {
   description: string;
 }
 
+interface GitCommitOptions {
+  lang?: Lang;
+  types?: CommitItem[];
+  scopes?: CommitItem[];
+}
+
 /**
  * Git commit with Conventional Commits standard
  *
- * @param lang
+ * @param options
  */
-export async function gitCommit(lang: Lang = 'en-us') {
-  const { gitCommitMessages, gitCommitTypes, gitCommitScopes } = locales[lang];
+export async function gitCommit(options: GitCommitOptions = {}) {
+  const lang = options.lang || 'en-us';
+  const { gitCommitMessages } = locales[lang];
 
-  const typesChoices = gitCommitTypes.map(([value, msg]) => {
+  const types = options.types || locales[lang].gitCommitTypes;
+  const scopes = options.scopes || locales[lang].gitCommitScopes;
+
+  const typesChoices = types.map(([value, msg]) => {
     const nameWithSuffix = `${value}:`;
-
     const message = `${nameWithSuffix.padEnd(12)}${msg}`;
 
     return {
@@ -30,7 +40,7 @@ export async function gitCommit(lang: Lang = 'en-us') {
     };
   });
 
-  const scopesChoices = gitCommitScopes.map(([value, msg]) => ({
+  const scopesChoices = scopes.map(([value, msg]) => ({
     name: value,
     message: `${value.padEnd(30)} (${msg})`
   }));
@@ -56,9 +66,7 @@ export async function gitCommit(lang: Lang = 'en-us') {
   ]);
 
   const breaking = result.description.startsWith('!') ? '!' : '';
-
   const description = result.description.replace(/^!/, '').trim();
-
   const commitMsg = `${result.types}(${result.scopes})${breaking}: ${description}`;
 
   await execCommand('git', ['commit', '-m', commitMsg], { stdio: 'inherit' });
@@ -67,9 +75,7 @@ export async function gitCommit(lang: Lang = 'en-us') {
 /** Git commit message verify */
 export async function gitCommitVerify(lang: Lang = 'en-us', ignores: RegExp[] = []) {
   const gitPath = await execCommand('git', ['rev-parse', '--show-toplevel']);
-
   const gitMsgPath = path.join(gitPath, '.git', 'COMMIT_EDITMSG');
-
   const commitMsg = readFileSync(gitMsgPath, 'utf8').trim();
 
   if (ignores.some(regExp => regExp.test(commitMsg))) return;
@@ -78,7 +84,6 @@ export async function gitCommitVerify(lang: Lang = 'en-us', ignores: RegExp[] = 
 
   if (!REG_EXP.test(commitMsg)) {
     const errorMsg = locales[lang].gitCommitVerify;
-
     throw new Error(errorMsg);
   }
 }

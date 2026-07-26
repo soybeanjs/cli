@@ -3,35 +3,26 @@ import { cac } from 'cac';
 import { version } from '../package.json';
 import { loadCliOptions } from './config';
 import type { Lang } from './locales';
-import { cleanup, genChangelog, gitCommit, gitCommitVerify, ncu, release } from './command';
+import {
+  cleanup,
+  configGet,
+  configPath,
+  configSet,
+  genChangelog,
+  gitCommit,
+  gitCommitVerify,
+  ncu,
+  release
+} from './command';
 import type { CliOption } from './types';
-
-type Command = 'cleanup' | 'ncu' | 'update-pkg' | 'git-commit' | 'git-commit-verify' | 'changelog' | 'release';
 
 type CommandAction<A extends object> = (args?: A) => Promise<void> | void;
 
-type CommandWithAction<A extends object = object> = Record<Command, { desc: string; action: CommandAction<A> }>;
-
 interface CommandArg {
-  /** Execute additional command after bumping and before git commit. Defaults to 'pnpm soy changelog' */
   execute?: string;
-  /** Indicates whether to push the git commit and tag. Defaults to true */
   push?: boolean;
-  /** Generate changelog by total tags */
   total?: boolean;
-  /**
-   * The glob pattern of dirs to cleanup
-   *
-   * If not set, it will use the default value
-   *
-   * Multiple values use "," to separate them
-   */
   cleanupDir?: string;
-  /**
-   * display lang of cli
-   *
-   * @default 'en-us'
-   */
   lang?: Lang;
 }
 
@@ -52,10 +43,13 @@ async function setupCli() {
       '-c, --cleanupDir <dir>',
       'The glob pattern of dirs to cleanup, If not set, it will use the default value, Multiple values use "," to separate them'
     )
-    .option('-l, --lang <lang>', 'display lang of cli', { default: 'en-us', type: [String] })
+    .option('-l, --lang <lang>', `display lang of cli (default: ${cliOptions.lang})`, {
+      default: cliOptions.lang,
+      type: [String]
+    })
     .help();
 
-  const commands: CommandWithAction<CommandArg> = {
+  const simpleCommands: Record<string, { desc: string; action: CommandAction<CommandArg> }> = {
     cleanup: {
       desc: 'delete dirs: node_modules, dist, etc.',
       action: async args => {
@@ -84,13 +78,19 @@ async function setupCli() {
     'git-commit': {
       desc: 'git commit, generate commit message which match Conventional Commits standard',
       action: async args => {
-        await gitCommit(args?.lang);
+        const lang = args?.lang || cliOptions.lang;
+        await gitCommit({
+          lang,
+          types: cliOptions.gitCommit?.types,
+          scopes: cliOptions.gitCommit?.scopes
+        });
       }
     },
     'git-commit-verify': {
       desc: 'verify git commit message, make sure it match Conventional Commits standard',
       action: async args => {
-        await gitCommitVerify(args?.lang, cliOptions.gitCommitVerifyIgnores);
+        const lang = args?.lang || cliOptions.lang;
+        await gitCommitVerify(lang, cliOptions.gitCommitVerifyIgnores);
       }
     },
     changelog: {
@@ -107,9 +107,30 @@ async function setupCli() {
     }
   };
 
-  for await (const [command, { desc, action }] of Object.entries(commands)) {
-    cli.command(command, desc).action(action);
+  for (const [cmdName, { desc, action }] of Object.entries(simpleCommands)) {
+    cli.command(cmdName, desc).action(action);
   }
+
+  cli
+    .command('config <cmd>', 'manage cli configuration (set|get|path)')
+    .option('--set-lang <lang>', 'Set default language (zh-cn or en-us)')
+    .action(async (cmd: string, options: { setLang?: Lang }) => {
+      switch (cmd) {
+        case 'set':
+          await configSet({ lang: options.setLang });
+          break;
+        case 'get':
+          await configGet();
+          break;
+        case 'path':
+          await configPath();
+          break;
+        default:
+          console.error(`Unknown config subcommand: ${cmd}`);
+          console.log('Available subcommands: set, get, path');
+          process.exit(1);
+      }
+    });
 
   cli.parse();
 }

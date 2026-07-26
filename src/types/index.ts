@@ -1,4 +1,56 @@
 import type { ChangelogOption } from '@soybeanjs/changelog';
+import type { Lang } from '../locales';
+
+export type CommitItem = [string, string];
+
+export interface GitCommitConfig {
+  /**
+   * Commit types
+   *
+   * If not set, it will use the default types
+   *
+   * @example
+   * ```ts
+   * {
+   *   types: [
+   *     ['feat', '新功能'],
+   *     ['wip', '工作进行中']
+   *   ],
+   *   typesAppend: true // append to defaults, set to false to overwrite
+   * }
+   * ```
+   */
+  types?: CommitItem[];
+  /**
+   * Whether to append custom types to defaults or overwrite
+   *
+   * @default true
+   */
+  typesAppend?: boolean;
+  /**
+   * Commit scopes
+   *
+   * If not set, it will use the default scopes
+   *
+   * @example
+   * ```ts
+   * {
+   *   scopes: [
+   *     ['ui', 'UI 相关'],
+   *     ['api', 'API 相关']
+   *   ],
+   *   scopesAppend: true // append to defaults, set to false to overwrite
+   * }
+   * ```
+   */
+  scopes?: CommitItem[];
+  /**
+   * Whether to append custom scopes to defaults or overwrite
+   *
+   * @default true
+   */
+  scopesAppend?: boolean;
+}
 
 export interface CliOption {
   /** The project root directory */
@@ -28,4 +80,16 @@ export interface CliOption {
   changelogOptions: Partial<ChangelogOption>;
   /** The ignore pattern list of git commit verify */
   gitCommitVerifyIgnores: RegExp[];
+  /**
+   * Git commit config for types and scopes
+   */
+  gitCommit?: GitCommitConfig;
+  /**
+   * Default display language of cli
+   *
+   * Can be 'zh-cn' or 'en-us'
+   *
+   * @default 'en-us'
+   */
+  lang?: Lang;
 }
