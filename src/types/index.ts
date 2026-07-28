@@ -67,7 +67,7 @@ export interface CliOption {
    */
   cleanupDirs: string[];
   /**
-   * Npm-check-updates command args
+   * npm-check-updates command args
    *
    * If not set, soybean-cli will resolve workspace package.json files automatically and fall back to package.json in single-package repos.
    */
