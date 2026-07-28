@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [v1.8.1](https://github.com/soybeanjs/cli/compare/v1.8.0...v1.8.1) (2026-07-28)
+
+### &nbsp;&nbsp;&nbsp;🛠 Optimizations
+
+- **projects**: simplify ncu command &nbsp;-&nbsp; by @soybeanjs [<samp>(372a1)</samp>](https://github.com/soybeanjs/cli/commit/372a1f2)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.8.0](https://github.com/soybeanjs/cli/compare/v1.7.4...v1.8.0) (2026-07-27)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
