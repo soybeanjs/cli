@@ -1,6 +1,6 @@
 catalog:
   vite: npm:@voidzero-dev/vite-plus-core@0.2.6
-  vite-plus: 0.2.6
+  vite-plus: 0.2.7
 overrides:
   vite: 'catalog:'
 shamefullyHoist: true
@@ -9,3 +9,5 @@ allowBuilds:
   simple-git-hooks: true
 minimumReleaseAgeExclude:
   - '@soybeanjs/changelog@0.5.2'
+  - npm-check-updates@23.0.1
+  - tsx@4.23.5
