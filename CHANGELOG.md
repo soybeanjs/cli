@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [v1.8.2](https://github.com/soybeanjs/cli/compare/v1.8.1...v1.8.2) (2026-08-03)
+
+### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
+
+- **command**: fix ncu default args &nbsp;-&nbsp; by @soybeanjs [<samp>(4411f)</samp>](https://github.com/soybeanjs/cli/commit/4411f00)
+
+### &nbsp;&nbsp;&nbsp;🛠 Optimizations
+
+- **command**: ncu support monorepo &nbsp;-&nbsp; by @soybeanjs [<samp>(f618c)</samp>](https://github.com/soybeanjs/cli/commit/f618cd2)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.8.1](https://github.com/soybeanjs/cli/compare/v1.8.0...v1.8.1) (2026-07-28)
 
 ### &nbsp;&nbsp;&nbsp;🛠 Optimizations
