@@ -1,6 +1,26 @@
 # Changelog
 
 
+## [v1.8.3](https://github.com/soybeanjs/cli/compare/v1.8.2...v1.8.3) (2026-09-13)
+
+### &nbsp;&nbsp;&nbsp;🚀 Features
+
+- **projects**: add skills &nbsp;-&nbsp; by @soybeanjs [<samp>(ec970)</samp>](https://github.com/soybeanjs/cli/commit/ec97021)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update README &nbsp;-&nbsp; by @soybeanjs [<samp>(dc180)</samp>](https://github.com/soybeanjs/cli/commit/dc1804d)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**:
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(c7609)</samp>](https://github.com/soybeanjs/cli/commit/c7609d6)
+  - update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(5a731)</samp>](https://github.com/soybeanjs/cli/commit/5a731f5)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.8.2](https://github.com/soybeanjs/cli/compare/v1.8.1...v1.8.2) (2026-08-03)
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
