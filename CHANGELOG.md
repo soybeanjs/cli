@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [v1.8.4](https://github.com/soybeanjs/cli/compare/v1.8.3...v1.8.4) (2026-10-02)
+
+### &nbsp;&nbsp;&nbsp;📖 Documentation
+
+- **projects**: update CHANGELOG &nbsp;-&nbsp; by @soybeanjs [<samp>(2c1f1)</samp>](https://github.com/soybeanjs/cli/commit/2c1f1d0)
+
+### &nbsp;&nbsp;&nbsp;🏡 Chore
+
+- **deps**: update deps &nbsp;-&nbsp; by @soybeanjs [<samp>(5390b)</samp>](https://github.com/soybeanjs/cli/commit/5390bc6)
+- **vscode**: optimize vscode settings &nbsp;-&nbsp; by @soybeanjs [<samp>(8f1cd)</samp>](https://github.com/soybeanjs/cli/commit/8f1cdb1)
+
+### &nbsp;&nbsp;&nbsp;❤️ Contributors
+
+[![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
+
 ## [v1.8.3](https://github.com/soybeanjs/cli/compare/v1.8.2...v1.8.3) (2026-09-13)
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
