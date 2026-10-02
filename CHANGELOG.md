@@ -143,7 +143,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.7.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.7.0-beta.1...v1.7.0-beta.2) (2026-03-20)
+## [v1.7.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.7.0-beta.1...v1.7.0-beta.2) (2026-03-20) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -153,7 +153,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.7.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.6.1...v1.7.0-beta.1) (2026-03-20)
+## [v1.7.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.6.1...v1.7.0-beta.1) (2026-03-20) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -219,7 +219,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.5.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.5.0-beta.1...v1.5.0-beta.2) (2026-02-05)
+## [v1.5.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.5.0-beta.1...v1.5.0-beta.2) (2026-02-05) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🛠 Optimizations
 
@@ -229,7 +229,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.5.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.4.4...v1.5.0-beta.1) (2026-02-05)
+## [v1.5.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.4.4...v1.5.0-beta.1) (2026-02-05) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
@@ -279,7 +279,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.4.2-beta.1](https://github.com/soybeanjs/cli/compare/v1.4.1...v1.4.2-beta.1) (2025-12-24)
+## [v1.4.2-beta.1](https://github.com/soybeanjs/cli/compare/v1.4.1...v1.4.2-beta.1) (2025-12-24) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;💅 Refactors
 
@@ -347,7 +347,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.4.0-beta.4](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.3...v1.4.0-beta.4) (2025-08-29)
+## [v1.4.0-beta.4](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.3...v1.4.0-beta.4) (2025-08-29) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -361,7 +361,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.4.0-beta.3](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.2...v1.4.0-beta.3) (2025-08-29)
+## [v1.4.0-beta.3](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.2...v1.4.0-beta.3) (2025-08-29) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
 
@@ -375,7 +375,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.4.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.1...v1.4.0-beta.2) (2025-08-27)
+## [v1.4.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.4.0-beta.1...v1.4.0-beta.2) (2025-08-27) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -389,7 +389,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.4.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.3.1...v1.4.0-beta.1) (2025-07-13)
+## [v1.4.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.3.1...v1.4.0-beta.1) (2025-07-13) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
@@ -447,7 +447,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.3.0-beta.3](https://github.com/soybeanjs/cli/compare/v1.3.0-beta.2...v1.3.0-beta.3) (2025-05-15)
+## [v1.3.0-beta.3](https://github.com/soybeanjs/cli/compare/v1.3.0-beta.2...v1.3.0-beta.3) (2025-05-15) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🛠 Optimizations
 
@@ -457,7 +457,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.3.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.3.0-beta.1...v1.3.0-beta.2) (2025-05-15)
+## [v1.3.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.3.0-beta.1...v1.3.0-beta.2) (2025-05-15) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -467,7 +467,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.3.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.2.1...v1.3.0-beta.1) (2025-05-15)
+## [v1.3.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.2.1...v1.3.0-beta.1) (2025-05-15) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
@@ -641,7 +641,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.12-beta.1](https://github.com/soybeanjs/cli/compare/v1.0.11...v1.0.12-beta.1) (2024-04-24)
+## [v1.0.12-beta.1](https://github.com/soybeanjs/cli/compare/v1.0.11...v1.0.12-beta.1) (2024-04-24) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -683,7 +683,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.9-beta.0](https://github.com/soybeanjs/cli/compare/v1.0.8...v1.0.9-beta.0) (2024-03-03)
+## [v1.0.9-beta.0](https://github.com/soybeanjs/cli/compare/v1.0.8...v1.0.9-beta.0) (2024-03-03) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -711,7 +711,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.8-beta.3](https://github.com/soybeanjs/cli/compare/v1.0.8-beta.2...v1.0.8-beta.3) (2024-03-03)
+## [v1.0.8-beta.3](https://github.com/soybeanjs/cli/compare/v1.0.8-beta.2...v1.0.8-beta.3) (2024-03-03) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -721,7 +721,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.8-beta.2](https://github.com/soybeanjs/cli/compare/v1.0.8-beta.1...v1.0.8-beta.2) (2024-03-03)
+## [v1.0.8-beta.2](https://github.com/soybeanjs/cli/compare/v1.0.8-beta.1...v1.0.8-beta.2) (2024-03-03) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -731,7 +731,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.8-beta.1](https://github.com/soybeanjs/cli/compare/v1.0.8-beta.0...v1.0.8-beta.1) (2024-03-03)
+## [v1.0.8-beta.1](https://github.com/soybeanjs/cli/compare/v1.0.8-beta.0...v1.0.8-beta.1) (2024-03-03) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
@@ -741,7 +741,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.8-beta.0](https://github.com/soybeanjs/cli/compare/v1.0.7...v1.0.8-beta.0) (2024-03-03)
+## [v1.0.8-beta.0](https://github.com/soybeanjs/cli/compare/v1.0.7...v1.0.8-beta.0) (2024-03-03) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🏡 Chore
 
@@ -839,7 +839,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.2-beta.0](https://github.com/soybeanjs/cli/compare/v1.0.1...v1.0.2-beta.0) (2024-01-14)
+## [v1.0.2-beta.0](https://github.com/soybeanjs/cli/compare/v1.0.1...v1.0.2-beta.0) (2024-01-14) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -925,7 +925,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.0-beta.7](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2023-12-11)
+## [v1.0.0-beta.7](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.6...v1.0.0-beta.7) (2023-12-11) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -940,7 +940,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.0-beta.6](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2023-12-11)
+## [v1.0.0-beta.6](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.5...v1.0.0-beta.6) (2023-12-11) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🔥 Performance
 
@@ -958,7 +958,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.0-beta.5](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2023-12-11)
+## [v1.0.0-beta.5](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.4...v1.0.0-beta.5) (2023-12-11) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
@@ -976,7 +976,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.0-beta.4](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2023-12-11)
+## [v1.0.0-beta.4](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.3...v1.0.0-beta.4) (2023-12-11) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -990,7 +990,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.0-beta.3](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2023-12-10)
+## [v1.0.0-beta.3](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2023-12-10) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
 
@@ -1000,7 +1000,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2023-12-10)
+## [v1.0.0-beta.2](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2023-12-10) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;📖 Documentation
 
@@ -1014,7 +1014,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.0...v1.0.0-beta.1) (2023-12-10)
+## [v1.0.0-beta.1](https://github.com/soybeanjs/cli/compare/v1.0.0-beta.0...v1.0.0-beta.1) (2023-12-10) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
@@ -1024,7 +1024,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v1.0.0-beta.0](https://github.com/soybeanjs/cli/compare/v0.8.10...v1.0.0-beta.0) (2023-12-10)
+## [v1.0.0-beta.0](https://github.com/soybeanjs/cli/compare/v0.8.10...v1.0.0-beta.0) (2023-12-10) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🚀 Features
 
@@ -1222,7 +1222,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v0.7.7-beta.2](https://github.com/soybeanjs/cli/compare/v0.7.7-beta.1...v0.7.7-beta.2) (2023-11-06)
+## [v0.7.7-beta.2](https://github.com/soybeanjs/cli/compare/v0.7.7-beta.1...v0.7.7-beta.2) (2023-11-06) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -1232,7 +1232,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v0.7.7-beta.1](https://github.com/soybeanjs/cli/compare/v0.7.7-beta.0...v0.7.7-beta.1) (2023-11-06)
+## [v0.7.7-beta.1](https://github.com/soybeanjs/cli/compare/v0.7.7-beta.0...v0.7.7-beta.1) (2023-11-06) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -1242,7 +1242,7 @@
 
 [![soybeanjs](https://github.com/soybeanjs.png?size=48)](https://github.com/soybeanjs)&nbsp;&nbsp;
 
-## [v0.7.7-beta.0](https://github.com/soybeanjs/cli/compare/v0.7.6...v0.7.7-beta.0) (2023-11-06)
+## [v0.7.7-beta.0](https://github.com/soybeanjs/cli/compare/v0.7.6...v0.7.7-beta.0) (2023-11-06) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
@@ -1583,7 +1583,7 @@
 
 [Soybean](mailto:honghuangdc@gmail.com)
 
-## [v0.5.1-beta.0](https://github.com/soybeanjs/cli/compare/v0.5.0...v0.5.1-beta.0) (2023-06-06)
+## [v0.5.1-beta.0](https://github.com/soybeanjs/cli/compare/v0.5.0...v0.5.1-beta.0) (2023-06-06) · 🧪 Pre-release
 
 ### &nbsp;&nbsp;&nbsp;🐞 Bug Fixes
 
