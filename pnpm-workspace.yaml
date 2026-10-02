@@ -8,3 +8,5 @@ allowBuilds:
   esbuild: true
   simple-git-hooks: true
 minimumReleaseAgeExclude:
+  - '@types/node@26.6.4'
+  - '@soybeanjs/changelog@0.5.3'

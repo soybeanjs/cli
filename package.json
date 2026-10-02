@@ -51,7 +51,7 @@
     "upkg": "soy ncu"
   },
   "dependencies": {
-    "@soybeanjs/changelog": "^0.5.2",
+    "@soybeanjs/changelog": "^0.5.3",
     "bumpp": "^12.3.0",
     "c12": "^3.3.4",
     "cac": "^7.0.0",
@@ -66,10 +66,10 @@
   "devDependencies": {
     "@soybeanjs/cli": "link:",
     "@soybeanjs/oxc-config": "^0.2.6",
-    "@types/node": "^26.5.1",
-    "tsx": "^4.23.13",
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite-plus": "catalog:"
   },
-  "packageManager": "pnpm@12.4.1"
+  "packageManager": "pnpm@12.8.1"
 }
