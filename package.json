@@ -54,10 +54,10 @@
     "@soybeanjs/changelog": "^0.5.3",
     "bumpp": "^12.3.0",
     "c12": "^3.3.4",
-    "cac": "^7.0.0",
+    "cac": "^7.0.1",
     "consola": "^3.4.2",
     "enquirer": "^2.4.1",
-    "execa": "^10.0.1",
+    "execa": "^10.1.0",
     "kolorist": "^1.8.0",
     "npm-check-updates": "^23.1.0",
     "rimraf": "^6.1.3",
@@ -71,5 +71,5 @@
     "typescript": "^7.0.2",
     "vite-plus": "catalog:"
   },
-  "packageManager": "pnpm@12.8.1"
+  "packageManager": "pnpm@12.10.1"
 }
