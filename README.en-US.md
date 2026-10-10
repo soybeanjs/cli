@@ -1,7 +1,7 @@
 # @soybeanjs/cli
 
 <p align="center">
-  <img src="https://r2.soybeanjs.tech/soybeanjs/logo-soybeanjs.svg" alt="SoybeanJS" width="96" />
+  <img src="https://img.soybeanjs.dev/logo-soybeanjs.svg" alt="SoybeanJS" width="96" />
 </p>
 
 [简体中文](./README.md) | English
